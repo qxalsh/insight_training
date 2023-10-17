@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://namespaces.querix.com/2015/fglForms" title="Console &amp; Log Window">
+	<form.rootContainer>
+		<GridPanel identifier="rootContainer" visible="true" preferredSize="1196,836">
+			<GridPanel.gridColumnDefinitions>
+				<GridColumnDefinition gridLengthValue=""/>
+			</GridPanel.gridColumnDefinitions>
+			<GridPanel.gridRowDefinitions>
+				<GridRowDefinition gridLengthValue=""/>
+				<GridRowDefinition gridLengthValue=""/>
+			</GridPanel.gridRowDefinitions>
+			<TextArea visible="true" identifier="console" gridItemLocation="0,0,1,1"/>
+			<Button text="Close" visible="true" identifier="btCancel" gridItemLocation="0,1,1,1" horizontalAlignment="Right" preferredSize="15rem,">
+				<Button.onInvoke>
+					<ActionEventHandler actionName="CANCEL"/>
+				</Button.onInvoke>
+			</Button>
+		</GridPanel>
+	</form.rootContainer>
+</form>

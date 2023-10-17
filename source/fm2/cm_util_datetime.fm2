@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8"?><form xmlns="http://namespaces.querix.com/2015/fglForms">
+	<form.rootContainer>
+		<GridPanel classNames="fcls_rootContainer" fieldTable="" horizontalAlignment="Left" identifier="rootContainer" verticalAlignment="Top">
+			<GridPanel.gridRowDefinitions>
+				<GridRowDefinition gridLengthValue=""/>
+				<GridRowDefinition gridLengthValue=""/>
+				<GridRowDefinition gridLengthValue=""/>
+				<GridRowDefinition/>
+				<GridRowDefinition/>
+				<GridRowDefinition gridLengthValue=""/>
+				<GridRowDefinition gridLengthValue=""/>
+				<GridRowDefinition gridLengthValue=""/>
+				<GridRowDefinition gridLengthValue=""/>
+				<GridRowDefinition gridLengthValue=""/>
+			</GridPanel.gridRowDefinitions>
+			<GridPanel.gridColumnDefinitions>
+				<GridColumnDefinition gridLengthValue="100%"/>
+			</GridPanel.gridColumnDefinitions>
+			<GridPanel classNames="fcls_title_cnt" fieldTable="formonly" gridItemLocation="0,0,1,1" identifier="cntTitle" verticalAlignment="Top" visible="true">
+				<GridPanel.gridRowDefinitions>
+					<GridRowDefinition gridLengthValue=""/>
+				</GridPanel.gridRowDefinitions>
+				<GridPanel.gridColumnDefinitions>
+					<GridColumnDefinition gridLengthValue="100%"/>
+					<GridColumnDefinition gridLengthValue=""/>
+				</GridPanel.gridColumnDefinitions>
+				<Label classNames="fcls_title_lb" fieldTable="formonly" gridItemLocation="0,0,1,1" identifier="lbTitle" isDynamic="true" text="util.Datetime" visible="true"/>
+				<Label classNames="fcls_title_lb" fieldTable="" gridItemLocation="1,0,1,1" identifier="lbFormName" isDynamic="true" text="cm_util_datetime" visible="true"/>
+			</GridPanel>
+			<GroupBox classNames="fcls_detail_gb_cnt" fieldTable="" gridItemLocation="0,1,1,1" horizontalAlignment="Stretch" identifier="cntDetail1GroupBox" title="util.Datetime.format()" verticalAlignment="Stretch" visible="true">
+				<GridPanel classNames="fcls_detail_gb_cnt_sub,fcls_data_cnt,fcls_align_left" fieldTable="formonly" gridItemLocation="0,0,1,1" horizontalAlignment="Left" identifier="cntDetail1GBSubGp" verticalAlignment="Top" visible="true">
+					<GridPanel.gridRowDefinitions>
+						<GridRowDefinition gridLengthValue=""/>
+						<GridRowDefinition gridLengthValue=""/>
+					</GridPanel.gridRowDefinitions>
+					<GridPanel.gridColumnDefinitions>
+						<GridColumnDefinition gridLengthValue="" gridMinLength="20rem"/>
+						<GridColumnDefinition gridLengthValue="" gridMinLength="20rem"/>
+					</GridPanel.gridColumnDefinitions>
+					<Label classNames="fcls_fieldlabel,fcls_align_left" fieldTable="" gridItemLocation="1,0,1,1" identifier="lb74" isDynamic="true" text="DISPLAY util.Datetime.format(CURRENT, &quot;%Y-%m-%d %H:%M&quot;)" visible="true"/>
+					<Label classNames="fcls_fieldlabel,fcls_align_left" fieldTable="formonly" identifier="lb56" isDynamic="true" text="DISPLAY CURRENT" visible="true" gridItemLocation="0,0,1,1"/>
+					<TextField visible="true" identifier="format_current" gridItemLocation="0,1,1,1"/>
+					<TextField visible="true" identifier="format_current_result" gridItemLocation="1,1,1,1"/>
+				</GridPanel>
+			</GroupBox>
+			<GroupBox classNames="fcls_detail_gb_cnt" gridItemLocation="0,2,1,1" identifier="cntDetail2GroupBox" title="util.Datetime.fromSecondsSinceEpoch()" visible="true">
+				<GridPanel classNames="fcls_detail_gb_cnt_sub,fcls_data_cnt,fcls_align_left" fieldTable="formonly" horizontalAlignment="Left" identifier="cntDetail2GBSubGp" verticalAlignment="Top" visible="true">
+				<GridPanel.gridRowDefinitions>
+					<GridRowDefinition gridLengthValue=""/>
+					<GridRowDefinition gridLengthValue=""/>
+				</GridPanel.gridRowDefinitions>
+				<GridPanel.gridColumnDefinitions>
+					<GridColumnDefinition gridLengthValue="" gridMinLength="20rem"/>
+					<GridColumnDefinition gridLengthValue="" gridMinLength="20rem"/>
+				</GridPanel.gridColumnDefinitions>
+				<Label classNames="fcls_fieldlabel,fcls_align_left" fieldTable="" gridItemLocation="0,0,1,1" identifier="lb91" isDynamic="true" text="Unix epoch time:  -1379020785" visible="true"/>
+				<Label classNames="fcls_fieldlabel,fcls_align_left" fieldTable="formonly" gridItemLocation="1,0,1,1" identifier="lb64" isDynamic="true" text="Human readable time" visible="true"/>
+				<TextField visible="true" identifier="fromSecondsSinceEpoch_seconds" gridItemLocation="0,1,1,1"/>
+				<TextField visible="true" identifier="fromSecondsSinceEpoch_human_readable" gridItemLocation="1,1,1,1"/>
+			</GridPanel>
+			</GroupBox>
+			<GroupBox visible="true" identifier="cntDetail3GroupBox" gridItemLocation="0,3,1,1" classNames="fcls_detail_gb_cnt" title="util.Datetime.getCurrentAsLocal()">
+				<GridPanel visible="true" identifier="cntDetail3GBSubGp" fieldTable="formonly" classNames="fcls_detail_gb_cnt_sub,fcls_data_cnt,fcls_align_left" horizontalAlignment="Left" verticalAlignment="Top">
+					<GridPanel.gridRowDefinitions>
+						<GridRowDefinition gridLengthValue=""/>
+						<GridRowDefinition gridLengthValue=""/>
+					</GridPanel.gridRowDefinitions>
+					<GridPanel.gridColumnDefinitions>
+						<GridColumnDefinition gridLengthValue="" gridMinLength="20rem"/>
+						<GridColumnDefinition gridLengthValue="" gridMinLength="20rem"/>
+					</GridPanel.gridColumnDefinitions>
+					<Label visible="true" identifier="lb213" classNames="fcls_fieldlabel,fcls_align_left" isDynamic="true" fieldTable="" gridItemLocation="0,0,1,1" text="DISPLAY CURRENT"/>
+					<Label visible="true" identifier="lb214" classNames="fcls_fieldlabel,fcls_align_left" isDynamic="true" fieldTable="formonly" gridItemLocation="1,0,1,1" text="CURRENT AS LOCAL"/>
+					<TextField visible="true" identifier="getCurrentAsLocal_current" gridItemLocation="0,1,1,1"/>
+					<TextField visible="true" identifier="getCurrentAsLocal_current_local" gridItemLocation="1,1,1,1"/>
+				</GridPanel>
+			</GroupBox>
+			<GroupBox visible="true" identifier="cntDetail4GroupBox" gridItemLocation="0,4,1,1" classNames="fcls_detail_gb_cnt" title="util.Datetime.getCurrentAsUTC()">
+				<GridPanel visible="true" identifier="cntDetail4GBSubGp" fieldTable="formonly" classNames="fcls_detail_gb_cnt_sub,fcls_data_cnt,fcls_align_left" horizontalAlignment="Left" verticalAlignment="Top">
+					<GridPanel.gridRowDefinitions>
+						<GridRowDefinition gridLengthValue=""/>
+					</GridPanel.gridRowDefinitions>
+					<GridPanel.gridColumnDefinitions>
+						<GridColumnDefinition gridLengthValue="" gridMinLength="20rem"/>
+						<GridColumnDefinition gridLengthValue="" gridMinLength="20rem"/>
+					</GridPanel.gridColumnDefinitions>
+					<Label visible="true" identifier="lb236" classNames="fcls_fieldlabel,fcls_align_left" isDynamic="true" fieldTable="formonly" gridItemLocation="0,0,1,1" text="Current UTC"/>
+					<TextField visible="true" identifier="getCurrentAsUTC" gridItemLocation="1,0,1,1"/>
+				</GridPanel>
+			</GroupBox>
+			<GroupBox classNames="fcls_detail_gb_cnt" fieldTable="formonly" gridItemLocation="0,5,1,1" horizontalAlignment="Stretch" identifier="cntDetail5GroupBox" title="util.Datetime.parse()" verticalAlignment="Stretch" visible="true">
+				<GridPanel classNames="fcls_detail_gb_cnt_sub,fcls_data_cnt,fcls_align_left" fieldTable="formonly" horizontalAlignment="Left" identifier="cntDetail5GBSubGpLeft" verticalAlignment="Top" visible="true">
+					<GridPanel.gridRowDefinitions>
+						<GridRowDefinition gridLengthValue=""/>
+						<GridRowDefinition gridLengthValue=""/>
+						<GridRowDefinition gridLengthValue=""/>
+						<GridRowDefinition gridLengthValue=""/>
+					</GridPanel.gridRowDefinitions>
+					<GridPanel.gridColumnDefinitions>
+						<GridColumnDefinition gridLengthValue="" gridMinLength="20rem"/>
+						<GridColumnDefinition gridLengthValue="" gridMinLength="20rem"/>
+					</GridPanel.gridColumnDefinitions>
+					<Label classNames="fcls_fieldlabel,fcls_align_left" fieldTable="" gridItemLocation="0,0,1,1" identifier="lb91x" isDynamic="true" text="Parse String" visible="true"/>
+					<Label classNames="fcls_fieldlabel,fcls_align_left" fieldTable="formonly" gridItemLocation="1,0,1,1" identifier="lb64x" isDynamic="true" text="2017-02-22 14:15" visible="true"/>
+					<Label classNames="fcls_fieldlabel,fcls_align_left" fieldTable="formonly" gridItemLocation="0,1,1,1" identifier="lb47x" isDynamic="true" text="Y-%m-%d %H:%M" visible="true"/>
+					<TextField visible="true" identifier="parse_1" gridItemLocation="1,1,1,1"/>
+					<Label classNames="fcls_fieldlabel,fcls_align_left" fieldTable="formonly" gridItemLocation="0,2,1,1" identifier="lb46x" isDynamic="true" text="%Y-%m-%d" visible="true"/>
+					<TextField visible="true" identifier="parse_2" gridItemLocation="1,2,1,1"/>
+					<TextField visible="true" identifier="parse_3" gridItemLocation="1,3,1,1"/>
+					<Label classNames="fcls_fieldlabel,fcls_align_left" fieldTable="" identifier="lb93x" isDynamic="true" text="%Y" visible="true" gridItemLocation="0,3,1,1"/>
+				</GridPanel>
+			</GroupBox>
+			<GridPanel classNames="fcls_detail_cnt" fieldTable="formonly" gridItemLocation="0,6,1,1" horizontalAlignment="Stretch" identifier="cntDetail6" verticalAlignment="Stretch" visible="true">
+				<GridPanel.gridRowDefinitions>
+					<GridRowDefinition gridLengthValue=""/>
+				</GridPanel.gridRowDefinitions>
+				<GridPanel.gridColumnDefinitions>
+					<GridColumnDefinition gridLengthValue="100%"/>
+				</GridPanel.gridColumnDefinitions>
+				<GroupBox classNames="fcls_detail_gb_cnt" fieldTable="formonly" gridItemLocation="0,0,1,1" horizontalAlignment="Stretch" identifier="cntDetail6GroupBox" title="util.Datetime.toLocalTime()" verticalAlignment="Stretch" visible="true">
+					<GridPanel classNames="fcls_detail_gb_cnt_sub,fcls_data_cnt,fcls_align_left" fieldTable="formonly" horizontalAlignment="Left" identifier="cntDetail6GBSubGp" verticalAlignment="Top" visible="true">
+						<GridPanel.gridRowDefinitions>
+							<GridRowDefinition gridLengthValue=""/>
+							<GridRowDefinition gridLengthValue=""/>
+						</GridPanel.gridRowDefinitions>
+						<GridPanel.gridColumnDefinitions>
+							<GridColumnDefinition gridLengthValue="" gridMinLength="20rem"/>
+							<GridColumnDefinition gridLengthValue="" gridMinLength="20rem"/>
+						</GridPanel.gridColumnDefinitions>
+						<Label classNames="fcls_fieldlabel,fcls_align_left" fieldTable="" gridItemLocation="0,0,1,1" identifier="lb91y" isDynamic="true" text="util.Datetime.toLocalTime(" visible="true"/>
+						<Label classNames="fcls_fieldlabel,fcls_align_left" fieldTable="formonly" gridItemLocation="1,0,1,1" identifier="lb64y" isDynamic="true" text="DATETIME(2017-02-23 12:34:56) YEAR TO SECOND" visible="true"/>
+						<Label classNames="fcls_fieldlabel,fcls_align_left" fieldTable="formonly" gridItemLocation="0,1,1,1" identifier="lb47y" isDynamic="true" text="Local time" visible="true"/>
+						<TextField visible="true" identifier="to_LocalTime" gridItemLocation="1,1,1,1"/>
+					</GridPanel>
+				</GroupBox>
+			</GridPanel>
+			<GroupBox classNames="fcls_detail_gb_cnt" fieldTable="formonly" gridItemLocation="0,7,1,1" horizontalAlignment="Stretch" identifier="cntDetail7GroupBox" title="util.Datetime.toSecondsSinceEpoch()" verticalAlignment="Stretch" visible="true">
+				<GridPanel classNames="fcls_detail_gb_cnt_sub,fcls_data_cnt,fcls_align_left" fieldTable="formonly" horizontalAlignment="Left" identifier="cntDetail7GBSubGpLeft" verticalAlignment="Top" visible="true">
+					<GridPanel.gridRowDefinitions>
+						<GridRowDefinition gridLengthValue=""/>
+						<GridRowDefinition gridLengthValue=""/>
+					</GridPanel.gridRowDefinitions>
+					<GridPanel.gridColumnDefinitions>
+						<GridColumnDefinition gridLengthValue="" gridMinLength="20rem"/>
+						<GridColumnDefinition gridLengthValue="" gridMinLength="20rem"/>
+					</GridPanel.gridColumnDefinitions>
+					<Label classNames="fcls_fieldlabel,fcls_align_left" fieldTable="formonly" identifier="lb47z" isDynamic="true" text="toSecondsSinceEpoch(CURRENT)" visible="true" gridItemLocation="1,0,1,1"/>
+					<TextField visible="true" identifier="toSecondsSinceEpoch" gridItemLocation="1,1,1,1"/>
+					<TextField visible="true" identifier="view_current" gridItemLocation="0,1,1,1"/>
+					<Label classNames="fcls_fieldlabel,fcls_align_left" fieldTable="formonly" identifier="lb46z" isDynamic="true" text="Current" visible="true" gridItemLocation="0,0,1,1"/>
+				</GridPanel>
+			</GroupBox>
+			<GridPanel classNames="fcls_detail_cnt" fieldTable="formonly" gridItemLocation="0,8,1,1" identifier="cntDetail8" verticalAlignment="Top" visible="true">
+				<GridPanel.gridRowDefinitions>
+					<GridRowDefinition gridLengthValue=""/>
+				</GridPanel.gridRowDefinitions>
+				<GridPanel.gridColumnDefinitions>
+					<GridColumnDefinition gridLengthValue="100%"/>
+				</GridPanel.gridColumnDefinitions>
+				<GroupBox classNames="fcls_detail_gb_cnt" fieldTable="formonly" gridItemLocation="0,0,1,1" horizontalAlignment="Stretch" identifier="cntDetail8GroupBox" title="util.Datetime.toUTC()" verticalAlignment="Stretch" visible="true">
+					<GridPanel classNames="fcls_detail_gb_cnt_sub,fcls_data_cnt,fcls_align_left" fieldTable="formonly" horizontalAlignment="Left" identifier="cntDetail8GBSubGp" verticalAlignment="Top" visible="true">
+						<GridPanel.gridRowDefinitions>
+							<GridRowDefinition gridLengthValue=""/>
+							<GridRowDefinition gridLengthValue=""/>
+						</GridPanel.gridRowDefinitions>
+						<GridPanel.gridColumnDefinitions>
+							<GridColumnDefinition gridLengthValue="" gridMinLength="20rem"/>
+							<GridColumnDefinition gridLengthValue="" gridMinLength="20rem"/>
+						</GridPanel.gridColumnDefinitions>
+						<Label classNames="fcls_fieldlabel,fcls_align_left" fieldTable="" gridItemLocation="0,0,1,1" identifier="lb91a" isDynamic="true" text="2017-02-23 12:34:56" visible="true"/>
+						<Label classNames="fcls_fieldlabel,fcls_align_left" fieldTable="formonly" gridItemLocation="1,0,1,1" identifier="lb64a" isDynamic="true" text="toUTC(DATETIME(2017-02-23 12:34:56) YEAR TO SECOND)" visible="true"/>
+						<TextField visible="true" identifier="local_dateime_year_to_second" gridItemLocation="0,1,1,1"/>
+						<TextField visible="true" identifier="toUTC" gridItemLocation="1,1,1,1"/>
+					</GridPanel>
+				</GroupBox>
+			</GridPanel>
+			<GridPanel classNames="fcls_statusbar_cnt" fieldTable="formonly" gridItemLocation="0,9,1,1" identifier="cntStatusBar" verticalAlignment="Top" visible="true">
+				<GridPanel.gridRowDefinitions>
+					<GridRowDefinition gridLengthValue=""/>
+					<GridRowDefinition gridLengthValue=""/>
+				</GridPanel.gridRowDefinitions>
+				<GridPanel.gridColumnDefinitions>
+					<GridColumnDefinition gridLengthValue="100%"/>
+				</GridPanel.gridColumnDefinitions>
+				<Label classNames="fcls_sblabel" fieldTable="formonly" gridItemLocation="0,0,1,1" identifier="lbInfo1" isDynamic="true" text="" visible="true"/>
+				<Label classNames="fcls_sblabel" fieldTable="formonly" gridItemLocation="0,1,1,1" identifier="lbInfo2" isDynamic="true" text="" visible="true"/>
+			</GridPanel>
+		</GridPanel>
+	</form.rootContainer>
+	<form.screenRecords>
+		<ScreenRecord fields="" identifier="s_reqthdr"/>
+		<ScreenRecord fields="print_opt" identifier="FORMONLY"/>
+	</form.screenRecords>
+</form>

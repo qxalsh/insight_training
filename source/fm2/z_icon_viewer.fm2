@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://namespaces.querix.com/2015/fglForms">
+	<form.rootContainer>
+		<GridPanel classNames="fcls_rootContainer" verticalAlignment="Top" horizontalAlignment="Left" fieldTable="" identifier="rootContainer">
+			<GridPanel.gridRowDefinitions>
+				<GridRowDefinition gridLengthValue=""/>
+				<GridRowDefinition gridLengthValue=""/>
+				<GridRowDefinition gridLengthValue=""/>
+			</GridPanel.gridRowDefinitions>
+			<GridPanel.gridColumnDefinitions>
+				<GridColumnDefinition gridLengthValue="100%"/>
+			</GridPanel.gridColumnDefinitions>
+			<GridPanel classNames="fcls_title_cnt" visible="true" verticalAlignment="Top" gridItemLocation="0,0,1,1" fieldTable="formonly" identifier="cntTitle">
+				<GridPanel.gridRowDefinitions>
+					<GridRowDefinition gridLengthValue=""/>
+				</GridPanel.gridRowDefinitions>
+				<GridPanel.gridColumnDefinitions>
+					<GridColumnDefinition gridLengthValue="100%"/>
+				</GridPanel.gridColumnDefinitions>
+				<Label isDynamic="true" text="Header-Text" classNames="fcls_title_lb" visible="true" gridItemLocation="0,0,1,1" fieldTable="formonly" identifier="lbTitle"/>
+			</GridPanel>
+			<GridPanel classNames="fcls_detail_cnt,fcls_data_cnt,fcls_align_left" visible="true" verticalAlignment="Top" horizontalAlignment="Left" gridItemLocation="0,1,1,1" fieldTable="formonly" identifier="cntDetail1">
+				<GridPanel.gridRowDefinitions>
+					<GridRowDefinition gridLengthValue="33"/>
+					<GridRowDefinition gridLengthValue="33"/>
+					<GridRowDefinition gridLengthValue="33"/>
+					<GridRowDefinition gridLengthValue="33"/>
+					<GridRowDefinition gridLengthValue="33"/>
+					<GridRowDefinition gridLengthValue="33"/>
+					<GridRowDefinition gridLengthValue="33"/>
+					<GridRowDefinition gridLengthValue="33"/>
+					<GridRowDefinition gridLengthValue="33"/>
+					<GridRowDefinition gridLengthValue="33"/>
+				</GridPanel.gridRowDefinitions>
+				<GridPanel.gridColumnDefinitions>
+					<GridColumnDefinition gridLengthValue="" gridMinLength="10rem"/>
+				</GridPanel.gridColumnDefinitions>
+				<GridPanel visible="true" identifier="c2" gridItemLocation="0,0,1,1" horizontalAlignment="Left">
+					<GridPanel.gridColumnDefinitions>
+						<GridColumnDefinition gridLengthValue=""/>
+						<GridColumnDefinition gridLengthValue=""/>
+					</GridPanel.gridColumnDefinitions>
+					<GridPanel.gridRowDefinitions>
+						<GridRowDefinition gridLengthValue=""/>
+					</GridPanel.gridRowDefinitions>
+					<Label isDynamic="true" classNames="fcls_button_image_only,fcls_columnlabel_rev_cell" visible="true" fieldTable="" identifier="lbImage" horizontalAlignment="Stretch" verticalAlignment="Stretch" gridItemLocation="0,0,1,1">
+					<Label.image>
+						<Image imageUrl="{CONTEXT}/public/querix/icon/svg/24/ic_1_24px.svg"/>
+					</Label.image>
+				</Label>
+					<Button visible="true" identifier="btImage" classNames="fcls_button_image_only" gridItemLocation="1,0,1,1">
+					<Button.image>
+						<Image imageUrl="{CONTEXT}/public/querix/icon/svg/24/ic_1_24px.svg"/>
+					</Button.image>
+					<Button.onInvoke>
+						<ActionEventHandler type="actioneventhandler" actionName="actRefresh"/>
+					</Button.onInvoke>
+				</Button>
+				</GridPanel>
+				<TextField visible="true" identifier="imagePath" gridItemLocation="0,1,1,1" classNames="fcls_data_widget,fcls_align_left,fcls_length_40qch"/>
+				<GridPanel visible="true" identifier="c3" gridItemLocation="0,2,1,1" horizontalAlignment="Left">
+					<GridPanel.gridColumnDefinitions>
+						<GridColumnDefinition gridLengthValue=""/>
+						<GridColumnDefinition gridLengthValue=""/>
+					</GridPanel.gridColumnDefinitions>
+					<GridPanel.gridRowDefinitions>
+						<GridRowDefinition gridLengthValue=""/>
+					</GridPanel.gridRowDefinitions>
+					<Label isDynamic="true" visible="true" identifier="lbImage2" gridItemLocation="0,0,1,1" classNames="fcls_button_image_only,fcls_columnlabel_rev_cell">
+						<Label.image>
+							<Image imageUrl="{CONTEXT}/public/querix/icon/svg/24/ic_1_24px.svg"/>
+						</Label.image>
+					</Label>
+					<Button visible="true" identifier="btImage2" gridItemLocation="1,0,1,1" classNames="fcls_button_image_only">
+						<Button.image>
+							<Image imageUrl="{CONTEXT}/public/querix/icon/svg/24/ic_1_24px.svg"/>
+						</Button.image>
+						<Button.onInvoke>
+							<ActionEventHandler type="actioneventhandler" actionName="actRefresh"/>
+						</Button.onInvoke>
+					</Button>
+				</GridPanel>
+				<TextField visible="true" identifier="imagePath2" gridItemLocation="0,3,1,1"/>
+				<GridPanel visible="true" identifier="c4" gridItemLocation="0,4,1,1" horizontalAlignment="Left">
+					<GridPanel.gridColumnDefinitions>
+						<GridColumnDefinition gridLengthValue=""/>
+						<GridColumnDefinition gridLengthValue=""/>
+					</GridPanel.gridColumnDefinitions>
+					<GridPanel.gridRowDefinitions>
+						<GridRowDefinition gridLengthValue=""/>
+					</GridPanel.gridRowDefinitions>
+					<Label isDynamic="true" visible="true" identifier="lbImage3" gridItemLocation="0,0,1,1" classNames="fcls_button_image_only,fcls_columnlabel_rev_cell">
+						<Label.image>
+							<Image imageUrl="{CONTEXT}/public/querix/icon/svg/24/ic_1_24px.svg"/>
+						</Label.image>
+					</Label>
+					<Button visible="true" identifier="btImage3" gridItemLocation="1,0,1,1" classNames="fcls_button_image_only">
+						<Button.image>
+							<Image imageUrl="{CONTEXT}/public/querix/icon/svg/24/ic_1_24px.svg"/>
+						</Button.image>
+						<Button.onInvoke>
+							<ActionEventHandler type="actioneventhandler" actionName="actRefresh"/>
+						</Button.onInvoke>
+					</Button>
+				</GridPanel>
+				<TextField visible="true" identifier="imagePath3" gridItemLocation="0,5,1,1"/>
+				<GridPanel visible="true" identifier="c5" gridItemLocation="0,6,1,1" horizontalAlignment="Left">
+					<GridPanel.gridColumnDefinitions>
+						<GridColumnDefinition gridLengthValue=""/>
+						<GridColumnDefinition gridLengthValue=""/>
+					</GridPanel.gridColumnDefinitions>
+					<GridPanel.gridRowDefinitions>
+						<GridRowDefinition gridLengthValue=""/>
+					</GridPanel.gridRowDefinitions>
+					<Label visible="true" identifier="lbImage4" gridItemLocation="0,0,1,1" classNames="fcls_button_image_only,fcls_columnlabel_rev_cell" isDynamic="true">
+						<Label.image>
+							<Image imageUrl="{CONTEXT}/public/querix/icon/svg/24/ic_1_24px.svg"/>
+						</Label.image>
+					</Label>
+					<Button visible="true" identifier="btImage4" gridItemLocation="1,0,1,1" classNames="fcls_button_image_only">
+						<Button.image>
+							<Image imageUrl="{CONTEXT}/public/querix/icon/svg/24/ic_1_24px.svg"/>
+						</Button.image>
+						<Button.onInvoke>
+							<ActionEventHandler type="actioneventhandler" actionName="actRefresh"/>
+						</Button.onInvoke>
+					</Button>
+				</GridPanel>
+				<TextField visible="true" identifier="imagePath4" gridItemLocation="0,7,1,1"/>
+				<GridPanel visible="true" identifier="c6" gridItemLocation="0,8,1,1" horizontalAlignment="Left">
+					<GridPanel.gridColumnDefinitions>
+						<GridColumnDefinition gridLengthValue=""/>
+						<GridColumnDefinition gridLengthValue=""/>
+					</GridPanel.gridColumnDefinitions>
+					<GridPanel.gridRowDefinitions>
+						<GridRowDefinition gridLengthValue=""/>
+					</GridPanel.gridRowDefinitions>
+					<Label visible="true" identifier="lbImage5" gridItemLocation="0,0,1,1" classNames="fcls_button_image_only,fcls_columnlabel_rev_cell" isDynamic="true">
+						<Label.image>
+							<Image imageUrl="{CONTEXT}/public/querix/icon/svg/24/ic_1_24px.svg"/>
+						</Label.image>
+					</Label>
+					<Button visible="true" identifier="btImage5" gridItemLocation="1,0,1,1" classNames="fcls_button_image_only">
+						<Button.image>
+							<Image imageUrl="{CONTEXT}/public/querix/icon/svg/24/ic_1_24px.svg"/>
+						</Button.image>
+						<Button.onInvoke>
+							<ActionEventHandler type="actioneventhandler" actionName="actRefresh"/>
+						</Button.onInvoke>
+					</Button>
+				</GridPanel>
+				<TextField visible="true" identifier="imagePath5" gridItemLocation="0,9,1,1"/>
+			</GridPanel>
+			<GridPanel classNames="fcls_statusbar_cnt" visible="true" verticalAlignment="Bottom" gridItemLocation="0,2,1,1" fieldTable="formonly" identifier="cntStatusBar">
+				<GridPanel.gridRowDefinitions>
+					<GridRowDefinition gridLengthValue=""/>
+					<GridRowDefinition gridLengthValue=""/>
+				</GridPanel.gridRowDefinitions>
+				<GridPanel.gridColumnDefinitions>
+					<GridColumnDefinition gridLengthValue="100%"/>
+				</GridPanel.gridColumnDefinitions>
+				<Label isDynamic="true" text="" classNames="fcls_sblabel" visible="true" gridItemLocation="0,0,1,1" fieldTable="formonly" identifier="lbInfo1"/>
+				<Label isDynamic="true" text="" classNames="fcls_sblabel" visible="true" gridItemLocation="0,1,1,1" fieldTable="formonly" identifier="lbInfo2"/>
+			</GridPanel>
+		</GridPanel>
+	</form.rootContainer>
+	<form.screenRecords>
+		<ScreenRecord identifier="FORMONLY" fields="imagePath,imagePath2,imagePath3,imagePath4,imagePath5"/>
+	</form.screenRecords>
+</form>
+

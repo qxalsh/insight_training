@@ -1,0 +1,108 @@
+DATABASE formonly
+
+SCREEN
+{
+ [dl_header                                                                  ] 
+\g-----------------------------------------------------------------------------  \g
+ [dl_grp_nam][m_name                       ]             [dl_event ][event   ] 
+ [dl_item   ][m_item                       ]             [dl_ord_id][ord     ] 
+                                                                               
+ [f_action        ]      [dialog   ]     [action_time]    [dl_icon]   [image ] 
+                                                                               
+                                                                               
+                         [stat     ]                                           
+\g-----------------------------------------------------------------------------  \g
+[dl_uk |txt_en                                                               ] 
+[dl_sp |txt_sp                                                               ] 
+[dl_de |txt_de                                                               ] 
+[dl_fr |txt_fr                                                               ] 
+[dl_ar |txt_ar                                                               ] 
+[dl_it |txt_it                                                               ] 
+[dl_ot |txt_ot                                                               ] 
+}
+
+
+ATTRIBUTES
+m_name=formonly.m_name;
+m_item=formonly.m_item;
+action_time=formonly.action_time,
+	config="0 Before 1 After",
+	widget="radio";
+f_action=formonly.action,
+	config="1 {Set Icon} 2 {Remove Icon} 3 {Set Divider} 4 {Remove Divider}",
+	widget="radio";
+dialog=formonly.dialog,
+	config="0 Normal 1 Dialog",
+	widget="radio";
+event=formonly.event;
+txt_en=formonly.txt_en;
+txt_sp=formonly.txt_sp;
+txt_de=formonly.txt_de;
+txt_fr=formonly.txt_fr;
+txt_ar=formonly.txt_ar;
+txt_it=formonly.txt_it;
+txt_ot=formonly.txt_ot;
+ord=formonly.ord;
+image=formonly.image,
+	config="icon32/exit01.ico F9",
+	widget="bmp";
+dl_header=formonly.dl_header,
+	config="{Toolbar/Context Menu Icon Details}",
+	widget="label",
+	color=bold blue;
+dl_ord_id=formonly.dl_order_id,
+	config="{Order ID:}",
+	widget="label",
+	color=bold Blue;
+dl_event=formonly.dl_event,
+	config="Event:",
+	widget="label",
+	color=bold Blue;
+dl_icon=formonly.dl_icon,
+	config="Icon:",
+	widget="label",
+	color=bold Blue;
+stat=formonly.stat,
+	config="1 0 Static",
+	widget="check";
+dl_grp_nam=formonly.dl_grp_nam,
+	config="{Group Name:}",
+	widget="label",
+	color=bold Blue;
+dl_item=formonly.dl_item,
+	config="{Item Name:}",
+	widget="label",
+	color=bold Blue;
+dl_uk=formonly.dl_uk,
+	config="English:",
+	widget="label",
+	color=bold Blue;
+dl_sp=formonly.dl_sp,
+	config="Spanish:",
+	widget="label",
+	color=bold Blue;
+dl_de=formonly.dl_de,
+	config="German:",
+	widget="label",
+	color=bold Blue;
+dl_ar=formonly.dl_ar,
+	config="Arabic:",
+	widget="label",
+	color=bold Blue;
+dl_fr=formonly.dl_fr,
+	config="French:",
+	widget="label",
+	color=bold Blue;
+dl_it=formonly.dl_it,
+	config="Italian:",
+	widget="label",
+	color=bold Blue;
+dl_ot=formonly.dl_ot,
+	config="Other:",
+	widget="label",
+	color=bold Blue;
+
+INSTRUCTIONS
+
+DELIMITERS "||"
+

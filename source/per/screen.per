@@ -1,0 +1,86 @@
+{#####################################################################
+# Copyright (C) 1994 FourGen Software Technologies, Inc.
+# All rights reserved.
+# Use, modification, duplication, and/or distribution of this
+# software is limited by the software license agreement.
+# Sccsid:  %Z%  %M%  %I%  Delta: %G%
+######################################################################
+# Screen Generator version: 4.12.UC1 }
+
+DATABASE accounts
+
+SCREEN
+{
+
+ Loan #      :[A0    ]
+
+ In Name Of  :[A5                                                ]
+
+ Bank Code   :[A7   ] [A8                                      ]
+ Branch Code :[A9   ] [B1                   ] Start Date   :[B2         ]
+ Bank Account:[B3                  ]          Send ACH     :[A]
+
+ Created By  :[T1         ]
+ Created     :[T2         ]
+}
+
+TABLES
+    loan_ach
+    loan
+    banks
+    bank_branch
+
+ATTRIBUTES
+A0 = loan_ach.loan_no, comments = "";
+A5 = loan.in_name_of, noentry, comments = "";
+A7 = loan_ach.bank_code, upshift, comments = "";
+A8 = banks.bank_name, noentry, comments = "";
+A9 = loan_ach.bank_branch, upshift, comments = "";
+B1 = bank_branch.branch_desc, noentry, comments = "";
+B2 = loan_ach.ach_date, format = "dd mmm yyyy", comments = "";
+B3 = loan_ach.bank_account, comments = "";
+A  = loan_ach.ach, include = ("Y", "N"), upshift,
+     comments = " Y-ACH On               N-Turn Off ACH";
+T1 = loan_ach.created, format = "dd mmm yyyy", noentry;
+T2 = loan_ach.created_by, noentry;
+
+INSTRUCTIONS
+screen record s_screen ( loan_ach.loan_no, loan.in_name_of, 
+loan_ach.bank_code, banks.bank_name, loan_ach.bank_branch, 
+bank_branch.branch_desc, loan_ach.ach_date, loan_ach.bank_account, 
+loan_ach.ach, loan_ach.created, loan_ach.created_by) 
+
+delimiters "  "
+
+{
+######################################################################
+FOURGEN
+######################################################################
+
+defaults
+    module         = loan
+    type           = header
+    init           = 1=1
+    attributes     = white
+    location       = 2, 3
+    ifx_lang_ver   = 7.20
+    ifx_engine_ver = SE
+
+input 1
+    table     = loan_ach
+    key       = loan_no
+    filter    = 1=1
+    order     = loan_no
+    lookup    = name=llk, key=loan_no, table=loan, into=in_name_of,
+      filter=loan_no=$loan_no
+    lookup    = name=banklk, key=bank_code, table=banks,
+      into=bank_name, from_into=branch_routing brouting,
+      filter=bank_code=$bank_code
+    lookup    = name=brlk, key=bank_branch, table=bank_branch,
+      into=branch_desc,
+      filter=branch_code=$bank_branch and bank_code=$bank_code
+    zoom      = key=bank_code, screen=bankzm, table=banks,
+      from=bank_code, filter=1=1
+    zoom      = key=bank_branch, screen=brzm, table=bank_branch,
+      from=bank_branch, filter=bank_code=$bank_code
+}

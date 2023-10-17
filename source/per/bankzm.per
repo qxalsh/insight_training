@@ -1,0 +1,51 @@
+{#####################################################################
+# Copyright (C) 1992 Informix Software, Inc.
+# Copyright (C) 1992 FourGen Software, Inc.
+# Sccsid:  @(#)  .../screen.4gm/painter.4gs/cgs_init.4gl  1.32  Delta:
+######################################################################
+# Screen Generator version: 4.10.UC1 }
+
+DATABASE accounts
+
+SCREEN
+{
+----Bank--------Bank Description-----------------------------
+   [A1   ]  [A2                                      ]
+   [A1   ]  [A2                                      ]
+   [A1   ]  [A2                                      ]
+   [A1   ]  [A2                                      ]
+   [A1   ]  [A2                                      ]
+   [A1   ]  [A2                                      ]
+   [A1   ]  [A2                                      ]
+}
+
+TABLES
+    banks
+
+ATTRIBUTES
+A1 = banks.bank_code, upshift, comments = "";
+A2 = banks.bank_name, upshift, comments = "";
+
+INSTRUCTIONS
+screen record s_bankzm[7] (banks.bank_code, banks.bank_name)
+
+delimiters "  "
+
+{
+######################################################################
+FOURGEN
+######################################################################
+
+defaults
+    module     = loan
+    type       = zoom
+    init       = 1=1
+    attributes = border, white
+    location   = 2, 3
+    returning  = bank_code
+
+input 1
+    table     = banks
+    filter    = 1=1
+    arr_max   = 100
+}

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://namespaces.querix.com/2015/fglForms">
+	<form.rootContainer>
+		<GridPanel classNames="fcls_rootContainer" verticalAlignment="Top" horizontalAlignment="Left" fieldTable="" identifier="rootContainer">
+			<GridPanel.gridRowDefinitions>
+				<GridRowDefinition gridLengthValue=""/>
+				<GridRowDefinition gridLengthValue=""/>
+				<GridRowDefinition gridLengthValue=""/>
+			</GridPanel.gridRowDefinitions>
+			<GridPanel.gridColumnDefinitions>
+				<GridColumnDefinition gridLengthValue="100%"/>
+			</GridPanel.gridColumnDefinitions>
+			<GridPanel classNames="fcls_title_cnt" visible="true" verticalAlignment="Top" gridItemLocation="0,0,1,1" fieldTable="formonly" identifier="cntTitle" horizontalAlignment="Stretch">
+				<GridPanel.gridRowDefinitions>
+					<GridRowDefinition gridLengthValue=""/>
+				</GridPanel.gridRowDefinitions>
+				<GridPanel.gridColumnDefinitions>
+					<GridColumnDefinition gridLengthValue="100%"/>
+					<GridColumnDefinition gridLengthValue=""/>
+				</GridPanel.gridColumnDefinitions>
+				<Label isDynamic="true" text="TimeEdit Widget" classNames="fcls_title_lb" visible="true" gridItemLocation="0,0,1,1" fieldTable="formonly" identifier="lbTitle"/>
+				<Label isDynamic="true" text="wig_timeedit.fm2" classNames="fcls_title_lb" visible="true" gridItemLocation="1,0,1,1" fieldTable="" identifier="lbFormName"/>
+			</GridPanel>
+			<GridPanel classNames="fcls_data_widget" visible="true" verticalAlignment="Top" horizontalAlignment="Left" gridItemLocation="0,1,1,1" fieldTable="formonly" identifier="cntDetail1">
+				<GridPanel.gridRowDefinitions>
+					<GridRowDefinition gridLengthValue=""/>
+					<GridRowDefinition gridLengthValue=""/>
+				</GridPanel.gridRowDefinitions>
+				<GridPanel.gridColumnDefinitions>
+					<GridColumnDefinition gridLengthValue="" gridMinLength="10rem"/>
+					<GridColumnDefinition gridLengthValue=""/>
+					<GridColumnDefinition gridLengthValue=""/>
+					<GridColumnDefinition gridLengthValue=""/>
+					<GridColumnDefinition gridLengthValue=""/>
+				</GridPanel.gridColumnDefinitions>
+				<Label text="DateTime hours to seconds  shown in a timeEdit widget" isDynamic="true" visible="true" identifier="lb53" gridItemLocation="1,0,1,1" classNames="fcls_fieldlabel" horizontalAlignment="Left" textAlignment="Left,Center"/>
+				<TimeEditField dataType="Date,,,," classNames="fcls_data_widget,fcls_align_left,fcls_length_10qch" visible="true" gridItemLocation="2,0,1,1" fieldTable="" identifier="fDateTime1"/>
+				<Label text="DBTIME format:" isDynamic="true" visible="true" identifier="lb54" gridItemLocation="3,0,1,1" classNames="fcls_fieldlabel" horizontalAlignment="Left" textAlignment="Left,Center"/>
+				<TextField classNames="fcls_data_widget,fcls_align_left,fcls_length_10qch" visible="true" gridItemLocation="4,0,1,1" fieldTable="" identifier="fDBTime"/>
+				<Label isDynamic="true" text="Time 1" classNames="fcls_fieldlabel" visible="true" gridItemLocation="0,0,1,1" fieldTable="" identifier="lb51" horizontalAlignment="Left" textAlignment="Left,Center"/>
+				<Label isDynamic="true" text="Time 2" classNames="fcls_fieldlabel" visible="true" gridItemLocation="0,1,1,1" fieldTable="" identifier="lb52" horizontalAlignment="Left" textAlignment="Left,Center"/>
+				<Label text="DateTime hours to seconds shown in a textField" isDynamic="true" visible="true" identifier="lb55" gridItemLocation="1,1,1,1" classNames="fcls_fieldlabel" horizontalAlignment="Left" textAlignment="Left,Center"/>
+				<TextField dataType="Date,,,," classNames="fcls_data_widget,fcls_align_left,fcls_length_10qch" visible="true" gridItemLocation="2,1,1,1" fieldTable="" identifier="fDateTime2"/>
+				<Label text="This env variable has no impact" isDynamic="true" visible="true" identifier="lb56" gridItemLocation="3,1,2,1" classNames="fcls_font_description"/>
+			</GridPanel>
+			<GridPanel classNames="fcls_statusbar_cnt" visible="true" verticalAlignment="Bottom" gridItemLocation="0,2,1,1" fieldTable="formonly" identifier="cntStatusBar" horizontalAlignment="Stretch">
+				<GridPanel.gridRowDefinitions>
+					<GridRowDefinition gridLengthValue=""/>
+					<GridRowDefinition gridLengthValue=""/>
+				</GridPanel.gridRowDefinitions>
+				<GridPanel.gridColumnDefinitions>
+					<GridColumnDefinition gridLengthValue="100%"/>
+				</GridPanel.gridColumnDefinitions>
+				<Label isDynamic="true" text="" classNames="fcls_sblabel" visible="true" gridItemLocation="0,0,1,1" fieldTable="formonly" identifier="lbInfo1"/>
+				<Label isDynamic="true" text="" classNames="fcls_sblabel" visible="true" gridItemLocation="0,1,1,1" fieldTable="formonly" identifier="lbInfo2"/>
+			</GridPanel>
+		</GridPanel>
+	</form.rootContainer>
+	<form.screenRecords>
+		<ScreenRecord identifier="FORMONLY" fields="fDateTime1,fDateTime2,fDBDate"/>
+	</form.screenRecords>
+</form>
+

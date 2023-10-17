@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://namespaces.querix.com/2015/fglForms">
+	<form.rootContainer>
+		<GridPanel classNames="fcls_rootContainer" verticalAlignment="Stretch" horizontalAlignment="Stretch" fieldTable="" identifier="rootContainer">
+			<GridPanel.gridRowDefinitions>
+				<GridRowDefinition gridLengthValue=""/>
+				<GridRowDefinition gridLengthValue=""/>
+				<GridRowDefinition gridLengthValue=""/>
+				<GridRowDefinition gridLengthValue=""/>
+			</GridPanel.gridRowDefinitions>
+			<GridPanel.gridColumnDefinitions>
+				<GridColumnDefinition gridLengthValue="100%"/>
+			</GridPanel.gridColumnDefinitions>
+			<GridPanel classNames="fcls_title_cnt" visible="true" verticalAlignment="Top" gridItemLocation="0,0,1,1" fieldTable="formonly" identifier="cntTitle">
+				<GridPanel.gridRowDefinitions>
+					<GridRowDefinition gridLengthValue=""/>
+				</GridPanel.gridRowDefinitions>
+				<GridPanel.gridColumnDefinitions>
+					<GridColumnDefinition gridLengthValue="100%"/>
+					<GridColumnDefinition gridLengthValue=""/>
+				</GridPanel.gridColumnDefinitions>
+				<Label isDynamic="true" text="Button Widget Demo (normal and toggle button)" classNames="fcls_title_lb" visible="true" gridItemLocation="0,0,1,1" fieldTable="formonly" identifier="lbTitle"/>
+				<Label isDynamic="true" text="wig_button.fm2" classNames="fcls_title_lb" visible="true" gridItemLocation="1,0,1,1" fieldTable="" identifier="lbFormName"/>
+			</GridPanel>
+			<GroupBox title="Button Group for Interative Testing" classNames="fcls_detail_gb_cnt" visible="true" gridItemLocation="0,1,1,1" fieldTable="" identifier="cntDetail1GroupBox" verticalAlignment="Top" horizontalAlignment="Stretch">
+				<GridPanel classNames="fcls_detail_gb_cnt_sub,fcls_detail_cnt_sub,fcls_data_cnt,fcls_align_left" visible="true" verticalAlignment="Top" horizontalAlignment="Left" gridItemLocation="0,0,1,1" fieldTable="formonly" identifier="cntDetail1Sub">
+					<GridPanel.gridRowDefinitions>
+						<GridRowDefinition gridLengthValue=""/>
+						<GridRowDefinition gridLengthValue=""/>
+						<GridRowDefinition gridLengthValue=""/>
+						<GridRowDefinition gridLengthValue=""/>
+						<GridRowDefinition gridLengthValue=""/>
+						<GridRowDefinition gridLengthValue=""/>
+					</GridPanel.gridRowDefinitions>
+					<GridPanel.gridColumnDefinitions>
+						<GridColumnDefinition gridLengthValue=""/>
+						<GridColumnDefinition gridLengthValue=""/>
+						<GridColumnDefinition gridLengthValue=""/>
+					</GridPanel.gridColumnDefinitions>
+					<Label isDynamic="true" text="Normal Button" classNames="fcls_fieldlabel,fcls_align_left" visible="true" fieldTable="formonly" identifier="lb56" gridItemLocation="0,0,1,1"/>
+					<Label isDynamic="true" text="isToggleButton=&quot;true&quot;" classNames="fcls_fieldlabel,fcls_align_left" visible="true" gridItemLocation="1,0,1,1" fieldTable="" identifier="lb74"/>
+					<Label isDynamic="true" text="isToggleButton=&quot;true&quot;" classNames="fcls_fieldlabel,fcls_align_left" visible="true" gridItemLocation="2,0,1,1" fieldTable="" identifier="lb81"/>
+					<Button text="Button Normal" visible="true" identifier="btNormal" gridItemLocation="0,1,1,1" classNames="fcls_button,fcls_length_20qch">
+						<Button.onInvoke>
+							<ActionEventHandler type="actioneventhandler" actionName="actBtNormal"/>
+						</Button.onInvoke>
+					</Button>
+					<Button text="Toggle Button 1" visible="true" enable="true" fieldTable="formonly" identifier="btToggle1" gridItemLocation="1,1,1,1" classNames="fcls_button,fcls_length_20qch" isToggleButton="true">
+				<Button.onInvoke>
+					<ActionEventHandler actionName="actBtToggle1"/>
+				</Button.onInvoke>
+			</Button>
+					<Button isToggleButton="true" text="Toggle Button 2" visible="true" enable="true" fieldTable="formonly" identifier="btToggle2" gridItemLocation="2,1,1,1" classNames="fcls_button,fcls_length_20qch">
+				<Button.onInvoke>
+					<ActionEventHandler actionName="actBtToggle2"/>
+				</Button.onInvoke>
+			</Button>
+					<TextField preferredSize="80,43" visible="true" enable="true" fieldTable="formonly" identifier="f_can_we_delete_this_field" gridItemLocation="0,2,3,1" collapsed="true"/>
+					<TextField visible="true" identifier="fBtNormal" gridItemLocation="0,3,1,1"/>
+					<TextField visible="true" identifier="fBtToggle1" gridItemLocation="1,3,1,1"/>
+					<TextField visible="true" identifier="fBtToggle2" gridItemLocation="2,3,1,1"/>
+
+
+					<!-- Set the event state of the normal button (1st button on the left) -->
+					<RadioGroup visible="true" identifier="rbEventStateButtonNormal" gridItemLocation="0,4,1,1" enable="true" orientation="Vertical">
+
+						<Radio title="Automatic" identifier="rbEventStateButtonNormal_auto">
+							<Radio.onCheck>
+								<ActionEventHandler type="actButtonNormal_auto"/>
+							</Radio.onCheck>
+						</Radio>
+					
+						<Radio title="Enabled" identifier="rbEventStateButtonNormal_enabled">
+							<Radio.onCheck>
+								<ActionEventHandler type="actButtonNormal_enable"/>
+							</Radio.onCheck>
+						</Radio>
+
+						<Radio title="Disabled" identifier="rbEventStateButtonNormal_disabled">
+							<Radio.onCheck>
+								<ActionEventHandler type="actButtonNormal_disable"/>
+							</Radio.onCheck>
+						</Radio>
+					</RadioGroup>
+					
+	
+	
+					<!-- Set the event state of the first toggle button (2nd button / Center -->
+					<RadioGroup visible="true" identifier="rbEventStateButtonToggle1" gridItemLocation="1,4,1,1" enable="true" orientation="Vertical">
+						<Radio identifier="rbEventStateButtonToggle1_auto" title="Automatic">						
+							<Radio.onCheck>
+								<ActionEventHandler type="actButtonToggle1_automatic"/>
+							</Radio.onCheck>
+						</Radio>
+						<Radio identifier="rbEventStateButtonToggle1_enabled" title="Enabled">
+							<Radio.onCheck>
+								<ActionEventHandler type="actButtonToggle1_enable"/>
+							</Radio.onCheck>													
+						</Radio>
+						<Radio identifier="rbEventStateButtonToggle1_disabled" title="Disabled">
+							<Radio.onCheck>
+								<ActionEventHandler type="actButtonToggle1_disable"/>
+							</Radio.onCheck>												
+						</Radio>
+					</RadioGroup>
+					
+					<!-- Set the event state of the second toggle button (3rd button / Right -->
+					<RadioGroup visible="true" identifier="rbEventStateButtonToggle2" gridItemLocation="2,4,1,1" enable="true" orientation="Vertical">
+						<Radio identifier="rbEventStateButtonToggle2_auto" title="Automatic">
+							<Radio.onCheck>
+								<ActionEventHandler type="actButtonToggle2_automatic"/>
+							</Radio.onCheck>
+						</Radio>
+						<Radio identifier="rbEventStateButtonToggle2_enabled" title="Enabled">
+							<Radio.onCheck>
+								<ActionEventHandler type="actButtonToggle2_enable"/>
+							</Radio.onCheck>														
+						</Radio>
+						<Radio identifier="rbEventStateButtonToggle2_disabled" title="Disabled">						
+							<Radio.onCheck>
+								<ActionEventHandler type="actButtonToggle2_disable"/>
+							</Radio.onCheck>		
+						</Radio>
+					</RadioGroup>
+					<Button text="Toggle &lt;Toggle Button 1&gt;" visible="true" enable="true" fieldTable="formonly" identifier="btSwitchToggleState1" classNames="fcls_button,fcls_length_20qch" gridItemLocation="1,5,1,1">
+				<Button.onInvoke>
+					<ActionEventHandler actionName="switchButtonToggleState1"/>
+				</Button.onInvoke>
+				<Button.background>
+					<Background backgroundStyle="Stretched"/>
+				</Button.background>
+			</Button>
+					<Button text="Toggle &lt;Toggle Button 2&gt;" visible="true" identifier="btSwitchToggleState2" classNames="fcls_button,fcls_length_20qch" gridItemLocation="2,5,1,1">
+						<Button.onInvoke>
+							<ActionEventHandler type="actioneventhandler" actionName="switchButtonToggleState2"/>
+						</Button.onInvoke>
+					</Button>
+					
+	
+					
+					
+				</GridPanel>
+			</GroupBox>
+			<GroupBox title="Info" classNames="fcls_detail_gb_cnt" visible="true" verticalAlignment="Stretch" gridItemLocation="0,2,1,1" fieldTable="formonly" identifier="cntDetail2GroupBox" horizontalAlignment="Stretch">
+				<TextArea visible="true" identifier="f82" text="Buttons are active by default if their associated event exists in the current runtime scope. Otherwise, they will be inactive . However, this behavior can be disabled using the enable property.&#13;&#10;&#13;&#10;At runtime, buttons can also be enabled/disabled.&#13;&#10;&#13;&#10;To activate/deactivate buttons at runtime:&#13;&#10;&#13;&#10;assign them with actions with ON KEY / ON ACTION events,&#13;&#10;&#13;&#10;ON KEYF5&#13;&#10;&#13;&#10;ON ACTION &quot;actionPrint&quot;&#13;&#10;&#13;&#10;display provided symbols to them using DISPLAY ... TO:&#13;&#10;&#13;&#10;DISPLAY &quot;!&quot; TO buttonIdentifier - to activate an inactive button;&#13;&#10;&#13;&#10;DISPLAY &quot;*&quot; TObuttonIdentifier - to deactivate an active button;&#13;&#10;&#13;&#10;DISPLAY&quot;?&quot;TO buttonIdentifier - to return to the automatic activation mode.&#13;&#10;&#13;&#10;&#13;&#10;&#13;&#10;To change the button appearance at runtime;&#13;&#10;&#13;&#10;DISPLAY &lt;string&gt; TO buttonIdentifier  - changes the button label:&#13;&#10;&#13;&#10;DISPLAY &quot;Submit&quot; TObt1&#13;&#10;&#13;&#10;DISPLAY &lt;imageUri&gt; TO buttonIdentifier - changes the image IF the button has NO text property tag:&#13;&#10;&#13;&#10;DISPLAY &quot;C:\Program Files\Querix\Lycia 3 Development Suite 7.1\Lycia\images\submit.jpg&quot; TObt1&#13;&#10;&#13;&#10;&#13;&#10;&#13;&#10;At runtime, Button can be manipulated with ui methods.&#13;&#10;&#13;&#10;Below you can find out how to use ui methods to display an image to the button.&#13;&#10;&#13;&#10;4gl code sample&#13;&#10;&#13;&#10;MAIN&#13;&#10;&#13;&#10;  DEFINE bt_ui1,&#13;&#10;&#13;&#10;         bt_ui2     ui.Button,&#13;&#10;&#13;&#10;         image_ui   ui.Image,&#13;&#10;&#13;&#10;         isImageSet SMALLINT&#13;&#10;&#13;&#10;    OPEN WINDOW w1 WITH FORM &quot;button_ui_setimage&quot; ATTRIBUTE(BORDER)&#13;&#10;&#13;&#10;  LET bt_ui1 = ui.Button.forName(&quot;bt1&quot;)&#13;&#10;&#13;&#10;  CALL image_ui.setImageUrl(&quot;qx://application/ok.png&quot;)&#13;&#10;&#13;&#10;  CALL bt_ui1.setText(&quot;Button for image&quot;)&#13;&#10;&#13;&#10;  CALL bt_ui1.SetEnable(TRUE)&#13;&#10;&#13;&#10;    MENU&#13;&#10;&#13;&#10;    ON ACTION &quot;Image&quot;&#13;&#10;&#13;&#10;      IF isImageSet THEN&#13;&#10;&#13;&#10;        LET isImageSet = 0&#13;&#10;&#13;&#10;        CALL bt_ui1.SetImage(&quot;&quot;)&#13;&#10;&#13;&#10;      ELSE&#13;&#10;&#13;&#10;        LET isImageSet = 1&#13;&#10;&#13;&#10;        CALL bt_ui1.SetImage(image_ui)&#13;&#10;&#13;&#10;      END IF&#13;&#10;&#13;&#10;    ON ACTION exit&#13;&#10;&#13;&#10;      EXIT MENU  &#13;&#10;&#13;&#10;  END MENU&#13;&#10;&#13;&#10;END MAIN" enable="true"/>
+			</GroupBox>
+			<GridPanel classNames="fcls_statusbar_cnt" visible="true" verticalAlignment="Top" gridItemLocation="0,3,1,1" fieldTable="formonly" identifier="cntStatusBar">
+				<GridPanel.gridRowDefinitions>
+					<GridRowDefinition gridLengthValue=""/>
+					<GridRowDefinition gridLengthValue=""/>
+				</GridPanel.gridRowDefinitions>
+				<GridPanel.gridColumnDefinitions>
+					<GridColumnDefinition gridLengthValue="100%"/>
+				</GridPanel.gridColumnDefinitions>
+				<Label isDynamic="true" text="" classNames="fcls_sblabel" visible="true" gridItemLocation="0,0,1,1" fieldTable="formonly" identifier="lbInfo1"/>
+				<Label isDynamic="true" text="" classNames="fcls_sblabel" visible="true" gridItemLocation="0,1,1,1" fieldTable="formonly" identifier="lbInfo2"/>
+			</GridPanel>
+		</GridPanel>
+	</form.rootContainer>
+	<form.screenRecords>
+		<ScreenRecord identifier="s_reqthdr" fields=""/>
+		<ScreenRecord identifier="FORMONLY" fields="print_opt,fBtToggle1,fBtToggle2,fBtNormal,rbEventStateButtonNormal,f122,f123,f82"/>
+	</form.screenRecords>
+</form>
+

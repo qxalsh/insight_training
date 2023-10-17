@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://namespaces.querix.com/2015/fglForms">
+	<form.rootContainer>
+		<GridPanel classNames="fcls_rootContainer" verticalAlignment="Center" horizontalAlignment="Center" fieldTable="" identifier="rootContainer">
+			<GridPanel.gridRowDefinitions>
+				<GridRowDefinition gridLengthValue=""/>
+				<GridRowDefinition gridLengthValue=""/>
+				<GridRowDefinition gridLengthValue=""/>
+			</GridPanel.gridRowDefinitions>
+			<GridPanel.gridColumnDefinitions>
+				<GridColumnDefinition gridLengthValue="100%"/>
+			</GridPanel.gridColumnDefinitions>
+			<GridPanel classNames="fcls_title_cnt" visible="true" verticalAlignment="Top" gridItemLocation="0,0,1,1" fieldTable="formonly" identifier="cntTitle">
+				<GridPanel.gridRowDefinitions>
+					<GridRowDefinition gridLengthValue=""/>
+				</GridPanel.gridRowDefinitions>
+				<GridPanel.gridColumnDefinitions>
+					<GridColumnDefinition gridLengthValue="100%"/>
+					<GridColumnDefinition gridLengthValue=""/>
+				</GridPanel.gridColumnDefinitions>
+				<Label isDynamic="true" text="Layout Example Demo" classNames="fcls_title_lb" visible="true" gridItemLocation="0,0,1,1" fieldTable="formonly" identifier="lbTitle"/>
+				<Label isDynamic="true" text="lay_gridPanel_01.fm2" classNames="fcls_title_lb" visible="true" gridItemLocation="1,0,1,1" fieldTable="" identifier="lbFormName"/>
+			</GridPanel>
+			<GridPanel classNames="fcls_detail_cnt,fcls_data_cnt,fcls_align_left" visible="true" verticalAlignment="Top" horizontalAlignment="Left" gridItemLocation="0,1,1,1" fieldTable="formonly" identifier="cntDetail1">
+				<GridPanel.gridRowDefinitions>
+					<GridRowDefinition gridLengthValue=""/>
+					<GridRowDefinition gridLengthValue=""/>
+					<GridRowDefinition gridLengthValue=""/>
+					<GridRowDefinition gridLengthValue=""/>
+					<GridRowDefinition gridLengthValue=""/>
+					<GridRowDefinition gridLengthValue=""/>
+					<GridRowDefinition gridLengthValue=""/>
+					<GridRowDefinition gridLengthValue=""/>
+					<GridRowDefinition gridLengthValue=""/>
+					<GridRowDefinition gridLengthValue=""/>
+				</GridPanel.gridRowDefinitions>
+				<GridPanel.gridColumnDefinitions>
+					<GridColumnDefinition gridLengthValue=""/>
+					<GridColumnDefinition gridLengthValue=""/>
+					<GridColumnDefinition gridLengthValue=""/>
+					<GridColumnDefinition gridLengthValue=""/>
+				</GridPanel.gridColumnDefinitions>
+				<Label isDynamic="true" text="Window Type" classNames="fcls_fieldlabel" visible="true" gridItemLocation="0,0,1,1" fieldTable="" identifier="lb166"/>
+				<ComboBox classNames="fcls_data_widget" visible="true" gridItemLocation="1,0,1,1" fieldTable="" identifier="windowType">
+					<ComboBoxItem text="Full Screen">
+						<ComboBoxItem.value>
+							<IntegerLiteral/>
+						</ComboBoxItem.value>
+					</ComboBoxItem>
+					<ComboBoxItem text="Dialog Window">
+						<ComboBoxItem.value>
+							<IntegerLiteral integerValue="1"/>
+						</ComboBoxItem.value>
+					</ComboBoxItem>
+				</ComboBox>
+				<Label isDynamic="true" text="RootContainer" classNames="fcls_columnlabel_rev_cell" visible="true" horizontalAlignment="Stretch" gridItemLocation="0,1,4,1" fieldTable="" identifier="lb163"/>
+				<Label isDynamic="true" text="Width" classNames="fcls_fieldlabel" visible="true" gridItemLocation="0,2,1,1" fieldTable="" identifier="lb160"/>
+				<ComboBox editable="true" classNames="fcls_data_widget" visible="true" gridItemLocation="1,2,1,1" fieldTable="" identifier="rcWidth">
+					<ComboBoxItem text="Not Specified">
+						<ComboBoxItem.value>
+							<IntegerLiteral/>
+						</ComboBoxItem.value>
+					</ComboBoxItem>
+				</ComboBox>
+				<Label isDynamic="true" text="Height" classNames="fcls_fieldlabel" visible="true" gridItemLocation="2,2,1,1" fieldTable="" identifier="lb164"/>
+				<ComboBox editable="true" classNames="fcls_data_widget" visible="true" gridItemLocation="3,2,1,1" fieldTable="" identifier="rcHeight">
+					<ComboBoxItem text="Not Specified">
+						<ComboBoxItem.value>
+							<IntegerLiteral/>
+						</ComboBoxItem.value>
+					</ComboBoxItem>
+				</ComboBox>
+				<Label isDynamic="true" text="Horizontal Align" classNames="fcls_fieldlabel" visible="true" gridItemLocation="0,3,1,1" fieldTable="" identifier="lb162"/>
+				<TextField classNames="fcls_data_widget" visible="true" gridItemLocation="1,3,1,1" fieldTable="" identifier="rcHorizontalAlign"/>
+				<Label isDynamic="true" text="Vertical Align" classNames="fcls_fieldlabel" visible="true" gridItemLocation="2,3,1,1" fieldTable="" identifier="lb165"/>
+				<TextField classNames="fcls_data_widget" visible="true" gridItemLocation="3,3,1,1" fieldTable="" identifier="rcVerticalAlign"/>
+				<Label isDynamic="true" text="Form Name" classNames="fcls_columnlabel_rev_cell" visible="true" horizontalAlignment="Stretch" gridItemLocation="0,4,4,1" fieldTable="" identifier="lb173"/>
+				<TextField text="" classNames="fcls_data_widget" visible="true" gridItemLocation="0,5,4,1" fieldTable="" identifier="formPath"/>
+				<Label isDynamic="true" text="Some Example Widgets" classNames="fcls_columnlabel_rev_cell" visible="true" horizontalAlignment="Stretch" gridItemLocation="0,6,4,1" fieldTable="" identifier="lb172"/>
+				<TextField classNames="fcls_data_widget" visible="true" gridItemLocation="1,7,1,1" fieldTable="" identifier="f1"/>
+				<TextField classNames="fcls_data_widget" visible="true" gridItemLocation="3,7,1,1" fieldTable="" identifier="f2"/>
+				<ComboBox classNames="fcls_data_widget" visible="true" gridItemLocation="1,8,1,1" fieldTable="" identifier="f3"/>
+				<Calendar dataType="Date,,,," classNames="fcls_data_widget" visible="true" gridItemLocation="3,8,1,1" fieldTable="" identifier="f4"/>
+				<Label isDynamic="true" text="ListBox F5" classNames="fcls_fieldlabel" visible="true" gridItemLocation="0,9,1,1" fieldTable="" identifier="lb67"/>
+				<ListBox classNames="fcls_data_widget" visible="true" verticalAlignment="Stretch" gridItemLocation="1,9,1,1" fieldTable="" identifier="f5">
+					<ListBoxItem text="value 0">
+						<ListBoxItem.value>
+							<IntegerLiteral/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="value 1">
+						<ListBoxItem.value>
+							<IntegerLiteral integerValue="1"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="value 2">
+						<ListBoxItem.value>
+							<IntegerLiteral integerValue="2"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="value 3">
+						<ListBoxItem.value>
+							<IntegerLiteral integerValue="3"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="value 4">
+						<ListBoxItem.value>
+							<IntegerLiteral integerValue="4"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="value 5">
+						<ListBoxItem.value>
+							<IntegerLiteral integerValue="5"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+				</ListBox>
+				<Label isDynamic="true" text="RadioButton F6" classNames="fcls_fieldlabel" visible="true" gridItemLocation="2,9,1,1" fieldTable="" identifier="lb65"/>
+				<Label isDynamic="true" text="Field F1" classNames="fcls_fieldlabel" visible="true" gridItemLocation="0,7,1,1" fieldTable="" identifier="lb51"/>
+				<Label isDynamic="true" text="Field F2" classNames="fcls_fieldlabel" visible="true" gridItemLocation="2,7,1,1" fieldTable="" identifier="lb53"/>
+				<Label isDynamic="true" text="Combo F3" classNames="fcls_fieldlabel" visible="true" gridItemLocation="0,8,1,1" fieldTable="" identifier="lb66"/>
+				<Label isDynamic="true" text="Calendar F4" classNames="fcls_fieldlabel" visible="true" gridItemLocation="2,8,1,1" fieldTable="" identifier="lb55"/>
+				<RadioGroup orientation="Vertical" classNames="fcls_data_widget" visible="true" verticalAlignment="Stretch" gridItemLocation="3,9,1,1" fieldTable="" identifier="f6">
+					<Radio title="value 0" identifier="f6_0">
+						<Radio.value>
+							<IntegerLiteral/>
+						</Radio.value>
+					</Radio>
+					<Radio title="value 1" identifier="f6_1">
+						<Radio.value>
+							<IntegerLiteral integerValue="1"/>
+						</Radio.value>
+					</Radio>
+					<Radio title="value 2" identifier="f6_2">
+						<Radio.value>
+							<IntegerLiteral integerValue="2"/>
+						</Radio.value>
+					</Radio>
+				</RadioGroup>
+			</GridPanel>
+			<GridPanel classNames="fcls_statusbar_cnt" visible="true" verticalAlignment="Bottom" gridItemLocation="0,2,1,1" fieldTable="formonly" identifier="cntStatusBar">
+				<GridPanel.gridRowDefinitions>
+					<GridRowDefinition gridLengthValue=""/>
+					<GridRowDefinition gridLengthValue=""/>
+				</GridPanel.gridRowDefinitions>
+				<GridPanel.gridColumnDefinitions>
+					<GridColumnDefinition gridLengthValue="100%"/>
+				</GridPanel.gridColumnDefinitions>
+				<Label isDynamic="true" text="" classNames="fcls_sblabel" visible="true" gridItemLocation="0,0,1,1" fieldTable="formonly" identifier="lbInfo1"/>
+				<Label isDynamic="true" text="" classNames="fcls_sblabel" visible="true" gridItemLocation="0,1,1,1" fieldTable="formonly" identifier="lbInfo2"/>
+			</GridPanel>
+		</GridPanel>
+	</form.rootContainer>
+	<form.screenRecords>
+		<ScreenRecord identifier="FORMONLY" fields="f1,f2,f4,f5,f6,windowType,rcWidth,rcHeight,rcHorizontalAlign,rcVerticalAlign,formPath"/>
+	</form.screenRecords>
+</form>
+

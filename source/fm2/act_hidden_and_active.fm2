@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://namespaces.querix.com/2015/fglForms" title="dialog.setActionHidden() and dialog.setActionActive()">
+	<form.rootContainer>
+		<GridPanel visible="true" fieldTable="" identifier="rootContainer" horizontalAlignment="Stretch" verticalAlignment="Top">
+			<GridPanel.gridRowDefinitions>
+				<GridRowDefinition/>
+				<GridRowDefinition/>
+			</GridPanel.gridRowDefinitions>
+			<GridPanel.gridColumnDefinitions>
+				<GridColumnDefinition gridLengthValue=""/>
+			</GridPanel.gridColumnDefinitions>
+			<GridPanel visible="true" gridItemLocation="0,0,1,1" fieldTable="" identifier="c1" verticalAlignment="Top" horizontalAlignment="Stretch">
+				<GridPanel.gridRowDefinitions>
+					<GridRowDefinition gridLengthValue="" gridMinLength="2rem"/>
+					<GridRowDefinition gridLengthValue="" gridMinLength="2rem"/>
+					<GridRowDefinition gridLengthValue="" gridMinLength="2rem"/>
+					<GridRowDefinition gridLengthValue="" gridMinLength="2rem"/>
+					<GridRowDefinition gridLengthValue=""/>
+					<GridRowDefinition gridLengthValue="2rem"/>
+					<GridRowDefinition gridLengthValue=""/>
+					<GridRowDefinition gridLengthValue=""/>
+					<GridRowDefinition gridLengthValue=""/>
+					<GridRowDefinition gridLengthValue=""/>
+					<GridRowDefinition gridLengthValue=""/>
+					<GridRowDefinition gridLengthValue=""/>
+				</GridPanel.gridRowDefinitions>
+				<GridPanel.gridColumnDefinitions>
+					<GridColumnDefinition gridLengthValue="25%" gridMinLength="20rem" gridMaxLength="30rem"/>
+					<GridColumnDefinition gridLengthValue="25%" gridMinLength="20rem" gridMaxLength="30rem"/>
+					<GridColumnDefinition gridLengthValue="25%" gridMinLength="20rem" gridMaxLength="30rem"/>
+					<GridColumnDefinition gridLengthValue="25%" gridMaxLength="30rem" gridMinLength="20rem"/>
+				</GridPanel.gridColumnDefinitions>
+				<Label isDynamic="true" text="Field F1" visible="true" gridItemLocation="0,0,1,1" fieldTable="" identifier="lb_f1"/>
+				<TextField visible="true" identifier="f1" gridItemLocation="1,0,3,1"/>
+				<Label isDynamic="true" text="Field f2" visible="true" gridItemLocation="0,1,1,1" fieldTable="" identifier="lb_f2"/>
+				<TextField visible="true" gridItemLocation="1,1,3,1" fieldTable="" identifier="f2"/>
+				<Label text="Field F3" isDynamic="true" visible="true" identifier="lb_f3" gridItemLocation="0,2,1,1"/>
+				<TextField visible="true" identifier="f3" gridItemLocation="1,2,3,1"/>
+				<Button text="INSERT" visible="true" identifier="bt_INSERT" gridItemLocation="2,4,1,1">
+					<Button.onInvoke>
+						<ActionEventHandler actionName="INSERT"/>
+					</Button.onInvoke>
+				</Button>
+				<Button text="dialog.setActionActive(&quot;EDIT&quot;,TRUE)" visible="true" identifier="bt_EDIT_ActActive_On" gridItemLocation="0,6,1,1" toolTip="Enable/Activate the EDIT action event">
+					<Button.onInvoke>
+						<ActionEventHandler actionName="EDIT_ActActive_On"/>
+					</Button.onInvoke>
+				</Button>
+				<Button visible="true" text="dialog.setActionActive(&quot;DELETE&quot;,TRUE)" identifier="bt_DELETE_ActActive_On" gridItemLocation="1,6,1,1" toolTip="Enable/Activate the DELETE action event">
+					<Button.onInvoke>
+						<ActionEventHandler actionName="DELETE_ActActive_On"/>
+					</Button.onInvoke>
+				</Button>
+				<Button visible="true" text="dialog.setActionActive(&quot;SEARCH&quot;,TRUE)" identifier="bt_SEARCH_ActActive_On" gridItemLocation="3,6,1,1" toolTip="Enable/Activate the SEARCH action event">
+					<Button.onInvoke>
+						<ActionEventHandler actionName="SEARCH_ActActive_On"/>
+					</Button.onInvoke>
+				</Button>
+				<Button text="dialog.setActionActive(&quot;EDIT&quot;,FALSE)" visible="true" identifier="bt_EDIT_ActActive_Off" gridItemLocation="0,7,1,1" toolTip="Disable/Deactivate the EDIT action event">
+					<Button.onInvoke>
+						<ActionEventHandler actionName="EDIT_ActActive_Off"/>
+					</Button.onInvoke>
+				</Button>
+				<Label text="EDIT (located in toolbar)" visible="true" identifier="lb_EDIT" gridItemLocation="0,4,1,1" isDynamic="true">
+					<Label.image>
+						<Image imageUrl="{CONTEXT}/public/querix/icon/svg/24/ic_edit_24px.svg"/>
+					</Label.image>
+				</Label>
+				<Label text="DELETE (located in toolbar)" visible="true" identifier="lb_DELETE" gridItemLocation="1,4,1,1" isDynamic="true">
+					<Label.image>
+						<Image imageUrl="{CONTEXT}/public/querix/icon/svg/24/ic_delete_24px.svg"/>
+					</Label.image>
+				</Label>
+				<Button visible="true" text="dialog.setActionActive(&quot;DELETE&quot;,FALSE)" identifier="bt_DELETE_ActActive_Off" gridItemLocation="1,7,1,1" toolTip="Disable/Deactivate the DELETE action event">
+					<Button.onInvoke>
+						<ActionEventHandler actionName="DELETE_ActActive_Off"/>
+					</Button.onInvoke>
+				</Button>
+				<Button text="dialog.setActionActive(&quot;INSERT&quot;,FALSE)" visible="true" identifier="bt_INSERT_ActActive_Off" gridItemLocation="2,7,1,1" toolTip="Disable/Deactivate the INSERT action event">
+					<Button.onInvoke>
+						<ActionEventHandler actionName="INSERT_ActActive_Off"/>
+					</Button.onInvoke>
+				</Button>
+				<Button text="dialog.setActionActive(&quot;INSERT&quot;,TRUE)" visible="true" identifier="bt_INSERT_ActActive_On" gridItemLocation="2,6,1,1" toolTip="Enable/Activate the INSERT action event">
+					<Button.onInvoke>
+						<ActionEventHandler actionName="INSERT_ActActive_On"/>
+					</Button.onInvoke>
+				</Button>
+				<Button text="SEARCH" visible="true" identifier="bt_SEARCH" gridItemLocation="3,4,1,1">
+					<Button.onInvoke>
+						<ActionEventHandler actionName="SEARCH"/>
+					</Button.onInvoke>
+				</Button>
+				<Button visible="true" text="dialog.setActionActive(&quot;SEARCH&quot;,FALSE)" identifier="bt_SEARCH_ActActive_Off" gridItemLocation="3,7,1,1" toolTip="Disable/Deactivate the SEARCH action event">
+					<Button.onInvoke>
+						<ActionEventHandler actionName="SEARCH_ActActive_Off"/>
+					</Button.onInvoke>
+				</Button>
+				<Button visible="true" text="dialog.setActionHidden(&quot;EDIT&quot;,TRUE)" identifier="bt_EDIT_ActHidden_On" gridItemLocation="0,8,1,1" toolTip="Hide the Action Event EDIT">
+					<Button.onInvoke>
+						<ActionEventHandler actionName="EDIT_ActHidden_On"/>
+					</Button.onInvoke>
+				</Button>
+				<Button visible="true" text="dialog.setActionHidden(&quot;INSERT&quot;,TRUE)" identifier="bt_INSERT_ActHidden_On" gridItemLocation="2,8,1,1" toolTip="Hide the Action Event INSERT">
+					<Button.onInvoke>
+						<ActionEventHandler actionName="INSERT_ActHidden_On"/>
+					</Button.onInvoke>
+				</Button>
+				<Button visible="true" text="dialog.setActionHidden(&quot;EDIT&quot;,FALSE)" identifier="EDIT_ActHidden_Off" gridItemLocation="0,9,1,1" toolTip="Show the Action Event EDIT (unHide)">
+					<Button.onInvoke>
+						<ActionEventHandler actionName="EDIT_ActHidden_Off"/>
+					</Button.onInvoke>
+				</Button>
+				<Button text="dialog.setActionHidden(&quot;DELETE&quot;,FALSE)" visible="true" identifier="bt_DELETE_ActHidden_Off" gridItemLocation="1,9,1,1" toolTip="Show the Action Event DELETE (unHide)">
+					<Button.onInvoke>
+						<ActionEventHandler actionName="DELETE_ActHidden_Off"/>
+					</Button.onInvoke>
+				</Button>
+				<Button text="dialog.setActionHidden(&quot;DELETE&quot;,TRUE)" visible="true" identifier="bt_DELETE_ActHidden_On" gridItemLocation="1,8,1,1" toolTip="Hide the Action Event DELETE">
+					<Button.onInvoke>
+						<ActionEventHandler actionName="DELETE_ActHidden_On"/>
+					</Button.onInvoke>
+				</Button>
+				<Button visible="true" text="dialog.setActionHidden(&quot;INSERT&quot;,FALSE)" identifier="bt_INSERT_ActHidden_Off" gridItemLocation="2,9,1,1" toolTip="Show the Action Event INSERT (unHide)">
+					<Button.onInvoke>
+						<ActionEventHandler actionName="INSERT_ActHidden_Off"/>
+					</Button.onInvoke>
+				</Button>
+				<Button text="dialog.setActionHidden(&quot;SEARCH&quot;,FALSE)" visible="true" identifier="bt_SEARCH_ActHidden_Off" gridItemLocation="3,9,1,1" toolTip="Show the Action Event SEARCH (unHide)">
+					<Button.onInvoke>
+						<ActionEventHandler actionName="SEARCH_ActHidden_Off"/>
+					</Button.onInvoke>
+				</Button>
+				<Button text="dialog.setActionHidden(&quot;SEARCH&quot;,TRUE)" visible="true" identifier="bt_SEARCH_ActHidden_On" gridItemLocation="3,8,1,1" toolTip="Hide the Action Event SEARCH">
+					<Button.onInvoke>
+						<ActionEventHandler actionName="SEARCH_ActHidden_On"/>
+					</Button.onInvoke>
+				</Button>
+			</GridPanel>
+		</GridPanel>
+	</form.rootContainer>
+	<form.screenRecords>
+		<ScreenRecord identifier="FormOnly" fields="lb_f2,f2"/>
+	</form.screenRecords>
+</form>

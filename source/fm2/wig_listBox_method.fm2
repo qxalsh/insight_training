@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://namespaces.querix.com/2015/fglForms">
+	<form.rootContainer>
+		<GridPanel classNames="fcls_rootContainer" verticalAlignment="Top" horizontalAlignment="Left" fieldTable="" identifier="rootContainer">
+			<GridPanel.gridRowDefinitions>
+				<GridRowDefinition gridLengthValue=""/>
+				<GridRowDefinition gridLengthValue="20rem"/>
+				<GridRowDefinition gridLengthValue="20rem"/>
+				<GridRowDefinition gridLengthValue=""/>
+			</GridPanel.gridRowDefinitions>
+			<GridPanel.gridColumnDefinitions>
+				<GridColumnDefinition gridLengthValue="100%"/>
+			</GridPanel.gridColumnDefinitions>
+			<GridPanel classNames="fcls_title_cnt" visible="true" verticalAlignment="Top" gridItemLocation="0,0,1,1" fieldTable="formonly" identifier="cntTitle">
+				<GridPanel.gridRowDefinitions>
+					<GridRowDefinition gridLengthValue=""/>
+				</GridPanel.gridRowDefinitions>
+				<GridPanel.gridColumnDefinitions>
+					<GridColumnDefinition gridLengthValue="100%"/>
+					<GridColumnDefinition gridLengthValue=""/>
+				</GridPanel.gridColumnDefinitions>
+				<Label isDynamic="true" text="ListBox Methods() Example" classNames="fcls_title_lb" visible="true" gridItemLocation="0,0,1,1" fieldTable="formonly" identifier="lbTitle"/>
+				<Label isDynamic="true" text="wig_listBox" classNames="fcls_title_lb" visible="true" gridItemLocation="1,0,1,1" fieldTable="" identifier="lbFormName"/>
+			</GridPanel>
+			<GridPanel classNames="fcls_detail_cnt,fcls_data_cnt,fcls_align_hstretch" visible="true" verticalAlignment="Stretch" horizontalAlignment="Stretch" gridItemLocation="0,1,1,1" fieldTable="formonly" identifier="cntDetail1">
+				<GridPanel.gridRowDefinitions>
+					<GridRowDefinition gridLengthValue=""/>
+					<GridRowDefinition gridLengthValue=""/>
+				</GridPanel.gridRowDefinitions>
+				<GridPanel.gridColumnDefinitions>
+					<GridColumnDefinition gridLengthValue="50%" gridMinLength="30rem"/>
+					<GridColumnDefinition gridLengthValue="50%" gridMinLength="30rem"/>
+				</GridPanel.gridColumnDefinitions>
+				<Label isDynamic="true" text="18 Of The Most Expensive Substances In The World" classNames="fcls_fieldlabel,fcls_align_left" visible="true" gridItemLocation="0,0,2,1" fieldTable="" identifier="lb48"/>
+				<ListBox enableMultiSelection="true" classNames="fcls_data_widget" preferredSize="15qch,10qch" visible="true" verticalAlignment="Stretch" horizontalAlignment="Stretch" gridItemLocation="0,1,1,1" fieldTable="" identifier="fListChoice">
+					<ListBox.onValueChanged>
+						<ActionEventHandler actionName="updateField"/>
+					</ListBox.onValueChanged>
+					<ListBox.onTouched>
+						<ActionEventHandler actionName="updateField"/>
+					</ListBox.onTouched>
+					<ListBox.onMouseDoubleClick>
+						<ActionEventHandler type="actioneventhandler" actionName="actmousedoubleclick"/>
+					</ListBox.onMouseDoubleClick>
+				</ListBox>
+				<GridPanel visible="true" verticalAlignment="Top" horizontalAlignment="Left" gridItemLocation="1,1,1,1" fieldTable="" identifier="cntListBoxDetails">
+					<GridPanel.gridRowDefinitions>
+						<GridRowDefinition gridLengthValue=""/>
+						<GridRowDefinition gridLengthValue=""/>
+						<GridRowDefinition gridLengthValue=""/>
+						<GridRowDefinition gridLengthValue=""/>
+					</GridPanel.gridRowDefinitions>
+					<GridPanel.gridColumnDefinitions>
+						<GridColumnDefinition gridLengthValue=""/>
+						<GridColumnDefinition gridLengthValue=""/>
+					</GridPanel.gridColumnDefinitions>
+					<Label isDynamic="true" text="Actual Field Value" classNames="fcls_fieldlabel,fcls_align_left" visible="true" gridItemLocation="0,0,1,1" fieldTable="" identifier="lb50"/>
+					<TextField classNames="fcls_data_widget,fcls_align_left,fcls_length_20qch" visible="true" gridItemLocation="1,0,1,1" fieldTable="" identifier="fListChoiceText"/>
+					<Label isDynamic="true" text=".getItemCount()" classNames="fcls_fieldlabel,fcls_align_left" visible="true" gridItemLocation="0,1,1,1" fieldTable="" identifier="lb53"/>
+					<TextField classNames="fcls_data_widget,fcls_align_left,fcls_length_20qch" visible="true" gridItemLocation="1,1,1,1" fieldTable="" identifier="itemCount"/>
+					<Label isDynamic="true" text=".getItemName()" classNames="fcls_fieldlabel,fcls_align_left" visible="true" gridItemLocation="0,2,1,1" fieldTable="" identifier="lb54"/>
+					<TextField classNames="fcls_data_widget,fcls_align_left,fcls_length_20qch" visible="true" gridItemLocation="1,2,1,1" fieldTable="" identifier="getItemName"/>
+					<Label isDynamic="true" text=".getItemText()" classNames="fcls_fieldlabel,fcls_align_left" visible="true" gridItemLocation="0,3,1,1" fieldTable="" identifier="lbGetItemText"/>
+					<TextField classNames="fcls_data_widget,fcls_align_left,fcls_length_20qch" visible="true" gridItemLocation="1,3,1,1" fieldTable="" identifier="GetItemText"/>
+				</GridPanel>
+			</GridPanel>
+			<GroupBox title="ListBox Methods()" visible="true" identifier="c2" gridItemLocation="0,2,1,1">
+				<GridPanel visible="true" identifier="c3">
+					<GridPanel.gridColumnDefinitions>
+						<GridColumnDefinition gridLengthValue="50%" gridMinLength="30rem"/>
+						<GridColumnDefinition gridLengthValue="50%" gridMinLength="30rem"/>
+					</GridPanel.gridColumnDefinitions>
+					<GridPanel.gridRowDefinitions>
+						<GridRowDefinition gridLengthValue=""/>
+					</GridPanel.gridRowDefinitions>
+					<ListBox visible="true" identifier="fListMethod" gridItemLocation="0,0,1,1" classNames="fcls_data_widget" verticalAlignment="Stretch" horizontalAlignment="Stretch">
+						<ListBox.onMouseDoubleClick>
+							<ActionEventHandler type="actioneventhandler" actionName="Call Method"/>
+						</ListBox.onMouseDoubleClick>
+					</ListBox>
+					<TextArea visible="true" identifier="methodDescription" gridItemLocation="1,0,1,1" horizontalAlignment="Stretch" verticalAlignment="Stretch" classNames="fcls_data_widget" enable="true"/>
+				</GridPanel>
+			</GroupBox>
+			<GridPanel classNames="fcls_statusbar_cnt" visible="true" verticalAlignment="Top" gridItemLocation="0,3,1,1" fieldTable="formonly" identifier="cntStatusBar">
+				<GridPanel.gridRowDefinitions>
+					<GridRowDefinition gridLengthValue=""/>
+					<GridRowDefinition gridLengthValue=""/>
+				</GridPanel.gridRowDefinitions>
+				<GridPanel.gridColumnDefinitions>
+					<GridColumnDefinition gridLengthValue="100%"/>
+				</GridPanel.gridColumnDefinitions>
+				<Label isDynamic="true" text="" classNames="fcls_sblabel" visible="true" gridItemLocation="0,0,1,1" fieldTable="formonly" identifier="lbInfo1"/>
+				<Label isDynamic="true" text="" classNames="fcls_sblabel" visible="true" gridItemLocation="0,1,1,1" fieldTable="formonly" identifier="lbInfo2"/>
+			</GridPanel>
+		</GridPanel>
+	</form.rootContainer>
+	<form.screenRecords>
+		<ScreenRecord identifier="FORMONLY" fields="fListChoice,fListChoiceText,itemCount,getItemName,GetItemText,fListMethod,methodDescription"/>
+	</form.screenRecords>
+</form>
+

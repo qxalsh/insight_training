@@ -1,0 +1,727 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://namespaces.querix.com/2015/fglForms">
+	<form.rootContainer>
+		<CoordPanel preferredSize="72qch,27qch" fieldTable="" identifier="coord1">
+			<Label isDynamic="true" text="Demo Application - PER translation (INCLUDE AND DATE TIME)" dataType="Char,,,," location="0qch,0qch" preferredSize="60qch,1qch" fieldTable="formonly" identifier="dl_header">
+				<Label.displayModes>
+					<DisplayMode appearance="bold,Blue"/>
+				</Label.displayModes>
+			</Label>
+			<Label text="ABC" location="61qch,0qch" preferredSize="3qch,1qch" fieldTable="" identifier="label1"/>
+			<TextField dataType="VarChar,,,," location="64qch,0qch" preferredSize="7qch,1qch" fieldTable="formonly" identifier="m01"/>
+			<Label text="TextField for size" location="0qch,1qch" preferredSize="18qch,1qch" fieldTable="" identifier="label2"/>
+			<TextField dataType="Char,,,," location="23qch,1qch" preferredSize="37qch,1qch" fieldTable="formonly" identifier="measure1"/>
+			<Label text="ABC" location="61qch,1qch" preferredSize="3qch,1qch" fieldTable="" identifier="label3"/>
+			<TextField dataType="VarChar,,,," location="64qch,1qch" preferredSize="7qch,1qch" fieldTable="formonly" identifier="m02"/>
+			<Separator location="0qch,2qch" preferredSize="72qch,1qch" zOrder="-1" fieldTable="" identifier="separator1"/>
+			<Label text="INCLUDE" location="0qch,3qch" preferredSize="7qch,1qch" fieldTable="" identifier="label4"/>
+			<Label text="ABC" location="61qch,3qch" preferredSize="3qch,1qch" fieldTable="" identifier="label5"/>
+			<TextField dataType="VarChar,,,," location="64qch,3qch" preferredSize="7qch,1qch" fieldTable="formonly" identifier="m03"/>
+			<Label text="CHAR" location="0qch,4qch" preferredSize="4qch,1qch" fieldTable="" identifier="label6"/>
+			<Separator location="4qch,4qch" preferredSize="57qch,1qch" zOrder="-1" fieldTable="" identifier="separator2"/>
+			<Label text="ABC" location="61qch,4qch" preferredSize="3qch,1qch" fieldTable="" identifier="label7"/>
+			<TextField dataType="VarChar,,,," location="64qch,4qch" preferredSize="7qch,1qch" fieldTable="formonly" identifier="m04"/>
+			<Label text="Yes/NO (short)" location="0qch,5qch" preferredSize="14qch,1qch" fieldTable="" identifier="label8"/>
+			<TextField dataType="VarChar,,,," location="23qch,5qch" preferredSize="3qch,1qch" fieldTable="formonly" identifier="f0">
+				<TextField.includes>
+					<ValueInclude>
+						<ValueInclude.value>
+							<StringLiteral stringValue="Yes"/>
+						</ValueInclude.value>
+					</ValueInclude>
+					<ValueInclude>
+						<ValueInclude.value>
+							<StringLiteral stringValue="No"/>
+						</ValueInclude.value>
+					</ValueInclude>
+				</TextField.includes>
+			</TextField>
+			<Label text="ABC" location="61qch,5qch" preferredSize="3qch,1qch" fieldTable="" identifier="label9"/>
+			<TextField dataType="VarChar,,,," location="64qch,5qch" preferredSize="7qch,1qch" fieldTable="formonly" identifier="m05"/>
+			<Label text="Yes/NO" location="0qch,6qch" preferredSize="6qch,1qch" fieldTable="" identifier="label10"/>
+			<ComboBox dataType="VarChar,,,," location="23qch,6qch" preferredSize="37qch,1qch" fieldTable="formonly" identifier="f1">
+				<ComboBoxItem text="Yes" identifier="comboboxitem1">
+					<ComboBoxItem.value>
+						<StringLiteral stringValue="Yes"/>
+					</ComboBoxItem.value>
+				</ComboBoxItem>
+				<ComboBoxItem text="No" identifier="comboboxitem2">
+					<ComboBoxItem.value>
+						<StringLiteral stringValue="No"/>
+					</ComboBoxItem.value>
+				</ComboBoxItem>
+			</ComboBox>
+			<Label text="ABC" location="61qch,6qch" preferredSize="3qch,1qch" fieldTable="" identifier="label11"/>
+			<TextField dataType="VarChar,,,," location="64qch,6qch" preferredSize="7qch,1qch" fieldTable="formonly" identifier="m06"/>
+			<Label text="John/Dom/Sean/..." location="0qch,7qch" preferredSize="17qch,1qch" fieldTable="" identifier="label12"/>
+			<ComboBox dataType="VarChar,,,," location="23qch,7qch" preferredSize="37qch,1qch" fieldTable="formonly" identifier="f2">
+				<ComboBoxItem text="John" identifier="comboboxitem3">
+					<ComboBoxItem.value>
+						<StringLiteral stringValue="John"/>
+					</ComboBoxItem.value>
+				</ComboBoxItem>
+				<ComboBoxItem text="Dom" identifier="comboboxitem4">
+					<ComboBoxItem.value>
+						<StringLiteral stringValue="Dom"/>
+					</ComboBoxItem.value>
+				</ComboBoxItem>
+				<ComboBoxItem text="Sean" identifier="comboboxitem5">
+					<ComboBoxItem.value>
+						<StringLiteral stringValue="Sean"/>
+					</ComboBoxItem.value>
+				</ComboBoxItem>
+				<ComboBoxItem text="Tim" identifier="comboboxitem6">
+					<ComboBoxItem.value>
+						<StringLiteral stringValue="Tim"/>
+					</ComboBoxItem.value>
+				</ComboBoxItem>
+				<ComboBoxItem text="Mary" identifier="comboboxitem7">
+					<ComboBoxItem.value>
+						<StringLiteral stringValue="Mary"/>
+					</ComboBoxItem.value>
+				</ComboBoxItem>
+				<ComboBoxItem text="Gemma" identifier="comboboxitem8">
+					<ComboBoxItem.value>
+						<StringLiteral stringValue="Gemma"/>
+					</ComboBoxItem.value>
+				</ComboBoxItem>
+				<ComboBoxItem text="Lucy" identifier="comboboxitem9">
+					<ComboBoxItem.value>
+						<StringLiteral stringValue="Lucy"/>
+					</ComboBoxItem.value>
+				</ComboBoxItem>
+				<ComboBoxItem text="Marta" identifier="comboboxitem10">
+					<ComboBoxItem.value>
+						<StringLiteral stringValue="Marta"/>
+					</ComboBoxItem.value>
+				</ComboBoxItem>
+				<ComboBoxItem text="Tom" identifier="comboboxitem11">
+					<ComboBoxItem.value>
+						<StringLiteral stringValue="Tom"/>
+					</ComboBoxItem.value>
+				</ComboBoxItem>
+				<ComboBoxItem text="Rowan" identifier="comboboxitem12">
+					<ComboBoxItem.value>
+						<StringLiteral stringValue="Rowan"/>
+					</ComboBoxItem.value>
+				</ComboBoxItem>
+			</ComboBox>
+			<Label text="ABC" location="61qch,7qch" preferredSize="3qch,1qch" fieldTable="" identifier="label13"/>
+			<TextField dataType="VarChar,,,," location="64qch,7qch" preferredSize="7qch,1qch" fieldTable="formonly" identifier="m07"/>
+			<Label text='&quot;A&quot; TO &quot;Z&quot;' location="0qch,8qch" preferredSize="10qch,1qch" fieldTable="" identifier="label14"/>
+			<ComboBox dataType="Char,,,," location="23qch,8qch" preferredSize="37qch,1qch" fieldTable="formonly" identifier="f3">
+				<ComboBoxItem text="A" identifier="comboboxitem13">
+					<ComboBoxItem.value>
+						<StringLiteral stringValue="A"/>
+					</ComboBoxItem.value>
+				</ComboBoxItem>
+				<ComboBoxItem text="B" identifier="comboboxitem14">
+					<ComboBoxItem.value>
+						<StringLiteral stringValue="B"/>
+					</ComboBoxItem.value>
+				</ComboBoxItem>
+				<ComboBoxItem text="C" identifier="comboboxitem15">
+					<ComboBoxItem.value>
+						<StringLiteral stringValue="C"/>
+					</ComboBoxItem.value>
+				</ComboBoxItem>
+				<ComboBoxItem text="D" identifier="comboboxitem16">
+					<ComboBoxItem.value>
+						<StringLiteral stringValue="D"/>
+					</ComboBoxItem.value>
+				</ComboBoxItem>
+				<ComboBoxItem text="E" identifier="comboboxitem17">
+					<ComboBoxItem.value>
+						<StringLiteral stringValue="E"/>
+					</ComboBoxItem.value>
+				</ComboBoxItem>
+				<ComboBoxItem text="F" identifier="comboboxitem18">
+					<ComboBoxItem.value>
+						<StringLiteral stringValue="F"/>
+					</ComboBoxItem.value>
+				</ComboBoxItem>
+				<ComboBoxItem text="G" identifier="comboboxitem19">
+					<ComboBoxItem.value>
+						<StringLiteral stringValue="G"/>
+					</ComboBoxItem.value>
+				</ComboBoxItem>
+				<ComboBoxItem text="H" identifier="comboboxitem20">
+					<ComboBoxItem.value>
+						<StringLiteral stringValue="H"/>
+					</ComboBoxItem.value>
+				</ComboBoxItem>
+				<ComboBoxItem text="I" identifier="comboboxitem21">
+					<ComboBoxItem.value>
+						<StringLiteral stringValue="I"/>
+					</ComboBoxItem.value>
+				</ComboBoxItem>
+				<ComboBoxItem text="J" identifier="comboboxitem22">
+					<ComboBoxItem.value>
+						<StringLiteral stringValue="J"/>
+					</ComboBoxItem.value>
+				</ComboBoxItem>
+				<ComboBoxItem text="K" identifier="comboboxitem23">
+					<ComboBoxItem.value>
+						<StringLiteral stringValue="K"/>
+					</ComboBoxItem.value>
+				</ComboBoxItem>
+				<ComboBoxItem text="L" identifier="comboboxitem24">
+					<ComboBoxItem.value>
+						<StringLiteral stringValue="L"/>
+					</ComboBoxItem.value>
+				</ComboBoxItem>
+				<ComboBoxItem text="M" identifier="comboboxitem25">
+					<ComboBoxItem.value>
+						<StringLiteral stringValue="M"/>
+					</ComboBoxItem.value>
+				</ComboBoxItem>
+				<ComboBoxItem text="N" identifier="comboboxitem26">
+					<ComboBoxItem.value>
+						<StringLiteral stringValue="N"/>
+					</ComboBoxItem.value>
+				</ComboBoxItem>
+				<ComboBoxItem text="O" identifier="comboboxitem27">
+					<ComboBoxItem.value>
+						<StringLiteral stringValue="O"/>
+					</ComboBoxItem.value>
+				</ComboBoxItem>
+				<ComboBoxItem text="P" identifier="comboboxitem28">
+					<ComboBoxItem.value>
+						<StringLiteral stringValue="P"/>
+					</ComboBoxItem.value>
+				</ComboBoxItem>
+				<ComboBoxItem text="Q" identifier="comboboxitem29">
+					<ComboBoxItem.value>
+						<StringLiteral stringValue="Q"/>
+					</ComboBoxItem.value>
+				</ComboBoxItem>
+				<ComboBoxItem text="R" identifier="comboboxitem30">
+					<ComboBoxItem.value>
+						<StringLiteral stringValue="R"/>
+					</ComboBoxItem.value>
+				</ComboBoxItem>
+				<ComboBoxItem text="S" identifier="comboboxitem31">
+					<ComboBoxItem.value>
+						<StringLiteral stringValue="S"/>
+					</ComboBoxItem.value>
+				</ComboBoxItem>
+				<ComboBoxItem text="T" identifier="comboboxitem32">
+					<ComboBoxItem.value>
+						<StringLiteral stringValue="T"/>
+					</ComboBoxItem.value>
+				</ComboBoxItem>
+				<ComboBoxItem text="U" identifier="comboboxitem33">
+					<ComboBoxItem.value>
+						<StringLiteral stringValue="U"/>
+					</ComboBoxItem.value>
+				</ComboBoxItem>
+				<ComboBoxItem text="V" identifier="comboboxitem34">
+					<ComboBoxItem.value>
+						<StringLiteral stringValue="V"/>
+					</ComboBoxItem.value>
+				</ComboBoxItem>
+				<ComboBoxItem text="W" identifier="comboboxitem35">
+					<ComboBoxItem.value>
+						<StringLiteral stringValue="W"/>
+					</ComboBoxItem.value>
+				</ComboBoxItem>
+				<ComboBoxItem text="X" identifier="comboboxitem36">
+					<ComboBoxItem.value>
+						<StringLiteral stringValue="X"/>
+					</ComboBoxItem.value>
+				</ComboBoxItem>
+				<ComboBoxItem text="Y" identifier="comboboxitem37">
+					<ComboBoxItem.value>
+						<StringLiteral stringValue="Y"/>
+					</ComboBoxItem.value>
+				</ComboBoxItem>
+				<ComboBoxItem text="Z" identifier="comboboxitem38">
+					<ComboBoxItem.value>
+						<StringLiteral stringValue="Z"/>
+					</ComboBoxItem.value>
+				</ComboBoxItem>
+			</ComboBox>
+			<Label text="ABC" location="61qch,8qch" preferredSize="3qch,1qch" fieldTable="" identifier="label15"/>
+			<TextField dataType="VarChar,,,," location="64qch,8qch" preferredSize="7qch,1qch" fieldTable="formonly" identifier="m08"/>
+			<Label text='&quot;A&quot; TO &quot;G&quot;, &quot;X&quot; TO &quot;Z&quot;' location="0qch,9qch" preferredSize="22qch,1qch" fieldTable="" identifier="label16"/>
+			<ComboBox dataType="Char,,,," location="23qch,9qch" preferredSize="37qch,1qch" fieldTable="formonly" identifier="f4">
+				<ComboBoxItem text="A" identifier="comboboxitem39">
+					<ComboBoxItem.value>
+						<StringLiteral stringValue="A"/>
+					</ComboBoxItem.value>
+				</ComboBoxItem>
+				<ComboBoxItem text="B" identifier="comboboxitem40">
+					<ComboBoxItem.value>
+						<StringLiteral stringValue="B"/>
+					</ComboBoxItem.value>
+				</ComboBoxItem>
+				<ComboBoxItem text="C" identifier="comboboxitem41">
+					<ComboBoxItem.value>
+						<StringLiteral stringValue="C"/>
+					</ComboBoxItem.value>
+				</ComboBoxItem>
+				<ComboBoxItem text="D" identifier="comboboxitem42">
+					<ComboBoxItem.value>
+						<StringLiteral stringValue="D"/>
+					</ComboBoxItem.value>
+				</ComboBoxItem>
+				<ComboBoxItem text="E" identifier="comboboxitem43">
+					<ComboBoxItem.value>
+						<StringLiteral stringValue="E"/>
+					</ComboBoxItem.value>
+				</ComboBoxItem>
+				<ComboBoxItem text="F" identifier="comboboxitem44">
+					<ComboBoxItem.value>
+						<StringLiteral stringValue="F"/>
+					</ComboBoxItem.value>
+				</ComboBoxItem>
+				<ComboBoxItem text="G" identifier="comboboxitem45">
+					<ComboBoxItem.value>
+						<StringLiteral stringValue="G"/>
+					</ComboBoxItem.value>
+				</ComboBoxItem>
+				<ComboBoxItem text="X" identifier="comboboxitem46">
+					<ComboBoxItem.value>
+						<StringLiteral stringValue="X"/>
+					</ComboBoxItem.value>
+				</ComboBoxItem>
+				<ComboBoxItem text="Y" identifier="comboboxitem47">
+					<ComboBoxItem.value>
+						<StringLiteral stringValue="Y"/>
+					</ComboBoxItem.value>
+				</ComboBoxItem>
+				<ComboBoxItem text="Z" identifier="comboboxitem48">
+					<ComboBoxItem.value>
+						<StringLiteral stringValue="Z"/>
+					</ComboBoxItem.value>
+				</ComboBoxItem>
+			</ComboBox>
+			<Label text="ABC" location="61qch,9qch" preferredSize="3qch,1qch" fieldTable="" identifier="label17"/>
+			<TextField dataType="VarChar,,,," location="64qch,9qch" preferredSize="7qch,1qch" fieldTable="formonly" identifier="m09"/>
+			<Label text="AA/BB/CC/.. (short)" location="0qch,10qch" preferredSize="19qch,1qch" fieldTable="" identifier="label18"/>
+			<TextField dataType="VarChar,,,," location="23qch,10qch" preferredSize="3qch,1qch" fieldTable="formonly" identifier="f5">
+				<TextField.includes>
+					<ValueInclude>
+						<ValueInclude.value>
+							<StringLiteral stringValue="AA"/>
+						</ValueInclude.value>
+					</ValueInclude>
+					<ValueInclude>
+						<ValueInclude.value>
+							<StringLiteral stringValue="BB"/>
+						</ValueInclude.value>
+					</ValueInclude>
+					<ValueInclude>
+						<ValueInclude.value>
+							<StringLiteral stringValue="CC"/>
+						</ValueInclude.value>
+					</ValueInclude>
+					<ValueInclude>
+						<ValueInclude.value>
+							<StringLiteral stringValue="DD"/>
+						</ValueInclude.value>
+					</ValueInclude>
+					<ValueInclude>
+						<ValueInclude.value>
+							<StringLiteral stringValue="EE"/>
+						</ValueInclude.value>
+					</ValueInclude>
+					<ValueInclude>
+						<ValueInclude.value>
+							<StringLiteral stringValue="FF"/>
+						</ValueInclude.value>
+					</ValueInclude>
+					<ValueInclude>
+						<ValueInclude.value>
+							<StringLiteral stringValue="GG"/>
+						</ValueInclude.value>
+					</ValueInclude>
+					<ValueInclude>
+						<ValueInclude.value>
+							<StringLiteral stringValue="HH"/>
+						</ValueInclude.value>
+					</ValueInclude>
+					<ValueInclude>
+						<ValueInclude.value>
+							<StringLiteral stringValue="II"/>
+						</ValueInclude.value>
+					</ValueInclude>
+					<ValueInclude>
+						<ValueInclude.value>
+							<StringLiteral stringValue="JJ"/>
+						</ValueInclude.value>
+					</ValueInclude>
+				</TextField.includes>
+			</TextField>
+			<Label text="ABC" location="61qch,10qch" preferredSize="3qch,1qch" fieldTable="" identifier="label19"/>
+			<TextField dataType="VarChar,,,," location="64qch,10qch" preferredSize="7qch,1qch" fieldTable="formonly" identifier="m10"/>
+			<Label text="SMALLINT" location="0qch,11qch" preferredSize="8qch,1qch" fieldTable="" identifier="label20"/>
+			<Separator location="8qch,11qch" preferredSize="53qch,1qch" zOrder="-1" fieldTable="" identifier="separator3"/>
+			<Label text="ABC" location="61qch,11qch" preferredSize="3qch,1qch" fieldTable="" identifier="label21"/>
+			<TextField dataType="VarChar,,,," location="64qch,11qch" preferredSize="7qch,1qch" fieldTable="formonly" identifier="m11"/>
+			<Label text="0,1" location="0qch,12qch" preferredSize="3qch,1qch" fieldTable="" identifier="label22"/>
+			<ComboBox dataType="SmallInt,,,," location="23qch,12qch" preferredSize="37qch,1qch" fieldTable="formonly" identifier="f6">
+				<ComboBoxItem text="0" identifier="comboboxitem49">
+					<ComboBoxItem.value>
+						<IntegerLiteral/>
+					</ComboBoxItem.value>
+				</ComboBoxItem>
+				<ComboBoxItem text="1" identifier="comboboxitem50">
+					<ComboBoxItem.value>
+						<IntegerLiteral integerValue="1"/>
+					</ComboBoxItem.value>
+				</ComboBoxItem>
+			</ComboBox>
+			<Label text="ABC" location="61qch,12qch" preferredSize="3qch,1qch" fieldTable="" identifier="label23"/>
+			<TextField dataType="VarChar,,,," location="64qch,12qch" preferredSize="7qch,1qch" fieldTable="formonly" identifier="m12"/>
+			<Label text="0,1,2,3,4,5" location="0qch,13qch" preferredSize="11qch,1qch" fieldTable="" identifier="label24"/>
+			<ComboBox dataType="SmallInt,,,," location="23qch,13qch" preferredSize="37qch,1qch" fieldTable="formonly" identifier="f7">
+				<ComboBoxItem text="0" identifier="comboboxitem51">
+					<ComboBoxItem.value>
+						<IntegerLiteral/>
+					</ComboBoxItem.value>
+				</ComboBoxItem>
+				<ComboBoxItem text="1" identifier="comboboxitem52">
+					<ComboBoxItem.value>
+						<IntegerLiteral integerValue="1"/>
+					</ComboBoxItem.value>
+				</ComboBoxItem>
+				<ComboBoxItem text="2" identifier="comboboxitem53">
+					<ComboBoxItem.value>
+						<IntegerLiteral integerValue="2"/>
+					</ComboBoxItem.value>
+				</ComboBoxItem>
+				<ComboBoxItem text="3" identifier="comboboxitem54">
+					<ComboBoxItem.value>
+						<IntegerLiteral integerValue="3"/>
+					</ComboBoxItem.value>
+				</ComboBoxItem>
+				<ComboBoxItem text="4" identifier="comboboxitem55">
+					<ComboBoxItem.value>
+						<IntegerLiteral integerValue="4"/>
+					</ComboBoxItem.value>
+				</ComboBoxItem>
+				<ComboBoxItem text="5" identifier="comboboxitem56">
+					<ComboBoxItem.value>
+						<IntegerLiteral integerValue="5"/>
+					</ComboBoxItem.value>
+				</ComboBoxItem>
+			</ComboBox>
+			<Label text="ABC" location="61qch,13qch" preferredSize="3qch,1qch" fieldTable="" identifier="label25"/>
+			<TextField dataType="VarChar,,,," location="64qch,13qch" preferredSize="7qch,1qch" fieldTable="formonly" identifier="m13"/>
+			<Label text="10 TO 50" location="0qch,14qch" preferredSize="8qch,1qch" fieldTable="" identifier="label26"/>
+			<Spinner step="1" minValue="10" maxValue="50" location="23qch,14qch" preferredSize="37qch,1qch" fieldTable="formonly" identifier="f8"/>
+			<Label text="ABC" location="61qch,14qch" preferredSize="3qch,1qch" fieldTable="" identifier="label27"/>
+			<TextField dataType="VarChar,,,," location="64qch,14qch" preferredSize="7qch,1qch" fieldTable="formonly" identifier="m14"/>
+			<Label text="50 TO 100" location="0qch,15qch" preferredSize="9qch,1qch" fieldTable="" identifier="label28"/>
+			<Spinner step="1" minValue="50" maxValue="100" location="23qch,15qch" preferredSize="37qch,1qch" fieldTable="formonly" identifier="f9"/>
+			<Label text="ABC" location="61qch,15qch" preferredSize="3qch,1qch" fieldTable="" identifier="label29"/>
+			<TextField dataType="VarChar,,,," location="64qch,15qch" preferredSize="7qch,1qch" fieldTable="formonly" identifier="m15"/>
+			<Label text="(1 TO 25, 75 TO 100)" location="0qch,16qch" preferredSize="20qch,1qch" fieldTable="" identifier="label30"/>
+			<ComboBox dataType="SmallInt,,,," location="23qch,16qch" preferredSize="37qch,1qch" fieldTable="formonly" identifier="f10">
+				<ComboBoxItem text="1" identifier="comboboxitem57">
+					<ComboBoxItem.value>
+						<IntegerLiteral integerValue="1"/>
+					</ComboBoxItem.value>
+				</ComboBoxItem>
+				<ComboBoxItem text="2" identifier="comboboxitem58">
+					<ComboBoxItem.value>
+						<IntegerLiteral integerValue="2"/>
+					</ComboBoxItem.value>
+				</ComboBoxItem>
+				<ComboBoxItem text="3" identifier="comboboxitem59">
+					<ComboBoxItem.value>
+						<IntegerLiteral integerValue="3"/>
+					</ComboBoxItem.value>
+				</ComboBoxItem>
+				<ComboBoxItem text="4" identifier="comboboxitem60">
+					<ComboBoxItem.value>
+						<IntegerLiteral integerValue="4"/>
+					</ComboBoxItem.value>
+				</ComboBoxItem>
+				<ComboBoxItem text="5" identifier="comboboxitem61">
+					<ComboBoxItem.value>
+						<IntegerLiteral integerValue="5"/>
+					</ComboBoxItem.value>
+				</ComboBoxItem>
+				<ComboBoxItem text="6" identifier="comboboxitem62">
+					<ComboBoxItem.value>
+						<IntegerLiteral integerValue="6"/>
+					</ComboBoxItem.value>
+				</ComboBoxItem>
+				<ComboBoxItem text="7" identifier="comboboxitem63">
+					<ComboBoxItem.value>
+						<IntegerLiteral integerValue="7"/>
+					</ComboBoxItem.value>
+				</ComboBoxItem>
+				<ComboBoxItem text="8" identifier="comboboxitem64">
+					<ComboBoxItem.value>
+						<IntegerLiteral integerValue="8"/>
+					</ComboBoxItem.value>
+				</ComboBoxItem>
+				<ComboBoxItem text="9" identifier="comboboxitem65">
+					<ComboBoxItem.value>
+						<IntegerLiteral integerValue="9"/>
+					</ComboBoxItem.value>
+				</ComboBoxItem>
+				<ComboBoxItem text="10" identifier="comboboxitem66">
+					<ComboBoxItem.value>
+						<IntegerLiteral integerValue="10"/>
+					</ComboBoxItem.value>
+				</ComboBoxItem>
+				<ComboBoxItem text="11" identifier="comboboxitem67">
+					<ComboBoxItem.value>
+						<IntegerLiteral integerValue="11"/>
+					</ComboBoxItem.value>
+				</ComboBoxItem>
+				<ComboBoxItem text="12" identifier="comboboxitem68">
+					<ComboBoxItem.value>
+						<IntegerLiteral integerValue="12"/>
+					</ComboBoxItem.value>
+				</ComboBoxItem>
+				<ComboBoxItem text="13" identifier="comboboxitem69">
+					<ComboBoxItem.value>
+						<IntegerLiteral integerValue="13"/>
+					</ComboBoxItem.value>
+				</ComboBoxItem>
+				<ComboBoxItem text="14" identifier="comboboxitem70">
+					<ComboBoxItem.value>
+						<IntegerLiteral integerValue="14"/>
+					</ComboBoxItem.value>
+				</ComboBoxItem>
+				<ComboBoxItem text="15" identifier="comboboxitem71">
+					<ComboBoxItem.value>
+						<IntegerLiteral integerValue="15"/>
+					</ComboBoxItem.value>
+				</ComboBoxItem>
+				<ComboBoxItem text="16" identifier="comboboxitem72">
+					<ComboBoxItem.value>
+						<IntegerLiteral integerValue="16"/>
+					</ComboBoxItem.value>
+				</ComboBoxItem>
+				<ComboBoxItem text="17" identifier="comboboxitem73">
+					<ComboBoxItem.value>
+						<IntegerLiteral integerValue="17"/>
+					</ComboBoxItem.value>
+				</ComboBoxItem>
+				<ComboBoxItem text="18" identifier="comboboxitem74">
+					<ComboBoxItem.value>
+						<IntegerLiteral integerValue="18"/>
+					</ComboBoxItem.value>
+				</ComboBoxItem>
+				<ComboBoxItem text="19" identifier="comboboxitem75">
+					<ComboBoxItem.value>
+						<IntegerLiteral integerValue="19"/>
+					</ComboBoxItem.value>
+				</ComboBoxItem>
+				<ComboBoxItem text="20" identifier="comboboxitem76">
+					<ComboBoxItem.value>
+						<IntegerLiteral integerValue="20"/>
+					</ComboBoxItem.value>
+				</ComboBoxItem>
+				<ComboBoxItem text="21" identifier="comboboxitem77">
+					<ComboBoxItem.value>
+						<IntegerLiteral integerValue="21"/>
+					</ComboBoxItem.value>
+				</ComboBoxItem>
+				<ComboBoxItem text="22" identifier="comboboxitem78">
+					<ComboBoxItem.value>
+						<IntegerLiteral integerValue="22"/>
+					</ComboBoxItem.value>
+				</ComboBoxItem>
+				<ComboBoxItem text="23" identifier="comboboxitem79">
+					<ComboBoxItem.value>
+						<IntegerLiteral integerValue="23"/>
+					</ComboBoxItem.value>
+				</ComboBoxItem>
+				<ComboBoxItem text="24" identifier="comboboxitem80">
+					<ComboBoxItem.value>
+						<IntegerLiteral integerValue="24"/>
+					</ComboBoxItem.value>
+				</ComboBoxItem>
+				<ComboBoxItem text="25" identifier="comboboxitem81">
+					<ComboBoxItem.value>
+						<IntegerLiteral integerValue="25"/>
+					</ComboBoxItem.value>
+				</ComboBoxItem>
+				<ComboBoxItem text="75" identifier="comboboxitem82">
+					<ComboBoxItem.value>
+						<IntegerLiteral integerValue="75"/>
+					</ComboBoxItem.value>
+				</ComboBoxItem>
+				<ComboBoxItem text="76" identifier="comboboxitem83">
+					<ComboBoxItem.value>
+						<IntegerLiteral integerValue="76"/>
+					</ComboBoxItem.value>
+				</ComboBoxItem>
+				<ComboBoxItem text="77" identifier="comboboxitem84">
+					<ComboBoxItem.value>
+						<IntegerLiteral integerValue="77"/>
+					</ComboBoxItem.value>
+				</ComboBoxItem>
+				<ComboBoxItem text="78" identifier="comboboxitem85">
+					<ComboBoxItem.value>
+						<IntegerLiteral integerValue="78"/>
+					</ComboBoxItem.value>
+				</ComboBoxItem>
+				<ComboBoxItem text="79" identifier="comboboxitem86">
+					<ComboBoxItem.value>
+						<IntegerLiteral integerValue="79"/>
+					</ComboBoxItem.value>
+				</ComboBoxItem>
+				<ComboBoxItem text="80" identifier="comboboxitem87">
+					<ComboBoxItem.value>
+						<IntegerLiteral integerValue="80"/>
+					</ComboBoxItem.value>
+				</ComboBoxItem>
+				<ComboBoxItem text="81" identifier="comboboxitem88">
+					<ComboBoxItem.value>
+						<IntegerLiteral integerValue="81"/>
+					</ComboBoxItem.value>
+				</ComboBoxItem>
+				<ComboBoxItem text="82" identifier="comboboxitem89">
+					<ComboBoxItem.value>
+						<IntegerLiteral integerValue="82"/>
+					</ComboBoxItem.value>
+				</ComboBoxItem>
+				<ComboBoxItem text="83" identifier="comboboxitem90">
+					<ComboBoxItem.value>
+						<IntegerLiteral integerValue="83"/>
+					</ComboBoxItem.value>
+				</ComboBoxItem>
+				<ComboBoxItem text="84" identifier="comboboxitem91">
+					<ComboBoxItem.value>
+						<IntegerLiteral integerValue="84"/>
+					</ComboBoxItem.value>
+				</ComboBoxItem>
+				<ComboBoxItem text="85" identifier="comboboxitem92">
+					<ComboBoxItem.value>
+						<IntegerLiteral integerValue="85"/>
+					</ComboBoxItem.value>
+				</ComboBoxItem>
+				<ComboBoxItem text="86" identifier="comboboxitem93">
+					<ComboBoxItem.value>
+						<IntegerLiteral integerValue="86"/>
+					</ComboBoxItem.value>
+				</ComboBoxItem>
+				<ComboBoxItem text="87" identifier="comboboxitem94">
+					<ComboBoxItem.value>
+						<IntegerLiteral integerValue="87"/>
+					</ComboBoxItem.value>
+				</ComboBoxItem>
+				<ComboBoxItem text="88" identifier="comboboxitem95">
+					<ComboBoxItem.value>
+						<IntegerLiteral integerValue="88"/>
+					</ComboBoxItem.value>
+				</ComboBoxItem>
+				<ComboBoxItem text="89" identifier="comboboxitem96">
+					<ComboBoxItem.value>
+						<IntegerLiteral integerValue="89"/>
+					</ComboBoxItem.value>
+				</ComboBoxItem>
+				<ComboBoxItem text="90" identifier="comboboxitem97">
+					<ComboBoxItem.value>
+						<IntegerLiteral integerValue="90"/>
+					</ComboBoxItem.value>
+				</ComboBoxItem>
+				<ComboBoxItem text="91" identifier="comboboxitem98">
+					<ComboBoxItem.value>
+						<IntegerLiteral integerValue="91"/>
+					</ComboBoxItem.value>
+				</ComboBoxItem>
+				<ComboBoxItem text="92" identifier="comboboxitem99">
+					<ComboBoxItem.value>
+						<IntegerLiteral integerValue="92"/>
+					</ComboBoxItem.value>
+				</ComboBoxItem>
+				<ComboBoxItem text="93" identifier="comboboxitem100">
+					<ComboBoxItem.value>
+						<IntegerLiteral integerValue="93"/>
+					</ComboBoxItem.value>
+				</ComboBoxItem>
+				<ComboBoxItem text="94" identifier="comboboxitem101">
+					<ComboBoxItem.value>
+						<IntegerLiteral integerValue="94"/>
+					</ComboBoxItem.value>
+				</ComboBoxItem>
+				<ComboBoxItem text="95" identifier="comboboxitem102">
+					<ComboBoxItem.value>
+						<IntegerLiteral integerValue="95"/>
+					</ComboBoxItem.value>
+				</ComboBoxItem>
+				<ComboBoxItem text="96" identifier="comboboxitem103">
+					<ComboBoxItem.value>
+						<IntegerLiteral integerValue="96"/>
+					</ComboBoxItem.value>
+				</ComboBoxItem>
+				<ComboBoxItem text="97" identifier="comboboxitem104">
+					<ComboBoxItem.value>
+						<IntegerLiteral integerValue="97"/>
+					</ComboBoxItem.value>
+				</ComboBoxItem>
+				<ComboBoxItem text="98" identifier="comboboxitem105">
+					<ComboBoxItem.value>
+						<IntegerLiteral integerValue="98"/>
+					</ComboBoxItem.value>
+				</ComboBoxItem>
+				<ComboBoxItem text="99" identifier="comboboxitem106">
+					<ComboBoxItem.value>
+						<IntegerLiteral integerValue="99"/>
+					</ComboBoxItem.value>
+				</ComboBoxItem>
+				<ComboBoxItem text="100" identifier="comboboxitem107">
+					<ComboBoxItem.value>
+						<IntegerLiteral integerValue="100"/>
+					</ComboBoxItem.value>
+				</ComboBoxItem>
+			</ComboBox>
+			<Label text="ABC" location="61qch,16qch" preferredSize="3qch,1qch" fieldTable="" identifier="label31"/>
+			<TextField dataType="VarChar,,,," location="64qch,16qch" preferredSize="7qch,1qch" fieldTable="formonly" identifier="m16"/>
+			<Label text="0 TO 10 (short)" location="0qch,17qch" preferredSize="15qch,1qch" fieldTable="" identifier="label32"/>
+			<TextField dataType="SmallInt,,,," location="23qch,17qch" preferredSize="3qch,1qch" fieldTable="formonly" identifier="fs">
+				<TextField.includes>
+					<RangeInclude>
+						<RangeInclude.fromValue>
+							<IntegerLiteral/>
+						</RangeInclude.fromValue>
+						<RangeInclude.toValue>
+							<IntegerLiteral integerValue="10"/>
+						</RangeInclude.toValue>
+					</RangeInclude>
+				</TextField.includes>
+			</TextField>
+			<Label text="ABC" location="61qch,17qch" preferredSize="3qch,1qch" fieldTable="" identifier="label33"/>
+			<TextField dataType="VarChar,,,," location="64qch,17qch" preferredSize="7qch,1qch" fieldTable="formonly" identifier="m17"/>
+			<Separator location="0qch,18qch" preferredSize="61qch,1qch" zOrder="-1" fieldTable="" identifier="separator4"/>
+			<Label text="ABC" location="61qch,18qch" preferredSize="3qch,1qch" fieldTable="" identifier="label34"/>
+			<TextField dataType="VarChar,,,," location="64qch,18qch" preferredSize="7qch,1qch" fieldTable="formonly" identifier="m18"/>
+			<Label text="DATE" location="0qch,19qch" preferredSize="4qch,1qch" fieldTable="" identifier="label35"/>
+			<TextField dataType="Date,,,," location="23qch,19qch" preferredSize="37qch,1qch" fieldTable="formonly" identifier="d1"/>
+			<Label text="ABC" location="61qch,19qch" preferredSize="3qch,1qch" fieldTable="" identifier="label36"/>
+			<TextField dataType="VarChar,,,," location="64qch,19qch" preferredSize="7qch,1qch" fieldTable="formonly" identifier="m19"/>
+			<Label text="DATETIME HOUR TO SECOND" location="0qch,20qch" preferredSize="23qch,1qch" fieldTable="" identifier="label37"/>
+			<TextField dataType="DateTime,Hour,Second,," location="23qch,20qch" preferredSize="37qch,1qch" fieldTable="formonly" identifier="t1"/>
+			<Label text="ABC" location="61qch,20qch" preferredSize="3qch,1qch" fieldTable="" identifier="label38"/>
+			<TextField dataType="VarChar,,,," location="64qch,20qch" preferredSize="7qch,1qch" fieldTable="formonly" identifier="m20"/>
+			<Separator location="0qch,21qch" preferredSize="61qch,1qch" zOrder="-1" fieldTable="" identifier="separator5"/>
+			<Label text="ABC" location="61qch,21qch" preferredSize="3qch,1qch" fieldTable="" identifier="label39"/>
+			<TextField dataType="VarChar,,,," location="64qch,21qch" preferredSize="7qch,1qch" fieldTable="formonly" identifier="m21"/>
+			<Label text="Memo" location="0qch,22qch" preferredSize="4qch,1qch" fieldTable="" identifier="label40"/>
+			<Label text="ABC" location="61qch,22qch" preferredSize="3qch,1qch" fieldTable="" identifier="label41"/>
+			<TextField dataType="VarChar,,,," location="64qch,22qch" preferredSize="7qch,1qch" fieldTable="formonly" identifier="m22"/>
+			<TextArea allowNewlines="true" dataType="VarChar,,,," location="0qch,23qch" preferredSize="60qch,2qch" fieldTable="formonly" identifier="memo1"/>
+			<Label text="ABC" location="61qch,23qch" preferredSize="3qch,1qch" fieldTable="" identifier="label42"/>
+			<TextField dataType="VarChar,,,," location="64qch,23qch" preferredSize="7qch,1qch" fieldTable="formonly" identifier="m23"/>
+			<Label text="ABC" location="61qch,24qch" preferredSize="3qch,1qch" fieldTable="" identifier="label43"/>
+			<TextField dataType="VarChar,,,," location="64qch,24qch" preferredSize="7qch,1qch" fieldTable="formonly" identifier="m24"/>
+			<TextField dataType="Char,,,," location="0qch,25qch" preferredSize="60qch,1qch" fieldTable="formonly" identifier="measure2"/>
+			<Label text="ABC" location="61qch,25qch" preferredSize="3qch,1qch" fieldTable="" identifier="label44"/>
+			<TextField dataType="VarChar,,,," location="64qch,25qch" preferredSize="7qch,1qch" fieldTable="formonly" identifier="m25"/>
+			<Separator location="0qch,26qch" preferredSize="72qch,1qch" zOrder="-1" fieldTable="" identifier="separator6"/>
+		</CoordPanel>
+	</form.rootContainer>
+	<form.screenRecords>
+		<ScreenRecord identifier="formonly" fields="formonly.measure1,formonly.measure2,formonly.f0,formonly.f1,formonly.f2,formonly.f3,formonly.f4,formonly.f5,formonly.f6,formonly.f7,formonly.f8,formonly.f9,formonly.f10,formonly.fs,formonly.d1,formonly.t1,formonly.memo1,formonly.dl_header,formonly.m01,formonly.m02,formonly.m03,formonly.m04,formonly.m05,formonly.m06,formonly.m07,formonly.m08,formonly.m09,formonly.m10,formonly.m11,formonly.m12,formonly.m13,formonly.m14,formonly.m15,formonly.m16,formonly.m17,formonly.m18,formonly.m19,formonly.m20,formonly.m21,formonly.m22,formonly.m23,formonly.m24,formonly.m25"/>
+	</form.screenRecords>
+</form>
+

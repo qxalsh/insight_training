@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<form xmlns="http://namespaces.querix.com/2015/fglForms" title="Demo base.stringbuffer">
+	<form.rootContainer>
+		<GridPanel classNames="fcls_rootContainer" verticalAlignment="Stretch" horizontalAlignment="Stretch" fieldTable="" identifier="rootContainer" preferredSize="100rem,">
+			<GridPanel.gridRowDefinitions>
+				<GridRowDefinition gridLengthValue=""/>
+				<GridRowDefinition gridLengthValue=""/>
+				<GridRowDefinition gridLengthValue="100%"/>
+				<GridRowDefinition gridLengthValue=""/>
+			</GridPanel.gridRowDefinitions>
+			<GridPanel.gridColumnDefinitions>
+				<GridColumnDefinition/>
+			</GridPanel.gridColumnDefinitions>
+			<GridPanel classNames="fcls_title_cnt" visible="true" verticalAlignment="Top" gridItemLocation="0,0,1,1" fieldTable="formonly" identifier="cntTitle" horizontalAlignment="Stretch">
+				<GridPanel.gridRowDefinitions>
+					<GridRowDefinition gridLengthValue=""/>
+				</GridPanel.gridRowDefinitions>
+				<GridPanel.gridColumnDefinitions>
+					<GridColumnDefinition gridLengthValue="100%"/>
+					<GridColumnDefinition gridLengthValue=""/>
+				</GridPanel.gridColumnDefinitions>
+				<Label isDynamic="true" text="Demo base.StringBuffer" classNames="fcls_title_lb" visible="true" gridItemLocation="0,0,1,1" fieldTable="formonly" identifier="lbTitle"/>
+				<Label isDynamic="true" text="cm_base_stringbuffer.fm2" classNames="fcls_title_lb" visible="true" gridItemLocation="1,0,1,1" fieldTable="" identifier="lbFormName"/>
+			</GridPanel>
+			<GridPanel visible="true" identifier="cntDetail1" gridItemLocation="0,1,1,1" verticalAlignment="Top" classNames="fcls_detail_cnt,fcls_data_cnt" horizontalAlignment="Stretch">
+				<GridPanel.gridColumnDefinitions>
+					<GridColumnDefinition gridLengthValue=""/>
+					<GridColumnDefinition gridLengthValue="3qch" gridMaxLength="3qch" gridMinLength="3qch"/>
+					<GridColumnDefinition gridLengthValue=""/>
+					<GridColumnDefinition gridLengthValue=""/>
+					<GridColumnDefinition gridLengthValue=""/>
+				</GridPanel.gridColumnDefinitions>
+				<GridPanel.gridRowDefinitions>
+					<GridRowDefinition gridLengthValue=""/>
+				</GridPanel.gridRowDefinitions>
+				<Label text="StringBuffer" isDynamic="true" visible="true" identifier="lb4" gridItemLocation="0,0,1,1"/>
+				<TextField visible="true" identifier="stringBuffer" gridItemLocation="2,0,1,1"/>
+			</GridPanel>
+			<GridPanel classNames="fcls_detail_cnt,fcls_data_cnt" visible="true" verticalAlignment="Stretch" horizontalAlignment="Stretch" gridItemLocation="0,2,1,1" fieldTable="formonly" identifier="cntDetail2">
+				<GridPanel.gridRowDefinitions>
+					<GridRowDefinition gridLengthValue="100%" gridMinLength="40rem"/>
+				</GridPanel.gridRowDefinitions>
+				<GridPanel.gridColumnDefinitions>
+					<GridColumnDefinition gridLengthValue="25rem" gridMaxLength="25rem" gridMinLength="25rem"/>
+					<GridColumnDefinition gridLengthValue="70%" gridMinLength="30rem" gridMaxLength="100%"/>
+				</GridPanel.gridColumnDefinitions>
+				<StackPanel visible="true" identifier="c3" gridItemLocation="0,0,1,1" orientation="Vertical" classNames="fcls_button,fcls_align_hstretch">
+					<Button text="stringBuffer.append()" visible="true" identifier="sbAppend" classNames="fcls_button,fcls_align_hstretch">
+						<Button.onInvoke>
+							<ActionEventHandler actionName="sbAppend"/>
+						</Button.onInvoke>
+					</Button>
+					<Button text="stringBuffer.clear()" visible="true" identifier="bt5" classNames="fcls_button,fcls_align_hstretch">
+						<Button.onInvoke>
+							<ActionEventHandler actionName="sb_Clear"/>
+						</Button.onInvoke>
+					</Button>
+					<Button text="stringBuffer.equals()" visible="true" identifier="sbEquals" classNames="fcls_button,fcls_align_hstretch">
+						<Button.onInvoke>
+							<ActionEventHandler actionName="sbEquals"/>
+						</Button.onInvoke>
+					</Button>
+					<Button text="stringBuffer.equalsIgnoreCase()" visible="true" identifier="sbEqualsIgnoreCase" classNames="fcls_button,fcls_align_hstretch">
+						<Button.onInvoke>
+							<ActionEventHandler actionName="sbEqualsIgnoreCase"/>
+						</Button.onInvoke>
+					</Button>
+					<Button text="stringBuffer.getCharAt()" visible="true" identifier="sbGetCharAt" classNames="fcls_button,fcls_align_hstretch">
+						<Button.onInvoke>
+							<ActionEventHandler actionName="sbGetCharAt"/>
+						</Button.onInvoke>
+					</Button>
+					<Button text="stringBuffer.getIndexOf()" visible="true" identifier="sbGetIndexOf" classNames="fcls_button,fcls_align_hstretch">
+						<Button.onInvoke>
+							<ActionEventHandler actionName="sbGetIndexOf"/>
+						</Button.onInvoke>
+					</Button>
+					<Button text="stringBuffer.getLength()" visible="true" identifier="sbGetLength" classNames="fcls_button,fcls_align_hstretch">
+						<Button.onInvoke>
+							<ActionEventHandler actionName="sbGetLength"/>
+						</Button.onInvoke>
+					</Button>
+					<Button text="stringBuffer.insertAt()" visible="true" identifier="sbInsertAt" classNames="fcls_button,fcls_align_hstretch">
+						<Button.onInvoke>
+							<ActionEventHandler actionName="sbInsertAt"/>
+						</Button.onInvoke>
+					</Button>
+					<Button text="stringBuffer.replace()" visible="true" identifier="sbReplace" classNames="fcls_button,fcls_align_hstretch">
+						<Button.onInvoke>
+							<ActionEventHandler actionName="sbReplace"/>
+						</Button.onInvoke>
+					</Button>
+					<Button text="stringBuffer.replaceAt()" visible="true" identifier="sbReplaceAt" classNames="fcls_button,fcls_align_hstretch">
+						<Button.onInvoke>
+							<ActionEventHandler actionName="sbReplaceAt"/>
+						</Button.onInvoke>
+					</Button>
+					<Button text="stringBuffer.subString()" visible="true" identifier="sbSubString" classNames="fcls_button,fcls_align_hstretch">
+						<Button.onInvoke>
+							<ActionEventHandler actionName="sbSubString"/>
+						</Button.onInvoke>
+					</Button>
+					<Button text="stringBuffer.ToLowerCase()" visible="true" identifier="sbToLowerCase" classNames="fcls_button,fcls_align_hstretch">
+						<Button.onInvoke>
+							<ActionEventHandler actionName="sbToLowerCase"/>
+						</Button.onInvoke>
+					</Button>
+					<Button text="StringBuffer.toString()" visible="true" identifier="sbToString" classNames="fcls_button,fcls_align_hstretch">
+						<Button.onInvoke>
+							<ActionEventHandler actionName="sbToString"/>
+						</Button.onInvoke>
+					</Button>
+					<Button text="stringBuffer.ToUpperCase()" visible="true" identifier="sbToUpperCase" classNames="fcls_button,fcls_align_hstretch">
+						<Button.onInvoke>
+							<ActionEventHandler actionName="sbToUpperCase"/>
+						</Button.onInvoke>
+					</Button>
+					<Button text="stringBuffer.trim()" visible="true" identifier="sbTrim" classNames="fcls_button,fcls_align_hstretch">
+						<Button.onInvoke>
+							<ActionEventHandler actionName="sbTrim"/>
+						</Button.onInvoke>
+					</Button>
+					<Button text="stringBuffer.trimWhiteSpace()" visible="true" identifier="sbTrimWhiteSpace" classNames="fcls_button,fcls_align_hstretch">
+						<Button.onInvoke>
+							<ActionEventHandler actionName="sbTrimWhiteSpace"/>
+						</Button.onInvoke>
+					</Button>
+					<Button text="stringBuffer.trimLeft()" visible="true" identifier="sbTrimLeft" classNames="fcls_button,fcls_align_hstretch">
+						<Button.onInvoke>
+							<ActionEventHandler actionName="sbTrimLeft"/>
+						</Button.onInvoke>
+					</Button>
+					<Button text="stringBuffer.trimRight()" visible="true" identifier="sbTrimRight" classNames="fcls_button,fcls_align_hstretch">
+						<Button.onInvoke>
+							<ActionEventHandler actionName="sbTrimRight"/>
+						</Button.onInvoke>
+					</Button>
+					<Button text="stringBuffer.trimLeftWhiteSpace()" visible="true" identifier="sbTrimLeftWhiteSpace" classNames="fcls_button,fcls_align_hstretch">
+						<Button.onInvoke>
+							<ActionEventHandler actionName="sbTrimLeftWhiteSpace"/>
+						</Button.onInvoke>
+					</Button>
+					<Button text="stringBuffer.trimRightWhiteSpace()" visible="true" identifier="sbTrimRightWhiteSpace" classNames="fcls_button,fcls_align_hstretch">
+						<Button.onInvoke>
+							<ActionEventHandler actionName="sbTrimRightWhiteSpace"/>
+						</Button.onInvoke>
+					</Button>
+				</StackPanel>
+
+				<TextArea visible="true" identifier="log_area" textAlignment="Left,Default" horizontalAlignment="Stretch" verticalAlignment="Stretch" gridItemLocation="1,0,1,1"/>
+
+			</GridPanel>
+			<GridPanel classNames="fcls_statusbar_cnt" visible="true" verticalAlignment="Top" gridItemLocation="0,3,1,1" fieldTable="formonly" identifier="cntStatusBar" horizontalAlignment="Stretch">
+				<GridPanel.gridRowDefinitions>
+					<GridRowDefinition gridLengthValue=""/>
+					<GridRowDefinition gridLengthValue=""/>
+				</GridPanel.gridRowDefinitions>
+				<GridPanel.gridColumnDefinitions>
+					<GridColumnDefinition gridLengthValue="100%"/>
+				</GridPanel.gridColumnDefinitions>
+				<Label isDynamic="true" text="" classNames="fcls_sblabel" visible="true" gridItemLocation="0,0,1,1" fieldTable="formonly" identifier="lbInfo1"/>
+				<Label isDynamic="true" text="" classNames="fcls_sblabel" visible="true" gridItemLocation="0,1,1,1" fieldTable="formonly" identifier="lbInfo2"/>
+			</GridPanel>
+		</GridPanel>
+	</form.rootContainer>
+	<form.screenRecords>
+		<ScreenRecord identifier="FORMONLY" fields=""/>
+	</form.screenRecords>
+</form>
+
+
+

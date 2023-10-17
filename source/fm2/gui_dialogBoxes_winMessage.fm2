@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://namespaces.querix.com/2015/fglForms">
+	<form.rootContainer>
+		<GridPanel classNames="fcls_rootContainer,fcls_container_border,fcls_container_margin,fcls_container_padding,fcls_align_left,fcls_align_top" visible="true" verticalAlignment="Top" horizontalAlignment="Left" fieldTable="" identifier="rootContainer">
+			<GridPanel.gridRowDefinitions>
+				<GridRowDefinition gridLengthValue=""/>
+				<GridRowDefinition gridLengthValue=""/>
+				<GridRowDefinition gridLengthValue=""/>
+				<GridRowDefinition gridLengthValue=""/>
+			</GridPanel.gridRowDefinitions>
+			<GridPanel.gridColumnDefinitions>
+				<GridColumnDefinition gridLengthValue="100%"/>
+			</GridPanel.gridColumnDefinitions>
+			<GridPanel classNames="fcls_title_cnt" visible="true" verticalAlignment="Top" gridItemLocation="0,0,1,1" fieldTable="formonly" identifier="cntTitle">
+				<GridPanel.gridRowDefinitions>
+					<GridRowDefinition gridLengthValue=""/>
+				</GridPanel.gridRowDefinitions>
+				<GridPanel.gridColumnDefinitions>
+					<GridColumnDefinition gridLengthValue="100%"/>
+				</GridPanel.gridColumnDefinitions>
+				<Label isDynamic="true" text="fgl_winMessage() Example" classNames="fcls_title_lb" visible="true" gridItemLocation="0,0,1,1" fieldTable="formonly" identifier="lbTitle"/>
+			</GridPanel>
+			<GridPanel classNames="fcls_detail_cnt,fcls_container_border,fcls_container_margin,fcls_container_padding,fcls_align_hstretch,fcls_detail_cnt_sub,fcls_data_cnt" preferredSize=",170" visible="true" gridItemLocation="0,1,1,1" fieldTable="" identifier="c1">
+				<GridPanel.gridRowDefinitions>
+					<GridRowDefinition gridLengthValue="" gridMinLength="80"/>
+				</GridPanel.gridRowDefinitions>
+				<GridPanel.gridColumnDefinitions>
+					<GridColumnDefinition gridLengthValue="100"/>
+					<GridColumnDefinition gridLengthValue="90%"/>
+				</GridPanel.gridColumnDefinitions>
+				<Label isDynamic="true" allowNewlines="true" text="PROMPT Example in an old classic 4gl application" classNames="fcls_columnlabel_rev_cell,fcls_align_left,fcls_align_vcenter" maxSize="100," visible="true" gridItemLocation="0,0,1,1" fieldTable="" identifier="lbNowLabel"/>
+				<Label isDynamic="true" allowNewlines="true" text='PROMPT &quot;Contact deleted! - Press any key to continue&quot; FOR CHAR c&#13;&#10;or&#13;&#10;MESSAGE &quot;Something happened...&quot;&#13;&#10;PROMPT &quot;Press any key to continue&quot; FOR CHAR c' classNames="fcls_font_description,fcls_align_left,fcls_align_vcenter" visible="true" verticalAlignment="Center" gridItemLocation="1,0,2,1" fieldTable="" identifier="lbInfoNow"/>
+			</GridPanel>
+			<GridPanel classNames="fcls_detail_cnt,fcls_container_border,fcls_container_margin,fcls_container_padding,fcls_align_hstretch,fcls_detail_cnt_sub,fcls_data_cnt" preferredSize=",170" visible="true" gridItemLocation="0,2,1,1" fieldTable="" identifier="c2">
+				<GridPanel.gridRowDefinitions>
+					<GridRowDefinition gridLengthValue="" gridMinLength="80"/>
+				</GridPanel.gridRowDefinitions>
+				<GridPanel.gridColumnDefinitions>
+					<GridColumnDefinition gridLengthValue="100"/>
+					<GridColumnDefinition gridLengthValue="90%"/>
+				</GridPanel.gridColumnDefinitions>
+				<Label isDynamic="true" allowNewlines="true" text="Can be changed to:" classNames="fcls_columnlabel_rev_cell,fcls_align_left,fcls_align_vcenter" maxSize="100," visible="true" gridItemLocation="0,0,1,1" fieldTable="" identifier="lbNextLabel"/>
+				<Label isDynamic="true" allowNewlines="true" text='CALL fgl_winmessage(&quot;Record Deleted&quot;,&quot;Contact Record deleted&quot;,&quot;info&quot;)' classNames="fcls_font_description,fcls_align_left,fcls_align_vcenter" visible="true" verticalAlignment="Center" textAlignment=",Center" gridItemLocation="1,0,1,1" fieldTable="" identifier="lbInfoNext"/>
+			</GridPanel>
+			<GridPanel classNames="fcls_statusbar_cnt" visible="true" verticalAlignment="Top" gridItemLocation="0,3,1,1" fieldTable="formonly" identifier="cntStatusBar">
+				<GridPanel.gridRowDefinitions>
+					<GridRowDefinition gridLengthValue=""/>
+					<GridRowDefinition gridLengthValue=""/>
+				</GridPanel.gridRowDefinitions>
+				<GridPanel.gridColumnDefinitions>
+					<GridColumnDefinition gridLengthValue="100%"/>
+				</GridPanel.gridColumnDefinitions>
+				<Label isDynamic="true" text="" classNames="fcls_sblabel" visible="true" gridItemLocation="0,0,1,1" fieldTable="formonly" identifier="lbInfo1"/>
+				<Label isDynamic="true" text="" classNames="fcls_sblabel" visible="true" gridItemLocation="0,1,1,1" fieldTable="formonly" identifier="lbInfo2"/>
+			</GridPanel>
+		</GridPanel>
+	</form.rootContainer>
+	<form.screenRecords>
+		<ScreenRecord identifier="FormOnly" fields=""/>
+	</form.screenRecords>
+</form>
+

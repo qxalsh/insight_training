@@ -1,0 +1,5 @@
+The TEXT datatype. 
+
+The TEXT datatype is capable of storing up to 2gb of character data, depending on your filesystem. Further restrictions on size may be placed on this type by your RDBMS, but these only take effect if you choose to store the file in a database.
+
+Whilst Informix-SE is not capable of storing TEXT data, you are still able to use and manipulate TEXT datatypes within your 4GL, you simply will not be able to store them within the database.

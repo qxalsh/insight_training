@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://namespaces.querix.com/2011/fglForms" title="fd2_widget_e_label_example_01_text_image">
+	<rootcontainer type="gridpanel" identifier="rootContainer" fieldType="FORM_ONLY" fieldTable="formonly" enable="true" visible="true">
+		<preferredsize width="600"/>
+		<items>
+			<label  isDynamic="true" fieldType="FORM_ONLY" fieldTable="formonly" enable="true" visible="true" identifier="lb1" text="My Label Text">
+				<griditemlocation gridWidth="1" gridHeight="1" gridY="0" gridX="0"/>
+				<image>
+					<imageurl uri="qx://application/icon32/people_05.ico"/>
+				</image>
+			</label>
+		</items>
+		<gridrowdefinitions>
+			<gridrowdefinition>
+				<gridlength gridLengthType="Auto"/>
+			</gridrowdefinition>
+		</gridrowdefinitions>
+		<gridcolumndefinitions>
+			<gridcolumndefinition>
+				<gridlength gridLengthType="Percent" gridLengthValue="100.0"/>
+			</gridcolumndefinition>
+		</gridcolumndefinitions>
+		<elementborder type="lineborder">
+			<customizedcolor type="customizedcolor"/>
+			<thickness left="1" top="1" bottom="1" right="1"/>
+			<borderbrush type="systemcolor" systemColorName="Blue"/>
+		</elementborder>
+		<margin left="5" top="5" bottom="5" right="5"/>
+		<padding left="5" top="5" bottom="5" right="5"/>
+	</rootcontainer>
+	<screenrecords>
+		<screenrecord identifier="FormOnly"/>
+	</screenrecords>
+</form>

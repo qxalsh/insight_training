@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://namespaces.querix.com/2011/fglForms" title="New Form 1">
+	<rootcontainer type="gridpanel" identifier="rootContainer" fieldType="FORM_ONLY" fieldTable="formonly" enable="true" visible="true">
+		<preferredsize width="450"/>
+		<items>
+			<label text="My initial Single Line Test Label defined in the form" isDynamic="true" fieldType="FORM_ONLY" fieldTable="formonly" enable="true" visible="true" identifier="lb1">
+				<griditemlocation gridWidth="1" gridHeight="1" gridY="0" gridX="0"/>
+			</label>
+		</items>
+		<gridrowdefinitions>
+			<gridrowdefinition>
+				<gridlength gridLengthType="Auto"/>
+			</gridrowdefinition>
+		</gridrowdefinitions>
+		<gridcolumndefinitions>
+			<gridcolumndefinition>
+				<gridlength gridLengthType="Percent" gridLengthValue="100.0"/>
+			</gridcolumndefinition>
+		</gridcolumndefinitions>
+		<elementborder type="lineborder">
+			<customizedcolor type="customizedcolor"/>
+			<thickness left="2" top="2" bottom="2" right="2"/>
+			<borderbrush type="systemcolor" systemColorName="Blue"/>
+		</elementborder>
+
+		<margin left="5" top="5" bottom="5" right="5"/>
+		<padding left="5" top="5" bottom="5" right="5"/>
+	</rootcontainer>
+	<screenrecords>
+		<screenrecord identifier="FormOnly"/>
+	</screenrecords>
+</form>

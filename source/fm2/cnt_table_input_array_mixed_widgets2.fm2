@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://namespaces.querix.com/2015/fglForms">
+	<form.rootContainer>
+		<GridPanel classNames="fcls_rootContainer" preferredSize="140qch,25qch" verticalAlignment="Stretch" horizontalAlignment="Stretch" fieldTable="" identifier="rootContainer">
+			<GridPanel.gridRowDefinitions>
+				<GridRowDefinition gridLengthValue=""/>
+				<GridRowDefinition gridLengthValue="100%"/>
+				<GridRowDefinition gridLengthValue=""/>
+				<GridRowDefinition gridLengthValue=""/>
+			</GridPanel.gridRowDefinitions>
+			<GridPanel.gridColumnDefinitions>
+				<GridColumnDefinition gridLengthValue="100%"/>
+			</GridPanel.gridColumnDefinitions>
+
+			<GridPanel classNames="fcls_title_cnt" visible="true" verticalAlignment="Top" gridItemLocation="0,0,1,1" fieldTable="formonly" identifier="cntTitle">
+				<GridPanel.gridRowDefinitions>
+					<GridRowDefinition gridLengthValue=""/>
+				</GridPanel.gridRowDefinitions>
+				<GridPanel.gridColumnDefinitions>
+					<GridColumnDefinition gridLengthValue="100%"/>
+					<GridColumnDefinition gridLengthValue=""/>
+				</GridPanel.gridColumnDefinitions>
+				<Label isDynamic="true" text="Input Array with mixed widgets - Demo 2" classNames="fcls_title_lb" visible="true" gridItemLocation="0,0,1,1" fieldTable="formonly" identifier="lbTitle"/>
+				<Label isDynamic="true" text="cnt_table_input_array_mixed_widgets2.fm2" classNames="fcls_title_lb" visible="true" gridItemLocation="1,0,1,1" fieldTable="" identifier="lbFormName"/>
+			</GridPanel>
+
+			<Table classNames="fcls_table_cnt" visible="true" gridItemLocation="0,1,1,1" fieldTable="" identifier="scr_contact2" verticalAlignment="Top">
+				<TableColumn text="ID" resizable="true" visible="true" identifier="tc_id">
+					<TextField visible="true" identifier="id" noEntry="true" fieldTable="formonly"/>
+					<TableColumn.columnLength>
+						<GridLength gridLengthValue="5%" gridMaxLength="5rem" gridMinLength="5rem"/>
+					</TableColumn.columnLength>
+				</TableColumn>
+				<TableColumn text="First Name" resizable="true" visible="true" identifier="tc_fname">
+					<TextField visible="true" identifier="fname"/>
+					<TableColumn.columnLength>
+						<GridLength gridLengthValue="10%" gridMaxLength="10rem" gridMinLength="5rem"/>
+					</TableColumn.columnLength>
+				</TableColumn>
+				<TableColumn text="Last Name" resizable="true" visible="true" identifier="tc_lname">
+					<TextField visible="true" identifier="lname"/>
+					<TableColumn.columnLength>
+						<GridLength gridLengthValue="10%" gridMaxLength="10rem" gridMinLength="5rem"/>
+					</TableColumn.columnLength>
+				</TableColumn>
+				<TableColumn text="DOB" resizable="true" visible="true" identifier="tc_f3">
+					<Calendar dataType="Date,,,," visible="true" identifier="dob"/>
+					<TableColumn.columnLength>
+						<GridLength gridLengthValue="10%" gridMaxLength="10rem" gridMinLength="5rem"/>
+					</TableColumn.columnLength>
+				</TableColumn>
+				<TableColumn text="E-mail" resizable="true" visible="true" identifier="tc_email">
+					<FunctionField visible="true" identifier="email">
+						<FunctionField.onInvoke>
+							<ActionEventHandler type="actioneventhandler" actionName="sendEmail"/>
+						</FunctionField.onInvoke>
+					</FunctionField>
+					<TableColumn.columnLength>
+						<GridLength gridLengthValue="20%" gridMaxLength="20rem" gridMinLength="10rem"/>
+					</TableColumn.columnLength>
+				</TableColumn>
+				<TableColumn text="Gender" resizable="true" visible="true" identifier="tc_f3">
+					<RadioGroup visible="true" identifier="gender">
+						<Radio title="female" identifier="gender_f">
+							<Radio.value>
+								<IntegerLiteral integerValue="0"/>
+							</Radio.value>
+						</Radio>
+						<Radio title="male" identifier="gender_m">
+							<Radio.value>
+								<IntegerLiteral integerValue="1"/>
+							</Radio.value>
+						</Radio>
+					</RadioGroup>
+					<TableColumn.columnLength>
+						<GridLength gridLengthValue="20%" gridMaxLength="20rem" gridMinLength="10rem"/>
+					</TableColumn.columnLength>
+				</TableColumn>
+				<TableColumn text="Personality" resizable="true" visible="true" identifier="tc_f3">
+					<ComboBox visible="true" identifier="personality">
+						<ComboBoxItem text="Nice Person">
+							<ComboBoxItem.value>
+								<IntegerLiteral integerValue="0"/>
+							</ComboBoxItem.value>
+						</ComboBoxItem>
+						<ComboBoxItem text="Smart Person">
+							<ComboBoxItem.value>
+								<IntegerLiteral integerValue="1"/>
+							</ComboBoxItem.value>
+						</ComboBoxItem>
+						<ComboBoxItem text="Ugly Person">
+							<ComboBoxItem.value>
+								<IntegerLiteral integerValue="2"/>
+							</ComboBoxItem.value>
+						</ComboBoxItem>
+					</ComboBox>
+					<TableColumn.columnLength>
+						<GridLength gridMinLength="5rem" gridLengthValue="10%" gridMaxLength="15rem"/>
+					</TableColumn.columnLength>
+				</TableColumn>
+				<TableColumn text="Priority" resizable="true" visible="true" identifier="tc_f4">
+					<Spinner maxValue="10" minValue="0" step="1" visible="true" identifier="priority"/>
+					<TableColumn.columnLength>
+						<GridLength gridLengthValue="5%" gridMaxLength="5rem" gridMinLength="5rem"/>
+					</TableColumn.columnLength>
+				</TableColumn>
+				<TableColumn text="Driving license" resizable="true" visible="true" identifier="tc_drive">
+					<CheckBox visible="true" notNull="true" identifier="driving" horizontalAlignment="Left">
+						<CheckBox.checkedValue>
+							<IntegerLiteral integerValue="1"/>
+						</CheckBox.checkedValue>
+						<CheckBox.uncheckedValue>
+							<IntegerLiteral integerValue="0"/>
+						</CheckBox.uncheckedValue>
+					</CheckBox>
+					<TableColumn.columnLength>
+						<GridLength gridMaxLength="10rem" gridLengthValue="10%" gridMinLength="5rem"/>
+					</TableColumn.columnLength>
+				</TableColumn>
+			</Table>
+			<GridPanel visible="true" identifier="cnt_table_details" gridItemLocation="0,2,1,1" horizontalAlignment="Right" verticalAlignment="Stretch">
+				<GridPanel.gridColumnDefinitions>
+					<GridColumnDefinition gridLengthValue=""/>
+					<GridColumnDefinition gridLengthValue=""/>
+					<GridColumnDefinition gridLengthValue=""/>
+					<GridColumnDefinition gridLengthValue=""/>
+					<GridColumnDefinition gridLengthValue=""/>
+					<GridColumnDefinition gridLengthValue=""/>
+					<GridColumnDefinition gridLengthValue=""/>
+					<GridColumnDefinition gridLengthValue=""/>
+					<GridColumnDefinition gridLengthValue=""/>
+					<GridColumnDefinition gridLengthValue=""/>
+					<GridColumnDefinition gridLengthValue=""/>
+					<GridColumnDefinition gridLengthValue=""/>
+				</GridPanel.gridColumnDefinitions>
+				<GridPanel.gridRowDefinitions>
+					<GridRowDefinition gridLengthValue=""/>
+				</GridPanel.gridRowDefinitions>
+				<Label text="cr" isDynamic="true" visible="true" identifier="lbCurrentRow" gridItemLocation="0,0,1,1" horizontalAlignment="Right"/>
+				<Label text="-&lt;pageSize&gt; of" isDynamic="true" visible="true" identifier="lbOf" gridItemLocation="1,0,1,1" horizontalAlignment="Right"/>
+				<Label text="arrCnt" isDynamic="true" visible="true" identifier="lbArrCnt" gridItemLocation="2,0,1,1" horizontalAlignment="Right"/>
+				<Label text="" isDynamic="true" visible="true" identifier="lbSpace" gridItemLocation="3,0,1,1" preferredSize="5qch,"/>
+				<Button visible="true" identifier="btFirstRow" gridItemLocation="8,0,1,1" horizontalAlignment="Right" text="|&lt;">
+					<Button.onInvoke>
+						<ActionEventHandler type="actioneventhandler" actionName="firstrow"/>
+					</Button.onInvoke>
+				</Button>
+				<Button text="&lt;" visible="true" identifier="btPrevPage" gridItemLocation="9,0,1,1" horizontalAlignment="Right">
+					<Button.onInvoke>
+						<ActionEventHandler type="actioneventhandler" actionName="prevpage"/>
+					</Button.onInvoke>
+				</Button>
+				<Button text="&gt;" visible="true" identifier="btNextPage" gridItemLocation="10,0,1,1" horizontalAlignment="Right">
+					<Button.onInvoke>
+						<ActionEventHandler type="actioneventhandler" actionName="nextPage"/>
+					</Button.onInvoke>
+				</Button>
+				<Button text="&gt;|" visible="true" identifier="btLastRow" gridItemLocation="11,0,1,1" horizontalAlignment="Right">
+					<Button.onInvoke>
+						<ActionEventHandler type="actioneventhandler" actionName="lastrow"/>
+					</Button.onInvoke>
+				</Button>
+			</GridPanel>
+			<GridPanel classNames="fcls_statusbar_cnt" visible="true" verticalAlignment="Bottom" gridItemLocation="0,3,1,1" fieldTable="formonly" identifier="cntStatusBar">
+				<GridPanel.gridRowDefinitions>
+					<GridRowDefinition gridLengthValue=""/>
+					<GridRowDefinition gridLengthValue=""/>
+				</GridPanel.gridRowDefinitions>
+				<GridPanel.gridColumnDefinitions>
+					<GridColumnDefinition gridLengthValue="100%"/>
+				</GridPanel.gridColumnDefinitions>
+				<Label isDynamic="true" text="" classNames="fcls_sblabel" visible="true" gridItemLocation="0,0,1,1" fieldTable="formonly" identifier="lbInfo1"/>
+				<Label isDynamic="true" text="" classNames="fcls_sblabel" visible="true" gridItemLocation="0,1,1,1" fieldTable="formonly" identifier="lbInfo2"/>
+			</GridPanel>
+		</GridPanel>
+	</form.rootContainer>
+	<form.screenRecords>
+		<ScreenRecord identifier="FORMONLY" fields=""/>
+		<ScreenRecord identifier="scr_contact2" fields="id,fname,lname,dob,email,gender,personality,priority,driving"/>
+		<ScreenRecord identifier="scr_contact" fields="dob"/>
+	</form.screenRecords>
+</form>
+

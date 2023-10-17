@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://namespaces.querix.com/2015/fglForms">
+	<form.rootContainer>
+		<CoordPanel location="0,0" minSize="64,506"   fieldTable="" identifier="">
+			<Label isDynamic="true" text="Icons:" dataType="Char,,,," location="8,0" preferredSize="40,22"   fieldTable="formonly" identifier="dl_i">
+				<Label.displayModes>
+					
+				</Label.displayModes>
+			</Label>
+			<Separator separatorType="LeftTop" location="0,22" preferredSize="8,22"   zOrder="-1" fieldTable="" identifier=""/>
+			<Separator location="8,22" preferredSize="8,22"   zOrder="-1" fieldTable="" identifier=""/>
+			<Separator location="16,22" preferredSize="8,22"   zOrder="-1" fieldTable="" identifier=""/>
+			<Separator location="24,22" preferredSize="8,22"   zOrder="-1" fieldTable="" identifier=""/>
+			<Separator location="32,22" preferredSize="8,22"   zOrder="-1" fieldTable="" identifier=""/>
+			<Separator location="40,22" preferredSize="8,22"   zOrder="-1" fieldTable="" identifier=""/>
+			<Separator location="48,22" preferredSize="8,22"   zOrder="-1" fieldTable="" identifier=""/>
+			<Separator separatorType="RightTop" location="56,22" preferredSize="8,22"   zOrder="-1" fieldTable="" identifier=""/>
+			<Separator separatorType="Vertical" location="0,44" preferredSize="8,22"   zOrder="-1" fieldTable="" identifier=""/>
+			<Button location="8,44" minSize="24,22"   fieldTable="formonly" identifier="icon">
+				<Button.image>
+					<Image imageUrl="icon32/exit01.ico"/>
+				</Button.image>
+				<Button.onInvoke>
+					<KeyEventHandler keyName="ACCEPT,false,false,false"/>
+				</Button.onInvoke>
+			</Button>
+			<ScrollBar orientation="Vertical" location="32,44" preferredSize="12,418"   fieldTable="" identifier="ic_array"/>
+			<Separator separatorType="Vertical" location="56,44" preferredSize="8,22"   zOrder="-1" fieldTable="" identifier=""/>
+			<Separator separatorType="Vertical" location="0,66" preferredSize="8,22"   zOrder="-1" fieldTable="" identifier=""/>
+			<Separator separatorType="Vertical" location="56,66" preferredSize="8,22"   zOrder="-1" fieldTable="" identifier=""/>
+			<Separator separatorType="Vertical" location="0,88" preferredSize="8,22"   zOrder="-1" fieldTable="" identifier=""/>
+			<Button location="8,88" minSize="24,22"   fieldTable="formonly" identifier="icon">
+				<Button.image>
+					<Image imageUrl="icon32/exit01.ico"/>
+				</Button.image>
+				<Button.onInvoke>
+					<KeyEventHandler keyName="ACCEPT,false,false,false"/>
+				</Button.onInvoke>
+			</Button>
+			<Separator separatorType="Vertical" location="56,88" preferredSize="8,22"   zOrder="-1" fieldTable="" identifier=""/>
+			<Separator separatorType="Vertical" location="0,110" preferredSize="8,22"   zOrder="-1" fieldTable="" identifier=""/>
+			<Separator separatorType="Vertical" location="56,110" preferredSize="8,22"   zOrder="-1" fieldTable="" identifier=""/>
+			<Separator separatorType="Vertical" location="0,132" preferredSize="8,22"   zOrder="-1" fieldTable="" identifier=""/>
+			<Button location="8,132" minSize="24,22"   fieldTable="formonly" identifier="icon">
+				<Button.image>
+					<Image imageUrl="icon32/exit01.ico"/>
+				</Button.image>
+				<Button.onInvoke>
+					<KeyEventHandler keyName="ACCEPT,false,false,false"/>
+				</Button.onInvoke>
+			</Button>
+			<Separator separatorType="Vertical" location="56,132" preferredSize="8,22"   zOrder="-1" fieldTable="" identifier=""/>
+			<Separator separatorType="Vertical" location="0,154" preferredSize="8,22"   zOrder="-1" fieldTable="" identifier=""/>
+			<Separator separatorType="Vertical" location="56,154" preferredSize="8,22"   zOrder="-1" fieldTable="" identifier=""/>
+			<Separator separatorType="Vertical" location="0,176" preferredSize="8,22"   zOrder="-1" fieldTable="" identifier=""/>
+			<Button location="8,176" minSize="24,22"   fieldTable="formonly" identifier="icon">
+				<Button.image>
+					<Image imageUrl="icon32/exit01.ico"/>
+				</Button.image>
+				<Button.onInvoke>
+					<KeyEventHandler keyName="ACCEPT,false,false,false"/>
+				</Button.onInvoke>
+			</Button>
+			<Separator separatorType="Vertical" location="56,176" preferredSize="8,22"   zOrder="-1" fieldTable="" identifier=""/>
+			<Separator separatorType="Vertical" location="0,198" preferredSize="8,22"   zOrder="-1" fieldTable="" identifier=""/>
+			<Separator separatorType="Vertical" location="56,198" preferredSize="8,22"   zOrder="-1" fieldTable="" identifier=""/>
+			<Separator separatorType="Vertical" location="0,220" preferredSize="8,22"   zOrder="-1" fieldTable="" identifier=""/>
+			<Button location="8,220" minSize="24,22"   fieldTable="formonly" identifier="icon">
+				<Button.image>
+					<Image imageUrl="icon32/exit01.ico"/>
+				</Button.image>
+				<Button.onInvoke>
+					<KeyEventHandler keyName="ACCEPT,false,false,false"/>
+				</Button.onInvoke>
+			</Button>
+			<Separator separatorType="Vertical" location="56,220" preferredSize="8,22"   zOrder="-1" fieldTable="" identifier=""/>
+			<Separator separatorType="Vertical" location="0,242" preferredSize="8,22"   zOrder="-1" fieldTable="" identifier=""/>
+			<Separator separatorType="Vertical" location="56,242" preferredSize="8,22"   zOrder="-1" fieldTable="" identifier=""/>
+			<Separator separatorType="Vertical" location="0,264" preferredSize="8,22"   zOrder="-1" fieldTable="" identifier=""/>
+			<Button location="8,264" minSize="24,22"   fieldTable="formonly" identifier="icon">
+				<Button.image>
+					<Image imageUrl="icon32/exit01.ico"/>
+				</Button.image>
+				<Button.onInvoke>
+					<KeyEventHandler keyName="ACCEPT,false,false,false"/>
+				</Button.onInvoke>
+			</Button>
+			<Separator separatorType="Vertical" location="56,264" preferredSize="8,22"   zOrder="-1" fieldTable="" identifier=""/>
+			<Separator separatorType="Vertical" location="0,286" preferredSize="8,22"   zOrder="-1" fieldTable="" identifier=""/>
+			<Separator separatorType="Vertical" location="56,286" preferredSize="8,22"   zOrder="-1" fieldTable="" identifier=""/>
+			<Separator separatorType="Vertical" location="0,308" preferredSize="8,22"   zOrder="-1" fieldTable="" identifier=""/>
+			<Button location="8,308" minSize="24,22"   fieldTable="formonly" identifier="icon">
+				<Button.image>
+					<Image imageUrl="icon32/exit01.ico"/>
+				</Button.image>
+				<Button.onInvoke>
+					<KeyEventHandler keyName="ACCEPT,false,false,false"/>
+				</Button.onInvoke>
+			</Button>
+			<Separator separatorType="Vertical" location="56,308" preferredSize="8,22"   zOrder="-1" fieldTable="" identifier=""/>
+			<Separator separatorType="Vertical" location="0,330" preferredSize="8,22"   zOrder="-1" fieldTable="" identifier=""/>
+			<Separator separatorType="Vertical" location="56,330" preferredSize="8,22"   zOrder="-1" fieldTable="" identifier=""/>
+			<Separator separatorType="Vertical" location="0,352" preferredSize="8,22"   zOrder="-1" fieldTable="" identifier=""/>
+			<Button location="8,352" minSize="24,22"   fieldTable="formonly" identifier="icon">
+				<Button.image>
+					<Image imageUrl="icon32/exit01.ico"/>
+				</Button.image>
+				<Button.onInvoke>
+					<KeyEventHandler keyName="ACCEPT,false,false,false"/>
+				</Button.onInvoke>
+			</Button>
+			<Separator separatorType="Vertical" location="56,352" preferredSize="8,22"   zOrder="-1" fieldTable="" identifier=""/>
+			<Separator separatorType="Vertical" location="0,374" preferredSize="8,22"   zOrder="-1" fieldTable="" identifier=""/>
+			<Separator separatorType="Vertical" location="56,374" preferredSize="8,22"   zOrder="-1" fieldTable="" identifier=""/>
+			<Separator separatorType="Vertical" location="0,396" preferredSize="8,22"   zOrder="-1" fieldTable="" identifier=""/>
+			<Button location="8,396" minSize="24,22"   fieldTable="formonly" identifier="icon">
+				<Button.image>
+					<Image imageUrl="icon32/exit01.ico"/>
+				</Button.image>
+				<Button.onInvoke>
+					<KeyEventHandler keyName="ACCEPT,false,false,false"/>
+				</Button.onInvoke>
+			</Button>
+			<Separator separatorType="Vertical" location="56,396" preferredSize="8,22"   zOrder="-1" fieldTable="" identifier=""/>
+			<Separator separatorType="Vertical" location="0,418" preferredSize="8,22"   zOrder="-1" fieldTable="" identifier=""/>
+			<Separator separatorType="Vertical" location="56,418" preferredSize="8,22"   zOrder="-1" fieldTable="" identifier=""/>
+			<Separator separatorType="Vertical" location="0,440" preferredSize="8,22"   zOrder="-1" fieldTable="" identifier=""/>
+			<Button location="8,440" minSize="24,22"   fieldTable="formonly" identifier="icon">
+				<Button.image>
+					<Image imageUrl="icon32/exit01.ico"/>
+				</Button.image>
+				<Button.onInvoke>
+					<KeyEventHandler keyName="ACCEPT,false,false,false"/>
+				</Button.onInvoke>
+			</Button>
+			<Separator separatorType="Vertical" location="56,440" preferredSize="8,22"   zOrder="-1" fieldTable="" identifier=""/>
+			<Separator separatorType="Vertical" location="0,462" preferredSize="8,22"   zOrder="-1" fieldTable="" identifier=""/>
+			<Separator separatorType="Vertical" location="56,462" preferredSize="8,22"   zOrder="-1" fieldTable="" identifier=""/>
+			<Separator separatorType="LeftBottom" location="0,484" preferredSize="8,22"   zOrder="-1" fieldTable="" identifier=""/>
+			<Separator location="8,484" preferredSize="8,22"   zOrder="-1" fieldTable="" identifier=""/>
+			<Separator location="16,484" preferredSize="8,22"   zOrder="-1" fieldTable="" identifier=""/>
+			<Separator location="24,484" preferredSize="8,22"   zOrder="-1" fieldTable="" identifier=""/>
+			<Separator location="32,484" preferredSize="8,22"   zOrder="-1" fieldTable="" identifier=""/>
+			<Separator location="40,484" preferredSize="8,22"   zOrder="-1" fieldTable="" identifier=""/>
+			<Separator location="48,484" preferredSize="8,22"   zOrder="-1" fieldTable="" identifier=""/>
+			<Separator separatorType="RightBottom" location="56,484" preferredSize="8,22"   zOrder="-1" fieldTable="" identifier=""/>
+		</CoordPanel>
+	</form.rootContainer>
+	<form.screenRecords>
+		<ScreenRecord identifier="ic_array" fields="icon"/>
+		<ScreenRecord identifier="formonly" fields="icon,dl_i"/>
+	</form.screenRecords>
+</form>
+

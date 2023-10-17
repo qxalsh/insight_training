@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://namespaces.querix.com/2015/fglForms">
+	<form.rootContainer>
+		<GridPanel classNames="fcls_rootContainer" preferredSize="140qch,25qch" verticalAlignment="Stretch" horizontalAlignment="Left" fieldTable="" identifier="rootContainer">
+			<GridPanel.gridRowDefinitions>
+				<GridRowDefinition gridLengthValue=""/>
+				<GridRowDefinition gridLengthValue="100%"/>
+				<GridRowDefinition gridLengthValue=""/>
+				<GridRowDefinition gridLengthValue=""/>
+			</GridPanel.gridRowDefinitions>
+			<GridPanel.gridColumnDefinitions>
+				<GridColumnDefinition gridLengthValue="100%"/>
+			</GridPanel.gridColumnDefinitions>
+
+			<GridPanel classNames="fcls_title_cnt" visible="true" verticalAlignment="Top" gridItemLocation="0,0,1,1" fieldTable="formonly" identifier="cntTitle">
+				<GridPanel.gridRowDefinitions>
+					<GridRowDefinition gridLengthValue=""/>
+				</GridPanel.gridRowDefinitions>
+				<GridPanel.gridColumnDefinitions>
+					<GridColumnDefinition gridLengthValue="100%"/>
+					<GridColumnDefinition gridLengthValue=""/>
+				</GridPanel.gridColumnDefinitions>
+				<Label isDynamic="true" text="Widget CheckBox used in DISPLAY / INPUT ARRAY" classNames="fcls_title_lb" visible="true" gridItemLocation="0,0,1,1" fieldTable="formonly" identifier="lbTitle"/>
+				<Label isDynamic="true" text="wig_checkbox_display_input_array.fm2" classNames="fcls_title_lb" visible="true" gridItemLocation="1,0,1,1" fieldTable="" identifier="lbFormName"/>
+			</GridPanel>
+
+			<Table classNames="fcls_table_cnt" visible="true" gridItemLocation="0,1,1,1" fieldTable="" identifier="scr_checkbox" verticalAlignment="Top" horizontalAlignment="Left">
+				<TableColumn resizable="true" visible="true" identifier="tc_f3">
+					<CheckBox visible="true" identifier="cb1_char_null">
+						<CheckBox.checkedValue>
+							<StringLiteral stringValue="*"/>
+						</CheckBox.checkedValue>
+						<CheckBox.uncheckedValue>
+							<NullLiteral/>
+						</CheckBox.uncheckedValue>
+					</CheckBox>
+					<TableColumn.columnLength>
+						<GridLength gridLengthValue="2rem" gridMaxLength="2rem" gridMinLength="2rem"/>
+					</TableColumn.columnLength>
+				</TableColumn>
+				<TableColumn resizable="true" visible="true" identifier="tc_f4">
+					<CheckBox visible="true" notNull="true" identifier="cb1_char">
+						<CheckBox.checkedValue>
+							<StringLiteral stringValue="A"/>
+						</CheckBox.checkedValue>
+						<CheckBox.uncheckedValue>
+							<StringLiteral stringValue="B"/>
+						</CheckBox.uncheckedValue>
+					</CheckBox>
+					<TableColumn.columnLength>
+						<GridLength gridLengthValue="2rem" gridMaxLength="2rem" gridMinLength="2rem"/>
+					</TableColumn.columnLength>
+				</TableColumn>
+				<TableColumn resizable="true" visible="true" identifier="tc_f6">
+					<CheckBox visible="true" notNull="true" identifier="f6">
+						<CheckBox.checkedValue>
+							<BooleanLiteral booleanValue="true"/>
+						</CheckBox.checkedValue>
+						<CheckBox.uncheckedValue>
+							<BooleanLiteral/>
+						</CheckBox.uncheckedValue>
+					</CheckBox>
+					<TableColumn.columnLength>
+						<GridLength gridLengthValue="2rem" gridMaxLength="2rem" gridMinLength="2rem"/>
+					</TableColumn.columnLength>
+				</TableColumn>
+				<TableColumn resizable="true" visible="true" identifier="tc_f5">
+					<CheckBox visible="true" notNull="true" identifier="cb1_int">
+						<CheckBox.checkedValue>
+							<IntegerLiteral integerValue="1"/>
+						</CheckBox.checkedValue>
+						<CheckBox.uncheckedValue>
+							<IntegerLiteral integerValue="0"/>
+						</CheckBox.uncheckedValue>
+					</CheckBox>
+					<TableColumn.columnLength>
+						<GridLength gridLengthValue="2rem" gridMaxLength="2rem" gridMinLength="2rem"/>
+					</TableColumn.columnLength>
+				</TableColumn>
+				<TableColumn text="cb2_char_null" resizable="true" visible="true" identifier="tc_f8">
+					<CheckBox title="cb2_char_null" visible="true" identifier="cb2_char_null">
+						<CheckBox.checkedValue>
+							<StringLiteral stringValue="*"/>
+						</CheckBox.checkedValue>
+						<CheckBox.uncheckedValue>
+							<NullLiteral/>
+						</CheckBox.uncheckedValue>
+					</CheckBox>
+					<TableColumn.columnLength>
+						<GridLength gridLengthValue="10rem" gridMaxLength="10rem" gridMinLength="10rem"/>
+					</TableColumn.columnLength>
+				</TableColumn>
+				<TableColumn text="cb2_char" resizable="true" visible="true" identifier="tc_f7">
+					<CheckBox title="cb2_char" visible="true" notNull="true" identifier="cb2_char">
+						<CheckBox.checkedValue>
+							<StringLiteral stringValue="A"/>
+						</CheckBox.checkedValue>
+						<CheckBox.uncheckedValue>
+							<StringLiteral stringValue="B"/>
+						</CheckBox.uncheckedValue>
+					</CheckBox>
+					<TableColumn.columnLength>
+						<GridLength gridLengthValue="10rem" gridMaxLength="10rem" gridMinLength="10rem"/>
+					</TableColumn.columnLength>
+				</TableColumn>
+				<TableColumn text="cb2_boolen" resizable="true" visible="true" identifier="tc_f10">
+					<CheckBox title="cb2_boolen" visible="true" notNull="true" identifier="cb2_boolen">
+						<CheckBox.checkedValue>
+							<BooleanLiteral booleanValue="true"/>
+						</CheckBox.checkedValue>
+						<CheckBox.uncheckedValue>
+							<BooleanLiteral/>
+						</CheckBox.uncheckedValue>
+					</CheckBox>
+					<TableColumn.columnLength>
+						<GridLength gridLengthValue="10rem" gridMaxLength="10rem" gridMinLength="10rem"/>
+					</TableColumn.columnLength>
+				</TableColumn>
+				<TableColumn text="cb2_int" resizable="true" visible="true" identifier="tc_f9">
+					<CheckBox title="cb2_int" visible="true" notNull="true" identifier="cb2_int">
+						<CheckBox.checkedValue>
+							<IntegerLiteral integerValue="1"/>
+						</CheckBox.checkedValue>
+						<CheckBox.uncheckedValue>
+							<IntegerLiteral integerValue="0"/>
+						</CheckBox.uncheckedValue>
+					</CheckBox>
+					<TableColumn.columnLength>
+						<GridLength gridLengthValue="10rem" gridMaxLength="10rem" gridMinLength="10rem"/>
+					</TableColumn.columnLength>
+				</TableColumn>
+			</Table>
+			<GridPanel visible="true" identifier="cnt_table_details" gridItemLocation="0,2,1,1" horizontalAlignment="Right" verticalAlignment="Stretch">
+				<GridPanel.gridColumnDefinitions>
+					<GridColumnDefinition gridLengthValue=""/>
+					<GridColumnDefinition gridLengthValue=""/>
+					<GridColumnDefinition gridLengthValue=""/>
+					<GridColumnDefinition gridLengthValue=""/>
+					<GridColumnDefinition gridLengthValue=""/>
+					<GridColumnDefinition gridLengthValue=""/>
+					<GridColumnDefinition gridLengthValue=""/>
+					<GridColumnDefinition gridLengthValue=""/>
+					<GridColumnDefinition gridLengthValue=""/>
+					<GridColumnDefinition gridLengthValue=""/>
+					<GridColumnDefinition gridLengthValue=""/>
+					<GridColumnDefinition gridLengthValue=""/>
+				</GridPanel.gridColumnDefinitions>
+				<GridPanel.gridRowDefinitions>
+					<GridRowDefinition gridLengthValue=""/>
+				</GridPanel.gridRowDefinitions>
+				<Label text="cr" isDynamic="true" visible="true" identifier="lbCurrentRow" gridItemLocation="0,0,1,1" horizontalAlignment="Right"/>
+				<Label text="-&lt;pageSize&gt; of" isDynamic="true" visible="true" identifier="lbOf" gridItemLocation="1,0,1,1" horizontalAlignment="Right"/>
+				<Label text="arrCnt" isDynamic="true" visible="true" identifier="lbArrCnt" gridItemLocation="2,0,1,1" horizontalAlignment="Right"/>
+				<Label text="" isDynamic="true" visible="true" identifier="lbSpace" gridItemLocation="3,0,1,1" preferredSize="5qch,"/>
+				<Button visible="true" identifier="btFirstRow" gridItemLocation="8,0,1,1" horizontalAlignment="Right" text="|&lt;">
+					<Button.onInvoke>
+						<ActionEventHandler type="actioneventhandler" actionName="firstrow"/>
+					</Button.onInvoke>
+				</Button>
+				<Button text="&lt;" visible="true" identifier="btPrevPage" gridItemLocation="9,0,1,1" horizontalAlignment="Right">
+					<Button.onInvoke>
+						<ActionEventHandler type="actioneventhandler" actionName="prevpage"/>
+					</Button.onInvoke>
+				</Button>
+				<Button text="&gt;" visible="true" identifier="btNextPage" gridItemLocation="10,0,1,1" horizontalAlignment="Right">
+					<Button.onInvoke>
+						<ActionEventHandler type="actioneventhandler" actionName="nextPage"/>
+					</Button.onInvoke>
+				</Button>
+				<Button text="&gt;|" visible="true" identifier="btLastRow" gridItemLocation="11,0,1,1" horizontalAlignment="Right">
+					<Button.onInvoke>
+						<ActionEventHandler type="actioneventhandler" actionName="lastrow"/>
+					</Button.onInvoke>
+				</Button>
+			</GridPanel>
+			<GridPanel classNames="fcls_statusbar_cnt" visible="true" verticalAlignment="Bottom" gridItemLocation="0,3,1,1" fieldTable="formonly" identifier="cntStatusBar">
+				<GridPanel.gridRowDefinitions>
+					<GridRowDefinition gridLengthValue=""/>
+					<GridRowDefinition gridLengthValue=""/>
+				</GridPanel.gridRowDefinitions>
+				<GridPanel.gridColumnDefinitions>
+					<GridColumnDefinition gridLengthValue="100%"/>
+				</GridPanel.gridColumnDefinitions>
+				<Label isDynamic="true" text="" classNames="fcls_sblabel" visible="true" gridItemLocation="0,0,1,1" fieldTable="formonly" identifier="lbInfo1"/>
+				<Label isDynamic="true" text="" classNames="fcls_sblabel" visible="true" gridItemLocation="0,1,1,1" fieldTable="formonly" identifier="lbInfo2"/>
+			</GridPanel>
+		</GridPanel>
+	</form.rootContainer>
+	<form.screenRecords>
+		<ScreenRecord identifier="FORMONLY" fields=""/>
+		<ScreenRecord identifier="scr_checkbox" fields="cb1_char_null,cb1_char,f6,cb1_int,cb2_char_null,cb2_char,cb2_boolen,cb2_int"/>
+		<ScreenRecord identifier="scr_contact" fields=""/>
+	</form.screenRecords>
+</form>
+

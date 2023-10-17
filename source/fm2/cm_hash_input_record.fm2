@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://namespaces.querix.com/2015/fglForms" title="HashMap Record INPUT">
+	<form.rootContainer>
+		<GridPanel identifier="rootContainer" visible="true" preferredSize="578,241">
+			<GridPanel.gridColumnDefinitions>
+				<GridColumnDefinition gridLengthValue="10rem" gridMinLength="10rem"/>
+				<GridColumnDefinition gridLengthValue="100%"/>
+			</GridPanel.gridColumnDefinitions>
+			<GridPanel.gridRowDefinitions>
+				<GridRowDefinition gridLengthValue=""/>
+				<GridRowDefinition gridLengthValue=""/>
+				<GridRowDefinition gridLengthValue=""/>
+				<GridRowDefinition gridLengthValue=""/>
+				<GridRowDefinition gridLengthValue=""/>
+				<GridRowDefinition gridLengthValue=""/>
+				<GridRowDefinition gridLengthValue=""/>
+				<GridRowDefinition gridLengthValue=""/>
+			</GridPanel.gridRowDefinitions>
+			<Label text="Title" isDynamic="true" visible="true" identifier="lb_title" gridItemLocation="0,0,2,1" classNames="fcls_columnlabel_rev_cell,fcls_align_hstretch"/>
+			<Label text="Description" isDynamic="true" visible="true" identifier="lb_description" gridItemLocation="0,1,2,1" classNames="fcls_font_description"/>
+			<Label text="key" isDynamic="true" visible="true" identifier="lb4" gridItemLocation="0,2,1,1" classNames="fcls_fieldlabel,fcls_align_left"/>
+			<TextField visible="true" identifier="key" gridItemLocation="1,2,1,1" classNames="fcls_length_30qch,fcls_data_widget,fcls_align_left"/>
+			<Label text="First Nama (fName)" isDynamic="true" visible="true" identifier="lb2" gridItemLocation="0,3,1,1" classNames="fcls_fieldlabel,fcls_align_left"/>
+			<TextField visible="true" identifier="fName" gridItemLocation="1,3,1,1" classNames="fcls_length_30qch,fcls_data_widget,fcls_align_left"/>
+			<Label text="Last Name (lName)" isDynamic="true" visible="true" identifier="lb5" gridItemLocation="0,4,1,1"/>
+			<TextField visible="true" identifier="lName" gridItemLocation="1,4,1,1" classNames="fcls_length_30qch,fcls_data_widget,fcls_align_left"/>
+			<Label text="DOB (dob)" isDynamic="true" visible="true" identifier="lb6" gridItemLocation="0,5,1,1"/>
+			<TextField visible="true" identifier="dob" gridItemLocation="1,5,1,1" classNames="fcls_length_30qch,fcls_data_widget,fcls_align_left"/>
+			<Label text="Country (country )" isDynamic="true" visible="true" identifier="lb7" gridItemLocation="0,7,1,1"/>
+			<TextField visible="true" identifier="country" gridItemLocation="1,7,1,1" classNames="fcls_length_30qch,fcls_data_widget,fcls_align_left"/>
+		</GridPanel>
+	</form.rootContainer>
+	
+	<form.screenRecords>
+		<ScreenRecord identifier="sc_hashPair" fields="key,fName,lname,dob,country"/>
+	</form.screenRecords> 
+	
+</form>

@@ -1,0 +1,27 @@
+database accounts@accounts
+screen size 24 by 80
+{
+tdate              [f000      ]
+bank               [f001 ]
+loan_no            [f002       ]
+bacc               [f003             ]
+amt                [f004            ]
+paid               [a]
+rcpt_no            [f005       ]
+printed            [b]
+date_done          [f006      ]
+}
+end
+tables
+bank_ach
+attributes
+f000 = bank_ach.tdate;
+f001 = bank_ach.bank;
+f002 = bank_ach.loan_no;
+f003 = bank_ach.bacc;
+f004 = bank_ach.amt;
+a = bank_ach.paid;
+f005 = bank_ach.rcpt_no;
+b = bank_ach.printed;
+f006 = bank_ach.date_done;
+end

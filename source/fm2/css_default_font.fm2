@@ -1,0 +1,413 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://namespaces.querix.com/2015/fglForms">
+	<form.rootContainer>
+		<GridPanel classNames="fcls_rootContainer" verticalAlignment="Stretch" fieldTable="" identifier="rootContainer" horizontalAlignment="Stretch">
+			<GridPanel.gridRowDefinitions>
+				<GridRowDefinition gridLengthValue=""/>
+				<GridRowDefinition gridLengthValue=""/>
+				<GridRowDefinition gridLengthValue=""/>
+				<GridRowDefinition gridLengthValue=""/>
+				<GridRowDefinition gridLengthValue="100%"/>
+				<GridRowDefinition gridLengthValue=""/>
+			</GridPanel.gridRowDefinitions>
+			<GridPanel.gridColumnDefinitions>
+				<GridColumnDefinition gridLengthValue="100%"/>
+			</GridPanel.gridColumnDefinitions>
+			<GridPanel classNames="fcls_title_cnt" visible="true" verticalAlignment="Top" gridItemLocation="0,0,1,1" fieldTable="formonly" identifier="cntTitle">
+				<GridPanel.gridRowDefinitions>
+					<GridRowDefinition gridLengthValue=""/>
+				</GridPanel.gridRowDefinitions>
+				<GridPanel.gridColumnDefinitions>
+					<GridColumnDefinition gridLengthValue="100%"/>
+					<GridColumnDefinition gridLengthValue=""/>
+				</GridPanel.gridColumnDefinitions>
+				<Label isDynamic="true" text="Default fonts test with and without the use of special form classes" classNames="fcls_title_lb" visible="true" gridItemLocation="0,0,1,1" fieldTable="formonly" identifier="lbTitle"/>
+				<Label isDynamic="true" text="_master_D6_2GB_2GB_2GB_2GB_2GB_2GB_01a" classNames="fcls_title_lb" visible="true" gridItemLocation="1,0,1,1" fieldTable="" identifier="lbFormName"/>
+			</GridPanel>
+			<GridPanel classNames="fcls_detail_cnt" visible="true" verticalAlignment="Top" gridItemLocation="0,1,1,1" fieldTable="formonly" identifier="cntDetail1" horizontalAlignment="Stretch">
+				<GridPanel.gridRowDefinitions>
+					<GridRowDefinition/>
+				</GridPanel.gridRowDefinitions>
+				<GridPanel.gridColumnDefinitions>
+					<GridColumnDefinition gridLengthValue="50%"/>
+					<GridColumnDefinition gridLengthValue="50%"/>
+				</GridPanel.gridColumnDefinitions>
+				<GroupBox title="Without any element form classes" classNames="fcls_detail_gb_cnt" visible="true" gridItemLocation="0,0,1,1" fieldTable="" identifier="cntDetail1GroupBoxLeft" horizontalAlignment="Stretch" verticalAlignment="Stretch">
+					<GridPanel classNames="fcls_detail_gb_cnt_sub" visible="true" verticalAlignment="Top" horizontalAlignment="Left" gridItemLocation="0,0,1,1" fieldTable="formonly" identifier="cntDetail1GBSubGpLeft">
+						<GridPanel.gridRowDefinitions>
+							<GridRowDefinition gridLengthValue=""/>
+							<GridRowDefinition gridLengthValue=""/>
+							<GridRowDefinition gridLengthValue=""/>
+							<GridRowDefinition gridLengthValue=""/>
+							<GridRowDefinition gridLengthValue=""/>
+							<GridRowDefinition gridLengthValue=""/>
+							<GridRowDefinition gridLengthValue=""/>
+							<GridRowDefinition gridLengthValue=""/>
+							<GridRowDefinition gridLengthValue=""/>
+							<GridRowDefinition gridLengthValue=""/>
+							<GridRowDefinition gridLengthValue=""/>
+						</GridPanel.gridRowDefinitions>
+						<GridPanel.gridColumnDefinitions>
+							<GridColumnDefinition gridLengthValue="" gridMinLength="10rem"/>
+							<GridColumnDefinition gridLengthValue=""/>
+						</GridPanel.gridColumnDefinitions>
+						<Label isDynamic="true" text="Name" classNames="fcls_fieldlabel" visible="true" gridItemLocation="0,0,1,1" fieldTable="formonly" identifier="lb57"/>
+						<StackPanel visible="true" identifier="c8" gridItemLocation="1,0,1,1">
+							<TextField visible="true" identifier="a_fname"/>
+							<TextField visible="true" identifier="a_lname"/>
+						</StackPanel>
+						<Label isDynamic="true" text="Address" classNames="fcls_fieldlabel" visible="true" gridItemLocation="0,1,1,1" fieldTable="" identifier="lb73"/>
+						<TextField visible="true" identifier="a_address" gridItemLocation="1,1,1,1"/>
+						<Label isDynamic="true" text="DOB" classNames="fcls_fieldlabel" visible="true" gridItemLocation="0,2,1,1" fieldTable="" identifier="lb76"/>
+						<Calendar dataType="Date,,,," visible="true" identifier="a_dob" gridItemLocation="1,2,1,1"/>
+						<Label isDynamic="true" text="Country" classNames="fcls_fieldlabel" visible="true" gridItemLocation="0,3,1,1" fieldTable="" identifier="lb77"/>
+						<ComboBox visible="true" identifier="a_country" gridItemLocation="1,3,1,1">
+							<ComboBoxItem text="Germany">
+								<ComboBoxItem.value>
+									<StringLiteral stringValue="DE"/>
+								</ComboBoxItem.value>
+							</ComboBoxItem>
+							<ComboBoxItem text="USA">
+								<ComboBoxItem.value>
+									<StringLiteral stringValue="US"/>
+								</ComboBoxItem.value>
+							</ComboBoxItem>
+							<ComboBoxItem text="United Kingdom">
+								<ComboBoxItem.value>
+									<StringLiteral stringValue="UK"/>
+								</ComboBoxItem.value>
+							</ComboBoxItem>
+							<ComboBoxItem text="Ukraine">
+								<ComboBoxItem.value>
+									<StringLiteral stringValue="UA"/>
+								</ComboBoxItem.value>
+							</ComboBoxItem>
+							<ComboBoxItem text="France">
+								<ComboBoxItem.value>
+									<StringLiteral stringValue="FR"/>
+								</ComboBoxItem.value>
+							</ComboBoxItem>
+
+						</ComboBox>
+						<Label text="E-Mail" isDynamic="true" visible="true" identifier="lb191" gridItemLocation="0,4,1,1"/>
+						<FunctionField visible="true" identifier="a_email" gridItemLocation="1,4,1,1"/>
+						<Label text="Salary" isDynamic="true" visible="true" identifier="lb182" gridItemLocation="0,5,1,1"/>
+						<TextField visible="true" identifier="a_salary" gridItemLocation="1,5,1,1"/>
+						<Label text="Lycia User" isDynamic="true" visible="true" identifier="lb183" gridItemLocation="0,6,1,1"/>
+						<CheckBox title="Lycia User" visible="true" notNull="true" identifier="a_lycia_user" gridItemLocation="1,6,1,1">
+							<CheckBox.checkedValue>
+								<IntegerLiteral integerValue="1"/>
+							</CheckBox.checkedValue>
+							<CheckBox.uncheckedValue>
+								<IntegerLiteral integerValue="0"/>
+							</CheckBox.uncheckedValue>
+						</CheckBox>
+						<Label text="Gender" isDynamic="true" visible="true" identifier="lb184" gridItemLocation="0,7,1,1"/>
+						<RadioGroup orientation="Vertical" visible="true" identifier="a_gender" gridItemLocation="1,7,1,1">
+							<Radio title="Female" identifier="a_gender_1">
+								<Radio.value>
+									<IntegerLiteral integerValue="1"/>
+								</Radio.value>
+							</Radio>
+							<Radio title="Male" identifier="a_gender_2">
+								<Radio.value>
+									<IntegerLiteral integerValue="2"/>
+								</Radio.value>
+							</Radio>
+							<Radio title="Other" identifier="a_gender_3">
+								<Radio.value>
+									<IntegerLiteral integerValue="0"/>
+								</Radio.value>
+							</Radio>
+						</RadioGroup>
+						<Label text="Starting Time" isDynamic="true" visible="true" identifier="lb_a_starting_time" gridItemLocation="0,8,1,1"/>
+						<TimeEditField dataType="DateTime,Hour,Minute,," visible="true" identifier="a_starting_time" gridItemLocation="1,8,1,1"/>
+						<Label isDynamic="true" text="Comment" classNames="fcls_fieldlabel" visible="true" gridItemLocation="0,9,1,1" fieldTable="" identifier="lb111"/>
+						<TextArea visible="true" identifier="a_comment" gridItemLocation="1,9,1,1"/>
+						<Label text="History" isDynamic="true" visible="true" identifier="lb207" gridItemLocation="0,10,1,1"/>
+						<BlobViewer dataType="Byte,,,," visible="true" identifier="a_history" gridItemLocation="1,10,1,1" minSize=",4rem"/>
+					</GridPanel>
+				</GroupBox>
+				<GroupBox title="With element form classes" classNames="fcls_detail_gb_cnt" visible="true" gridItemLocation="1,0,1,1" fieldTable="" identifier="cntDetail1GroupBoxRight" horizontalAlignment="Stretch" verticalAlignment="Stretch">
+					<GridPanel visible="true" identifier="cntDetail1GBSubGpRight" fieldTable="formonly" classNames="fcls_detail_gb_cnt_sub" horizontalAlignment="Left" verticalAlignment="Top">
+						<GridPanel.gridRowDefinitions>
+							<GridRowDefinition gridLengthValue=""/>
+							<GridRowDefinition gridLengthValue=""/>
+							<GridRowDefinition gridLengthValue=""/>
+							<GridRowDefinition gridLengthValue=""/>
+							<GridRowDefinition gridLengthValue=""/>
+							<GridRowDefinition gridLengthValue=""/>
+							<GridRowDefinition gridLengthValue=""/>
+							<GridRowDefinition gridLengthValue=""/>
+							<GridRowDefinition gridLengthValue=""/>
+							<GridRowDefinition gridLengthValue=""/>
+							<GridRowDefinition gridLengthValue=""/>
+						</GridPanel.gridRowDefinitions>
+						<GridPanel.gridColumnDefinitions>
+							<GridColumnDefinition gridLengthValue="" gridMinLength="10rem"/>
+							<GridColumnDefinition gridLengthValue=""/>
+						</GridPanel.gridColumnDefinitions>
+						<Label visible="true" identifier="lb208" isDynamic="true" classNames="fcls_fieldlabel" fieldTable="formonly" gridItemLocation="0,0,1,1" text="Name"/>
+						<StackPanel visible="true" identifier="c10" gridItemLocation="1,0,1,1">
+							<TextField visible="true" identifier="b_fname"/>
+							<TextField visible="true" identifier="b_lname"/>
+						</StackPanel>
+						<Label visible="true" identifier="lb211" isDynamic="true" classNames="fcls_fieldlabel" fieldTable="" gridItemLocation="0,1,1,1" text="Address"/>
+						<TextField visible="true" identifier="b_address" gridItemLocation="1,1,1,1"/>
+						<Label visible="true" identifier="lb213" isDynamic="true" classNames="fcls_fieldlabel" fieldTable="" gridItemLocation="0,2,1,1" text="DOB"/>
+						<Calendar visible="true" identifier="b_dob" dataType="Date,,,," gridItemLocation="1,2,1,1"/>
+						<Label visible="true" identifier="lb215" isDynamic="true" classNames="fcls_fieldlabel" fieldTable="" gridItemLocation="0,3,1,1" text="Country"/>
+						<ComboBox visible="true" identifier="b_country" gridItemLocation="1,3,1,1">
+							<ComboBoxItem text="Germany">
+								<ComboBoxItem.value>
+									<StringLiteral stringValue="DE"/>
+								</ComboBoxItem.value>
+							</ComboBoxItem>
+							<ComboBoxItem text="USA">
+								<ComboBoxItem.value>
+									<StringLiteral stringValue="US"/>
+								</ComboBoxItem.value>
+							</ComboBoxItem>
+							<ComboBoxItem text="United Kingdom">
+								<ComboBoxItem.value>
+									<StringLiteral stringValue="UK"/>
+								</ComboBoxItem.value>
+							</ComboBoxItem>
+							<ComboBoxItem text="Ukraine">
+								<ComboBoxItem.value>
+									<StringLiteral stringValue="UA"/>
+								</ComboBoxItem.value>
+							</ComboBoxItem>
+							<ComboBoxItem text="France">
+								<ComboBoxItem.value>
+									<StringLiteral stringValue="FR"/>
+								</ComboBoxItem.value>
+							</ComboBoxItem>
+						</ComboBox>
+						<Label visible="true" identifier="lb217" isDynamic="true" gridItemLocation="0,4,1,1" text="E-Mail"/>
+						<FunctionField visible="true" identifier="b_email" gridItemLocation="1,4,1,1"/>
+						<Label visible="true" identifier="lb219" isDynamic="true" gridItemLocation="0,5,1,1" text="Salary"/>
+						<TextField visible="true" identifier="b_salary" gridItemLocation="1,5,1,1"/>
+						<Label visible="true" identifier="lb221" isDynamic="true" gridItemLocation="0,6,1,1" text="Lycia User"/>
+						<CheckBox visible="true" identifier="b_lycia_user" notNull="true" gridItemLocation="1,6,1,1" title="Lycia User">
+							<CheckBox.checkedValue>
+								<IntegerLiteral integerValue="1"/>
+							</CheckBox.checkedValue>
+							<CheckBox.uncheckedValue>
+								<IntegerLiteral integerValue="0"/>
+							</CheckBox.uncheckedValue>
+						</CheckBox>
+						<Label visible="true" identifier="lb223" isDynamic="true" gridItemLocation="0,7,1,1" text="Gender"/>
+						<RadioGroup visible="true" identifier="b_gender" gridItemLocation="1,7,1,1" orientation="Vertical">
+							<Radio identifier="a_gender_1" title="Female">
+								<Radio.value>
+									<IntegerLiteral integerValue="1"/>
+								</Radio.value>
+							</Radio>
+							<Radio identifier="a_gender_2" title="Male">
+								<Radio.value>
+									<IntegerLiteral integerValue="2"/>
+								</Radio.value>
+							</Radio>
+							<Radio identifier="a_gender_3" title="Other">
+								<Radio.value>
+									<IntegerLiteral integerValue="0"/>
+								</Radio.value>
+							</Radio>
+						</RadioGroup>
+						<Label visible="true" identifier="lb225" isDynamic="true" gridItemLocation="0,8,1,1" text="Starting Time"/>
+						<TimeEditField visible="true" identifier="b_starting_time" dataType="DateTime,Hour,Minute,," gridItemLocation="1,8,1,1"/>
+						<Label visible="true" identifier="lb227" isDynamic="true" classNames="fcls_fieldlabel" fieldTable="" gridItemLocation="0,9,1,1" text="Comment"/>
+						<TextArea visible="true" identifier="b_comment" gridItemLocation="1,9,1,1"/>
+						<Label visible="true" identifier="lb229" isDynamic="true" gridItemLocation="0,10,1,1" text="History"/>
+						<BlobViewer visible="true" identifier="b_history" dataType="Byte,,,," minSize=",4rem" gridItemLocation="1,10,1,1"/>
+					</GridPanel>
+				</GroupBox>
+			</GridPanel>
+			<GridPanel classNames="fcls_detail_cnt" visible="true" verticalAlignment="Top" gridItemLocation="0,2,1,1" fieldTable="formonly" identifier="cntDetail2">
+				<GridPanel.gridRowDefinitions>
+					<GridRowDefinition gridLengthValue=""/>
+				</GridPanel.gridRowDefinitions>
+				<GridPanel.gridColumnDefinitions>
+					<GridColumnDefinition gridLengthValue="50%"/>
+					<GridColumnDefinition gridLengthValue="50%"/>
+				</GridPanel.gridColumnDefinitions>
+				<GroupBox title="Text Fields with numeric data (no fcls)" classNames="fcls_detail_gb_cnt" visible="true" verticalAlignment="Top" gridItemLocation="0,0,1,1" fieldTable="formonly" identifier="cntDetail2GroupBoxLeft">
+					<GridPanel classNames="fcls_detail_gb_cnt_sub" visible="true" verticalAlignment="Top" horizontalAlignment="Left" fieldTable="formonly" identifier="cntDetail2GBSubGpLeft">
+						<GridPanel.gridRowDefinitions>
+							<GridRowDefinition gridLengthValue=""/>
+							<GridRowDefinition gridLengthValue=""/>
+							<GridRowDefinition gridLengthValue=""/>
+							<GridRowDefinition gridLengthValue=""/>
+							<GridRowDefinition gridLengthValue=""/>
+							<GridRowDefinition gridLengthValue=""/>
+							<GridRowDefinition gridLengthValue=""/>
+						</GridPanel.gridRowDefinitions>
+						<GridPanel.gridColumnDefinitions>
+							<GridColumnDefinition gridLengthValue=""/>
+							<GridColumnDefinition gridLengthValue=""/>
+						</GridPanel.gridColumnDefinitions>
+						<TextField visible="true" identifier="a_amount_1" gridItemLocation="0,0,1,1"/>
+						<TextField visible="true" identifier="a_amount_b1" gridItemLocation="1,0,1,1"/>
+						<TextField visible="true" identifier="a_amount_2" gridItemLocation="0,1,1,1"/>
+						<TextField visible="true" identifier="a_amount_b2" gridItemLocation="1,1,1,1"/>
+						<TextField visible="true" identifier="a_amount_3" gridItemLocation="0,2,1,1"/>
+						<TextField visible="true" identifier="a_amount_b3" gridItemLocation="1,2,1,1"/>
+						<TextField visible="true" identifier="a_amount_4" gridItemLocation="0,3,1,1"/>
+						<TextField visible="true" identifier="a_amount_b4" gridItemLocation="1,3,1,1"/>
+						<TextField visible="true" identifier="a_amount_5" gridItemLocation="0,4,1,1"/>
+						<TextField visible="true" identifier="a_amount_b5" gridItemLocation="1,4,1,1"/>
+						<TextField visible="true" identifier="a_amount_6" gridItemLocation="0,5,1,1"/>
+						<TextField visible="true" identifier="a_amount_b6" gridItemLocation="1,5,1,1"/>
+						<TextField visible="true" identifier="a_amount_7" gridItemLocation="0,6,1,1"/>
+						<TextField visible="true" identifier="a_amount_b7" gridItemLocation="1,6,1,1"/>
+					</GridPanel>
+				</GroupBox>
+				<GroupBox title="Text Fields with numeric data (with fcls)" classNames="fcls_detail_gb_cnt" visible="true" gridItemLocation="1,0,1,1" fieldTable="" identifier="cntDetail2GroupBoxRight">
+					<GridPanel visible="true" identifier="c11" fieldTable="formonly" classNames="fcls_detail_gb_cnt_sub" horizontalAlignment="Left" verticalAlignment="Top">
+						<GridPanel.gridRowDefinitions>
+							<GridRowDefinition gridLengthValue=""/>
+							<GridRowDefinition gridLengthValue=""/>
+							<GridRowDefinition gridLengthValue=""/>
+							<GridRowDefinition gridLengthValue=""/>
+							<GridRowDefinition gridLengthValue=""/>
+							<GridRowDefinition gridLengthValue=""/>
+							<GridRowDefinition gridLengthValue=""/>
+						</GridPanel.gridRowDefinitions>
+						<GridPanel.gridColumnDefinitions>
+							<GridColumnDefinition gridLengthValue=""/>
+							<GridColumnDefinition gridLengthValue=""/>
+						</GridPanel.gridColumnDefinitions>
+						<TextField visible="true" identifier="b_amount_1" gridItemLocation="0,0,1,1"/>
+						<TextField visible="true" identifier="b_amount_b1" gridItemLocation="1,0,1,1"/>
+						<TextField visible="true" identifier="b_amount_2" gridItemLocation="0,1,1,1"/>
+						<TextField visible="true" identifier="b_amount_b2" gridItemLocation="1,1,1,1"/>
+						<TextField visible="true" identifier="b_amount_3" gridItemLocation="0,2,1,1"/>
+						<TextField visible="true" identifier="b_amount_b3" gridItemLocation="1,2,1,1"/>
+						<TextField visible="true" identifier="b_amount_4" gridItemLocation="0,3,1,1"/>
+						<TextField visible="true" identifier="b_amount_b4" gridItemLocation="1,3,1,1"/>
+						<TextField visible="true" identifier="b_amount_5" gridItemLocation="0,4,1,1"/>
+						<TextField visible="true" identifier="b_amount_b5" gridItemLocation="1,4,1,1"/>
+						<TextField visible="true" identifier="b_amount_6" gridItemLocation="0,5,1,1"/>
+						<TextField visible="true" identifier="b_amount_b6" gridItemLocation="1,5,1,1"/>
+						<TextField visible="true" identifier="b_amount_7" gridItemLocation="0,6,1,1"/>
+						<TextField visible="true" identifier="b_amount_b7" gridItemLocation="1,6,1,1"/>
+					</GridPanel>
+				</GroupBox>
+			</GridPanel>
+			<GridPanel classNames="fcls_detail_cnt" visible="true" verticalAlignment="Top" gridItemLocation="0,3,1,1" fieldTable="formonly" identifier="cntDetail3">
+				<GridPanel.gridRowDefinitions>
+					<GridRowDefinition gridLengthValue=""/>
+				</GridPanel.gridRowDefinitions>
+				<GridPanel.gridColumnDefinitions>
+					<GridColumnDefinition gridLengthValue="50%"/>
+					<GridColumnDefinition gridLengthValue="50%"/>
+				</GridPanel.gridColumnDefinitions>
+				<GroupBox title="Group 3 Left" classNames="fcls_detail_gb_cnt" visible="true" verticalAlignment="Top" gridItemLocation="0,0,1,1" fieldTable="formonly" identifier="cntDetail3GroupBoxLeft">
+					<GridPanel classNames="fcls_detail_gb_cnt_sub" visible="true" verticalAlignment="Top" horizontalAlignment="Left" fieldTable="formonly" identifier="cntDetail3GBSubGpLeft">
+						<GridPanel.gridRowDefinitions>
+							<GridRowDefinition gridLengthValue=""/>
+							<GridRowDefinition gridLengthValue=""/>
+							<GridRowDefinition gridLengthValue=""/>
+							<GridRowDefinition gridLengthValue=""/>
+							<GridRowDefinition gridLengthValue=""/>
+							<GridRowDefinition gridLengthValue=""/>
+						</GridPanel.gridRowDefinitions>
+						<GridPanel.gridColumnDefinitions>
+							<GridColumnDefinition gridLengthValue=""/>
+							<GridColumnDefinition gridLengthValue=""/>
+							<GridColumnDefinition gridLengthValue=""/>
+							<GridColumnDefinition gridLengthValue=""/>
+							<GridColumnDefinition gridLengthValue=""/>
+							<GridColumnDefinition gridLengthValue=""/>
+							<GridColumnDefinition gridLengthValue=""/>
+							<GridColumnDefinition gridLengthValue=""/>
+						</GridPanel.gridColumnDefinitions>
+						<Label isDynamic="true" text="xxxx" classNames="fcls_fieldlabel" visible="true" gridItemLocation="0,0,1,1" fieldTable="" identifier="lb91x"/>
+						<Label isDynamic="true" text="xxxx" classNames="fcls_fieldlabel" visible="true" gridItemLocation="1,0,1,1" fieldTable="formonly" identifier="lb64x"/>
+						<Label isDynamic="true" text="xxxx" classNames="fcls_fieldlabel" visible="true" gridItemLocation="2,0,1,1" fieldTable="formonly" identifier="lb65x"/>
+						<Label isDynamic="true" text="xxxx" classNames="fcls_fieldlabel" visible="true" gridItemLocation="0,1,1,1" fieldTable="formonly" identifier="lb47x"/>
+						<Label isDynamic="true" text="xxxx" classNames="fcls_fieldlabel" visible="true" gridItemLocation="3,0,1,1" fieldTable="" identifier="lb85x"/>
+						<Label isDynamic="true" text="xxxx" classNames="fcls_fieldlabel" visible="true" gridItemLocation="7,0,1,1" fieldTable="" identifier="lb90x"/>
+						<Label isDynamic="true" text="xxxx" classNames="fcls_fieldlabel" visible="true" gridItemLocation="4,1,1,1" fieldTable="" identifier="lb92x"/>
+						<Label isDynamic="true" text="xxxx" classNames="fcls_fieldlabel" visible="true" gridItemLocation="0,2,1,1" fieldTable="formonly" identifier="lb46x"/>
+						<Label isDynamic="true" text="xxxx" classNames="fcls_fieldlabel" visible="true" gridItemLocation="4,0,1,1" fieldTable="" identifier="lb86x"/>
+						<Label isDynamic="true" text="xxxx" classNames="fcls_fieldlabel" visible="true" gridItemLocation="4,2,1,1" fieldTable="" identifier="lb93x"/>
+						<Label isDynamic="true" text="xxxx" classNames="fcls_fieldlabel" visible="true" gridItemLocation="0,3,1,1" fieldTable="formonly" identifier="lb44x"/>
+						<Label isDynamic="true" text="xxxx" classNames="fcls_fieldlabel" visible="true" gridItemLocation="5,0,1,1" fieldTable="" identifier="lb87x"/>
+						<Label isDynamic="true" text="xxxx" classNames="fcls_fieldlabel" visible="true" gridItemLocation="4,3,1,1" fieldTable="" identifier="lb94x"/>
+						<Label isDynamic="true" text="xxxx" classNames="fcls_fieldlabel" visible="true" gridItemLocation="0,4,1,1" fieldTable="" identifier="lb89x"/>
+						<Label isDynamic="true" text="xxxx" classNames="fcls_fieldlabel" visible="true" gridItemLocation="6,0,1,1" fieldTable="" identifier="lb88x"/>
+						<Label isDynamic="true" text="xxxx" classNames="fcls_fieldlabel" visible="true" gridItemLocation="4,4,1,1" fieldTable="" identifier="lb95x"/>
+						<Label isDynamic="true" text="xxxx" classNames="fcls_fieldlabel" visible="true" gridItemLocation="0,5,1,1" fieldTable="" identifier="lb113x"/>
+						<Label isDynamic="true" text="xxxx" classNames="fcls_fieldlabel" visible="true" gridItemLocation="4,5,1,1" fieldTable="" identifier="lb114x"/>
+					</GridPanel>
+				</GroupBox>
+				<GroupBox title="Group 3 Right" classNames="fcls_detail_gb_cnt" visible="true" gridItemLocation="1,0,1,1" fieldTable="" identifier="cntDetail3GroupBoxRight">
+					<GridPanel classNames="fcls_detail_gb_cnt_sub" visible="true" verticalAlignment="Top" horizontalAlignment="Left" fieldTable="" identifier="cntDetail3GBSubGpRight">
+						<GridPanel.gridRowDefinitions>
+							<GridRowDefinition gridLengthValue=""/>
+							<GridRowDefinition gridLengthValue=""/>
+							<GridRowDefinition gridLengthValue=""/>
+							<GridRowDefinition gridLengthValue=""/>
+							<GridRowDefinition gridLengthValue=""/>
+							<GridRowDefinition gridLengthValue=""/>
+						</GridPanel.gridRowDefinitions>
+						<GridPanel.gridColumnDefinitions>
+							<GridColumnDefinition gridLengthValue=""/>
+							<GridColumnDefinition gridLengthValue=""/>
+							<GridColumnDefinition gridLengthValue=""/>
+							<GridColumnDefinition gridLengthValue=""/>
+							<GridColumnDefinition gridLengthValue=""/>
+							<GridColumnDefinition gridLengthValue=""/>
+						</GridPanel.gridColumnDefinitions>
+						<Label isDynamic="true" text="xxxx" classNames="fcls_fieldlabel" visible="true" gridItemLocation="0,0,1,1" fieldTable="" identifier="lb161x"/>
+						<Label isDynamic="true" text="xxxx" classNames="fcls_fieldlabel" visible="true" gridItemLocation="1,0,1,1" fieldTable="" identifier="lb162x"/>
+						<Label isDynamic="true" text="xxxx" classNames="fcls_fieldlabel" visible="true" gridItemLocation="2,0,1,1" fieldTable="" identifier="lb163x"/>
+						<Label isDynamic="true" text="xxxx" classNames="fcls_fieldlabel" visible="true" gridItemLocation="3,0,1,1" fieldTable="" identifier="lb164x"/>
+						<Label isDynamic="true" text="xxxx" classNames="fcls_fieldlabel" visible="true" gridItemLocation="4,0,1,1" fieldTable="" identifier="lb165x"/>
+						<Label isDynamic="true" text="xxxx" classNames="fcls_fieldlabel" visible="true" gridItemLocation="5,0,1,1" fieldTable="" identifier="lb166x"/>
+						<Label isDynamic="true" text="xxxx" classNames="fcls_fieldlabel" visible="true" gridItemLocation="0,1,1,1" fieldTable="" identifier="lb167x"/>
+						<Label isDynamic="true" text="xxxx" classNames="fcls_fieldlabel" visible="true" gridItemLocation="2,1,1,1" fieldTable="" identifier="lb172x"/>
+						<Label isDynamic="true" text="xxxx" classNames="fcls_fieldlabel" visible="true" gridItemLocation="4,1,1,1" fieldTable="" identifier="lb173x"/>
+						<Label isDynamic="true" text="xxxx" classNames="fcls_fieldlabel" visible="true" gridItemLocation="0,2,1,1" fieldTable="" identifier="lb168x"/>
+						<Label isDynamic="true" text="xxxx" classNames="fcls_fieldlabel" visible="true" gridItemLocation="2,2,1,1" fieldTable="" identifier="lb174x"/>
+						<Label isDynamic="true" text="xxxx" classNames="fcls_fieldlabel" visible="true" gridItemLocation="4,2,1,1" fieldTable="" identifier="lb178x"/>
+						<Label isDynamic="true" text="xxxx" classNames="fcls_fieldlabel" visible="true" gridItemLocation="0,3,1,1" fieldTable="" identifier="lb169x"/>
+						<Label isDynamic="true" text="xxxx" classNames="fcls_fieldlabel" visible="true" gridItemLocation="2,3,1,1" fieldTable="" identifier="lb175x"/>
+						<Label isDynamic="true" text="xxxx" classNames="fcls_fieldlabel" visible="true" gridItemLocation="4,3,1,1" fieldTable="" identifier="lb179x"/>
+						<Label isDynamic="true" text="xxxx" classNames="fcls_fieldlabel" visible="true" gridItemLocation="0,4,1,1" fieldTable="" identifier="lb170x"/>
+						<Label isDynamic="true" text="xxxx" classNames="fcls_fieldlabel" visible="true" gridItemLocation="2,4,1,1" fieldTable="" identifier="lb176x"/>
+						<Label isDynamic="true" text="xxxx" classNames="fcls_fieldlabel" visible="true" gridItemLocation="4,4,1,1" fieldTable="" identifier="lb180x"/>
+						<Label isDynamic="true" text="xxxx" classNames="fcls_fieldlabel" visible="true" gridItemLocation="0,5,1,1" fieldTable="" identifier="lb171x"/>
+						<Label isDynamic="true" text="xxxx" classNames="fcls_fieldlabel" visible="true" gridItemLocation="2,5,1,1" fieldTable="" identifier="lb177x"/>
+						<Label isDynamic="true" text="xxxx" classNames="fcls_fieldlabel" visible="true" gridItemLocation="4,5,1,1" fieldTable="" identifier="lb181x"/>
+					</GridPanel>
+				</GroupBox>
+			</GridPanel>
+			<Table visible="true" gridItemLocation="0,4,1,1" fieldTable="" identifier="Table7">
+				<TableColumn text="column" resizable="true" visible="true" fieldTable="" identifier="">
+					<TableColumn.columnLength>
+						<GridLength gridLengthValue=""/>
+					</TableColumn.columnLength>
+				</TableColumn>
+			</Table>
+			<GridPanel classNames="fcls_statusbar_cnt" visible="true" verticalAlignment="Top" gridItemLocation="0,5,1,1" fieldTable="formonly" identifier="cntStatusBar">
+				<GridPanel.gridRowDefinitions>
+					<GridRowDefinition gridLengthValue=""/>
+					<GridRowDefinition gridLengthValue=""/>
+				</GridPanel.gridRowDefinitions>
+				<GridPanel.gridColumnDefinitions>
+					<GridColumnDefinition gridLengthValue="100%"/>
+				</GridPanel.gridColumnDefinitions>
+				<Label isDynamic="true" text="" classNames="fcls_sblabel" visible="true" gridItemLocation="0,0,1,1" fieldTable="formonly" identifier="lbInfo1"/>
+				<Label isDynamic="true" text="" classNames="fcls_sblabel" visible="true" gridItemLocation="0,1,1,1" fieldTable="formonly" identifier="lbInfo2"/>
+			</GridPanel>
+		</GridPanel>
+	</form.rootContainer>
+	<form.screenRecords>
+		<ScreenRecord identifier="s_reqthdr" fields=""/>
+		<ScreenRecord identifier="FORMONLY" fields="print_opt,a_fname,a_address,a_dob,a_salary,a_comment,a_email,a_lycia_user,a_gender,a_lname,a_starting_time,a_amount_2,a_amount_3,a_amount_4,a_amount_5,a_amount_7,a_amount_6,a_amount_1,a_amount_b1,a_amount_b2,a_amount_b3,a_amount_b4,a_amount_b5,a_amount_b6,a_amount_b7,b_fname,b_lname,b_address,b_dob,b_email,b_salary,b_lycia_user,b_gender,b_starting_time,b_comment,b_amount_1,b_amount_b1,b_amount_2,b_amount_b2,b_amount_b3,b_amount_b4,b_amount_b5,b_amount_b6,b_amount_b7,b_amount_3,b_amount_4,b_amount_5,b_amount_6,b_amount_7"/>
+	</form.screenRecords>
+</form>
+

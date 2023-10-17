@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://namespaces.querix.com/2015/fglForms">
+	<form.rootContainer>
+		<CoordPanel location="0,0" minSize="536,484"   fieldTable="" identifier="">
+			<Browser dataType="Char,,,," location="0,0" preferredSize="528,484"   fieldTable="formonly" identifier="bw_print_preview" text="qx:/application/html/gd_temp.html"/>
+		</CoordPanel>
+	</form.rootContainer>
+	<form.screenRecords>
+		<ScreenRecord identifier="formonly" fields="bw_print_preview"/>
+	</form.screenRecords>
+</form>
+

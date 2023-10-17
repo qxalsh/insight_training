@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?><form xmlns="http://namespaces.querix.com/2015/fglForms">
+	<form.rootContainer>
+		<GridPanel classNames="fcls_rootContainer" fieldTable="" horizontalAlignment="Stretch" identifier="rootContainer" verticalAlignment="Stretch">
+			<GridPanel.gridRowDefinitions>
+				<GridRowDefinition/>
+				<GridRowDefinition/>
+				<GridRowDefinition gridLengthValue="29%" gridMaxLength="15rem" gridMinLength="5rem"/>
+				<GridRowDefinition gridLengthValue="29%" gridMaxLength="15rem" gridMinLength="5rem"/>
+				<GridRowDefinition gridLengthValue="29%" gridMaxLength="15rem" gridMinLength="5rem"/>
+				<GridRowDefinition/>
+			</GridPanel.gridRowDefinitions>
+			<GridPanel.gridColumnDefinitions>
+				<GridColumnDefinition gridLengthValue="100%"/>
+			</GridPanel.gridColumnDefinitions>
+			<GridPanel classNames="fcls_title_cnt" fieldTable="formonly" gridItemLocation="0,0,1,1" identifier="cntTitle" verticalAlignment="Top" visible="true">
+				<GridPanel.gridRowDefinitions>
+					<GridRowDefinition gridLengthValue=""/>
+				</GridPanel.gridRowDefinitions>
+				<GridPanel.gridColumnDefinitions>
+					<GridColumnDefinition gridLengthValue="100%"/>
+					<GridColumnDefinition gridLengthValue=""/>
+				</GridPanel.gridColumnDefinitions>
+				<Label classNames="fcls_title_lb" fieldTable="formonly" gridItemLocation="0,0,1,1" identifier="lbTitle" isDynamic="true" text="Class methods base.tokenizer Demo" visible="true"/>
+				<Label classNames="fcls_title_lb" fieldTable="" gridItemLocation="1,0,1,1" identifier="lbFormName" isDynamic="true" text="cm_base_tokenizer" visible="true"/>
+			</GridPanel>
+			<GroupBox classNames="fcls_detail_gb_cnt" fieldTable="" gridItemLocation="0,1,1,1" identifier="cntDetail1GroupBox" title="INPUT String" visible="true" verticalAlignment="Top">
+				<TextArea identifier="source_string" visible="true" maxSize=",3qch"/>
+			</GroupBox>
+			<GroupBox classNames="fcls_detail_gb_cnt" fieldTable="formonly" gridItemLocation="0,2,1,1" horizontalAlignment="Stretch" identifier="cntDetail2GroupBox" title="Tokenized String Array" verticalAlignment="Stretch" visible="true">
+				<GridPanel visible="true" identifier="c3">
+					<GridPanel.gridColumnDefinitions>
+						<GridColumnDefinition gridLengthValue="50%"/>
+						<GridColumnDefinition gridLengthValue="50%"/>
+					</GridPanel.gridColumnDefinitions>
+					<GridPanel.gridRowDefinitions>
+						<GridRowDefinition gridLengthValue=""/>
+					</GridPanel.gridRowDefinitions>
+					<Table identifier="scr_arr_token" visible="true" gridItemLocation="0,0,1,1">
+					<TableColumn identifier="tc_token" resizable="true" text="Column 1" visible="true">
+						<TextField identifier="token" visible="true"/>
+						<TableColumn.columnLength>
+							<GridLength gridLengthValue="100%"/>
+						</TableColumn.columnLength>
+					</TableColumn>
+				</Table>
+					<TextArea text="FUNCTION string_tokenizer(p_arg_str)&#13;&#10;&#9;DEFINE p_arg_str STRING&#13;&#10;&#9;DEFINE tok base.StringTokenizer&#13;&#10;&#9;DEFINE l_arr_token DYNAMIC ARRAY OF STRING&#13;&#10;&#9;DEFINE l_idx SMALLINT&#13;&#10;&#9;&#9;&#13;&#10;&#9;LET tok = base.StringTokenizer.Create(p_arg_str, &quot;;&quot;)&#13;&#10;&#13;&#10;&#9;LET l_idx = 0&#13;&#10;  WHILE tok.hasMoreTokens()&#13;&#10;  &#9;LET l_idx = l_idx + 1&#13;&#10;&#9;&#9;LET l_arr_token[l_idx] = tok.nextToken()&#13;&#10;  END WHILE&#13;&#10;  &#13;&#10;&#9;RETURN l_arr_token&#9;&#9;&#13;&#10;END FUNCTION" visible="true" identifier="lb_tokenizer_code" gridItemLocation="1,0,1,1" classNames="fcls_font_description"/>
+				</GridPanel>
+			</GroupBox>
+			<GroupBox classNames="fcls_detail_gb_cnt" fieldTable="formonly" gridItemLocation="0,3,1,1" horizontalAlignment="Stretch" identifier="cntDetail3GroupBox" title="Array Record with left/right pattern" verticalAlignment="Stretch" visible="true">
+				<GridPanel visible="true" identifier="c2">
+					<GridPanel.gridColumnDefinitions>
+						<GridColumnDefinition gridLengthValue="^50%"/>
+						<GridColumnDefinition gridLengthValue="^50%"/>
+					</GridPanel.gridColumnDefinitions>
+					<GridPanel.gridRowDefinitions>
+						<GridRowDefinition gridLengthValue=""/>
+					</GridPanel.gridRowDefinitions>
+					<Table identifier="scr_arr_rec_pair" visible="true" horizontalAlignment="Left" verticalAlignment="Stretch" minSize="40qch,5qch" gridItemLocation="0,0,1,1">
+					<TableColumn identifier="tc_left_prefix_str" resizable="true" text="Left/Prefix String Segment" visible="true">
+						<TextField identifier="left_prefix_str" visible="true"/>
+						<TableColumn.columnLength>
+							<GridLength/>
+						</TableColumn.columnLength>
+					</TableColumn>
+					<TableColumn identifier="tc_right_suffix_str" resizable="true" text="Right/Suffix String Segment" visible="true">
+						<TextField identifier="right_suffix_str" visible="true"/>
+						<TableColumn.columnLength>
+							<GridLength/>
+						</TableColumn.columnLength>
+					</TableColumn>
+				</Table>
+					<TextArea text="FUNCTION regex_pattern_tokenizer(p_arr_token)&#13;&#10;&#9;DEFINE p_arr_token DYNAMIC ARRAY OF STRING&#13;&#10;&#9;DEFINE l_arr_rec_pair DYNAMIC ARRAY OF RECORD&#13;&#10;&#9;&#9;left_prefix_str STRING,&#13;&#10;&#9;&#9;right_suffix_str STRING&#13;&#10;&#9;END RECORD&#13;&#10;&#9;DEFINE l_idx SMALLINT&#9;&#13;&#10;&#9;DEFINE l_regex util.REGEX #util.REGEX - to hold the regular expression:&#13;&#10;&#9;DEFINE l_match_results util.MATCH_RESULTS&#13;&#10;&#13;&#10;&#9;LET l_regex = /=/&#13;&#10;&#9;&#13;&#10;&#9;FOR l_idx = 1 TO p_arr_token.getSize()&#13;&#10;&#9;&#9;CALL util.REGEX.search(p_arr_token[l_idx], l_regex) RETURNING l_match_results&#13;&#10;&#9;&#9;&#9;&#13;&#10;&#9;&#9;IF l_match_results.matched(0) THEN&#13;&#10;&#9;&#9;&#9;LET l_arr_rec_pair[l_idx].left_prefix_str =&#9;l_match_results.prefix()&#13;&#10;&#9;&#9;&#9;LET l_arr_rec_pair[l_idx].right_suffix_str =&#9;l_match_results.suffix()&#13;&#10;&#9;&#9;END IF&#13;&#10;&#9;END FOR&#13;&#10;&#9;&#13;&#10;&#9;RETURN l_arr_rec_pair&#13;&#10;END FUNCTION" visible="true" identifier="lb_regex_code" gridItemLocation="1,0,1,1" classNames="fcls_font_description"/>
+				</GridPanel>
+			</GroupBox>
+			
+			<GroupBox classNames="fcls_detail_gb_cnt" fieldTable="" gridItemLocation="0,4,1,1" horizontalAlignment="Stretch" identifier="cntDetail4GroupBox" title="If pairs with var1,var2 or var3 are found, they will be assigned to the corresponding variables " visible="true">
+				<GridPanel visible="true" identifier="c4" preferredSize="666,222">
+					<GridPanel.gridColumnDefinitions>
+						<GridColumnDefinition gridLengthValue="50%"/>
+						<GridColumnDefinition gridLengthValue="50%"/>
+					</GridPanel.gridColumnDefinitions>
+					<GridPanel.gridRowDefinitions>
+						<GridRowDefinition gridLengthValue=""/>
+					</GridPanel.gridRowDefinitions>
+					<TextArea text="FUNCTION assign_values_to_variables(p_arr_rec_token)&#13;&#10;&#9;DEFINE p_arr_rec_token,l_arr_rec_token DYNAMIC ARRAY OF RECORD&#13;&#10;&#9;&#9;var STRING,&#13;&#10;&#9;&#9;val STRING&#13;&#10;&#9;END RECORD&#13;&#10;&#13;&#10;&#9;DEFINE l_var_rec RECORD&#13;&#10;&#9;&#9;var1,var2,var3 INTEGER #Just 3 sample module scope variables for this demo&#13;&#10;&#9;END RECORD&#13;&#10;&#13;&#10;&#9;LET l_arr_rec_token = p_arr_rec_token&#13;&#10;&#9;&#9;&#13;&#10;&#9;WHILE l_arr_rec_token.getSize()&#13;&#10;&#9;&#9;CASE l_arr_rec_token[1].var.toLowerCase()&#13;&#10;&#9;&#9;&#9;WHEN &quot;var1&quot;&#13;&#10;&#9;&#9;&#9;&#9;LET l_var_rec.var1 = l_arr_rec_token[1].val&#13;&#10;&#9;&#9;&#9;&#13;&#10;&#9;&#9;&#9;WHEN &quot;var2&quot;&#13;&#10;&#9;&#9;&#9;&#9;LET l_var_rec.var2 = l_arr_rec_token[1].val&#13;&#10;&#9;&#9;&#9;&#13;&#10;&#9;&#9;&#9;WHEN &quot;var3&quot;&#13;&#10;&#9;&#9;&#9;&#9;LET l_var_rec.var3 = l_arr_rec_token[1].val&#13;&#10;&#9;&#9;END CASE&#9;&#9;&#9;&#9;&#13;&#10;&#9;&#9;CALL l_arr_rec_token.delete(1)&#13;&#10;&#9;END WHILE&#13;&#10;&#13;&#10;&#9;RETURN l_var_rec.*&#13;&#10;END FUNCTION" visible="true" identifier="lb_var_case_code" gridItemLocation="1,0,1,1" classNames="fcls_font_description"/>
+					<GridPanel classNames="fcls_detail_gb_cnt_sub,fcls_detail_cnt_sub,fcls_data_cnt" fieldTable="formonly" horizontalAlignment="Left" identifier="cntDetail4Sub" verticalAlignment="Top" visible="true" gridItemLocation="0,0,1,1">
+					<GridPanel.gridRowDefinitions>
+						<GridRowDefinition gridLengthValue=""/>
+						<GridRowDefinition gridLengthValue=""/>
+						<GridRowDefinition gridLengthValue=""/>
+						<GridRowDefinition gridLengthValue=""/>
+						<GridRowDefinition gridLengthValue=""/>
+						<GridRowDefinition gridLengthValue=""/>
+						<GridRowDefinition gridLengthValue=""/>
+					</GridPanel.gridRowDefinitions>
+					<GridPanel.gridColumnDefinitions>
+						<GridColumnDefinition gridLengthValue="" gridMinLength="10rem"/>
+						<GridColumnDefinition gridLengthValue=""/>
+					</GridPanel.gridColumnDefinitions>
+					<Label classNames="fcls_fieldlabel" fieldTable="" gridItemLocation="0,1,1,1" identifier="lb115" isDynamic="true" text="var1" visible="true"/>
+					<TextField classNames="fcls_data_widget,fcls_align_left,fcls_length_30qch" gridItemLocation="1,1,1,1" identifier="var1" visible="true"/>
+					<Label classNames="fcls_fieldlabel" fieldTable="" gridItemLocation="0,2,1,1" identifier="lb116" isDynamic="true" text="var2" visible="true"/>
+					<TextField classNames="fcls_data_widget,fcls_align_left,fcls_length_30qch" gridItemLocation="1,2,1,1" identifier="var2" visible="true"/>
+					<Label classNames="fcls_fieldlabel" fieldTable="" gridItemLocation="0,3,1,1" identifier="lb120" isDynamic="true" text="var3" visible="true"/>
+					<TextField classNames="fcls_data_widget,fcls_align_left,fcls_length_30qch" gridItemLocation="1,3,1,1" identifier="var3" visible="true"/>
+				</GridPanel>
+				</GridPanel>
+			</GroupBox>
+						
+			<GridPanel classNames="fcls_statusbar_cnt" fieldTable="formonly" gridItemLocation="0,5,1,1" identifier="cntStatusBar" verticalAlignment="Top" visible="true">
+				<GridPanel.gridRowDefinitions>
+					<GridRowDefinition gridLengthValue=""/>
+					<GridRowDefinition gridLengthValue=""/>
+				</GridPanel.gridRowDefinitions>
+				<GridPanel.gridColumnDefinitions>
+					<GridColumnDefinition gridLengthValue="100%"/>
+				</GridPanel.gridColumnDefinitions>
+				<Label classNames="fcls_sblabel" fieldTable="formonly" gridItemLocation="0,0,1,1" identifier="lbInfo1" isDynamic="true" text="" visible="true"/>
+				<Label classNames="fcls_sblabel" fieldTable="formonly" gridItemLocation="0,1,1,1" identifier="lbInfo2" isDynamic="true" text="" visible="true"/>
+			</GridPanel>
+		</GridPanel>
+	</form.rootContainer>
+	<form.screenRecords>
+		<ScreenRecord fields="formonly.pr_paid_flag,formonly.pr_invstart_date,formonly.pr_invend_date,formonly.pr_paystart_date,formonly.pr_payend_date" identifier="formonly"/>
+		<ScreenRecord fields="invoicehead.inv_ind,invoicehead.cust_code,invoicehead.total_amt,invoicehead.paid_amt" identifier="invoicehead"/>
+		<ScreenRecord fields="salesperson.sale_code,salesperson.name_text,salesperson.terri_code,salesperson.sale_type_ind,salesperson.mgr_code" identifier="salesperson"/>
+		<ScreenRecord fields="token" identifier="scr_arr_token"/>
+		<ScreenRecord fields="left_prefix_str,right_suffix_str" identifier="scr_arr_rec_pair"/>
+	</form.screenRecords>
+</form>

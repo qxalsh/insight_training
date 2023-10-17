@@ -1,0 +1,139 @@
+<!--
+ cms-demo
+ Property of Querix Ltd.
+ Copyright (C) 2016  Querix Ltd. All rights reserved.
+ This program is free software: you can redistribute it. 
+ You may modify this program only using Lycia.
+
+ This program is distributed in the hope that it will be useful,
+ but without any warranty; without even the implied warranty of
+ merchantability or fitness for a particular purpose.
+
+ Email: info@querix.com
+-->
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        #map {
+			height: 100%;
+        }
+		html, body {
+			height: 100%;
+			margin: 0;
+			padding: 0;
+		}
+    </style>
+	<script type="text/javascript">
+		/**
+		 * Lycia WebComponent widgets were developed to support
+		 * gICAPI.
+		 * This script implements required gICAPI functions
+		 * gICAPI.onFocus()
+		 * gICAPI.onData()
+		 * gICAPI.onProperty()
+		 */
+		onICHostReady = function(version) {
+			gICAPI.onFocus = function(polarity) {
+			}
+
+			gICAPI.onData = function(data) {
+				initMap(data);
+			}
+
+			gICAPI.onProperty = function(property) {
+			}
+		}
+
+		/**
+		 * Lycia WebComponent API functions
+		 * WebComponentAPI.SetFocus()
+		 * WebComponentAPI.SetData()
+		 * WebComponentAPI.Action()
+		 */
+		execAction = function(stateName) {
+			//WebComponentAPI.Action(stateName);
+		}
+
+		askFocus = function() {
+			WebComponentAPI.SetFocus();
+		}
+
+		dispatchData = function(data) {
+			//WebComponentAPI.SetData(data);
+		}
+	</script>
+	<meta charset="utf-8" /><meta http-equiv="Cache-Control" content="no-cache" />
+	<meta http-equiv="Expires" content="0" /><meta http-equiv="Pragma" content="no-cache" />
+</head>
+<body onclick="askFocus()">
+    <div id="map"></div>
+    <script>
+		var googleMapsApiFailed = false, geocoder, googleMap, uluru;
+
+		function initMap(address) {
+			/**
+			 * In some situations (heavy Google Map servers load, network problems)
+			 * initialization of the Google Map script fails.
+			 * In such cases we reinitialize Google Map script and call initMap() again.
+			 */
+			if (window.google === undefined) {
+				console.warn('Google Maps not loaded. Attempting to reload.');
+				var oldScript = document.getElementById('google-map');
+				oldScript.remove();
+				var newScript = document.createElement('script');
+				newScript.id = oldScript.id;
+				newScript.src = oldScript.src;
+				newScript.async = 'async';
+				newScript.onload = function(){
+					console.log('[Feed of "GoogleMap" WebComponent] Google Map API reloaded');
+					initMap(address);
+				};
+				newScript.onerror = function(){
+					console.log('[Feed of "GoogleMap" WebComponent] Google Map API reload failed');
+				};
+				document.body.appendChild(newScript);
+				return;
+			}
+
+			/**
+			 * Calling Google Map API to set map to the given address.
+			 */
+			if (address) {
+				console.log('[Feed of "GoogleMap" WebComponent] geocode() call with address: ', address);
+
+				if (!geocoder) {
+					geocoder = new google.maps.Geocoder();
+				}
+
+				geocoder.geocode( {
+						'address': address
+					},
+					function(results, status) {
+						if (status == google.maps.GeocoderStatus.OK) {
+							var addressLatLng = results[0].geometry.location;
+							if (!googleMap) {
+								googleMap = new google.maps.Map(document.getElementById("map"), {
+									zoom: 18,
+									location: addressLatLng
+								});
+							}
+                            if (googleMap && googleMap.setCenter) {
+						        googleMap.setCenter(addressLatLng);
+						        var marker = new google.maps.Marker({
+							     map: googleMap,
+							     position: addressLatLng
+						        });
+                            }
+						} else {
+							console.log('[Feed of "GoogleMap" WebComponent] geocode() call was not successful for the following reason: ' + status);
+						}
+					}
+				);
+			}
+		}
+    </script>
+    <script async defer id="google-map" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAIzmXkCIBFqi1EjiC3BFHEihb5aYj3RmY&callback=initMap"></script>
+</body>
+
+</html>

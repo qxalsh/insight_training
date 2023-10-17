@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://namespaces.querix.com/2015/fglForms">
+	<form.rootContainer>
+		<GridPanel classNames="fcls_rootContainer" verticalAlignment="Top" horizontalAlignment="Left" fieldTable="" identifier="rootContainer" minSize="50rem,">
+			<GridPanel.gridRowDefinitions>
+				<GridRowDefinition gridLengthValue=""/>
+				<GridRowDefinition gridLengthValue=""/>
+				<GridRowDefinition gridLengthValue=""/>
+			</GridPanel.gridRowDefinitions>
+			<GridPanel.gridColumnDefinitions>
+				<GridColumnDefinition gridLengthValue="100%"/>
+			</GridPanel.gridColumnDefinitions>
+			<GridPanel classNames="fcls_title_cnt" visible="true" verticalAlignment="Top" gridItemLocation="0,0,1,1" fieldTable="formonly" identifier="cntTitle">
+				<GridPanel.gridRowDefinitions>
+					<GridRowDefinition gridLengthValue=""/>
+				</GridPanel.gridRowDefinitions>
+				<GridPanel.gridColumnDefinitions>
+					<GridColumnDefinition gridLengthValue="100%"/>
+					<GridColumnDefinition gridLengthValue=""/>
+				</GridPanel.gridColumnDefinitions>
+				<Label isDynamic="true" text="Label with mouse-click event Demo" classNames="fcls_title_lb" visible="true" gridItemLocation="0,0,1,1" fieldTable="formonly" identifier="lbTitle"/>
+				<Label isDynamic="true" text="wig_label_event" classNames="fcls_title_lb" visible="true" gridItemLocation="1,0,1,1" fieldTable="" identifier="lbFormName"/>
+			</GridPanel>
+			<GridPanel classNames="fcls_detail_cnt,fcls_data_cnt" visible="true" verticalAlignment="Top" horizontalAlignment="Left" gridItemLocation="0,1,1,1" fieldTable="formonly" identifier="cntDetail1">
+				<GridPanel.gridRowDefinitions>
+					<GridRowDefinition gridLengthValue="10rem"/>
+					<GridRowDefinition gridLengthValue="10rem"/>
+					<GridRowDefinition gridLengthValue="10rem"/>
+				</GridPanel.gridRowDefinitions>
+				<GridPanel.gridColumnDefinitions>
+					<GridColumnDefinition gridLengthValue="" gridMinLength="25rem"/>
+					<GridColumnDefinition gridLengthValue="" gridMinLength="25rem"/>
+				</GridPanel.gridColumnDefinitions>
+				<Label isDynamic="true" allowNewlines="true" text="Label OnMouseClick - Action&#13;&#10;&lt;Please click me&gt;" classNames="classLabel" margin="5,5,5,5" cursor="Hand" visible="true" enable="true" fieldTable="formonly" identifier="lbTextOnlyAction" gridItemLocation="0,0,1,1">
+				<Label.onMouseClick>
+					<ActionEventHandler actionName="actOnMouseClickLabelText"/>
+				</Label.onMouseClick>
+			</Label>
+				<Label isDynamic="true" allowNewlines="true" text="Label OnMouseClick - Key&#13;&#10;&lt;Please click me&gt;" classNames="classLabel" margin="5,5,5,5" cursor="Hand" visible="true" enable="true" fieldTable="formonly" identifier="lbTextOnlyKey" gridItemLocation="1,0,1,1">
+
+				<Label.onMouseClick>
+					<KeyEventHandler keyName="F101,false,false,false"/>
+				</Label.onMouseClick>
+			</Label>
+				<Label isDynamic="true" margin="5,5,5,5" cursor="Hand" visible="true" enable="true" fieldTable="formonly" identifier="lb7" gridItemLocation="0,1,1,1">
+				<Label.image>
+					<Image imageUrl="qx://application/icon24/clipboard_w2_01_024.ico"/>
+				</Label.image>
+
+				<Label.onMouseClick>
+					<ActionEventHandler actionName="actOnMouseClickLabelImage"/>
+				</Label.onMouseClick>
+			</Label>
+				<Label isDynamic="true" margin="5,5,5,5" cursor="Hand" visible="true" enable="true" fieldTable="formonly" identifier="lb8" gridItemLocation="1,1,1,1">
+				<Label.image>
+					<Image imageUrl="qx://application/icon24/clipboard_w2_01_024.ico"/>
+				</Label.image>
+
+				<Label.onMouseClick>
+					<KeyEventHandler keyName="F102,false,false,false"/>
+				</Label.onMouseClick>
+			</Label>
+				<Label isDynamic="true" allowNewlines="true" text="Label Image OnMouseClick - Action&#13;&#10;&lt;Please click me&gt;" classNames="classLabel" margin="5,5,5,5" cursor="Hand" visible="true" enable="true" fieldTable="formonly" identifier="lbTextAndImageAction" gridItemLocation="0,2,1,1">
+				<Label.image>
+					<Image imageUrl="qx://application/icon24/switch_w2_01_024.ico"/>
+				</Label.image>
+
+				<Label.onMouseClick>
+					<ActionEventHandler actionName="actOnMouseClickLabelTextImage"/>
+				</Label.onMouseClick>
+			</Label>
+				<Label isDynamic="true" allowNewlines="true" text="Label Image OnMouseClick - Key&#13;&#10;&lt;Please click me&gt;" classNames="classLabel" margin="5,5,5,5" cursor="Hand" visible="true" enable="true" fieldTable="formonly" identifier="lbTextAndImageKey" gridItemLocation="1,2,1,1">
+				<Label.image>
+					<Image imageUrl="qx://application/icon24/switch_w2_01_024.ico"/>
+				</Label.image>
+
+				<Label.onMouseClick>
+					<KeyEventHandler keyName="F103,false,false,false"/>
+				</Label.onMouseClick>
+			</Label>
+			</GridPanel>
+			<GridPanel classNames="fcls_statusbar_cnt" visible="true" verticalAlignment="Bottom" gridItemLocation="0,2,1,1" fieldTable="formonly" identifier="cntStatusBar">
+				<GridPanel.gridRowDefinitions>
+					<GridRowDefinition gridLengthValue=""/>
+					<GridRowDefinition gridLengthValue=""/>
+				</GridPanel.gridRowDefinitions>
+				<GridPanel.gridColumnDefinitions>
+					<GridColumnDefinition gridLengthValue="100%"/>
+				</GridPanel.gridColumnDefinitions>
+				<Label isDynamic="true" text="Simply click on any of the 6 label widgets" classNames="fcls_sblabel" visible="true" gridItemLocation="0,0,1,1" fieldTable="formonly" identifier="lbInfo1"/>
+				<Label isDynamic="true" text="" classNames="fcls_sblabel" visible="true" gridItemLocation="0,1,1,1" fieldTable="formonly" identifier="lbInfo2"/>
+			</GridPanel>
+		</GridPanel>
+	</form.rootContainer>
+	<form.screenRecords>
+		<ScreenRecord identifier="FORMONLY" fields=""/>
+	</form.screenRecords>
+</form>
+
+
+
+

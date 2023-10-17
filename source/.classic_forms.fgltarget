@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<fglBuildTarget xmlns="http://namespaces.querix.com/lyciaide/target" name="classic_forms" type="fgl-program">
+  <sources type="form">
+    <file location="per/ba.per"/>
+    <file location="per/bankzm.per"/>
+    <file location="per/brzm.per"/>
+    <file location="per/la.per"/>
+    <file location="per/screen.per"/>
+  </sources>
+</fglBuildTarget>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://namespaces.querix.com/2015/fglForms" title="Index Rnage">
+	<form.rootContainer>
+		<GridPanel identifier="rootContainer" visible="true" preferredSize="420,165">
+			<GridPanel.gridColumnDefinitions>
+				<GridColumnDefinition gridLengthValue="10rem" gridMinLength="10rem"/>
+				<GridColumnDefinition gridLengthValue="100%"/>
+			</GridPanel.gridColumnDefinitions>
+			<GridPanel.gridRowDefinitions>
+				<GridRowDefinition gridLengthValue=""/>
+				<GridRowDefinition gridLengthValue=""/>
+				<GridRowDefinition gridLengthValue=""/>
+				<GridRowDefinition gridLengthValue=""/>
+				<GridRowDefinition gridLengthValue=""/>
+			</GridPanel.gridRowDefinitions>
+			<Label text="Title" isDynamic="true" visible="true" identifier="lb_title" gridItemLocation="0,0,2,1" classNames="fcls_columnlabel_rev_cell,fcls_align_hstretch"/>
+			<Label text="Description" isDynamic="true" visible="true" identifier="lb_description" gridItemLocation="0,1,2,1" classNames="fcls_font_description"/>
+			<Label text="Index" isDynamic="true" visible="true" identifier="lb4" gridItemLocation="0,2,1,1" classNames="fcls_fieldlabel,fcls_align_left"/>
+			<Spinner visible="true" identifier="json_index" gridItemLocation="1,2,1,1" classNames="fcls_length_10qch,fcls_data_widget,fcls_align_left" maxValue="100" minValue="0" step="1"/>
+			<StackPanel visible="true" identifier="c1" gridItemLocation="1,3,1,1" horizontalAlignment="Right">
+				<Button text="Cancel" visible="true" identifier="bt5" classNames="fcls_button,fcls_length_10qch">
+					<Button.onInvoke>
+						<ActionEventHandler actionName="CANCEL"/>
+					</Button.onInvoke>
+				</Button>
+				<Button text="OK" visible="true" identifier="bt6" classNames="fcls_button,fcls_length_10qch">
+					<Button.onInvoke>
+						<ActionEventHandler actionName="ACCEPT"/>
+					</Button.onInvoke>
+				</Button>
+			</StackPanel>
+		</GridPanel>
+	</form.rootContainer>
+	
+	<form.screenRecords>
+		<ScreenRecord identifier="sc_hashPair" fields="json_index"/>
+	</form.screenRecords> 
+	
+</form>

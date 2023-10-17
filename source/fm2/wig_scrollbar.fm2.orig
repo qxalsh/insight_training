@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://namespaces.querix.com/2015/fglForms">
+	<form.rootContainer>
+		<GridPanel classNames="fcls_rootContainer" verticalAlignment="Stretch" fieldTable="" identifier="rootContainer" horizontalAlignment="Stretch" preferredSize="80qch,30qch">
+			<GridPanel.gridRowDefinitions>
+				<GridRowDefinition>
+					<GridRowDefinition.gridLength>
+						<GridLength gridLengthType="Auto"/>
+					</GridRowDefinition.gridLength>
+				</GridRowDefinition>
+				<GridRowDefinition>
+					<GridRowDefinition.gridLength>
+						<GridLength gridLengthType="Percent" gridLengthValue="100"/>
+					</GridRowDefinition.gridLength>
+				</GridRowDefinition>
+				<GridRowDefinition>
+					<GridRowDefinition.gridLength>
+						<GridLength gridLengthType="Auto"/>
+					</GridRowDefinition.gridLength>
+				</GridRowDefinition>
+			</GridPanel.gridRowDefinitions>
+
+
+			
+			<GridPanel.gridColumnDefinitions>
+				<GridColumnDefinition>
+					<GridColumnDefinition.gridLength>
+						<GridLength gridLengthType="Percent" gridLengthValue="100"/>
+					</GridColumnDefinition.gridLength>
+				</GridColumnDefinition>
+			</GridPanel.gridColumnDefinitions>
+
+				<GridPanel classNames="fcls_title_cnt" visible="true" verticalAlignment="Top" gridItemLocation="0,0,1,1" fieldTable="formonly" identifier="cntTitle">
+					<GridPanel.gridRowDefinitions>
+						<GridRowDefinition>
+							<GridRowDefinition.gridLength>
+								<GridLength gridLengthType="Auto"/>
+							</GridRowDefinition.gridLength>
+						</GridRowDefinition>
+					</GridPanel.gridRowDefinitions>
+					<GridPanel.gridColumnDefinitions>
+						<GridColumnDefinition>
+							<GridColumnDefinition.gridLength>
+								<GridLength gridLengthType="Percent" gridLengthValue="100"/>
+							</GridColumnDefinition.gridLength>
+						</GridColumnDefinition>
+						<GridColumnDefinition>
+							<GridColumnDefinition.gridLength>
+								<GridLength gridLengthType="Auto" gridLengthValue="0.0"/>
+							</GridColumnDefinition.gridLength>
+						</GridColumnDefinition>
+					</GridPanel.gridColumnDefinitions>
+					<Label isDynamic="true" text="Scrollbar Widget Demo" classNames="fcls_title_lb" visible="true" gridItemLocation="0,0,1,1" fieldTable="formonly" identifier="masken_kopf"/>
+					<Label visible="true" identifier="lbFormName" gridItemLocation="1,0,1,1" classNames="fcls_title_lb" isDynamic="true" text="wig_scrollbar"/>
+				</GridPanel>
+				<GridPanel visible="true" identifier="tempContainer" gridItemLocation="0,1,1,1">
+			<GridPanel.gridRowDefinitions>
+				<GridRowDefinition>
+					<GridRowDefinition.gridLength>
+						<GridLength gridLengthType="Percent" gridLengthValue="9.08"/>
+					</GridRowDefinition.gridLength>
+				</GridRowDefinition>
+				<GridRowDefinition>
+					<GridRowDefinition.gridLength>
+						<GridLength gridLengthType="Percent" gridLengthValue="9.08"/>
+					</GridRowDefinition.gridLength>
+				</GridRowDefinition>
+				<GridRowDefinition>
+					<GridRowDefinition.gridLength>
+						<GridLength gridLengthType="Percent" gridLengthValue="9.08"/>
+					</GridRowDefinition.gridLength>
+				</GridRowDefinition>
+				<GridRowDefinition>
+					<GridRowDefinition.gridLength>
+						<GridLength gridLengthType="Percent" gridLengthValue="9.08"/>
+					</GridRowDefinition.gridLength>
+				</GridRowDefinition>
+				<GridRowDefinition>
+					<GridRowDefinition.gridLength>
+						<GridLength gridLengthType="Percent" gridLengthValue="9.08"/>
+					</GridRowDefinition.gridLength>
+				</GridRowDefinition>
+				<GridRowDefinition>
+					<GridRowDefinition.gridLength>
+						<GridLength gridLengthType="Percent" gridLengthValue="9.08"/>
+					</GridRowDefinition.gridLength>
+				</GridRowDefinition>
+				<GridRowDefinition>
+					<GridRowDefinition.gridLength>
+						<GridLength/>
+					</GridRowDefinition.gridLength>
+				</GridRowDefinition>
+				<GridRowDefinition>
+					<GridRowDefinition.gridLength>
+						<GridLength gridLengthType="Percent" gridLengthValue="9.08"/>
+					</GridRowDefinition.gridLength>
+				</GridRowDefinition>
+				<GridRowDefinition>
+					<GridRowDefinition.gridLength>
+						<GridLength gridLengthType="Percent" gridLengthValue="9.08"/>
+					</GridRowDefinition.gridLength>
+				</GridRowDefinition>
+				<GridRowDefinition>
+					<GridRowDefinition.gridLength>
+						<GridLength gridLengthType="Percent" gridLengthValue="9.08"/>
+					</GridRowDefinition.gridLength>
+				</GridRowDefinition>
+				<GridRowDefinition>
+					<GridRowDefinition.gridLength>
+						<GridLength/>
+					</GridRowDefinition.gridLength>
+				</GridRowDefinition>
+			</GridPanel.gridRowDefinitions>
+			<GridPanel.gridColumnDefinitions>
+				<GridColumnDefinition>
+					<GridColumnDefinition.gridLength>
+						<GridLength/>
+					</GridColumnDefinition.gridLength>
+				</GridColumnDefinition>
+				<GridColumnDefinition>
+					<GridColumnDefinition.gridLength>
+						<GridLength gridLengthType="Percent" gridLengthValue="9.08"/>
+					</GridColumnDefinition.gridLength>
+				</GridColumnDefinition>
+				<GridColumnDefinition>
+					<GridColumnDefinition.gridLength>
+						<GridLength gridLengthType="Percent" gridLengthValue="9.08"/>
+					</GridColumnDefinition.gridLength>
+				</GridColumnDefinition>
+				<GridColumnDefinition>
+					<GridColumnDefinition.gridLength>
+						<GridLength/>
+					</GridColumnDefinition.gridLength>
+				</GridColumnDefinition>
+				<GridColumnDefinition>
+					<GridColumnDefinition.gridLength>
+						<GridLength gridLengthType="Percent" gridLengthValue="9.08"/>
+					</GridColumnDefinition.gridLength>
+				</GridColumnDefinition>
+				<GridColumnDefinition>
+					<GridColumnDefinition.gridLength>
+						<GridLength gridLengthType="Percent" gridLengthValue="9.08"/>
+					</GridColumnDefinition.gridLength>
+				</GridColumnDefinition>
+				<GridColumnDefinition>
+					<GridColumnDefinition.gridLength>
+						<GridLength gridLengthType="Percent" gridLengthValue="9.08"/>
+					</GridColumnDefinition.gridLength>
+				</GridColumnDefinition>
+				<GridColumnDefinition>
+					<GridColumnDefinition.gridLength>
+						<GridLength gridLengthType="Percent" gridLengthValue="9.08"/>
+					</GridColumnDefinition.gridLength>
+				</GridColumnDefinition>
+				<GridColumnDefinition>
+					<GridColumnDefinition.gridLength>
+						<GridLength gridLengthType="Percent" gridLengthValue="9.08"/>
+					</GridColumnDefinition.gridLength>
+				</GridColumnDefinition>
+				<GridColumnDefinition>
+					<GridColumnDefinition.gridLength>
+						<GridLength gridLengthType="Percent" gridLengthValue="9.08"/>
+					</GridColumnDefinition.gridLength>
+				</GridColumnDefinition>
+				<GridColumnDefinition>
+					<GridColumnDefinition.gridLength>
+						<GridLength gridLengthType="Percent" gridLengthValue="9.08"/>
+					</GridColumnDefinition.gridLength>
+				</GridColumnDefinition>
+			</GridPanel.gridColumnDefinitions>
+			
+			<ScrollBar orientation="Vertical" largeStep="100" smallStep="10" maxValue="1000" preferredSize="15," visible="true" enable="true" horizontalAlignment="Right" gridItemLocation="0,0,1,10" fieldTable="formonly" identifier="scrollbar_v1" verticalAlignment="Stretch">
+				<ScrollBar.onValueChanged>
+					<ActionEventHandler actionName="actUpdateV1"/>
+				</ScrollBar.onValueChanged>
+				<ScrollBar.background>
+					<Background/>
+				</ScrollBar.background>
+			</ScrollBar>
+			<TextField visible="true" enable="true" gridItemLocation="1,0,2,1" fieldTable="formonly" identifier="tf_v1" classNames="fcls_data_widget,fcls_align_hstretch">
+			</TextField>
+			<ScrollBar orientation="Vertical" largeStep="10" smallStep="1" maxValue="100" preferredSize="15," visible="true" enable="true" horizontalAlignment="Right" gridItemLocation="3,0,1,6" fieldTable="formonly" identifier="scrollbar_v2" verticalAlignment="Stretch">
+				<ScrollBar.onValueChanged>
+					<ActionEventHandler actionName="actUpdateV2"/>
+				</ScrollBar.onValueChanged>
+				<ScrollBar.background>
+					<Background/>
+				</ScrollBar.background>
+				<ScrollBar.foreColor>
+					<SystemColor systemColorName="Red"/>
+				</ScrollBar.foreColor>
+			</ScrollBar>
+			<TextField visible="true" enable="true" gridItemLocation="4,0,2,1" fieldTable="formonly" identifier="tf_v2" classNames="fcls_data_widget,fcls_align_hstretch">
+
+			</TextField>
+			<Label text="VScroll 1&#13;&#10;Range 0-1000&#13;&#10;Step 10/100" isDynamic="true" visible="true" identifier="lb3" gridItemLocation="1,1,2,2" allowNewlines="true" classNames="fcls_fieldlabel,fcls_align_left"/>
+			<Label text="VScroll2&#13;&#10;Range 0-100&#13;&#10;Step 1/10" isDynamic="true" visible="true" identifier="lb4" gridItemLocation="4,1,2,2" allowNewlines="true" classNames="fcls_fieldlabel,fcls_align_left"/>
+			<Label text="HScroll2&#13;&#10;Range 0-100&#13;&#10;Step 1/10" isDynamic="true" visible="true" identifier="lb5" gridItemLocation="9,3,2,2" allowNewlines="true" classNames="fcls_fieldlabel,fcls_align_left"/>
+			<TextField visible="true" enable="true" gridItemLocation="9,5,2,1" fieldTable="formonly" identifier="tf_h2" classNames="fcls_data_widget,fcls_align_hstretch">
+			</TextField>
+			<ScrollBar largeStep="10" smallStep="1" maxValue="100" preferredSize=",15" visible="true" enable="true" verticalAlignment="Top" gridItemLocation="4,6,7,1" fieldTable="formonly" identifier="scrollbar_h2">
+				<ScrollBar.onValueChanged>
+					<ActionEventHandler actionName="actUpdateH2"/>
+				</ScrollBar.onValueChanged>
+				<ScrollBar.background>
+					<Background/>
+				</ScrollBar.background>
+				<ScrollBar.foreColor>
+					<SystemColor systemColorName="Red"/>
+				</ScrollBar.foreColor>
+			</ScrollBar>
+			<Label text="HScroll 1&#13;&#10;Range 0-1000&#13;&#10;Step 10/100" isDynamic="true" visible="true" identifier="lb6" gridItemLocation="9,7,2,1" allowNewlines="true" classNames="fcls_fieldlabel,fcls_align_left"/>
+			<TextField visible="true" enable="true" gridItemLocation="9,9,2,1" fieldTable="formonly" identifier="tf_h1" classNames="fcls_data_widget,fcls_align_hstretch">
+			</TextField>
+			<ScrollBar largeStep="100" smallStep="10" maxValue="1000" preferredSize=",15" visible="true" enable="true" verticalAlignment="Top" gridItemLocation="1,10,10,1" fieldTable="formonly" identifier="scrollbar_h1">
+				<ScrollBar.onValueChanged>
+					<ActionEventHandler actionName="actUpdateH1"/>
+				</ScrollBar.onValueChanged>
+				<ScrollBar.background>
+					<Background/>
+				</ScrollBar.background>
+			</ScrollBar>
+		
+				</GridPanel>
+
+
+
+				<GridPanel classNames="fcls_statusbar_cnt" visible="true" verticalAlignment="Top" gridItemLocation="0,2,1,1" fieldTable="formonly" identifier="cntStatusBar">
+					<GridPanel.gridRowDefinitions>
+						<GridRowDefinition>
+							<GridRowDefinition.gridLength>
+								<GridLength gridLengthType="Auto"/>
+							</GridRowDefinition.gridLength>
+						</GridRowDefinition>
+						<GridRowDefinition>
+							<GridRowDefinition.gridLength>
+								<GridLength gridLengthType="Auto"/>
+							</GridRowDefinition.gridLength>
+						</GridRowDefinition>
+					</GridPanel.gridRowDefinitions>
+					<GridPanel.gridColumnDefinitions>
+						<GridColumnDefinition>
+							<GridColumnDefinition.gridLength>
+								<GridLength gridLengthType="Percent" gridLengthValue="100"/>
+							</GridColumnDefinition.gridLength>
+						</GridColumnDefinition>
+					</GridPanel.gridColumnDefinitions>
+					<Label isDynamic="true" text="" classNames="fcls_sblabel" visible="true" gridItemLocation="0,0,1,1" fieldTable="formonly" identifier="lbInfo1"/>
+					<Label isDynamic="true" text="" classNames="fcls_sblabel" visible="true" gridItemLocation="0,1,1,1" fieldTable="formonly" identifier="lbInfo2"/>
+
+			</GridPanel>
+			
+			
+
+
+<!-- BEGIN Temp Container -->
+<!-- END Temp Container -->
+
+			
+		</GridPanel>
+	</form.rootContainer>
+	<form.screenRecords>
+		<ScreenRecord identifier="FormOnly" fields="formonly.scrollbar_v1,formonly.tf_v1,formonly.tf_h2,formonly.scrollbar_v2,formonly.scrollbar_h1,formonly.tf_v2,formonly.tf_h1,formonly.scrollbar_h2"/>
+	</form.screenRecords>
+</form>
+

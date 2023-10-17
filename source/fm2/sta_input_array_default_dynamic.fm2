@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://namespaces.querix.com/2015/fglForms">
+	<form.rootContainer>
+		<GridPanel visible="true" fieldTable="" identifier="rootContainer" horizontalAlignment="Stretch" verticalAlignment="Stretch">
+			<GridPanel.gridRowDefinitions>
+				<GridRowDefinition gridLengthValue=""/>
+				<GridRowDefinition gridLengthValue="100%"/>
+				<GridRowDefinition gridLengthValue=""/>
+			</GridPanel.gridRowDefinitions>
+			<GridPanel.gridColumnDefinitions>
+				<GridColumnDefinition gridLengthValue=""/>
+			</GridPanel.gridColumnDefinitions>
+			<GridPanel classNames="fcls_title_cnt" visible="true" verticalAlignment="Top" horizontalAlignment="Stretch" gridItemLocation="0,0,1,1" fieldTable="formonly" identifier="cntTitle">
+				<GridPanel.gridRowDefinitions>
+					<GridRowDefinition gridLengthValue=""/>
+				</GridPanel.gridRowDefinitions>
+				<GridPanel.gridColumnDefinitions>
+					<GridColumnDefinition gridLengthValue="100%"/>
+					<GridColumnDefinition gridLengthValue=""/>
+				</GridPanel.gridColumnDefinitions>
+				<Label isDynamic="true" text="INPUT ARRAY with dynamic array (Default)" classNames="fcls_title_lb" visible="true" gridItemLocation="0,0,1,1" fieldTable="formonly" identifier="lbTitle"/>
+				<Label isDynamic="true" text="sta_input_array_default_dynamic" classNames="fcls_title_lb" visible="true" gridItemLocation="1,0,1,1" fieldTable="" identifier="lbFormName"/>
+			</GridPanel>
+			<GridPanel visible="true" identifier="c15" gridItemLocation="0,1,1,1" horizontalAlignment="Stretch" verticalAlignment="Stretch">
+				<GridPanel.gridColumnDefinitions>
+					<GridColumnDefinition gridLengthValue="75%"/>
+					<GridColumnDefinition gridLengthValue="25%" gridMinLength="22rem"/>
+				</GridPanel.gridColumnDefinitions>
+				<GridPanel.gridRowDefinitions>
+					<GridRowDefinition gridLengthValue="100%"/>
+				</GridPanel.gridRowDefinitions>
+				<Table visible="true" fieldTable="" identifier="sArr" gridItemLocation="0,0,1,1" horizontalAlignment="Stretch" verticalAlignment="Stretch">
+				<TableColumn text="ID" resizable="true" visible="true" fieldTable="" identifier="tc_f1">
+					<TableColumn.columnLength>
+						<GridLength gridLengthValue="12.5%" gridMinLength="5rem"/>
+					</TableColumn.columnLength>
+					<TextField visible="true" fieldTable="contactRecord" identifier="contId"/>
+				</TableColumn>
+				<TableColumn text="First Name" resizable="true" visible="true" fieldTable="" identifier="tc_f2">
+					<TableColumn.columnLength>
+						<GridLength gridLengthValue="12.5%" gridMinLength="5rem"/>
+					</TableColumn.columnLength>
+					<TextField visible="true" fieldTable="contactRecord" identifier="firstName"/>
+				</TableColumn>
+				<TableColumn text="LastName" resizable="true" visible="true" fieldTable="" identifier="tc_f8">
+					<TableColumn.columnLength>
+						<GridLength gridLengthValue="12.5%" gridMinLength="5rem"/>
+					</TableColumn.columnLength>
+					<TextField visible="true" fieldTable="contactRecord" identifier="lastName"/>
+				</TableColumn>
+				<TableColumn text="Address 1" resizable="true" visible="true" fieldTable="" identifier="tc_f9">
+					<TableColumn.columnLength>
+						<GridLength gridLengthValue="12.5%" gridMinLength="5rem"/>
+					</TableColumn.columnLength>
+					<TextField visible="true" fieldTable="" identifier="address1"/>
+				</TableColumn>
+				<TableColumn text="Address 2" resizable="true" visible="true" fieldTable="" identifier="tc_f10">
+					<TableColumn.columnLength>
+						<GridLength gridLengthValue="12.5%" gridMinLength="5rem"/>
+					</TableColumn.columnLength>
+					<TextField visible="true" fieldTable="" identifier="address2"/>
+				</TableColumn>
+				<TableColumn text="Address 3" resizable="true" visible="true" fieldTable="" identifier="tc_f11">
+					<TableColumn.columnLength>
+						<GridLength gridLengthValue="12.5%" gridMinLength="5rem"/>
+					</TableColumn.columnLength>
+					<TextField visible="true" fieldTable="" identifier="address3"/>
+				</TableColumn>
+				<TableColumn text="City" resizable="true" visible="true" fieldTable="" identifier="tc_f13">
+					<TableColumn.columnLength>
+						<GridLength gridLengthValue="12.5%" gridMinLength="5rem"/>
+					</TableColumn.columnLength>
+					<TextField visible="true" fieldTable="" identifier="city"/>
+				</TableColumn>
+				<TableColumn text="Post Code" resizable="true" visible="true" fieldTable="" identifier="tc_f14">
+					<TableColumn.columnLength>
+						<GridLength gridLengthValue="12.5%" gridMinLength="5rem"/>
+					</TableColumn.columnLength>
+					<TextField visible="true" fieldTable="" identifier="postCode"/>
+				</TableColumn>
+			</Table>
+				<TextArea visible="true" identifier="fActionReport" gridItemLocation="1,0,1,1"/>
+			</GridPanel>
+			<GridPanel classNames="fcls_statusbar_cnt" visible="true" verticalAlignment="Top" gridItemLocation="0,2,1,1" fieldTable="formonly" identifier="cntStatusBar">
+				<GridPanel.gridRowDefinitions>
+					<GridRowDefinition gridLengthValue=""/>
+					<GridRowDefinition gridLengthValue=""/>
+				</GridPanel.gridRowDefinitions>
+				<GridPanel.gridColumnDefinitions>
+					<GridColumnDefinition gridLengthValue="100%"/>
+				</GridPanel.gridColumnDefinitions>
+				<Label isDynamic="true" text="" classNames="fcls_sblabel" visible="true" gridItemLocation="0,0,1,1" fieldTable="formonly" identifier="lbInfo1"/>
+				<Label isDynamic="true" text="" classNames="fcls_sblabel" visible="true" gridItemLocation="0,1,1,1" fieldTable="formonly" identifier="lbInfo2"/>
+			</GridPanel>
+		</GridPanel>
+	</form.rootContainer>
+	<form.screenRecords>
+		<ScreenRecord identifier="FormOnly" fields="contId,firstName,lastName,address1,address2,address3,city,postCode"/>
+		<ScreenRecord identifier="cntRec" fields="cntRec.contId,cntRec.firstName,cntRec.lastName,cntRec.address1,cntRec.address2,cntRec.address3,cntRec.city,cntRec.postCode"/>
+		<ScreenRecord identifier="xRec" fields="cntRec.contId,cntRec.firstName,cntRec.lastName,cntRec.address1,cntRec.address2,cntRec.address3,cntRec.city,cntRec.postCode"/>
+		<ScreenRecord identifier="sArr" fields="contId,firstName,lastName,address1,address2,address3,city,postCode"/>
+	</form.screenRecords>
+</form>
+

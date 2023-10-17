@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://namespaces.querix.com/2015/fglForms">
+	<form.rootContainer>
+		<GridPanel classNames="fcls_rootContainer" fieldTable="" identifier="rootContainer" verticalAlignment="Stretch" horizontalAlignment="Stretch">
+			<GridPanel.gridRowDefinitions>
+				<GridRowDefinition>
+					<GridRowDefinition.gridLength>
+						<GridLength gridLengthType="Auto" gridLengthValue="0.0"/>
+					</GridRowDefinition.gridLength>
+				</GridRowDefinition>
+				<GridRowDefinition>
+					<GridRowDefinition.gridLength>
+						<GridLength gridLengthType="Auto"/>
+					</GridRowDefinition.gridLength>
+				</GridRowDefinition>
+			</GridPanel.gridRowDefinitions>
+
+			<GridPanel.gridColumnDefinitions>
+				<GridColumnDefinition>
+					<GridColumnDefinition.gridLength>
+						<GridLength gridLengthType="Percent" gridLengthValue="100"/>
+					</GridColumnDefinition.gridLength>
+				</GridColumnDefinition>
+			</GridPanel.gridColumnDefinitions>
+			<Tab tabPagePlacement="Top" visible="true" identifier="cntTab" gridItemLocation="0,0,1,1" verticalAlignment="Stretch" classNames="fcls_tab_cnt">
+				<TabPage title="Contact Details" visible="true" identifier="cntTabPageContactDetails" classNames="fcls_tab_page_cnt">
+					<TabPage.onSelectTabPage>
+						<ActionEventHandler type="actioneventhandler" actionName="actContactDetails"/>
+					</TabPage.onSelectTabPage>
+				</TabPage>
+				<TabPage title="Activities" visible="true" identifier="cntTabPageActivities" verticalAlignment="Stretch" classNames="fcls_tab_page_cnt">
+					<TabPage.onSelectTabPage>
+						<ActionEventHandler type="actioneventhandler" actionName="actContactActivities"/>
+					</TabPage.onSelectTabPage>
+					<GridPanel visible="true" identifier="cntTabPageActivitiesSubGp" preferredSize=",20qch" verticalAlignment="Stretch">
+						<GridPanel.gridColumnDefinitions>
+							<GridColumnDefinition>
+								<GridColumnDefinition.gridLength>
+									<GridLength gridLengthType="Auto" gridLengthValue="0.0"/>
+								</GridColumnDefinition.gridLength>
+							</GridColumnDefinition>
+						</GridPanel.gridColumnDefinitions>
+						<GridPanel.gridRowDefinitions>
+							<GridRowDefinition>
+								<GridRowDefinition.gridLength>
+									<GridLength gridLengthType="Auto" gridLengthValue="0.0"/>
+								</GridRowDefinition.gridLength>
+							</GridRowDefinition>
+							<GridRowDefinition>
+								<GridRowDefinition.gridLength>
+									<GridLength gridLengthType="Percent" gridLengthValue="100" gridMinLength="100"/>
+								</GridRowDefinition.gridLength>
+							</GridRowDefinition>
+							<GridRowDefinition>
+								<GridRowDefinition.gridLength>
+									<GridLength/>
+								</GridRowDefinition.gridLength>
+							</GridRowDefinition>
+						</GridPanel.gridRowDefinitions>
+						<GridPanel classNames="fcls_title_cnt" visible="true" verticalAlignment="Top" gridItemLocation="0,0,1,1" fieldTable="formonly" identifier="cntTitle">
+					<GridPanel.gridRowDefinitions>
+						<GridRowDefinition>
+							<GridRowDefinition.gridLength>
+								<GridLength gridLengthType="Auto"/>
+							</GridRowDefinition.gridLength>
+						</GridRowDefinition>
+					</GridPanel.gridRowDefinitions>
+					<GridPanel.gridColumnDefinitions>
+						<GridColumnDefinition>
+							<GridColumnDefinition.gridLength>
+								<GridLength gridLengthType="Percent" gridLengthValue="100"/>
+							</GridColumnDefinition.gridLength>
+						</GridColumnDefinition>
+						<GridColumnDefinition>
+							<GridColumnDefinition.gridLength>
+								<GridLength gridLengthType="Auto" gridLengthValue="0.0"/>
+							</GridColumnDefinition.gridLength>
+						</GridColumnDefinition>
+					</GridPanel.gridColumnDefinitions>
+					<Label isDynamic="true" text="Customer Communication Activities" classNames="fcls_title_lb" visible="true" gridItemLocation="0,0,1,1" fieldTable="formonly" identifier="lbTitle"/>
+					<Label visible="true" identifier="lbFormName" gridItemLocation="1,0,1,1" classNames="fcls_title_lb" isDynamic="true" text="cnt_tab_page_imitation_tab2.fm2"/>
+				</GridPanel>
+						<Table visible="true" identifier="Table4" gridItemLocation="0,1,1,1" preferredSize="50qch,10qch" horizontalAlignment="Stretch" verticalAlignment="Stretch">
+							<TableColumn text="Type" resizable="true" visible="true" identifier="tc_f159">
+								<ComboBox visible="true" identifier="logType">
+									<ComboBoxItem text="Other" identifier="actType_0">
+										<ComboBoxItem.value>
+											<IntegerLiteral/>
+										</ComboBoxItem.value>
+									</ComboBoxItem>
+									<ComboBoxItem text="Consultancy" identifier="actType_1">
+										<ComboBoxItem.value>
+											<StringLiteral stringValue="1"/>
+										</ComboBoxItem.value>
+									</ComboBoxItem>
+									<ComboBoxItem text="Sale" identifier="actType_2">
+										<ComboBoxItem.value>
+											<StringLiteral stringValue="2"/>
+										</ComboBoxItem.value>
+									</ComboBoxItem>
+									<ComboBoxItem text="Support" identifier="logType_3">
+										<ComboBoxItem.value>
+											<IntegerLiteral integerValue="3"/>
+										</ComboBoxItem.value>
+									</ComboBoxItem>
+								</ComboBox>
+								<TableColumn.columnLength>
+									<GridLength gridLengthType="Auto"/>
+								</TableColumn.columnLength>
+							</TableColumn>
+							<TableColumn text="Date" resizable="true" visible="true" identifier="tc_f160">
+								<Calendar dataType="Date,,,," visible="true" identifier="logDate"/>
+								<TableColumn.columnLength>
+									<GridLength gridLengthType="Auto"/>
+								</TableColumn.columnLength>
+							</TableColumn>
+							<TableColumn text="Time" resizable="true" visible="true" identifier="tc_f161">
+								<TimeEditField visible="true" identifier="logTime"/>
+								<TableColumn.columnLength>
+									<GridLength gridLengthType="Auto"/>
+								</TableColumn.columnLength>
+							</TableColumn>
+							<TableColumn text="Friendly" resizable="true" visible="true" identifier="tc_f162">
+								<CheckBox visible="true" notNull="true" identifier="logStatusFriendly">
+									<CheckBox.checkedValue>
+										<IntegerLiteral integerValue="1"/>
+									</CheckBox.checkedValue>
+									<CheckBox.uncheckedValue>
+										<IntegerLiteral integerValue="0"/>
+									</CheckBox.uncheckedValue>
+								</CheckBox>
+								<TableColumn.columnLength>
+									<GridLength gridLengthType="Auto"/>
+								</TableColumn.columnLength>
+							</TableColumn>
+							<TableColumn text="Request" resizable="true" visible="true" identifier="tc_f163">
+								<CheckBox visible="true" notNull="true" identifier="logStatusRequest">
+									<CheckBox.checkedValue>
+										<IntegerLiteral integerValue="1"/>
+									</CheckBox.checkedValue>
+									<CheckBox.uncheckedValue>
+										<IntegerLiteral integerValue="0"/>
+									</CheckBox.uncheckedValue>
+								</CheckBox>
+								<TableColumn.columnLength>
+									<GridLength gridLengthType="Auto"/>
+								</TableColumn.columnLength>
+							</TableColumn>
+							<TableColumn text="Cancelation" resizable="true" visible="true" identifier="tc_f164">
+								<CheckBox visible="true" notNull="true" identifier="logStatusCancelation">
+									<CheckBox.checkedValue>
+										<IntegerLiteral integerValue="1"/>
+									</CheckBox.checkedValue>
+									<CheckBox.uncheckedValue>
+										<IntegerLiteral integerValue="0"/>
+									</CheckBox.uncheckedValue>
+								</CheckBox>
+								<TableColumn.columnLength>
+									<GridLength gridLengthType="Auto"/>
+								</TableColumn.columnLength>
+							</TableColumn>
+						</Table>
+						<GridPanel visible="true" identifier="cntDetail1" horizontalAlignment="Left" verticalAlignment="Top" classNames="fcls_detail_cnt,fcls_data_cnt,fcls_align_left,fcls_align_top" gridItemLocation="0,2,1,1">
+							<GridPanel.gridColumnDefinitions>
+								<GridColumnDefinition>
+									<GridColumnDefinition.gridLength>
+										<GridLength/>
+									</GridColumnDefinition.gridLength>
+								</GridColumnDefinition>
+								<GridColumnDefinition>
+									<GridColumnDefinition.gridLength>
+										<GridLength gridLengthType="Auto"/>
+									</GridColumnDefinition.gridLength>
+								</GridColumnDefinition>
+								<GridColumnDefinition>
+									<GridColumnDefinition.gridLength>
+										<GridLength gridLengthType="Auto"/>
+									</GridColumnDefinition.gridLength>
+								</GridColumnDefinition>
+								<GridColumnDefinition>
+									<GridColumnDefinition.gridLength>
+										<GridLength gridLengthType="Auto"/>
+									</GridColumnDefinition.gridLength>
+								</GridColumnDefinition>
+								<GridColumnDefinition>
+									<GridColumnDefinition.gridLength>
+										<GridLength gridLengthType="Auto" gridLengthValue="0.0"/>
+									</GridColumnDefinition.gridLength>
+								</GridColumnDefinition>
+								<GridColumnDefinition>
+									<GridColumnDefinition.gridLength>
+										<GridLength gridLengthType="Auto" gridLengthValue="0.0"/>
+									</GridColumnDefinition.gridLength>
+								</GridColumnDefinition>
+							</GridPanel.gridColumnDefinitions>
+							<GridPanel.gridRowDefinitions>
+								<GridRowDefinition>
+									<GridRowDefinition.gridLength>
+										<GridLength gridLengthType="Auto"/>
+									</GridRowDefinition.gridLength>
+								</GridRowDefinition>
+								<GridRowDefinition>
+									<GridRowDefinition.gridLength>
+										<GridLength gridLengthType="Auto"/>
+									</GridRowDefinition.gridLength>
+								</GridRowDefinition>
+								<GridRowDefinition>
+									<GridRowDefinition.gridLength>
+										<GridLength gridLengthType="Auto"/>
+									</GridRowDefinition.gridLength>
+								</GridRowDefinition>
+								<GridRowDefinition>
+									<GridRowDefinition.gridLength>
+										<GridLength gridLengthType="Auto"/>
+									</GridRowDefinition.gridLength>
+								</GridRowDefinition>
+							</GridPanel.gridRowDefinitions>
+							<Label text="Type" isDynamic="true" visible="true" identifier="lb139" gridItemLocation="0,0,1,1" classNames="fcls_fieldlabel,fcls_align_left"/>
+							<TextField visible="true" identifier="detLogType" gridItemLocation="1,0,1,1"/>
+							<Label text="Date" isDynamic="true" visible="true" identifier="lb146" gridItemLocation="2,0,1,1" classNames="fcls_fieldlabel,fcls_align_left"/>
+							<TextField visible="true" identifier="detLogDate" gridItemLocation="3,0,1,1"/>
+							<Label text="Time" isDynamic="true" visible="true" identifier="lb149" gridItemLocation="4,0,1,1" classNames="fcls_fieldlabel,fcls_align_left"/>
+							<TextField visible="true" identifier="detLogTime" gridItemLocation="5,0,1,1"/>
+							<Label text="Attributes" isDynamic="true" visible="true" identifier="lb156" gridItemLocation="0,1,1,1" classNames="fcls_fieldlabel,fcls_align_left"/>
+							<CheckBox title="Friendly" visible="true" notNull="true" identifier="isFriendly" gridItemLocation="1,1,1,1">
+								<CheckBox.checkedValue>
+									<IntegerLiteral integerValue="1"/>
+								</CheckBox.checkedValue>
+								<CheckBox.uncheckedValue>
+									<IntegerLiteral integerValue="0"/>
+								</CheckBox.uncheckedValue>
+							</CheckBox>
+							<Label text="Details" isDynamic="true" visible="true" identifier="lb147" gridItemLocation="2,1,1,1" classNames="fcls_fieldlabel,fcls_align_left"/>
+							<TextArea visible="true" identifier="details" gridItemLocation="3,1,3,3"/>
+							<Label text="Title" isDynamic="true" visible="true" identifier="lb141" gridItemLocation="0,2,1,1" classNames="fcls_fieldlabel,fcls_align_left"/>
+							<CheckBox title="Status Requested" visible="true" notNull="true" identifier="statusRequest" gridItemLocation="1,2,1,1">
+								<CheckBox.checkedValue>
+									<IntegerLiteral integerValue="1"/>
+								</CheckBox.checkedValue>
+								<CheckBox.uncheckedValue>
+									<IntegerLiteral integerValue="0"/>
+								</CheckBox.uncheckedValue>
+							</CheckBox>
+							<Label text="First Name" isDynamic="true" visible="true" identifier="lb157" gridItemLocation="0,3,1,1" classNames="fcls_fieldlabel,fcls_align_left"/>
+							<CheckBox title="Canceled Maintenance" visible="true" notNull="true" identifier="statusCancelation" gridItemLocation="1,3,1,1">
+								<CheckBox.checkedValue>
+									<IntegerLiteral integerValue="1"/>
+								</CheckBox.checkedValue>
+								<CheckBox.uncheckedValue>
+									<IntegerLiteral integerValue="0"/>
+								</CheckBox.uncheckedValue>
+							</CheckBox>
+						</GridPanel>
+					</GridPanel>
+				</TabPage>
+				<TabPage title="Account Summary" visible="true" identifier="cntTabPageAccountSummary" classNames="fcls_tab_page_cnt">
+					<TabPage.onSelectTabPage>
+						<ActionEventHandler type="actioneventhandler" actionName="actAccountSummary"/>
+					</TabPage.onSelectTabPage>
+				</TabPage>
+			</Tab>
+			
+			
+
+
+
+
+
+
+				<GridPanel classNames="fcls_statusbar_cnt" visible="true" verticalAlignment="Top" gridItemLocation="0,1,1,1" fieldTable="formonly" identifier="cntStatusBar">
+					<GridPanel.gridRowDefinitions>
+						<GridRowDefinition>
+							<GridRowDefinition.gridLength>
+								<GridLength gridLengthType="Auto"/>
+							</GridRowDefinition.gridLength>
+						</GridRowDefinition>
+						<GridRowDefinition>
+							<GridRowDefinition.gridLength>
+								<GridLength gridLengthType="Auto"/>
+							</GridRowDefinition.gridLength>
+						</GridRowDefinition>
+					</GridPanel.gridRowDefinitions>
+					<GridPanel.gridColumnDefinitions>
+						<GridColumnDefinition>
+							<GridColumnDefinition.gridLength>
+								<GridLength gridLengthType="Percent" gridLengthValue="100"/>
+							</GridColumnDefinition.gridLength>
+						</GridColumnDefinition>
+					</GridPanel.gridColumnDefinitions>
+					<Label isDynamic="true" text="" classNames="fcls_sblabel" visible="true" gridItemLocation="0,0,1,1" fieldTable="formonly" identifier="lbInfo1"/>
+					<Label isDynamic="true" text="" classNames="fcls_sblabel" visible="true" gridItemLocation="0,1,1,1" fieldTable="formonly" identifier="lbInfo2"/>
+
+			</GridPanel>
+			
+			
+<!-- BEGIN Temp Container -->
+<!-- END Temp Container -->
+			
+			
+		</GridPanel>
+	</form.rootContainer>
+	<form.screenRecords>
+		<ScreenRecord identifier="s_reqthdr" fields=""/>
+		<ScreenRecord identifier="FORMONLY" fields="print_opt,detLogType,detLogDate,detLogTime,isFriendly,statusRequest,statusCancelation,details"/>
+		<ScreenRecord identifier="Table4" fields="logType,logDate,logTime,logStatusFriendly,logStatusRequest,logStatusCancelation"/>
+	</form.screenRecords>
+</form>
+

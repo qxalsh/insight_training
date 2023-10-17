@@ -1,0 +1,661 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://namespaces.querix.com/2015/fglForms">
+	<form.rootContainer>
+		<Tab preferredSize="831,574" minSize="831,574"   fieldTable="" identifier="">
+			<TabPage title='"General Path"'   fieldTable="" identifier="">
+				<GridPanel   fieldTable="formonly" identifier="c2">
+					<GridPanel.gridRowDefinitions>
+						<GridRowDefinition>
+							<GridRowDefinition.gridLength>
+								<GridLength gridLengthType="Pixels" gridLengthValue="30"/>
+							</GridRowDefinition.gridLength>
+						</GridRowDefinition>
+						<GridRowDefinition>
+							<GridRowDefinition.gridLength>
+								<GridLength gridLengthType="Pixels" gridLengthValue="30"/>
+							</GridRowDefinition.gridLength>
+						</GridRowDefinition>
+						<GridRowDefinition>
+							<GridRowDefinition.gridLength>
+								<GridLength gridLengthType="Pixels" gridLengthValue="30"/>
+							</GridRowDefinition.gridLength>
+						</GridRowDefinition>
+						<GridRowDefinition>
+							<GridRowDefinition.gridLength>
+								<GridLength gridLengthType="Pixels" gridLengthValue="30"/>
+							</GridRowDefinition.gridLength>
+						</GridRowDefinition>
+						<GridRowDefinition>
+							<GridRowDefinition.gridLength>
+								<GridLength gridLengthType="Pixels" gridLengthValue="30"/>
+							</GridRowDefinition.gridLength>
+						</GridRowDefinition>
+						<GridRowDefinition>
+							<GridRowDefinition.gridLength>
+								<GridLength gridLengthType="Pixels" gridLengthValue="30"/>
+							</GridRowDefinition.gridLength>
+						</GridRowDefinition>
+						<GridRowDefinition>
+							<GridRowDefinition.gridLength>
+								<GridLength gridLengthType="Pixels" gridLengthValue="30"/>
+							</GridRowDefinition.gridLength>
+						</GridRowDefinition>
+						<GridRowDefinition>
+							<GridRowDefinition.gridLength>
+								<GridLength gridLengthType="Pixels" gridLengthValue="30"/>
+							</GridRowDefinition.gridLength>
+						</GridRowDefinition>
+						<GridRowDefinition>
+							<GridRowDefinition.gridLength>
+								<GridLength gridLengthType="Pixels" gridLengthValue="30"/>
+							</GridRowDefinition.gridLength>
+						</GridRowDefinition>
+						<GridRowDefinition>
+							<GridRowDefinition.gridLength>
+								<GridLength gridLengthType="Pixels" gridLengthValue="30"/>
+							</GridRowDefinition.gridLength>
+						</GridRowDefinition>
+						<GridRowDefinition>
+							<GridRowDefinition.gridLength>
+								<GridLength gridLengthType="Pixels" gridLengthValue="30"/>
+							</GridRowDefinition.gridLength>
+						</GridRowDefinition>
+					</GridPanel.gridRowDefinitions>
+					<GridPanel.gridColumnDefinitions>
+						<GridColumnDefinition>
+							<GridColumnDefinition.gridLength>
+								<GridLength gridLengthType="Percent" gridLengthValue="1"/>
+							</GridColumnDefinition.gridLength>
+						</GridColumnDefinition>
+						<GridColumnDefinition>
+							<GridColumnDefinition.gridLength>
+								<GridLength gridLengthType="Percent" gridLengthValue="1"/>
+							</GridColumnDefinition.gridLength>
+						</GridColumnDefinition>
+						<GridColumnDefinition>
+							<GridColumnDefinition.gridLength>
+								<GridLength gridLengthType="Percent" gridLengthValue="1"/>
+							</GridColumnDefinition.gridLength>
+						</GridColumnDefinition>
+					</GridPanel.gridColumnDefinitions>
+					<CoordPanel   gridItemLocation="2,10,1,1" fieldTable="formonly" identifier="c3">
+						<Label isDynamic="true" text="New Label" location="88,0" preferredSize="80,20"   fieldTable="formonly" identifier="f1"/>
+					</CoordPanel>
+				</GridPanel>
+			</TabPage>
+			<TabPage title='"Cfg-Path"'   fieldTable="" identifier="">
+				<GridPanel   fieldTable="formonly" identifier="c4">
+					<GridPanel.gridRowDefinitions>
+						<GridRowDefinition>
+							<GridRowDefinition.gridLength>
+								<GridLength gridLengthType="Pixels" gridLengthValue="30"/>
+							</GridRowDefinition.gridLength>
+						</GridRowDefinition>
+						<GridRowDefinition>
+							<GridRowDefinition.gridLength>
+								<GridLength gridLengthType="Pixels" gridLengthValue="30"/>
+							</GridRowDefinition.gridLength>
+						</GridRowDefinition>
+						<GridRowDefinition>
+							<GridRowDefinition.gridLength>
+								<GridLength gridLengthType="Pixels" gridLengthValue="30"/>
+							</GridRowDefinition.gridLength>
+						</GridRowDefinition>
+						<GridRowDefinition>
+							<GridRowDefinition.gridLength>
+								<GridLength gridLengthType="Pixels" gridLengthValue="30"/>
+							</GridRowDefinition.gridLength>
+						</GridRowDefinition>
+						<GridRowDefinition>
+							<GridRowDefinition.gridLength>
+								<GridLength gridLengthType="Pixels" gridLengthValue="30"/>
+							</GridRowDefinition.gridLength>
+						</GridRowDefinition>
+						<GridRowDefinition>
+							<GridRowDefinition.gridLength>
+								<GridLength gridLengthType="Pixels" gridLengthValue="30"/>
+							</GridRowDefinition.gridLength>
+						</GridRowDefinition>
+						<GridRowDefinition>
+							<GridRowDefinition.gridLength>
+								<GridLength gridLengthType="Pixels" gridLengthValue="30"/>
+							</GridRowDefinition.gridLength>
+						</GridRowDefinition>
+						<GridRowDefinition>
+							<GridRowDefinition.gridLength>
+								<GridLength gridLengthType="Pixels" gridLengthValue="30"/>
+							</GridRowDefinition.gridLength>
+						</GridRowDefinition>
+						<GridRowDefinition>
+							<GridRowDefinition.gridLength>
+								<GridLength gridLengthType="Pixels" gridLengthValue="30"/>
+							</GridRowDefinition.gridLength>
+						</GridRowDefinition>
+						<GridRowDefinition>
+							<GridRowDefinition.gridLength>
+								<GridLength gridLengthType="Pixels" gridLengthValue="30"/>
+							</GridRowDefinition.gridLength>
+						</GridRowDefinition>
+						<GridRowDefinition>
+							<GridRowDefinition.gridLength>
+								<GridLength gridLengthType="Pixels" gridLengthValue="30"/>
+							</GridRowDefinition.gridLength>
+						</GridRowDefinition>
+					</GridPanel.gridRowDefinitions>
+					<GridPanel.gridColumnDefinitions>
+						<GridColumnDefinition>
+							<GridColumnDefinition.gridLength>
+								<GridLength gridLengthType="Percent" gridLengthValue="1"/>
+							</GridColumnDefinition.gridLength>
+						</GridColumnDefinition>
+						<GridColumnDefinition>
+							<GridColumnDefinition.gridLength>
+								<GridLength gridLengthType="Percent" gridLengthValue="1"/>
+							</GridColumnDefinition.gridLength>
+						</GridColumnDefinition>
+						<GridColumnDefinition>
+							<GridColumnDefinition.gridLength>
+								<GridLength gridLengthType="Percent" gridLengthValue="1"/>
+							</GridColumnDefinition.gridLength>
+						</GridColumnDefinition>
+					</GridPanel.gridColumnDefinitions>
+					<CoordPanel   gridItemLocation="2,10,1,1" fieldTable="formonly" identifier="c5">
+						<Label isDynamic="true" text="New Label" location="40,0" preferredSize="80,20"   fieldTable="formonly" identifier="f2"/>
+					</CoordPanel>
+				</GridPanel>
+			</TabPage>
+			<TabPage title='"Classic Help"'   fieldTable="" identifier="">
+				<GridPanel   fieldTable="formonly" identifier="c6">
+					<GridPanel.gridRowDefinitions>
+						<GridRowDefinition>
+							<GridRowDefinition.gridLength>
+								<GridLength gridLengthType="Pixels" gridLengthValue="30"/>
+							</GridRowDefinition.gridLength>
+						</GridRowDefinition>
+						<GridRowDefinition>
+							<GridRowDefinition.gridLength>
+								<GridLength gridLengthType="Pixels" gridLengthValue="30"/>
+							</GridRowDefinition.gridLength>
+						</GridRowDefinition>
+						<GridRowDefinition>
+							<GridRowDefinition.gridLength>
+								<GridLength gridLengthType="Pixels" gridLengthValue="30"/>
+							</GridRowDefinition.gridLength>
+						</GridRowDefinition>
+						<GridRowDefinition>
+							<GridRowDefinition.gridLength>
+								<GridLength gridLengthType="Pixels" gridLengthValue="30"/>
+							</GridRowDefinition.gridLength>
+						</GridRowDefinition>
+						<GridRowDefinition>
+							<GridRowDefinition.gridLength>
+								<GridLength gridLengthType="Pixels" gridLengthValue="30"/>
+							</GridRowDefinition.gridLength>
+						</GridRowDefinition>
+						<GridRowDefinition>
+							<GridRowDefinition.gridLength>
+								<GridLength gridLengthType="Pixels" gridLengthValue="30"/>
+							</GridRowDefinition.gridLength>
+						</GridRowDefinition>
+						<GridRowDefinition>
+							<GridRowDefinition.gridLength>
+								<GridLength gridLengthType="Pixels" gridLengthValue="30"/>
+							</GridRowDefinition.gridLength>
+						</GridRowDefinition>
+						<GridRowDefinition>
+							<GridRowDefinition.gridLength>
+								<GridLength gridLengthType="Pixels" gridLengthValue="30"/>
+							</GridRowDefinition.gridLength>
+						</GridRowDefinition>
+						<GridRowDefinition>
+							<GridRowDefinition.gridLength>
+								<GridLength gridLengthType="Pixels" gridLengthValue="30"/>
+							</GridRowDefinition.gridLength>
+						</GridRowDefinition>
+						<GridRowDefinition>
+							<GridRowDefinition.gridLength>
+								<GridLength gridLengthType="Pixels" gridLengthValue="30"/>
+							</GridRowDefinition.gridLength>
+						</GridRowDefinition>
+						<GridRowDefinition>
+							<GridRowDefinition.gridLength>
+								<GridLength gridLengthType="Pixels" gridLengthValue="30"/>
+							</GridRowDefinition.gridLength>
+						</GridRowDefinition>
+					</GridPanel.gridRowDefinitions>
+					<GridPanel.gridColumnDefinitions>
+						<GridColumnDefinition>
+							<GridColumnDefinition.gridLength>
+								<GridLength gridLengthType="Percent" gridLengthValue="1"/>
+							</GridColumnDefinition.gridLength>
+						</GridColumnDefinition>
+						<GridColumnDefinition>
+							<GridColumnDefinition.gridLength>
+								<GridLength gridLengthType="Percent" gridLengthValue="1"/>
+							</GridColumnDefinition.gridLength>
+						</GridColumnDefinition>
+						<GridColumnDefinition>
+							<GridColumnDefinition.gridLength>
+								<GridLength gridLengthType="Percent" gridLengthValue="1"/>
+							</GridColumnDefinition.gridLength>
+						</GridColumnDefinition>
+					</GridPanel.gridColumnDefinitions>
+					<CoordPanel   gridItemLocation="2,10,1,1" fieldTable="formonly" identifier="c7">
+						<Label isDynamic="true" text="New Label" location="32,0" preferredSize="80,20"   fieldTable="formonly" identifier="f3"/>
+					</CoordPanel>
+				</GridPanel>
+			</TabPage>
+			<TabPage title='"Html-Help"'   fieldTable="" identifier="">
+				<GridPanel   fieldTable="formonly" identifier="c8">
+					<GridPanel.gridRowDefinitions>
+						<GridRowDefinition>
+							<GridRowDefinition.gridLength>
+								<GridLength gridLengthType="Pixels" gridLengthValue="30"/>
+							</GridRowDefinition.gridLength>
+						</GridRowDefinition>
+						<GridRowDefinition>
+							<GridRowDefinition.gridLength>
+								<GridLength gridLengthType="Pixels" gridLengthValue="30"/>
+							</GridRowDefinition.gridLength>
+						</GridRowDefinition>
+						<GridRowDefinition>
+							<GridRowDefinition.gridLength>
+								<GridLength gridLengthType="Pixels" gridLengthValue="30"/>
+							</GridRowDefinition.gridLength>
+						</GridRowDefinition>
+						<GridRowDefinition>
+							<GridRowDefinition.gridLength>
+								<GridLength gridLengthType="Pixels" gridLengthValue="30"/>
+							</GridRowDefinition.gridLength>
+						</GridRowDefinition>
+						<GridRowDefinition>
+							<GridRowDefinition.gridLength>
+								<GridLength gridLengthType="Pixels" gridLengthValue="30"/>
+							</GridRowDefinition.gridLength>
+						</GridRowDefinition>
+						<GridRowDefinition>
+							<GridRowDefinition.gridLength>
+								<GridLength gridLengthType="Pixels" gridLengthValue="30"/>
+							</GridRowDefinition.gridLength>
+						</GridRowDefinition>
+						<GridRowDefinition>
+							<GridRowDefinition.gridLength>
+								<GridLength gridLengthType="Pixels" gridLengthValue="30"/>
+							</GridRowDefinition.gridLength>
+						</GridRowDefinition>
+						<GridRowDefinition>
+							<GridRowDefinition.gridLength>
+								<GridLength gridLengthType="Pixels" gridLengthValue="30"/>
+							</GridRowDefinition.gridLength>
+						</GridRowDefinition>
+						<GridRowDefinition>
+							<GridRowDefinition.gridLength>
+								<GridLength gridLengthType="Pixels" gridLengthValue="30"/>
+							</GridRowDefinition.gridLength>
+						</GridRowDefinition>
+						<GridRowDefinition>
+							<GridRowDefinition.gridLength>
+								<GridLength gridLengthType="Pixels" gridLengthValue="30"/>
+							</GridRowDefinition.gridLength>
+						</GridRowDefinition>
+						<GridRowDefinition>
+							<GridRowDefinition.gridLength>
+								<GridLength gridLengthType="Pixels" gridLengthValue="30"/>
+							</GridRowDefinition.gridLength>
+						</GridRowDefinition>
+					</GridPanel.gridRowDefinitions>
+					<GridPanel.gridColumnDefinitions>
+						<GridColumnDefinition>
+							<GridColumnDefinition.gridLength>
+								<GridLength gridLengthType="Percent" gridLengthValue="1"/>
+							</GridColumnDefinition.gridLength>
+						</GridColumnDefinition>
+						<GridColumnDefinition>
+							<GridColumnDefinition.gridLength>
+								<GridLength gridLengthType="Percent" gridLengthValue="1"/>
+							</GridColumnDefinition.gridLength>
+						</GridColumnDefinition>
+						<GridColumnDefinition>
+							<GridColumnDefinition.gridLength>
+								<GridLength gridLengthType="Percent" gridLengthValue="1"/>
+							</GridColumnDefinition.gridLength>
+						</GridColumnDefinition>
+					</GridPanel.gridColumnDefinitions>
+					<CoordPanel   gridItemLocation="2,10,1,1" fieldTable="formonly" identifier="c9">
+						<Label isDynamic="true" text="New Label" location="16,0" preferredSize="80,20"   fieldTable="formonly" identifier="f4"/>
+					</CoordPanel>
+				</GridPanel>
+			</TabPage>
+			<TabPage title='"Webservice"'   fieldTable="" identifier="">
+				<GridPanel   fieldTable="formonly" identifier="c10">
+					<GridPanel.gridRowDefinitions>
+						<GridRowDefinition>
+							<GridRowDefinition.gridLength>
+								<GridLength gridLengthType="Pixels" gridLengthValue="30"/>
+							</GridRowDefinition.gridLength>
+						</GridRowDefinition>
+						<GridRowDefinition>
+							<GridRowDefinition.gridLength>
+								<GridLength gridLengthType="Pixels" gridLengthValue="30"/>
+							</GridRowDefinition.gridLength>
+						</GridRowDefinition>
+						<GridRowDefinition>
+							<GridRowDefinition.gridLength>
+								<GridLength gridLengthType="Pixels" gridLengthValue="30"/>
+							</GridRowDefinition.gridLength>
+						</GridRowDefinition>
+					</GridPanel.gridRowDefinitions>
+					<GridPanel.gridColumnDefinitions>
+						<GridColumnDefinition>
+							<GridColumnDefinition.gridLength>
+								<GridLength gridLengthType="Percent" gridLengthValue="1"/>
+							</GridColumnDefinition.gridLength>
+						</GridColumnDefinition>
+						<GridColumnDefinition>
+							<GridColumnDefinition.gridLength>
+								<GridLength gridLengthType="Percent" gridLengthValue="1"/>
+							</GridColumnDefinition.gridLength>
+						</GridColumnDefinition>
+						<GridColumnDefinition>
+							<GridColumnDefinition.gridLength>
+								<GridLength gridLengthType="Percent" gridLengthValue="1"/>
+							</GridColumnDefinition.gridLength>
+						</GridColumnDefinition>
+					</GridPanel.gridColumnDefinitions>
+					<CoordPanel   gridItemLocation="2,2,1,1" fieldTable="formonly" identifier="c12">
+						<Label isDynamic="true" text="New Label" location="40,0" preferredSize="80,20"   fieldTable="formonly" identifier="f5"/>
+					</CoordPanel>
+				</GridPanel>
+			</TabPage>
+			<TabPage title='"Language"'   fieldTable="" identifier="">
+				<GridPanel   fieldTable="formonly" identifier="c13">
+					<GridPanel.gridRowDefinitions>
+						<GridRowDefinition>
+							<GridRowDefinition.gridLength>
+								<GridLength gridLengthType="Pixels" gridLengthValue="30"/>
+							</GridRowDefinition.gridLength>
+						</GridRowDefinition>
+						<GridRowDefinition>
+							<GridRowDefinition.gridLength>
+								<GridLength gridLengthType="Pixels" gridLengthValue="30"/>
+							</GridRowDefinition.gridLength>
+						</GridRowDefinition>
+						<GridRowDefinition>
+							<GridRowDefinition.gridLength>
+								<GridLength gridLengthType="Pixels" gridLengthValue="30"/>
+							</GridRowDefinition.gridLength>
+						</GridRowDefinition>
+						<GridRowDefinition>
+							<GridRowDefinition.gridLength>
+								<GridLength gridLengthType="Pixels" gridLengthValue="30"/>
+							</GridRowDefinition.gridLength>
+						</GridRowDefinition>
+						<GridRowDefinition>
+							<GridRowDefinition.gridLength>
+								<GridLength gridLengthType="Pixels" gridLengthValue="30"/>
+							</GridRowDefinition.gridLength>
+						</GridRowDefinition>
+					</GridPanel.gridRowDefinitions>
+					<GridPanel.gridColumnDefinitions>
+						<GridColumnDefinition>
+							<GridColumnDefinition.gridLength>
+								<GridLength gridLengthType="Percent" gridLengthValue="1"/>
+							</GridColumnDefinition.gridLength>
+						</GridColumnDefinition>
+						<GridColumnDefinition>
+							<GridColumnDefinition.gridLength>
+								<GridLength gridLengthType="Percent" gridLengthValue="1"/>
+							</GridColumnDefinition.gridLength>
+						</GridColumnDefinition>
+						<GridColumnDefinition>
+							<GridColumnDefinition.gridLength>
+								<GridLength gridLengthType="Percent" gridLengthValue="1"/>
+							</GridColumnDefinition.gridLength>
+						</GridColumnDefinition>
+					</GridPanel.gridColumnDefinitions>
+					<CoordPanel   gridItemLocation="2,4,1,1" fieldTable="formonly" identifier="c14">
+						<Label isDynamic="true" dataType="Char,,,," location="0,22" preferredSize="152,22"   fieldTable="formonly" identifier="dl_field81">
+							<Label.displayModes>
+								
+							</Label.displayModes>
+						</Label>
+						<RadioButtonList orientation="Vertical" dataType="Char,,,," location="160,22" minSize="288,22"   toolTip="Language choice (not implemented)" fieldTable="formonly" comment="Language choice (not implemented)" identifier="language">
+							
+								<RadioButtonListItem title="English" identifier="">
+									<RadioButtonListItem.value>
+										<StringLiteral stringValue="1"/>
+									</RadioButtonListItem.value>
+								</RadioButtonListItem>
+								<RadioButtonListItem title="Spanish" identifier="">
+									<RadioButtonListItem.value>
+										<StringLiteral stringValue="2"/>
+									</RadioButtonListItem.value>
+								</RadioButtonListItem>
+								<RadioButtonListItem title="German" identifier="">
+									<RadioButtonListItem.value>
+										<StringLiteral stringValue="3"/>
+									</RadioButtonListItem.value>
+								</RadioButtonListItem>
+								<RadioButtonListItem title="French" identifier="">
+									<RadioButtonListItem.value>
+										<StringLiteral stringValue="4"/>
+									</RadioButtonListItem.value>
+								</RadioButtonListItem>
+								<RadioButtonListItem title="Arabic" identifier="">
+									<RadioButtonListItem.value>
+										<StringLiteral stringValue="5"/>
+									</RadioButtonListItem.value>
+								</RadioButtonListItem>
+								<RadioButtonListItem title="Italian" identifier="">
+									<RadioButtonListItem.value>
+										<StringLiteral stringValue="6"/>
+									</RadioButtonListItem.value>
+								</RadioButtonListItem>
+								<RadioButtonListItem title="Other" identifier="">
+									<RadioButtonListItem.value>
+										<StringLiteral stringValue="7"/>
+									</RadioButtonListItem.value>
+								</RadioButtonListItem>
+
+						</RadioButtonList>
+					</CoordPanel>
+				</GridPanel>
+			</TabPage>
+			<TabPage title='"Print-Html"'   fieldTable="" identifier="">
+				<GridPanel   fieldTable="formonly" identifier="c15">
+					<GridPanel.gridRowDefinitions>
+						<GridRowDefinition>
+							<GridRowDefinition.gridLength>
+								<GridLength gridLengthType="Pixels" gridLengthValue="30"/>
+							</GridRowDefinition.gridLength>
+						</GridRowDefinition>
+						<GridRowDefinition>
+							<GridRowDefinition.gridLength>
+								<GridLength gridLengthType="Pixels" gridLengthValue="30"/>
+							</GridRowDefinition.gridLength>
+						</GridRowDefinition>
+						<GridRowDefinition>
+							<GridRowDefinition.gridLength>
+								<GridLength gridLengthType="Pixels" gridLengthValue="30"/>
+							</GridRowDefinition.gridLength>
+						</GridRowDefinition>
+						<GridRowDefinition>
+							<GridRowDefinition.gridLength>
+								<GridLength gridLengthType="Pixels" gridLengthValue="30"/>
+							</GridRowDefinition.gridLength>
+						</GridRowDefinition>
+						<GridRowDefinition>
+							<GridRowDefinition.gridLength>
+								<GridLength gridLengthType="Pixels" gridLengthValue="30"/>
+							</GridRowDefinition.gridLength>
+						</GridRowDefinition>
+						<GridRowDefinition>
+							<GridRowDefinition.gridLength>
+								<GridLength gridLengthType="Pixels" gridLengthValue="30"/>
+							</GridRowDefinition.gridLength>
+						</GridRowDefinition>
+						<GridRowDefinition>
+							<GridRowDefinition.gridLength>
+								<GridLength gridLengthType="Pixels" gridLengthValue="30"/>
+							</GridRowDefinition.gridLength>
+						</GridRowDefinition>
+						<GridRowDefinition>
+							<GridRowDefinition.gridLength>
+								<GridLength gridLengthType="Pixels" gridLengthValue="30"/>
+							</GridRowDefinition.gridLength>
+						</GridRowDefinition>
+						<GridRowDefinition>
+							<GridRowDefinition.gridLength>
+								<GridLength gridLengthType="Pixels" gridLengthValue="30"/>
+							</GridRowDefinition.gridLength>
+						</GridRowDefinition>
+						<GridRowDefinition>
+							<GridRowDefinition.gridLength>
+								<GridLength gridLengthType="Pixels" gridLengthValue="30"/>
+							</GridRowDefinition.gridLength>
+						</GridRowDefinition>
+						<GridRowDefinition>
+							<GridRowDefinition.gridLength>
+								<GridLength gridLengthType="Pixels" gridLengthValue="30"/>
+							</GridRowDefinition.gridLength>
+						</GridRowDefinition>
+					</GridPanel.gridRowDefinitions>
+					<GridPanel.gridColumnDefinitions>
+						<GridColumnDefinition>
+							<GridColumnDefinition.gridLength>
+								<GridLength gridLengthType="Percent" gridLengthValue="1"/>
+							</GridColumnDefinition.gridLength>
+						</GridColumnDefinition>
+						<GridColumnDefinition>
+							<GridColumnDefinition.gridLength>
+								<GridLength gridLengthType="Percent" gridLengthValue="1"/>
+							</GridColumnDefinition.gridLength>
+						</GridColumnDefinition>
+						<GridColumnDefinition>
+							<GridColumnDefinition.gridLength>
+								<GridLength gridLengthType="Percent" gridLengthValue="1"/>
+							</GridColumnDefinition.gridLength>
+						</GridColumnDefinition>
+					</GridPanel.gridColumnDefinitions>
+					<CoordPanel   gridItemLocation="2,10,1,1" fieldTable="formonly" identifier="c16">
+						<Label isDynamic="true" text="New Label" location="48,0" preferredSize="80,20"   fieldTable="formonly" identifier="f6"/>
+					</CoordPanel>
+				</GridPanel>
+			</TabPage>
+			<TabPage title='"Print-Html-Image"'   fieldTable="" identifier="">
+				<GridPanel   fieldTable="formonly" identifier="c17">
+					<GridPanel.gridRowDefinitions>
+						<GridRowDefinition>
+							<GridRowDefinition.gridLength>
+								<GridLength gridLengthValue="30"/>
+							</GridRowDefinition.gridLength>
+						</GridRowDefinition>
+						<GridRowDefinition>
+							<GridRowDefinition.gridLength>
+								<GridLength gridLengthType="Pixels" gridLengthValue="30"/>
+							</GridRowDefinition.gridLength>
+						</GridRowDefinition>
+						<GridRowDefinition>
+							<GridRowDefinition.gridLength>
+								<GridLength gridLengthType="Pixels" gridLengthValue="30"/>
+							</GridRowDefinition.gridLength>
+						</GridRowDefinition>
+						<GridRowDefinition>
+							<GridRowDefinition.gridLength>
+								<GridLength gridLengthType="Pixels" gridLengthValue="30"/>
+							</GridRowDefinition.gridLength>
+						</GridRowDefinition>
+						<GridRowDefinition>
+							<GridRowDefinition.gridLength>
+								<GridLength gridLengthType="Pixels" gridLengthValue="30"/>
+							</GridRowDefinition.gridLength>
+						</GridRowDefinition>
+						<GridRowDefinition>
+							<GridRowDefinition.gridLength>
+								<GridLength gridLengthType="Pixels" gridLengthValue="30"/>
+							</GridRowDefinition.gridLength>
+						</GridRowDefinition>
+						<GridRowDefinition>
+							<GridRowDefinition.gridLength>
+								<GridLength gridLengthType="Pixels" gridLengthValue="30"/>
+							</GridRowDefinition.gridLength>
+						</GridRowDefinition>
+						<GridRowDefinition>
+							<GridRowDefinition.gridLength>
+								<GridLength gridLengthType="Pixels" gridLengthValue="30"/>
+							</GridRowDefinition.gridLength>
+						</GridRowDefinition>
+						<GridRowDefinition>
+							<GridRowDefinition.gridLength>
+								<GridLength gridLengthType="Pixels" gridLengthValue="30"/>
+							</GridRowDefinition.gridLength>
+						</GridRowDefinition>
+						<GridRowDefinition>
+							<GridRowDefinition.gridLength>
+								<GridLength gridLengthType="Pixels" gridLengthValue="30"/>
+							</GridRowDefinition.gridLength>
+						</GridRowDefinition>
+						<GridRowDefinition>
+							<GridRowDefinition.gridLength>
+								<GridLength gridLengthType="Percent" gridLengthValue="30"/>
+							</GridRowDefinition.gridLength>
+						</GridRowDefinition>
+					</GridPanel.gridRowDefinitions>
+					<GridPanel.gridColumnDefinitions>
+						<GridColumnDefinition>
+							<GridColumnDefinition.gridLength>
+								<GridLength gridLengthType="Percent" gridLengthValue="1"/>
+							</GridColumnDefinition.gridLength>
+						</GridColumnDefinition>
+						<GridColumnDefinition>
+							<GridColumnDefinition.gridLength>
+								<GridLength gridLengthType="Percent" gridLengthValue="1"/>
+							</GridColumnDefinition.gridLength>
+						</GridColumnDefinition>
+						<GridColumnDefinition>
+							<GridColumnDefinition.gridLength>
+								<GridLength gridLengthType="Percent" gridLengthValue="3"/>
+							</GridColumnDefinition.gridLength>
+						</GridColumnDefinition>
+					</GridPanel.gridColumnDefinitions>
+					<CoordPanel   gridItemLocation="2,10,1,1" fieldTable="formonly" identifier="c18">
+						<Label isDynamic="true" text="New Label" location="8,22" preferredSize="80,20"   fieldTable="formonly" identifier="f7"/>
+					</CoordPanel>
+				</GridPanel>
+			</TabPage>
+			<TabPage title='"DDE"'   fieldTable="" identifier="">
+				<GridPanel   fieldTable="formonly" identifier="c19">
+					<GridPanel.gridRowDefinitions>
+						<GridRowDefinition>
+							<GridRowDefinition.gridLength>
+								<GridLength gridLengthType="Percent" gridLengthValue="30"/>
+							</GridRowDefinition.gridLength>
+						</GridRowDefinition>
+						<GridRowDefinition>
+							<GridRowDefinition.gridLength>
+								<GridLength gridLengthType="Pixels" gridLengthValue="30"/>
+							</GridRowDefinition.gridLength>
+						</GridRowDefinition>
+					</GridPanel.gridRowDefinitions>
+					<GridPanel.gridColumnDefinitions>
+						<GridColumnDefinition>
+							<GridColumnDefinition.gridLength>
+								<GridLength gridLengthType="Percent" gridLengthValue="1"/>
+							</GridColumnDefinition.gridLength>
+						</GridColumnDefinition>
+						<GridColumnDefinition>
+							<GridColumnDefinition.gridLength>
+								<GridLength gridLengthType="Percent" gridLengthValue="1"/>
+							</GridColumnDefinition.gridLength>
+						</GridColumnDefinition>
+					</GridPanel.gridColumnDefinitions>
+					<CoordPanel   gridItemLocation="1,1,1,1" fieldTable="formonly" identifier="c20"/>
+				</GridPanel>
+			</TabPage>
+		</Tab>
+	</form.rootContainer>
+	<form.screenRecords>
+		<ScreenRecord identifier="formonly" fields="language,cfg_path,unl_path,image_path,form_path,document_path,html_path,icon10_path,icon16_path,icon32_path,main_cfg_file_name,toolbar_cfg_file_name,tool_string_file_name,tool_string_mono_file_name,string_file_name,string_mono_file_name,help_url_mapping_file_name,dde_cfg_file_name,online_demo_path,msg_path,classic_help_multi_lang,classic_help_file_1,classic_help_file_2,classic_help_file_3,classic_help_file_4,classic_help_file_5,classic_help_file_6,classic_help_file_7,classic_help_file_8,classic_help_file_9,classic_help_file_10,help_file_base_url,help_system_type,help_language_dir_uk,help_language_dir_sp,help_language_dir_de,help_language_dir_fr,help_language_dir_ar,help_language_dir_it,help_language_dir_ot,ws_name,ws_port,html_print_output,html_print_template_1,html_print_template_2,html_print_template_3,html_print_template_4,html_print_template_5,html_print_template_6,html_print_template_7,html_print_template_8,html_print_image_1,html_print_image_2,html_print_image_3,html_print_image_4,html_print_image_5,html_print_image_6,html_print_image_7,html_print_image_8,dde_timeout,dl_field11,dl_field12,dl_field13,dl_field14,dl_field15,dl_field16,dl_field17,dl_field18,dl_field19,dl_field21,dl_field22,dl_field23,dl_field24,dl_field25,dl_field26,dl_field27,dl_field28,dl_field29,dl_field31,dl_field32,dl_field33,dl_field34,dl_field35,dl_field36,dl_field37,dl_field38,dl_field39,dl_field40,dl_field41,dl_field42,dl_field51,dl_field52,dl_field53,dl_field54,dl_field55,dl_field56,dl_field57,dl_field58,dl_field59,dl_field71,dl_field72,dl_field81,dl_field91,dl_field92,dl_field93,dl_field94,dl_field95,dl_field96,dl_field97,dl_field98,dl_field99,dl_field101,dl_field102,dl_field103,dl_field104,dl_field105,dl_field106,dl_field107,dl_field108,dl_field111,formonly.f1,formonly.f2,formonly.f3,formonly.f4,formonly.f5,formonly.f6,formonly.f6,formonly.f7"/>
+	</form.screenRecords>
+</form>
+

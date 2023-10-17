@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://namespaces.querix.com/2015/fglForms">
+	<form.rootContainer>
+		<GridPanel classNames="fcls_rootContainer" verticalAlignment="Stretch" horizontalAlignment="Stretch" fieldTable="" identifier="rootContainer">
+			<GridPanel.gridRowDefinitions>
+				<GridRowDefinition gridLengthValue=""/>
+				<GridRowDefinition gridLengthValue="100%"/>
+				<GridRowDefinition gridLengthValue=""/>
+			</GridPanel.gridRowDefinitions>
+			<GridPanel.gridColumnDefinitions>
+				<GridColumnDefinition gridLengthValue="100%"/>
+			</GridPanel.gridColumnDefinitions>
+
+			<GridPanel classNames="fcls_title_cnt" visible="true" verticalAlignment="Top" gridItemLocation="0,0,1,1" fieldTable="formonly" identifier="cntTitle">
+				<GridPanel.gridRowDefinitions>
+					<GridRowDefinition gridLengthValue=""/>
+				</GridPanel.gridRowDefinitions>
+				<GridPanel.gridColumnDefinitions>
+					<GridColumnDefinition gridLengthValue="100%"/>
+					<GridColumnDefinition gridLengthValue=""/>
+				</GridPanel.gridColumnDefinitions>
+				<Label isDynamic="true" text="Simple Table Container Demo" classNames="fcls_title_lb" visible="true" gridItemLocation="0,0,1,1" fieldTable="formonly" identifier="lbTitle"/>
+				<Label isDynamic="true" text="cnt_table.fm2" classNames="fcls_title_lb" visible="true" gridItemLocation="1,0,1,1" fieldTable="" identifier="lbFormName"/>
+			</GridPanel>
+			<Table visible="true" identifier="sc1" classNames="fcls_table" horizontalAlignment="Stretch" verticalAlignment="Stretch" gridItemLocation="0,1,1,1">
+
+				<TableColumn visible="true" identifier="tc_f1" resizable="true" text="Column 1 - 25%">
+					<TextField visible="true" identifier="f1" fieldTable=""/>
+					<TableColumn.columnLength>
+						<GridLength gridLengthValue="25%"/>
+					</TableColumn.columnLength>
+				</TableColumn>
+				
+				<TableColumn visible="true" identifier="tc_f2" resizable="true" text="Column 2 - 25%">
+					<TextField visible="true" identifier="f2" fieldTable=""/>
+					<TableColumn.columnLength>
+						<GridLength gridLengthValue="25%"/>
+					</TableColumn.columnLength>
+				</TableColumn>
+				<TableColumn visible="true" identifier="tc_f3" resizable="true" text="Column 3 - 25%">
+					<TextField visible="true" identifier="f3" fieldTable=""/>
+					<TableColumn.columnLength>
+						<GridLength gridLengthValue="25%"/>
+					</TableColumn.columnLength>
+				</TableColumn>
+				<TableColumn visible="true" identifier="tc_f4" resizable="true" text="Column 4 - 12.5%">
+					<TextField visible="true" identifier="f4" fieldTable=""/>
+					<TableColumn.columnLength>
+						<GridLength gridLengthValue="12.5%"/>
+					</TableColumn.columnLength>
+				</TableColumn>
+				<TableColumn visible="true" identifier="tc_f5" resizable="true" text="Column 5 - 12.5%">
+					<TextField visible="true" identifier="f5" fieldTable=""/>
+					<TableColumn.columnLength>
+						<GridLength gridLengthValue="12.5%"/>
+					</TableColumn.columnLength>
+				</TableColumn>
+			</Table>
+			<GridPanel classNames="fcls_statusbar_cnt" visible="true" verticalAlignment="Bottom" gridItemLocation="0,2,1,1" fieldTable="formonly" identifier="cntStatusBar">
+				<GridPanel.gridRowDefinitions>
+					<GridRowDefinition gridLengthValue=""/>
+					<GridRowDefinition gridLengthValue=""/>
+				</GridPanel.gridRowDefinitions>
+				<GridPanel.gridColumnDefinitions>
+					<GridColumnDefinition gridLengthValue="100%"/>
+				</GridPanel.gridColumnDefinitions>
+				<Label isDynamic="true" text="" classNames="fcls_sblabel" visible="true" gridItemLocation="0,0,1,1" fieldTable="formonly" identifier="lbInfo1"/>
+				<Label isDynamic="true" text="" classNames="fcls_sblabel" visible="true" gridItemLocation="0,1,1,1" fieldTable="formonly" identifier="lbInfo2"/>
+			</GridPanel>
+		</GridPanel>
+	</form.rootContainer>
+	<form.screenRecords>
+		<ScreenRecord identifier="sc1" fields="f1,f2,f3,f4,f5"/>
+	</form.screenRecords>
+</form>
+

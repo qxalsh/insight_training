@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://namespaces.querix.com/2015/fglForms">
+	<form.rootContainer>
+		<GridPanel classNames="fcls_rootContainer" verticalAlignment="Top" horizontalAlignment="Left" fieldTable="" identifier="rootContainer">
+			<GridPanel.gridRowDefinitions>
+				<GridRowDefinition gridLengthValue=""/>
+				<GridRowDefinition gridLengthValue=""/>
+				<GridRowDefinition gridLengthValue=""/>
+			</GridPanel.gridRowDefinitions>
+			<GridPanel.gridColumnDefinitions>
+				<GridColumnDefinition gridLengthValue="100%"/>
+			</GridPanel.gridColumnDefinitions>
+			<GridPanel classNames="fcls_title_cnt" visible="true" verticalAlignment="Top" gridItemLocation="0,0,1,1" fieldTable="formonly" identifier="cntTitle">
+				<GridPanel.gridRowDefinitions>
+					<GridRowDefinition gridLengthValue=""/>
+				</GridPanel.gridRowDefinitions>
+				<GridPanel.gridColumnDefinitions>
+					<GridColumnDefinition gridLengthValue="100%"/>
+					<GridColumnDefinition gridLengthValue=""/>
+				</GridPanel.gridColumnDefinitions>
+				<Label isDynamic="true" text="Joining Strings with APPEND (,) CONCATENATE (||) and SFMT()" classNames="fcls_title_lb" visible="true" gridItemLocation="0,0,1,1" fieldTable="formonly" identifier="lbTitle"/>
+				<Label isDynamic="true" text="sta_string_joining" classNames="fcls_title_lb" visible="true" gridItemLocation="1,0,1,1" fieldTable="" identifier="lbFormName"/>
+			</GridPanel>
+			<GridPanel classNames="fcls_detail_cnt,fcls_data_cnt" visible="true" verticalAlignment="Top" horizontalAlignment="Left" gridItemLocation="0,1,1,1" fieldTable="formonly" identifier="cntDetail1">
+				<GridPanel.gridRowDefinitions>
+					<GridRowDefinition gridLengthValue=""/>
+					<GridRowDefinition gridLengthValue=""/>
+					<GridRowDefinition gridLengthValue=""/>
+					<GridRowDefinition gridLengthValue=""/>
+					<GridRowDefinition gridLengthValue="30" gridMaxLength="30" gridMinLength="30"/>
+					<GridRowDefinition gridLengthValue=""/>
+					<GridRowDefinition gridLengthValue=""/>
+					<GridRowDefinition gridLengthValue=""/>
+					<GridRowDefinition gridLengthValue=""/>
+					<GridRowDefinition gridLengthValue=""/>
+					<GridRowDefinition gridLengthValue=""/>
+					<GridRowDefinition gridLengthValue=""/>
+					<GridRowDefinition gridLengthValue=""/>
+				</GridPanel.gridRowDefinitions>
+				<GridPanel.gridColumnDefinitions>
+					<GridColumnDefinition gridLengthValue="" gridMinLength="10rem"/>
+					<GridColumnDefinition gridLengthValue=""/>
+				</GridPanel.gridColumnDefinitions>
+				<Label visible="true" identifier="lb183" gridItemLocation="0,0,1,1" isDynamic="true" classNames="fcls_fieldlabel,fcls_align_left" fieldTable="" text="Variable s1="/>
+				<Label visible="true" identifier="s1" gridItemLocation="1,0,1,1" isDynamic="true" classNames="fcls_fieldlabel,fcls_align_left" fieldTable="" text="s1"/>
+				<Label visible="true" identifier="lb184" gridItemLocation="0,1,1,1" isDynamic="true" classNames="fcls_fieldlabel,fcls_align_left" fieldTable="" text="Variable s2="/>
+				<Label visible="true" identifier="s2" gridItemLocation="1,1,1,1" isDynamic="true" classNames="fcls_fieldlabel,fcls_align_left" fieldTable="" text="s2"/>
+				<Label visible="true" identifier="lb186" gridItemLocation="0,2,1,1" isDynamic="true" classNames="fcls_fieldlabel,fcls_align_left" fieldTable="" text="Variable s3="/>
+				<Label visible="true" identifier="s3" gridItemLocation="1,2,1,1" isDynamic="true" classNames="fcls_fieldlabel,fcls_align_left" fieldTable="" text="s3"/>
+				<Label visible="true" identifier="lb185" gridItemLocation="0,3,1,1" isDynamic="true" classNames="fcls_fieldlabel,fcls_align_left" fieldTable="" text="Variable s4="/>
+				<Label visible="true" identifier="s4" gridItemLocation="1,3,1,1" isDynamic="true" classNames="fcls_fieldlabel,fcls_align_left" fieldTable="" text="NULL"/>
+				<TextField visible="true" identifier="join_result1" gridItemLocation="1,5,1,1" classNames="fcls_length_40qch,fcls_data_widget,fcls_align_left"/>
+				<TextField visible="true" identifier="join_result2" gridItemLocation="1,6,1,1" classNames="fcls_length_40qch,fcls_data_widget,fcls_align_left"/>
+				<TextField visible="true" identifier="join_result3" gridItemLocation="1,7,1,1" classNames="fcls_length_40qch,fcls_data_widget,fcls_align_left"/>
+				<Label isDynamic="true" text="SFMT(&quot;1st = &apos;%1&apos; 2nd = &apos;%2&apos; 3rd = &apos;%3&apos;  4th = &apos;%4&apos;&quot;, s1,s2,s3,s4)" classNames="fcls_fieldlabel,fcls_align_left" visible="true" gridItemLocation="0,8,1,1" fieldTable="" identifier="lb_result4"/>
+				<TextField visible="true" identifier="join_result4" gridItemLocation="1,8,1,1" classNames="fcls_length_40qch,fcls_data_widget,fcls_align_left"/>
+				<Label isDynamic="true" text="s1, &quot; &quot;, s2, &quot; &quot;, s3, &quot; &quot;, s4" classNames="fcls_fieldlabel,fcls_align_left" visible="true" gridItemLocation="0,5,1,1" fieldTable="" identifier="lb_result1"/>
+				<Label isDynamic="true" text="s1|| &quot; &quot; || s2 || &quot; &quot; || s3 || &quot; &quot; || s4" classNames="fcls_fieldlabel,fcls_align_left" visible="true" gridItemLocation="0,6,1,1" fieldTable="" identifier="lb_result2"/>
+				<Label isDynamic="true" text="SFMT(&quot;%1%2%3%4&quot;, s1, s2, s3, s4)" classNames="fcls_fieldlabel,fcls_align_left" visible="true" gridItemLocation="0,7,1,1" fieldTable="" identifier="lb_result3"/>
+				<Label isDynamic="true" text="&quot;s1 = &quot;,s1 USING &quot;##&amp;&quot;, &quot;AND s2 =&quot;, s3 USING &quot;##&amp;&quot;" classNames="fcls_fieldlabel,fcls_align_left" visible="true" gridItemLocation="0,9,1,1" fieldTable="" identifier="lb_result5"/>
+				<TextField visible="true" identifier="join_result5" gridItemLocation="1,9,1,1" classNames="fcls_length_40qch,fcls_data_widget,fcls_align_left"/>
+				<Label isDynamic="true" text="SFMT(&quot;s1 = %1 AND s2 = %2&quot;, s1 USING &quot;##&amp;&quot;, s2 USING &quot;##&amp;&quot; )" classNames="fcls_fieldlabel,fcls_align_left" visible="true" gridItemLocation="0,10,1,1" fieldTable="" identifier="lb_result6"/>
+				<TextField visible="true" identifier="join_result6" gridItemLocation="1,10,1,1" classNames="fcls_length_40qch,fcls_data_widget,fcls_align_left"/>
+				<Label isDynamic="true" text="???" classNames="fcls_fieldlabel,fcls_align_left" visible="true" gridItemLocation="0,11,1,1" fieldTable="" identifier="lb_result7"/>
+				<TextField visible="true" identifier="join_result7" gridItemLocation="1,11,1,1" classNames="fcls_length_40qch,fcls_data_widget,fcls_align_left"/>
+				<GridPanel visible="true" identifier="c2" gridItemLocation="0,12,2,1" horizontalAlignment="Stretch">
+					<GridPanel.gridColumnDefinitions>
+						<GridColumnDefinition gridLengthValue="25%"/>
+						<GridColumnDefinition gridLengthValue="25%"/>
+						<GridColumnDefinition gridLengthValue="25%"/>
+						<GridColumnDefinition gridLengthValue="25%"/>
+					</GridPanel.gridColumnDefinitions>
+					<GridPanel.gridRowDefinitions>
+						<GridRowDefinition gridLengthValue="33" gridMinLength="33"/>
+					</GridPanel.gridRowDefinitions>
+					<Button text="&quot;First Segment&quot;" visible="true" identifier="bt1" gridItemLocation="0,0,1,1" classNames="fcls_button,fcls_align_hstretch">
+						<Button.onInvoke>
+							<ActionEventHandler actionName="option1"/>
+						</Button.onInvoke>
+					</Button>
+					<Button text="&quot;Second Segment&quot;" visible="true" identifier="bt2" gridItemLocation="1,0,1,1" classNames="fcls_button,fcls_align_hstretch">
+						<Button.onInvoke>
+							<ActionEventHandler actionName="option2"/>
+						</Button.onInvoke>
+					</Button>
+					<Button text="&quot;First-Second Segment&quot;" visible="true" identifier="bt3" gridItemLocation="2,0,1,1" classNames="fcls_button,fcls_align_hstretch">
+						<Button.onInvoke>
+							<ActionEventHandler actionName="option3"/>
+						</Button.onInvoke>
+					</Button>
+					<Button text="&quot;Second-First Segment&quot;" visible="true" identifier="bt4" gridItemLocation="3,0,1,1" classNames="fcls_button,fcls_align_hstretch">
+						<Button.onInvoke>
+							<ActionEventHandler actionName="option4"/>
+						</Button.onInvoke>
+					</Button>
+				</GridPanel>
+			</GridPanel>
+			<GridPanel classNames="fcls_statusbar_cnt" visible="true" verticalAlignment="Bottom" gridItemLocation="0,2,1,1" fieldTable="formonly" identifier="cntStatusBar">
+				<GridPanel.gridRowDefinitions>
+					<GridRowDefinition gridLengthValue=""/>
+					<GridRowDefinition gridLengthValue=""/>
+				</GridPanel.gridRowDefinitions>
+				<GridPanel.gridColumnDefinitions>
+					<GridColumnDefinition gridLengthValue="100%"/>
+				</GridPanel.gridColumnDefinitions>
+				<Label isDynamic="true" text="" classNames="fcls_sblabel" visible="true" gridItemLocation="0,0,1,1" fieldTable="formonly" identifier="lbInfo1"/>
+				<Label isDynamic="true" text="" classNames="fcls_sblabel" visible="true" gridItemLocation="0,1,1,1" fieldTable="formonly" identifier="lbInfo2"/>
+			</GridPanel>
+		</GridPanel>
+	</form.rootContainer>
+	<form.screenRecords>
+		<ScreenRecord identifier="FORMONLY" fields=""/>
+	</form.screenRecords>
+</form>
+

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://namespaces.querix.com/2015/fglForms" title="Demo util.regex.search()">
+	<form.rootContainer>
+		<GridPanel classNames="fcls_rootContainer" verticalAlignment="Stretch" horizontalAlignment="Stretch" fieldTable="" identifier="rootContainer" preferredSize="100rem,">
+			<GridPanel.gridRowDefinitions>
+				<GridRowDefinition gridLengthValue=""/>
+				<GridRowDefinition gridLengthValue=""/>
+				<GridRowDefinition gridLengthValue="100%"/>
+				<GridRowDefinition gridLengthValue=""/>
+			</GridPanel.gridRowDefinitions>
+			<GridPanel.gridColumnDefinitions>
+				<GridColumnDefinition/>
+			</GridPanel.gridColumnDefinitions>
+			<GridPanel classNames="fcls_title_cnt" visible="true" verticalAlignment="Top" gridItemLocation="0,0,1,1" fieldTable="formonly" identifier="cntTitle" horizontalAlignment="Stretch">
+				<GridPanel.gridRowDefinitions>
+					<GridRowDefinition gridLengthValue=""/>
+				</GridPanel.gridRowDefinitions>
+				<GridPanel.gridColumnDefinitions>
+					<GridColumnDefinition gridLengthValue="100%"/>
+					<GridColumnDefinition gridLengthValue=""/>
+				</GridPanel.gridColumnDefinitions>
+				<Label isDynamic="true" text="Demo util.regex.search()" classNames="fcls_title_lb" visible="true" gridItemLocation="0,0,1,1" fieldTable="formonly" identifier="lbTitle"/>
+				<Label isDynamic="true" text="util_regex_search" classNames="fcls_title_lb" visible="true" gridItemLocation="1,0,1,1" fieldTable="" identifier="lbFormName"/>
+			</GridPanel>
+			<GridPanel visible="true" identifier="cntDetail1" gridItemLocation="0,1,1,1" verticalAlignment="Top" classNames="fcls_detail_cnt,fcls_data_cnt" horizontalAlignment="Stretch">
+				<GridPanel.gridColumnDefinitions>
+					<GridColumnDefinition gridLengthValue=""/>
+					<GridColumnDefinition gridLengthValue="3qch" gridMaxLength="3qch" gridMinLength="3qch"/>
+					<GridColumnDefinition gridLengthValue=""/>
+					<GridColumnDefinition gridLengthValue=""/>
+					<GridColumnDefinition gridLengthValue=""/>
+				</GridPanel.gridColumnDefinitions>
+				<GridPanel.gridRowDefinitions>
+					<GridRowDefinition gridLengthValue=""/>
+					<GridRowDefinition gridLengthValue=""/>
+				</GridPanel.gridRowDefinitions>
+				<Label visible="true" identifier="lb_field" gridItemLocation="0,0,1,1" isDynamic="true" allowNewlines="true" text="Enter your  search&#13;&#10;string or expression"/>
+				<TextField visible="true" identifier="inpString" gridItemLocation="2,0,1,1">
+					<TextField.onKeyUp>
+						<ActionEventHandler actionName="ACCEPT"/>
+					</TextField.onKeyUp>
+				</TextField>
+				<Button visible="true" identifier="bt_accept" textAlignment="Left,Default" horizontalAlignment="Left" gridItemLocation="1,0,1,1">
+					<Button.onInvoke>
+						<ActionEventHandler actionName="ACCEPT"/>
+					</Button.onInvoke>
+				</Button>
+				<Label text="Matches (count)" isDynamic="true" visible="true" identifier="lb3" gridItemLocation="0,1,1,1"/>
+				<TextField visible="true" identifier="matched" classNames="fcls_length_05qch,fcls_data_widget,fcls_align_left" gridItemLocation="2,1,1,1" textAlignment="Left,Default"/>
+			</GridPanel>
+			<GridPanel classNames="fcls_detail_cnt,fcls_data_cnt" visible="true" verticalAlignment="Stretch" horizontalAlignment="Stretch" gridItemLocation="0,2,1,1" fieldTable="formonly" identifier="cntDetail2">
+				<GridPanel.gridRowDefinitions>
+					<GridRowDefinition gridLengthValue="100%" gridMinLength="40rem"/>
+				</GridPanel.gridRowDefinitions>
+				<GridPanel.gridColumnDefinitions>
+					<GridColumnDefinition gridLengthValue="50%" gridMinLength="30rem"/>
+					<GridColumnDefinition gridLengthValue="50%" gridMinLength="30rem"/>
+				</GridPanel.gridColumnDefinitions>
+
+				<TextArea visible="true" identifier="regex_result" textAlignment="Left,Default" horizontalAlignment="Stretch" verticalAlignment="Stretch" gridItemLocation="1,0,1,1"/>
+				<BlobViewer dataType="Text,,,," visible="true" identifier="document" gridItemLocation="0,0,1,1" horizontalAlignment="Stretch" verticalAlignment="Stretch"/>
+
+			</GridPanel>
+			<GridPanel classNames="fcls_statusbar_cnt" visible="true" verticalAlignment="Top" gridItemLocation="0,3,1,1" fieldTable="formonly" identifier="cntStatusBar" horizontalAlignment="Stretch">
+				<GridPanel.gridRowDefinitions>
+					<GridRowDefinition gridLengthValue=""/>
+					<GridRowDefinition gridLengthValue=""/>
+				</GridPanel.gridRowDefinitions>
+				<GridPanel.gridColumnDefinitions>
+					<GridColumnDefinition gridLengthValue="100%"/>
+				</GridPanel.gridColumnDefinitions>
+				<Label isDynamic="true" text="" classNames="fcls_sblabel" visible="true" gridItemLocation="0,0,1,1" fieldTable="formonly" identifier="lbInfo1"/>
+				<Label isDynamic="true" text="" classNames="fcls_sblabel" visible="true" gridItemLocation="0,1,1,1" fieldTable="formonly" identifier="lbInfo2"/>
+			</GridPanel>
+		</GridPanel>
+	</form.rootContainer>
+	<form.screenRecords>
+		<ScreenRecord identifier="FORMONLY" fields=""/>
+	</form.screenRecords>
+</form>
+
+
+

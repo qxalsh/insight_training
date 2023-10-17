@@ -1,0 +1,2683 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://namespaces.querix.com/2015/fglForms">
+	<form.rootContainer>
+		<GridPanel classNames="fcls_rootContainer" verticalAlignment="Stretch" horizontalAlignment="Stretch" fieldTable="" identifier="rootContainer">
+			<GridPanel.gridRowDefinitions>
+				<GridRowDefinition gridLengthValue=""/>
+				<GridRowDefinition gridLengthValue="100%"/>
+				<GridRowDefinition gridLengthValue=""/>
+			</GridPanel.gridRowDefinitions>
+			<GridPanel.gridColumnDefinitions>
+				<GridColumnDefinition gridLengthValue="100%"/>
+			</GridPanel.gridColumnDefinitions>
+			<GridPanel classNames="fcls_title_cnt" visible="true" verticalAlignment="Top" gridItemLocation="0,0,1,1" fieldTable="formonly" identifier="cntTitle">
+				<GridPanel.gridRowDefinitions>
+					<GridRowDefinition gridLengthValue=""/>
+				</GridPanel.gridRowDefinitions>
+				<GridPanel.gridColumnDefinitions>
+					<GridColumnDefinition gridLengthValue="100%"/>
+					<GridColumnDefinition gridLengthValue=""/>
+				</GridPanel.gridColumnDefinitions>
+				<Label isDynamic="true" text="Layout Form Examples" classNames="fcls_title_lb" visible="true" gridItemLocation="0,0,1,1" fieldTable="formonly" identifier="lbTitle"/>
+				<Label isDynamic="true" text="lay_form_examples.fm2" classNames="fcls_title_lb" visible="true" gridItemLocation="1,0,1,1" fieldTable="" identifier="lbFormName"/>
+			</GridPanel>
+			<GridPanel classNames="fcls_detail_cnt,fcls_data_cnt,fcls_align_left" visible="true" verticalAlignment="Top" horizontalAlignment="Left" gridItemLocation="0,1,1,1" fieldTable="formonly" identifier="cntDetail1">
+				<GridPanel.gridRowDefinitions>
+					<GridRowDefinition gridLengthValue="" gridMinLength="100%"/>
+				</GridPanel.gridRowDefinitions>
+				<GridPanel.gridColumnDefinitions>
+					<GridColumnDefinition gridLengthValue="" gridMinLength="100%"/>
+				</GridPanel.gridColumnDefinitions>
+				<ListBox minSize="30qch,20rem" visible="true" verticalAlignment="Stretch" horizontalAlignment="Stretch" gridItemLocation="0,0,1,1" fieldTable="" identifier="formName">
+					<ListBoxItem text="f001_m0n - BAB Example 1" identifier="f001_m0n">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="f001_m0n"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+
+
+					<ListBoxItem text="A100 - Tax Codes" identifier="formName_A100">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="A100"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="A101 - Tax Code" identifier="formName_A101">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="A101"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="A102 - Payment Term Codes" identifier="formName_A102">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="A102"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="A103 - Term" identifier="formName_A103">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="A103"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="A104 - GL Distribution Account" identifier="formName_A104">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="A104"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="A105 - Customer Information" identifier="formName_A105">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="A100"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="A106 - Customer Details Scan" identifier="formName_A106">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="A106"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="A107 - Customer Scan" identifier="formName_A107">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="A107"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="A108 - Credit Details" identifier="formName_A108">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="A108"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="A109 - Customer Credit Details" identifier="formName_A109">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="A109"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="A111 - Customer Shipping Details" identifier="formName_A111">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="A111"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="A112 - Customer Inquiry" identifier="formName_A112">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="A112"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="A113 - Customer Ledger Scan" identifier="formName_A113">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="A113"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="A114 - Customer History" identifier="formName_A114">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="A114"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="A115 - Missing Form-need a name ????" identifier="formName_A115">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="A115"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="A116 - Audit Trail Scan - Trans Document" identifier="formName_A116">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="A116"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="A118 - Invoice Stories" identifier="formName_A118">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="A118"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="A119 - Tax Codes" identifier="formName_A119">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="A119"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="A120 - Shipping" identifier="formName_A120">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="A120"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="A121 - Credit Details" identifier="formName_A121">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="A121"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="A122 - Credit Scan" identifier="formName_A122">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="A122"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="A123 - Credit Application" identifier="formName_A123">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="A123"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="A124 - Customer" identifier="formName_A124">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="A124"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="A125 - Credit Application" identifier="formName_A125">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="A125"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="A127 - Missing Form - Needs a name" identifier="formName_A127">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="A127"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="A128 - Credit Entry Info (Missing form)" identifier="formName_A128">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="A128"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="A131 - Credit Line Items" identifier="formName_A131">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="A131"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="A132 - Missing Form - need a name" identifier="formName_A132">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="A132"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="A133 - Missing Form - Need a name" identifier="formName_A133">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="A133"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="A134 - Invoice Information" identifier="formName_A134">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="A134"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="A135 - Invoice Scan" identifier="formName_A135">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="A135"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="A136 - Missing Form" identifier="formName_A136">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="A136"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="A137 - Invoice Header" identifier="formName_A137">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="A137"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="A137a - Invoice Header" identifier="formName_A137a">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="A137a"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="A138 - Shipping" identifier="formName_A138">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="A138"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="A139 - Invoice" identifier="formName_A139">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="A139"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="A140 - Part" identifier="formName_A140">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="A140"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="A142 - Missing Form - Needs title" identifier="formName_A142">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="A142"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="A143 - Invoice Line" identifier="formName_A143">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="A143"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="A144 - Invoice Line Items" identifier="formName_A144">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="A144"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="A145 - Product" identifier="formName_A145">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="A145"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="A147 - Invoice Summary" identifier="formName_A147">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="A147"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="A148 - Cash Receipt Info" identifier="formName_A148">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="A148"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="A149 - Cash Receipt Scan" identifier="formName_A149">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="A149"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="A150 - Cash Receipt Application" identifier="formName_A150">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="A150"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="A151 - Cheque Details" identifier="formName_A151">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="A151"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="A152 - Cash Applications" identifier="formName_A152">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="A152"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="A153 - Cash Receipt" identifier="formName_A153">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="A153"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="A154 - Cash Application" identifier="formName_A154">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="A154"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="A158 - Missing Form - needs title" identifier="formName_A158">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="A158"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="A159 - Salespersons Maintenance" identifier="formName_A159">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="A159"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="A160 - Sales Person" identifier="formName_A160">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="A160"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="A161 - Customer Type Maintenance" identifier="formName_A161">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="A161"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="A162 - Customer Type" identifier="formName_A162">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="A162"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="A163 - Statement Messages" identifier="formName_A163">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="A163"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="A164 - Accounts Receivable Parameters" identifier="formName_A164">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="A164"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="A165 - Customer Details" identifier="formName_A165">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="A165"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="A167 - Needs a title - Missing Form" identifier="formName_A167">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="A167"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="A168 - Debtor Adjustments" identifier="formName_A168">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="A168"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="A174 - Bank Deposit Calculator" identifier="formName_A174">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="A174"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="A176 - AR Posting" identifier="formName_A176">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="A176"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="A177 - Invoice Sales Analysis" identifier="formName_A177">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="A177"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="A178 - Customer Information" identifier="formName_A178">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="A178"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="A182 - Cash Receipt Entry" identifier="formName_A182">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="A182"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="A183 - Bulk Cash Receipt Application" identifier="formName_A183">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="A183"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="A187 - Cash Receipt Entry" identifier="formName_A187">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="A187"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="A188 - Sales Commissions" identifier="formName_A188">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="A188"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="A189 - Sales Tax Billed" identifier="formName_A189">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="A189"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="A190 - Cash Receipt Entry" identifier="formName_A190">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="A190"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="A191 - AR Post Report" identifier="formName_A191">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="A191"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="A192 - Invoice Inquiry" identifier="formName_A192">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="A192"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="A193 - AR Snapshot Header" identifier="formName_A193">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="A193"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="A200 - Credit Applications" identifier="formName_A200">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="A200"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="A201 - Cash Receipt Entry" identifier="formName_A201">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="A201"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="A202 - Customer Account Aging" identifier="formName_A202">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="A202"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="A203 - Transaction Number Entry" identifier="formName_A203">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="A203"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="A204 - Account Status" identifier="formName_A204">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="A204"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="A205 - Customer Information" identifier="formName_A205">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="A205"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="A205a - Corporate Debtors Information" identifier="formName_A205a">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="A205a"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="A206 - Customer Shipping" identifier="formName_A206">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="A206"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="A207 - Invoice Transfer" identifier="formName_A207">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="A207"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="A208 - GL Account Distribution and Tax Code" identifier="formName_A208">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="A208"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="A209 - Invoice Scan" identifier="formName_A209">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="A209"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="A210 - Account Aging by" identifier="formName_A210">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="A210"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="A211 - User Defined Reference Definitions" identifier="formName_A211">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="A211"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="A212 - Shipping Info (Missing Form)" identifier="formName_A212">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="A212"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="A213 - Invoice Menu (missing form)" identifier="formName_A213">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="A213"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="A214 - Option ? - Missing Form" identifier="formName_A214">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="A214"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="A215 - Credit Detail Report" identifier="formName_A215">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="A215"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="A216 - Salesperson Commision Report" identifier="formName_A216">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="A216"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="A217 - Change Hold Status" identifier="formName_A217">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="A217"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="A218 - Corporate Debtors Listing" identifier="formName_A218">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="A218"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="A219 - Cash Receipt Info" identifier="formName_A219">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="A219"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="A221 - Change Hold Status" identifier="formName_A221">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="A221"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="A223 - Debt Type Listing" identifier="formName_A223">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="A223"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="A224 - Transaction Type Listing" identifier="formName_A224">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="A224"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="A226 - Credit Entry / Edit" identifier="formName_A226">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="A226"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="A227 - Quick Credit Scan" identifier="formName_A227">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="A227"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="A229 - Debt Types Scan" identifier="formName_A229">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="A229"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="A230 - Transaction Type Listing" identifier="formName_A230">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="A230"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="A231 - Transaction Type Maintenance" identifier="formName_A231">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="A231"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="A232 - Missing Form" identifier="formName_A232">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="A232"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="A233 - Missing Form" identifier="formName_A233">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="A233"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="A234 - Customer Billing" identifier="formName_A234">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="A234"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="A235 - Debtors Funds Employed (Not finished)" identifier="formName_A235">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="A235"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="A31_w - Missing Form" identifier="formName_A31_w">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="A31_w"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="A600 - Sales Managers" identifier="formName_A600">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="A600"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="A601 - Credit Reason" identifier="formName_A601">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="A601"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="A602 - Customer User Prompts" identifier="formName_A602">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="A602"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="A603 - Sales Area Details" identifier="formName_A603">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="A603"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="A604 - Reason to Hold Sales" identifier="formName_A604">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="A604"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="A605 - Credit Memo Reasons" identifier="formName_A605">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="A605"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="A606 - Credit Reason" identifier="formName_A606">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="A606"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="A607 - Customer Parameters" identifier="formName_A607">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="A607"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="A610 - Salesperson Information" identifier="formName_A610">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="A610"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="A611 - Sales Territory" identifier="formName_A611">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="A611"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="A612 - Sales Manager" identifier="formName_A612">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="A612"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="A613 - Sales Territory Maintenance" identifier="formName_A613">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="A613"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="A614 - Sales Territory Information" identifier="formName_A614">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="A614"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="A615 - Sales Area" identifier="formName_A615">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="A615"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="A616 - Invoice Scan" identifier="formName_A616">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="A616"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="A617 - Payment Term Detail" identifier="formName_A617">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="A617"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+
+					<ListBoxItem text="A618 - Customer Account Status" identifier="formName_A618">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="A618"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="A619 - Customer Scan" identifier="formName_A619">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="A619"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="A620 - Customer Notes Selection" identifier="formName_A620">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="A620"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="A621 - Customer Notes" identifier="formName_A621">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="A621"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="A622 - ?? Unknown/Missing" identifier="formName_A622">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="A622"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="A623 - ?? Unknown/Missing" identifier="formName_A63">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="A623"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="A624 - Payment Term Methods" identifier="formName_A624">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="A624"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="A627 - Invoice Load Parameters" identifier="formName_A627">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="A627"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="A628 - Invoice Import Parameters" identifier="formName_A628">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="A628"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="A629 - Invoice/Credit Import" identifier="formName_A629">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="A629"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="A630 - Invoice Inquiry (missing form) needs cleaning up" identifier="formName_A630">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="A630"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="A631 - Invoice Detail Inquiry (Missing Form)" identifier="formName_A631">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="A631"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="A632 - Credit Card Details" identifier="formName_A632">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="A632"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="A633 - External Transaction Load" identifier="formName_A633">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="A633"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="A635 - Invoice and Credit Note Print" identifier="formName_A635">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="A635"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="A636 - Debtor Import" identifier="formName_A636">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="A636"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="A637 - Invoice Detail Import" identifier="formName_A637">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="A637"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="A638 - PROFIT Invoice Import" identifier="formName_A638">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="A638"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="A639 - Sundry Receipt Entry" identifier="formName_A639">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="A639"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="A640 - Receipt Distribution" identifier="formName_A640">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="A640"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="A641 - ????????????????" identifier="formName_A641">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="A641"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="A642 - Invoice Summary" identifier="formName_A642">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="A642"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="A643 - ????????????????" identifier="formName_A643">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="A643"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="A644 - Receipt Distribution" identifier="formName_A644">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="A644"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="A645 - Sales Analysis" identifier="formName_A645">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="A645"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="A647 - Aging Report" identifier="formName_A647">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="A647"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="A649 - Imprest Extraction" identifier="formName_A649">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="A649"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="A650 - AR Adjustments" identifier="formName_A650">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="A650"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="A651 - Customer Information" identifier="formName_A651">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="A651"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					
+					
+					<ListBoxItem text="A652 - Summary Aging" identifier="formName_A652">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="A652"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="A653 - Credits by Reason" identifier="formName_A653">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="A653"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="A654 - Customer Notes Selection" identifier="formName_A654">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="A654"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="A655 - VOYAGER Invoice Import" identifier="formName_A655">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="A655"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="A656 - A656 - Form title" identifier="formName_A656">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="A656"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="A657 - Summary Aging" identifier="formName_A657">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="A657"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="A658 - Customer Balance Write Off" identifier="formName_A658">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="A658"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="A659 - Tentative Write Off Adjustments" identifier="formName_A659">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="A659"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="A660 - Tentative Balance Write Off Report" identifier="formName_A660">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="A660"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="A661 - Generate Write Off Transactions" identifier="formName_A661">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="A661"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="A662 - Invoice Transfer" identifier="formName_A662">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="A662"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="A663 - Header-Text" identifier="formName_A663">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="A663"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="A664 - Credit... (missing form)" identifier="formName_A664">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="A664"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="A665 - Customer Credit Note Entry" identifier="formName_A665">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="A665"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="A666 - Customer Credit Information" identifier="formName_A666">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="A666"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="A667 - Customer Credit Information" identifier="formName_A667">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="A667"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="A668 - Credit Note Line Items" identifier="formName_A668">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="A668"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="A669 - Header-Text" identifier="formName_A669">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="A669"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="A670 - Header-Text" identifier="formName_A670">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="A670"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="A671 - Credit Line Item" identifier="formName_A671">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="A671"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="A672 - GL Distribution Account" identifier="formName_A672">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="A672"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="A673 - Header-Text -Freight" identifier="formName_A673">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="A673"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="A674 - Sales Area Maintenance" identifier="formName_A674">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="A674"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="A675 - WHICS-OPEN AR Interface File Load" identifier="formName_A675">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="A675"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="A676 - Customer Cards Details" identifier="formName_A676">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="A676"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="A677 - Card Generation" identifier="formName_A677">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="A677"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="A679 - Customer Transaction Purge" identifier="formName_A679">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="A679"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="A680 - Customer Transaction Purge Confirmation" identifier="formName_A680">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="A680"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="A681 - Credit Applications (missing form)" identifier="formName_A681">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="A681"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="A683 - Bulk Notes Entry" identifier="formName_A683">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="A683"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="A685 - Cash Flow Analysis" identifier="formName_A685">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="A685"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="A686 - Account Receivable Cash Flow Analysis" identifier="formName_A686">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="A686"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="A687 - Bank Deposit Scan" identifier="formName_A687">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="A687"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="A688 - Bank Deposit Edit" identifier="formName_A688">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="A688"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="A689 - POS Bank Deposit Calculator" identifier="formName_A689">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="A689"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="A690 - Customer Promotions" identifier="formName_A690">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="A690"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="A691 - Customer Promotion Detail" identifier="formName_A691">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="A691"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="A692 - Receipt Invoice Scan" identifier="formName_A692">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="A692"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="A694 - Reassign Salesperson" identifier="formName_A694">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="A694"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="A695 - POS Payment Scan" identifier="formName_A695">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="A695"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="A696 - Customer Product Codes" identifier="formName_A696">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="A696"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="A698 - Promotion by Customer" identifier="formName_A698">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="A698"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="A699 - Customer List (Missing Form)" identifier="formName_A699">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="A699"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="A700 - Debtor Take-on Adjustments" identifier="formName_A700">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="A700"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="A701 - Sales Report" identifier="formName_A701">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="A701"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="A704 - Sales Margin Analysis" identifier="formName_A704">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="A704"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="A705 - Analysis Time Frame" identifier="formName_A705">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="A705"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="A706 - Customer Card Maintenance" identifier="formName_A706">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="A706"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="A707 - Customer Period Aging" identifier="formName_A707">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="A707"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="A915 - Invoice User Message" identifier="formName_A915">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="A915"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="A922 - Invoice User Message" identifier="formName_A922">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="A922"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+
+					<ListBoxItem text="A923 - ??????????????????????" identifier="formName_A923">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="A923"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+
+
+					<ListBoxItem text="A950 - A950-AR3-transaction-queries" identifier="formName_A950">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="A950"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+
+					<ListBoxItem text="A951 - A951_statement_print_l2" identifier="formName_A951">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="A951"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="A952 - ??????????????????????" identifier="formName_A952">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="A952"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="A953 - ??????????????????????" identifier="formName_A953">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="A953"/>
+						</ListBoxItem.value>
+					</ListBoxItem>		
+					
+					
+					<ListBoxItem text="AA - AA - Account Reports Sub-system" identifier="formName_AA">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="AA"/>
+						</ListBoxItem.value>
+					</ListBoxItem>								
+					
+					<ListBoxItem text="ACB - Debtors Bank Listing Selection" identifier="formName_ACB">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="ACB"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="AR - GA - Account Reports Sub-system" identifier="formName_AR">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="AR"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					
+					
+
+
+					<ListBoxItem text="P100 - Vendor Header" identifier="formName_P100">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="P100"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="P101 - Vendor Scan" identifier="formName_P101">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="P101"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="P102 - Vendor Missing Form - needs cleaning" identifier="formName_P102">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="P102"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="P103 - Vendor Credit" identifier="formName_P103">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="P103"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="P104 - Vendor Credit" identifier="formName_P104">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="P104"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="P105 - Vendor Inquiry" identifier="formName_P105">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="P105"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="P106 - Vendor Ledger" identifier="formName_P106">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="P106"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="P107 - Vendor History" identifier="formName_P107">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="P107"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="P109 - Audit Trail" identifier="formName_P109">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="P109"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="P109a - Reporting Years and Periods" identifier="formName_P109a">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="P109a"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="P110 - Vendor Notes" identifier="formName_P110">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="P110"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="P111 - Automatic Payment Maintenance" identifier="formName_P111">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="P111"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="P112 - Debit Header" identifier="formName_P112">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="P112"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="P113 - Debit Scan" identifier="formName_P113">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="P113"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="P114 - Debit Scan" identifier="formName_P114">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="P114"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="P115 - Debit Scan" identifier="formName_P115">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="P115"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="P116 - Vendor Payment Details" identifier="formName_P116">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="P116"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="P116a - Vendor Notes" identifier="formName_P116a">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="P116a"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="P117 - Debit Details" identifier="formName_P117">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="P117"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="P118 - Purchasing Information" identifier="formName_P118">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="P118"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="P119 - Purchasing Group (Missing Form P119)" identifier="formName_P119">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="P119"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="P120 - Voucher Inquiry" identifier="formName_P120">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="P120"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="P121 - Voucher Scan" identifier="formName_P121">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="P121"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="P122 - Vendor Invoices" identifier="formName_P122">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="P122"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="P123 - Voucher Edit" identifier="formName_P123">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="P123"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="P124 - Voucher ??? P124.fm2 (missing form - needs to be adjusted with runtime testing" identifier="formName_P124">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="P124"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="P125 - Voucher Information" identifier="formName_P125">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="P125"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="P126 - Vendor" identifier="formName_P126">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="P126"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="P129 - Voucher Scan" identifier="formName_P129">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="P129"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="P132 - Payment Information" identifier="formName_P132">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="P132"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="P133 - Payment Details Scan" identifier="formName_P133">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="P133"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="P134 - Cheque by Number" identifier="formName_P134">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="P134"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="P135 - Cheque Scan" identifier="formName_P135">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="P135"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="P137 - Cheque Entry" identifier="formName_P137">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="P137"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="P138 - Cheque Application" identifier="formName_P138">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="P138"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="P139 - Hold Voucher Codes" identifier="formName_P139">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="P139"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="P140 - Accounts Payable Parameters" identifier="formName_P140">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="P140"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="P143 - Auto Cheque Print" identifier="formName_P143">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="P143"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="P146 - Voucher Approval" identifier="formName_P146">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="P146"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="P147 - AP Posting" identifier="formName_P147">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="P147"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="P148 - Automatic Payment Creation" identifier="formName_P148">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="P148"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="P149 - Cheque Detail" identifier="formName_P149">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="P149"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="P150 - Cheque Details Report" identifier="formName_P150">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="P150"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="P152 - Voucher Distribution" identifier="formName_P152">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="P152"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="P153 - Debit Distribution" identifier="formName_P153">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="P153"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="P154 - Vendor" identifier="formName_P154">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="P154"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="P155 - Contractors Details Selection" identifier="formName_P155">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="P155"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="P156 - Voucher ??? P156.fm2 (missing form - needs to be adjusted with runtime testing" identifier="formName_P156">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="P156"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="P157 - Contractors" identifier="formName_P157">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="P157"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="P158 - Contractor Scan" identifier="formName_P158">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="P158"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="P159 - AP Post Report" identifier="formName_P159">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="P159"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="P160 - Treasury Report Cheque Selector" identifier="formName_P160">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="P160"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="P161 - Missing Cheque Selection" identifier="formName_P161">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="P161"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="P163 - Cancelled Cheque Selection" identifier="formName_P163">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="P163"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="P164 - Reason for Cheque Cancellation (Comment)" identifier="formName_P164">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="P164"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="P165 - Creditors Audit Trail" identifier="formName_P165">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="P165"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="P166 - Vendor Type Scan" identifier="formName_P166">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="P166"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="P167 - Vendor Type" identifier="formName_P167">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="P167"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="P168 - Voucher Reports" identifier="formName_P168">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="P168"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="P169 - Voucher Distribution" identifier="formName_P169">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="P169"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="P170 - Debit Distribution" identifier="formName_P170">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="P170"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="P171 - Debit Application" identifier="formName_P171">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="P171"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="P173 - Debit Applications" identifier="formName_P173">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="P173"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="P174 - Vendor Type" identifier="formName_P174">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="P174"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="P175 - Account Status" identifier="formName_P175">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="P175"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="P176 - Vendor Information" identifier="formName_P176">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="P176"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="P177 - Voucher Transfer" identifier="formName_P177">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="P177"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="P178 - AP Batch Posting Report" identifier="formName_P178">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="P178"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="P179 - AP Inter Segment Payments" identifier="formName_P179">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="P179"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="P180 - Automatic Cheque Print" identifier="formName_P180">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="P180"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="P181 - A/c Payable Snapshot" identifier="formName_P181">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="P181"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="P182 - Year and Period" identifier="formName_P182">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="P182"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="P190 - Recurring Vouchers" identifier="formName_P190">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="P190"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="P191 - Recurring Voucher Maintenance" identifier="formName_P191">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="P191"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="P192 - Recurring Vouchers History" identifier="formName_P192">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="P192"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="P193 - Recurring Voucher Schedule" identifier="formName_P193">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="P193"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="P195 - Terms" identifier="formName_P195">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="P195"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="P196 - Interval Types" identifier="formName_P196">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="P196"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="P197 - Header-Text" identifier="formName_P197">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="P197"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="P200 - Voucher Distribution" identifier="formName_P200">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="P200"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="P203 - Voucher ??? P203.fm2 (missing form - needs to be adjusted with runtime testing" identifier="formName_P203">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="P203"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="P204 - Tax Refund Entry" identifier="formName_P204">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="P204"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="P207 - Voucher" identifier="formName_P207">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="P207"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="P208 - Tax Payment Summary" identifier="formName_P208">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="P208"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="P212 - Vendor Menu" identifier="formName_P212">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="P212"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="P213 - Outstanding Vouchers" identifier="formName_P213">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="P213"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="P214 - Voucher Entry Batch Details" identifier="formName_P214">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="P214"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="P215 - Vendor Import" identifier="formName_P215">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="P215"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="P218 - Voucher Import" identifier="formName_P218">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="P218"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="P219 - Cheque Details Extract" identifier="formName_P219">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="P219"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="P221 - Automatic Payments Maintenance" identifier="formName_P221">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="P221"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="P222 - Automatic Debit Application" identifier="formName_P222">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="P222"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="P224 - Automatic Payments Maintenance" identifier="formName_P224">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="P224"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="P225 - AP Voucher Import" identifier="formName_P225">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="P225"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="P226 - Charge Thru Sales" identifier="formName_P226">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="P226"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="P227 - Charge Thru Distribution" identifier="formName_P227">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="P227"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="P228 - WHICS-Open AP Interface File Load" identifier="formName_P228">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="P228"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="P229 - AP Load Parameters" identifier="formName_P229">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="P229"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="P230 - AP Load Parameters" identifier="formName_P230">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="P230"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="P231 - Shipment Costs Distribution" identifier="formName_P231">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="P231"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="P233 - Automatic Payment Details" identifier="formName_P233">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="P233"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="P234 - Automatic Payments Processing" identifier="formName_P234">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="P234"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="P235 - Automatic Cheque Number" identifier="formName_P235">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="P235"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="P236 - Cheque/Remittance Print" identifier="formName_P236">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="P236"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="P237 - Cheque/EFT Remittance Advice" identifier="formName_P237">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="P237"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="P238 - Remittance Statement Print" identifier="formName_P238">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="P238"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="P239 - Cheque Range Numbering" identifier="formName_P239">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="P239"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="P240 - Debit Entry Batch Details" identifier="formName_P240">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="P240"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="P241 - WHICS-Open AP Interface File Load" identifier="formName_P241">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="P241"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="P500 - Generate EFT Payments" identifier="formName_P500">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="P500"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="P501 - Generate EFT Payments" identifier="formName_P501">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="P501"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="P502 - EFT Payments" identifier="formName_P502">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="P502"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="P503 - EFT Payment Scan" identifier="formName_P503">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="P503"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="P504 - Remittance Advice Print" identifier="formName_P504">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="P504"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="P505 - Purchase Journal Report" identifier="formName_P505">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="P505"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="P506 - Distribute Order Costs" identifier="formName_P506">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="P506"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="P507 - Vendor Type Period Aging" identifier="formName_P507">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="P507"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="P508 - Aging Date" identifier="formName_P508">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="P508"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="P509 - Duplicate Voucher Exception" identifier="formName_P509">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="P509"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="P510 - Password Entry" identifier="formName_P510">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="P510"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="P511 - Payment Run Cancel" identifier="formName_P511">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="P511"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="P512 - Cancel Payment Generation" identifier="formName_P512">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="P512"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="P513 - Payment Generation Restart" identifier="formName_P513">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="P513"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="P514 - Vendor Aging" identifier="formName_P514">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="P514"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="P515 - Payee Details" identifier="formName_P515">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="P515"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="P516 - Authority code" identifier="formName_P516">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="P516"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+
+
+
+
+					<ListBoxItem text="G100 - Account Inquiry">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="G100"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="G101 - Account Ledger Scan">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="G101"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="G102 - Account Budget Scan">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="G102"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="G103 - Ledger Detail">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="G103"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="G104 - Ledger Detail Scan">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="G104"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="G105 - Account Budget Detail">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="G105"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="G106 - Ledger History Scan">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="G106"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="G107 - GA - Account Reports Sub-system">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="G107"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="G109 - Journal Batch Information">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="G109"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="G110 - Automatic Transaction Numbering">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="G110"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="G111 - Bank Account Reconciliation">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="G111"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="G112 - Batch Detail">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="G112"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="G114 - Journal Line Items">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="G114"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="G115 - Successful Addition of Batch Number">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="G115"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="G118 - Report Header">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="G118"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="G119 - Report Header">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="G119"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="G120 - Financial Report Instructions">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="G120"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="G121 - Financial Report Selector">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="G121"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="G122 - Chart of Accounts">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="G122"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="G123 - Chart of Accounts">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="G123"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="G124 - Journal Types">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="G124"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="G125 - Journal List - Header-Text (missing Form)">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="G125"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="G126 - GL Flexible Structure - CHAR(18)">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="G126"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="G128 - Flex Codes">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="G128"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="G129 - Flex Codes">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="G129"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="G130 - Company Scan">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="G130"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="G131 - Company Detail">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="G131"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="G132 - Currency">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="G132"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="G133 - General Ledger Parameters">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="G133"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="G134 - Bank Account Details">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="G134"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="G135 - Bank Scan">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="G135"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="G136 - Bank Account Details">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="G136"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="G136a - Create Historical Balances">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="G136a"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="G137 - Bank Reconciliation">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="G137"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="G138 - Title missing (needs adding - please give me a title for this form.window">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="G138"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="G144 - Split Deposits">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="G144"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="G145 - Cashbook Installation">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="G145"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="G146 - Account Details">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="G146"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="G147 - Account Verifier">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="G147"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="G148 - External Batch Load">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="G148"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="G149 - Batch Clearance">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="G149"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="G150 - Post Run Audit Trail">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="G150"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="G151 - Subsidiary Ledger Reconciliation">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="G151"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="G151a - Subsidiary Ledger Reconciliation">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="G151a"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="G153 - Fiscal Year and Period">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="G153"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="G154 - Journals">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="G154"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="G155 - GL Posting">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="G155"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="G156 - Recurring Journals">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="G156"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="G157 - Journal Detail">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="G157"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="G158 - Account Budgets">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="G158"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="G161 - GL Period Closing">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="G161"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="G162 - GL Year Closing">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="G162"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="G163 - Exchange Rate Scan">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="G163"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="G164 - Subsidiary to General Ledger Reconcile">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="G164"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="G165 - Subsidiary Verify">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="G165"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="G166 - Cashbook Audit Trail">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="G166"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="G167 - Foreign Currency Exchange">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="G167"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="G168 - Segment Searcher">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="G168"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="G169 - Group Codes">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="G169"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="G170 - Copy Chart of Account">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="G170"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="G173 - Budget Worksheet Selection">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="G173"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="G174 - Segment Searcher">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="G174"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="G175 - Bank Reconciliation Direct Entry">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="G175"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="G180 - Max Ledger Detail">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="G180"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="G181 - missing Form ...">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="G181"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="G182 - Bank Statement Details">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="G182"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="G184 - Copy Report Instructions">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="G184"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="G187 - Budget Year">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="G187"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="G188 - Trial Balance Report">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="G188"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="G190 - Segment Prefixed Transaction Numbering">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="G190"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="G191 - Exchange Rates">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="G191"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="G193 - Country Setup">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="G193"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="G195 - Country Details">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="G195"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="G196 - Account">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="G196"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="G197 - Ledger Scan">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="G197"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="G198 - Base Currency Ledger Summary">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="G198"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="G199 - Ledger Detail">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="G199"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="G200 - Ledger Detail">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="G200"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="G203 - Base Currency Account Summary">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="G203"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="G204 - Report Potential Exchange Variance">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="G204"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="G205 - Unrealised Exchange Variances">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="G205"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="G206 - Too many Unreconciled items">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="G206"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="G207 - Rollup Account History">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="G207"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="G208 - Update Account History">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="G208"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="G209 - GL Summary Segment Definition">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="G209"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="G210 - GL Summary Codes Definition">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="G210"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="G211 - GL Summary Block Definition">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="G211"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="G212 - GL Summary Report">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="G212"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="G213 - Summary Trial Balance Report">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="G213"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="G214 - Company Detail">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="G214"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="G400 - External Budget Interface">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="G400"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="G401 - Bank Sheet Entry &amp; Reconciliation">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="G401"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="G402 - Cheque Selection">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="G402"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="G403 - Selection">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="G403"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="G404 - Vendor Selection">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="G404"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="G405 - Customer Selection">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="G405"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="G408 - Bank Statement Entry &amp; Reconciliation">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="G408"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="G409 - Cash Book">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="G409"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="G410 - Disbursements">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="G410"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="G411 - Receipt Entry">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="G411"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="G412 - Cheque">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="G412"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="G413 - Receipt Application">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="G413"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="G414 - Bank Statement">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="G414"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="G415 - Payment Application">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="G415"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="G417 - Cash Book Transactions">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="G417"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="G418 - Currency Transfer Scan">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="G418"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="G419 - Bank Statement Load">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="G419"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="G420 - Bank Statement Print">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="G420"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="G421 - Payroll Batch Load">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="G421"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="G422 - General Ledger Budget Parameters">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="G422"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="G423 - End of Period Batch Reversal">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="G423"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="G444 - Multi-Ledger Exchange Variance">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="G444"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="G449 - Cash Receipt Scan">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="G449"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="G450 - Multi-Ledger Relationships">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="G450"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="G450 - Multi-Ledger Relationships">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="G450"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="G451 - Multi-Ledger Relationships">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="G451"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="G452 - Consolidated Report Codes">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="G452"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="G453 - Consolidated Report Codes">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="G453"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="G454 - GL Period Closing">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="G454"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="G455 - GL Year Closing">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="G455"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="G456 - Payroll Load Parameters">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="G456"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="G457 - Consolidated Summary Trial Balance Report">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="G457"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="G458 - Journal Disbursement Maintenance">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="G458"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="G459 - Standing Journal Disbursements">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="G459"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="G460 - Standing Journal Disbursements">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="G460"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="G461 - Journal Disbursement Processing">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="G461"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="G462 - Fiscal">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="G462"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="G463 - Journal Batch Information">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="G463"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="G464 - Journals">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="G464"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="G465 - Standing Journal Disbursement">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="G465"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="G467 - Journal Disbursements">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="G467"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="G500 - Management Report Processing">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="G500"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="G501 - Report Header Browse">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="G501"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="G504 - Report Position ? (Missing Form)">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="G504"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="G505 - missing form - needs title">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="G505"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="G506 - missing form - needs title">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="G506"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="G507 - Report Type (missing form)">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="G507"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="G509 - Print Report Writer Definitions">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="G509"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="G510 - Report Header Maintenance">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="G510"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="G511 - Report Column Browse">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="G511"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="G512 - Column Item type">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="G512"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="G513 - Column Maintenance">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="G513"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="G514 - Time Item Type">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="G514"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="G515 - Value Item type">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="G515"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="G516 - Underline Maintenance">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="G516"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="G517 - EFT Payment Scan">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="G517"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="G521 - Accumulator">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="G521"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="G522 - Accumulator Maintenance">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="G522"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="G523 - Column Description Line Maintenance">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="G523"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="G524 - General Ledger Line Maintenance">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="G524"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="G525 - Report Line Maintenance">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="G525"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="G526 - Segment Maintenance">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="G526"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="G527 - Segment Maintenance">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="G527"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="G528 - External Link Maintenance">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="G528"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="G529 - Print Report Writer Definitions">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="G529"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="G530 - Image Report">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="G530"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="G532 - Bank Types">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="G532"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="G533 - Bank Type Details">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="G533"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="G534 - Bank/State/Branch Codes">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="G534"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="G535 - Bank Group">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="G535"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="G536 - BIC">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="G536"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="G537 - EFT Selection">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="G537"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="G538 - Program Transaction Numbering">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="G538"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="G539 - Account Transaction Codes">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="G539"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="G540 - ANZ Transaction Load">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="G540"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="G542 -Report Sub Groups">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="G542"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="G543 - General Ledger Reports">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="G543"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="G544 - Report Details">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="G544"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="G545 - Report Data Extraction">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="G545"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="G546 - Report Group Order">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="G546"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="G547 - AR Posting Drill Down">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="G547"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="G548 - Post Journal">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="G548"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="G549 - General ledger account translation">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="G549"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="G550 - Report Data Import">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="G550"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="G551 - Financial Work Sheet Selection">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="G551"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="G552 - Approved Funds Account Details">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="G552"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="G555 - Transaction Numbering Menu">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="G555"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="G557 - Missing Form G557">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="G557"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="G559 - Tax Code">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="G559"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="G560 - Missing form...">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="G560"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="G579 - Account Group Management">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="G579"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="G580 - Header-Text">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="G580"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="G581 - Account Maintenance Group">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="G581"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="GB - Batch Reports Sub-system Menu (GB)">
+						<ListBoxItem.value>
+							<StringLiteral stringValue="GB"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+
+
+					
+					
+					<ListBox.onMouseDoubleClick>
+						<ActionEventHandler actionName="ViewForm"/>
+					</ListBox.onMouseDoubleClick>
+				</ListBox>
+			</GridPanel>
+			<GridPanel classNames="fcls_statusbar_cnt" visible="true" verticalAlignment="Bottom" gridItemLocation="0,2,1,1" fieldTable="formonly" identifier="cntStatusBar">
+				<GridPanel.gridRowDefinitions>
+					<GridRowDefinition gridLengthValue=""/>
+					<GridRowDefinition gridLengthValue=""/>
+				</GridPanel.gridRowDefinitions>
+				<GridPanel.gridColumnDefinitions>
+					<GridColumnDefinition gridLengthValue="100%"/>
+				</GridPanel.gridColumnDefinitions>
+				<Label isDynamic="true" text="" classNames="fcls_sblabel" visible="true" gridItemLocation="0,0,1,1" fieldTable="formonly" identifier="lbInfo1"/>
+				<Label isDynamic="true" text="" classNames="fcls_sblabel" visible="true" gridItemLocation="0,1,1,1" fieldTable="formonly" identifier="lbInfo2"/>
+			</GridPanel>
+		</GridPanel>
+	</form.rootContainer>
+	<form.screenRecords>
+		<ScreenRecord identifier="FORMONLY" fields="f151"/>
+	</form.screenRecords>
+</form>
+

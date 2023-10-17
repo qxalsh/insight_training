@@ -1,0 +1,375 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://namespaces.querix.com/2015/fglForms" title="gui_demo_contact">
+	<form.rootContainer>
+		<GridPanel classNames="fcls_rootContainer" fieldTable="formonly" identifier="rootContainer" verticalAlignment="Stretch" horizontalAlignment="Stretch">
+			<GridPanel.gridRowDefinitions>
+				<GridRowDefinition gridLengthValue=""/>
+				<GridRowDefinition gridLengthValue=""/>
+				<GridRowDefinition/>
+				<GridRowDefinition gridLengthValue="100%"/>
+				<GridRowDefinition gridLengthValue=""/>
+			</GridPanel.gridRowDefinitions>
+			<GridPanel.gridColumnDefinitions>
+				<GridColumnDefinition gridLengthValue="100%"/>
+			</GridPanel.gridColumnDefinitions>
+			<GridPanel classNames="fcls_title_cnt" visible="true" verticalAlignment="Top" gridItemLocation="0,0,1,1" fieldTable="formonly" identifier="cntTitle">
+				<GridPanel.gridRowDefinitions>
+					<GridRowDefinition gridLengthValue=""/>
+				</GridPanel.gridRowDefinitions>
+				<GridPanel.gridColumnDefinitions>
+					<GridColumnDefinition gridLengthValue="100%"/>
+				</GridPanel.gridColumnDefinitions>
+				<Label isDynamic="true" text="Guidemo - Simple Contact Form" classNames="fcls_title_lb" visible="true" gridItemLocation="0,0,1,1" fieldTable="formonly" identifier="lbTitle"/>
+			</GridPanel>
+			<GridPanel classNames="fcls_detail_cnt" gridItemLocation="0,1,1,1" fieldTable="formonly" identifier="c3_UpperDetailsArea">
+				<GridPanel.gridRowDefinitions>
+					<GridRowDefinition/>
+				</GridPanel.gridRowDefinitions>
+				<GridPanel.gridColumnDefinitions>
+					<GridColumnDefinition gridLengthValue="15%"/>
+					<GridColumnDefinition gridLengthValue="35%"/>
+					<GridColumnDefinition gridLengthValue="35%"/>
+					<GridColumnDefinition gridLengthValue="15%"/>
+				</GridPanel.gridColumnDefinitions>
+				<GroupBox title="Picture" classNames="fcls_detail_gb_cnt" gridItemLocation="0,0,1,1" fieldTable="formonly" identifier="c9">
+					<GridPanel classNames="fcls_data_cnt" fieldTable="formonly" identifier="c10">
+						<GridPanel.gridRowDefinitions>
+							<GridRowDefinition gridLengthValue=""/>
+						</GridPanel.gridRowDefinitions>
+						<GridPanel.gridColumnDefinitions>
+							<GridColumnDefinition gridLengthValue=""/>
+						</GridPanel.gridColumnDefinitions>
+						<Label isDynamic="true" text="" classNames="classLabel" toolTip="Click picture for fun" textAlignment="Center,Center" gridItemLocation="0,0,1,1" fieldTable="formonly" identifier="cust_picture">
+							<Label.image>
+								<Image imageUrl="qx://application/image_contact/leaderEngland_01-160.png"/>
+							</Label.image>
+							<Label.onInvoke>
+								<ActionEventHandler actionName="ActPictureBrowser"/>
+							</Label.onInvoke>
+						</Label>
+					</GridPanel>
+				</GroupBox>
+				<GroupBox title="Contact Details" classNames="fcls_detail_gb_cnt" gridItemLocation="1,0,1,1" fieldTable="formonly" identifier="cntGbContactDetails">
+					<GridPanel classNames="fcls_data_cnt" verticalAlignment="Top" fieldTable="formonly" identifier="cgp_Details1">
+						<GridPanel.gridRowDefinitions>
+							<GridRowDefinition gridLengthValue=""/>
+							<GridRowDefinition gridLengthValue=""/>
+							<GridRowDefinition gridLengthValue=""/>
+							<GridRowDefinition gridLengthValue=""/>
+							<GridRowDefinition gridLengthValue=""/>
+							<GridRowDefinition gridLengthValue=""/>
+							<GridRowDefinition gridLengthValue=""/>
+						</GridPanel.gridRowDefinitions>
+						<GridPanel.gridColumnDefinitions>
+							<GridColumnDefinition gridLengthValue="10rem"/>
+							<GridColumnDefinition/>
+						</GridPanel.gridColumnDefinitions>
+						<Label isDynamic="true" text="Contact ID:" dataType="Char,,,," classNames="fcls_fieldlabel,fcls_align_left" gridItemLocation="0,0,1,1" fieldTable="formonly" identifier="dl_c_id"/>
+						<TextField dataType="Char,,,," classNames="fcls_data_widget" toolTip="Customer ID" gridItemLocation="1,0,1,1" fieldTable="formonly" comment="Customer ID" identifier="cust_id" horizontalAlignment="Stretch"/>
+						<Label isDynamic="true" text="Title:" dataType="Char,,,," classNames="fcls_fieldlabel,fcls_align_left" gridItemLocation="0,1,1,1" fieldTable="formonly" identifier="dl_title"/>
+						<ComboBox editable="true" dataType="Char,,,," classNames="fcls_data_widget" toolTip="Title" gridItemLocation="1,1,1,1" fieldTable="formonly" comment="Title" identifier="cust_title" horizontalAlignment="Stretch">
+							<ComboBoxItem text="Mr.">
+								<ComboBoxItem.value>
+									<StringLiteral stringValue="Mr."/>
+								</ComboBoxItem.value>
+							</ComboBoxItem>
+							<ComboBoxItem text="Mrs.">
+								<ComboBoxItem.value>
+									<StringLiteral stringValue="Mrs."/>
+								</ComboBoxItem.value>
+							</ComboBoxItem>
+							<ComboBoxItem text="Miss.">
+								<ComboBoxItem.value>
+									<StringLiteral stringValue="Miss."/>
+								</ComboBoxItem.value>
+							</ComboBoxItem>
+							<ComboBoxItem text="Dr.">
+								<ComboBoxItem.value>
+									<StringLiteral stringValue="Dr."/>
+								</ComboBoxItem.value>
+							</ComboBoxItem>
+							<ComboBoxItem text="Prof.">
+								<ComboBoxItem.value>
+									<StringLiteral stringValue="Prof."/>
+								</ComboBoxItem.value>
+							</ComboBoxItem>
+						</ComboBox>
+						<Label isDynamic="true" text="First Name:" dataType="Char,,,," classNames="fcls_fieldlabel,fcls_align_left" gridItemLocation="0,2,1,1" fieldTable="formonly" identifier="dl_f_name"/>
+						<TextField dataType="Char,,,," classNames="fcls_data_widget,fcls_align_hstretch" toolTip="First Name" fieldTable="formonly" comment="First Name" identifier="cust_fname" gridItemLocation="1,2,1,1"/>
+						<Label isDynamic="true" text="Second Name:" dataType="Char,,,," classNames="fcls_fieldlabel,fcls_align_left" gridItemLocation="0,3,1,1" fieldTable="formonly" identifier="dl_s_name"/>
+						<TextField dataType="Char,,,," classNames="fcls_data_widget,fcls_align_hstretch" toolTip="Last Name" gridItemLocation="1,3,1,1" fieldTable="formonly" comment="Last Name" identifier="cust_lname"/>
+						<Label isDynamic="true" text="D.O.B.:" dataType="Char,,,," classNames="fcls_fieldlabel,fcls_align_left" gridItemLocation="0,4,1,1" fieldTable="formonly" identifier="dl_dob"/>
+						<Calendar dataType="Char,,,," classNames="fcls_data_widget" gridItemLocation="1,4,1,1" fieldTable="formonly" comment="Date of birth" identifier="cust_dob" horizontalAlignment="Stretch"/>
+						<Label isDynamic="true" text="E-Mail:" dataType="Char,,,," classNames="fcls_fieldlabel,fcls_align_left" gridItemLocation="0,5,1,1" fieldTable="formonly" identifier="dl_email"/>
+						<FunctionField classNames="fcls_data_widget,fcls_align_hstretch" gridItemLocation="1,5,1,1" fieldTable="formonly" comment="E-Mail Address" identifier="cust_email">
+							<FunctionField.onInvoke>
+								<OpenUrlEventHandler type="OpenUrlEventHandler" url="mailto:info@querix.com"/>
+							</FunctionField.onInvoke>
+						</FunctionField>
+						<Label isDynamic="true" text="Website:" classNames="fcls_fieldlabel,fcls_align_left" gridItemLocation="0,6,1,1" fieldTable="" identifier="lb5"/>
+						<FunctionField classNames="fcls_data_widget,fcls_align_hstretch" gridItemLocation="1,6,1,1" fieldTable="" comment="WebSite URL" identifier="cust_url">
+							<FunctionField.onInvoke>
+								<OpenUrlEventHandler type="OpenUrlEventHandler" url="https://www.royal.uk/"/>
+							</FunctionField.onInvoke>
+						</FunctionField>
+					</GridPanel>
+				</GroupBox>
+				<GroupBox title="Address" classNames="fcls_detail_gb_cnt" gridItemLocation="2,0,1,1" fieldTable="" identifier="cntGbAddress">
+					<GridPanel classNames="fcls_data_cnt" verticalAlignment="Top" fieldTable="" identifier="cnGpAddress">
+						<GridPanel.gridRowDefinitions>
+							<GridRowDefinition gridLengthValue=""/>
+							<GridRowDefinition gridLengthValue=""/>
+							<GridRowDefinition gridLengthValue=""/>
+							<GridRowDefinition gridLengthValue=""/>
+							<GridRowDefinition gridLengthValue=""/>
+						</GridPanel.gridRowDefinitions>
+						<GridPanel.gridColumnDefinitions>
+							<GridColumnDefinition gridLengthValue="10rem"/>
+							<GridColumnDefinition/>
+						</GridPanel.gridColumnDefinitions>
+						<Label isDynamic="true" text="Address" classNames="fcls_fieldlabel,fcls_align_left" gridItemLocation="0,0,1,1" fieldTable="" identifier="lb1"/>
+						<TextField classNames="fcls_data_widget,fcls_align_hstretch" gridItemLocation="1,0,1,1" fieldTable="" identifier="cust_address1"/>
+						<TextField classNames="fcls_data_widget,fcls_align_hstretch" gridItemLocation="1,1,1,1" fieldTable="" identifier="cust_address2"/>
+						<TextField classNames="fcls_data_widget,fcls_align_hstretch" gridItemLocation="1,2,1,1" fieldTable="" identifier="cust_address3"/>
+						<Label isDynamic="true" text="Post Code" classNames="fcls_fieldlabel,fcls_align_left" gridItemLocation="0,3,1,1" fieldTable="" identifier="lb4"/>
+						<TextField classNames="fcls_data_widget" gridItemLocation="1,3,1,1" fieldTable="" identifier="cust_post_code" horizontalAlignment="Stretch"/>
+						<Label isDynamic="true" text="Country:" dataType="Char,,,," classNames="fcls_fieldlabel,fcls_align_left" gridItemLocation="0,4,1,1" fieldTable="formonly" identifier="dl_country"/>
+						<FunctionField imageId="{CONTEXT}/public/querix/icon/svg/24/ic_more_horiz_24px.svg" dataType="Char,,,," classNames="fcls_data_widget,fcls_align_hstretch" toolTip="Country of Origin" gridItemLocation="1,4,1,1" fieldTable="formonly" comment="Country of Origin" identifier="cust_country">
+							<FunctionField.onInvoke>
+								<ActionEventHandler type="actioneventhandler" actionName="actCountryList"/>
+							</FunctionField.onInvoke>
+						</FunctionField>
+					</GridPanel>
+				</GroupBox>
+				<GroupBox title="Map" classNames="fcls_detail_gb_cnt" visible="true" gridItemLocation="3,0,1,1" fieldTable="" identifier="c11">
+					<WebComponent componentType="html/google-map" visible="true" verticalAlignment="Stretch" horizontalAlignment="Stretch" fieldTable="" identifier="wc_google_map"/>
+				</GroupBox>
+			</GridPanel>
+			<GridPanel classNames="fcls_detail_cnt" gridItemLocation="0,2,1,1" fieldTable="formonly" identifier="c9_centerArea">
+				<GridPanel.gridRowDefinitions>
+					<GridRowDefinition gridLengthValue="100%"/>
+				</GridPanel.gridRowDefinitions>
+				<GridPanel.gridColumnDefinitions>
+					<GridColumnDefinition gridLengthValue="15%" gridMinLength="15rem"/>
+					<GridColumnDefinition gridLengthValue="100%"/>
+					<GridColumnDefinition gridLengthValue="15%" gridMinLength="15rem"/>
+				</GridPanel.gridColumnDefinitions>
+				<GroupBox title="Contact Rules" classNames="fcls_detail_gb_cnt" gridItemLocation="0,0,1,1" fieldTable="formonly" identifier="cGBContactRules">
+					<GridPanel classNames="fcls_data_cnt" verticalAlignment="Top" fieldTable="formonly" identifier="cgp_Details2">
+						<GridPanel.gridRowDefinitions>
+							<GridRowDefinition/>
+							<GridRowDefinition/>
+							<GridRowDefinition/>
+							<GridRowDefinition/>
+							<GridRowDefinition/>
+							<GridRowDefinition/>
+							<GridRowDefinition/>
+						</GridPanel.gridRowDefinitions>
+						<GridPanel.gridColumnDefinitions>
+							<GridColumnDefinition gridLengthValue="100%"/>
+						</GridPanel.gridColumnDefinitions>
+						<CheckBox title="Receives Phone Calls" dataType="Char,,,," classNames="fcls_data_widget,fcls_align_left" toolTip="Receives Emails" gridItemLocation="0,0,1,1" fieldTable="formonly" comment="Receives Emails" identifier="cust_rp" notNull="true">
+							<CheckBox.checkedValue>
+								<StringLiteral stringValue="1"/>
+							</CheckBox.checkedValue>
+							<CheckBox.uncheckedValue>
+								<StringLiteral stringValue="0"/>
+							</CheckBox.uncheckedValue>
+						</CheckBox>
+						<CheckBox title="Receives Emails" dataType="Char,,,," classNames="fcls_data_widget,fcls_align_left" toolTip="Receives Phone Calls" gridItemLocation="0,1,1,1" fieldTable="formonly" comment="Receives Phone Calls" identifier="cust_re" notNull="true">
+							<CheckBox.checkedValue>
+								<StringLiteral stringValue="1"/>
+							</CheckBox.checkedValue>
+							<CheckBox.uncheckedValue>
+								<StringLiteral stringValue="0"/>
+							</CheckBox.uncheckedValue>
+						</CheckBox>
+						<CheckBox title="Receives Letters" dataType="Char,,,," classNames="fcls_data_widget,fcls_align_left" toolTip="Receives Letters" gridItemLocation="0,2,1,1" fieldTable="formonly" comment="Receives Letters" identifier="cust_rl" notNull="true">
+							<CheckBox.checkedValue>
+								<StringLiteral stringValue="1"/>
+							</CheckBox.checkedValue>
+							<CheckBox.uncheckedValue>
+								<StringLiteral stringValue="0"/>
+							</CheckBox.uncheckedValue>
+						</CheckBox>
+						<RadioGroup orientation="Vertical" dataType="Char,,,," classNames="fcls_data_widget,fcls_align_left" toolTip="Reseller/End-User" verticalAlignment="Top" horizontalAlignment="Left" gridItemLocation="0,3,1,2" fieldTable="formonly" comment="Reseller/End-User" identifier="cust_type">
+							<Radio title="Private" identifier="cust_type_0">
+								<Radio.value>
+									<StringLiteral stringValue="0"/>
+								</Radio.value>
+							</Radio>
+							<Radio title="Business" identifier="cust_type_1">
+								<Radio.value>
+									<StringLiteral stringValue="1"/>
+								</Radio.value>
+							</Radio>
+						</RadioGroup>
+						<Label isDynamic="true" text="Visit my website" dataType="Char,,,," classNames="fcls_data_widget,fcls_align_left" toolTip="Click here to visit my website" textAlignment="Center,Center" gridItemLocation="0,5,1,1" fieldTable="formonly" comment="Click here to visit my website" identifier="cust_url2">
+							<Label.onMouseClick>
+								<OpenUrlEventHandler url="http://www.royal.gov.uk"/>
+							</Label.onMouseClick>
+							<Label.displayModes>
+								<DisplayMode appearance="Underline"/>
+							</Label.displayModes>
+						</Label>
+						<Label isDynamic="true" text="Write an e-mail" dataType="Char,,,," classNames="fcls_data_widget,fcls_align_left" toolTip="Click here to send me an e-mail" textAlignment="Center,Center" gridItemLocation="0,6,1,1" fieldTable="formonly" comment="Click here to send me an e-mail" identifier="hl_cust_email">
+							<Label.onMouseClick>
+								<OpenUrlEventHandler url="mailto:info@querix.com"/>
+							</Label.onMouseClick>
+							<Label.displayModes>
+								<DisplayMode appearance="Underline"/>
+							</Label.displayModes>
+						</Label>
+					</GridPanel>
+				</GroupBox>
+				<GroupBox title="Memo" classNames="fcls_detail_gb_cnt" gridItemLocation="1,0,1,1" fieldTable="formonly" identifier="cntGbMemo">
+					<TextArea classNames="fcls_align_hstretch,fcls_align_vstretch,fcls_field_memo,fcls_data_widget" fieldTable="formonly" identifier="cust_memo"/>
+				</GroupBox>
+				<StackPanel visible="true" identifier="cStackButtons" gridItemLocation="2,0,1,1" orientation="Vertical">
+					<Button text="Error" classNames="fcls_button" toolTip="Display 4GL Error Message" fieldTable="" comment="Display 4GL Error Message" identifier="fb_error" textAlignment="Left,Default" horizontalAlignment="Stretch">
+						<Button.image>
+							<Image imageUrl="{CONTEXT}/public/querix/icon/svg/24/ic_error_24px.svg"/>	
+						</Button.image>
+						<Button.onInvoke>
+							<ActionEventHandler actionName="ERROR"/>
+						</Button.onInvoke>
+					</Button>
+					<Button text="Message" classNames="fcls_button" toolTip="Display 4gl Message" fieldTable="" comment="Display 4gl Message" identifier="fb_message" textAlignment="Left,Default" horizontalAlignment="Stretch">
+						<Button.image>
+							<Image imageUrl="{CONTEXT}/public/querix/icon/svg/24/ic_message_24px.svg"/>	
+						</Button.image>
+						<Button.onInvoke>
+							<ActionEventHandler actionName="MESSAGE"/>
+						</Button.onInvoke>
+					</Button>
+					<Button text="Add Item to ComboList" classNames="fcls_button" toolTip="Add an item to the Title ComboListBox" fieldTable="" comment="Input/Edit Mode" identifier="fb_listbox" horizontalAlignment="Stretch" textAlignment="Left,Default">
+						<Button.image>
+							<Image imageUrl="{CONTEXT}/public/querix/icon/svg/24/ic_widget_combo_24px.svg"/>
+						</Button.image>
+						<Button.onInvoke>
+							<ActionEventHandler actionName="manageListBox"/>
+						</Button.onInvoke>
+					</Button>
+					<Button text="Copy Table to Clipboard" classNames="fcls_button" toolTip="Copy Table contents to the clipboard" fieldTable="" comment="Done" identifier="fb_clipboard_copy" horizontalAlignment="Stretch" textAlignment="Left,Default">
+						<Button.image>
+							<Image imageUrl="{CONTEXT}/public/querix/icon/svg/24/ic_clipboard_copy_24px.svg"/>
+						</Button.image>
+						<Button.onInvoke>
+							<ActionEventHandler actionName="grid_export_clipboard"/>
+						</Button.onInvoke>
+					</Button>
+					<Button visible="true" text="Copy Table to File" identifier="fb_file_copy" classNames="fcls_button" comment="Done" fieldTable="" textAlignment="Left,Default" horizontalAlignment="Stretch" toolTip="Copy Table contents to a file">
+						<Button.image>
+							<Image imageUrl="{CONTEXT}/public/querix/icon/svg/24/ic_file_copy_24px.svg"/>
+						</Button.image>
+						<Button.onInvoke>
+							<ActionEventHandler actionName="grid_export_file"/>
+						</Button.onInvoke>
+					</Button>
+				</StackPanel>
+			</GridPanel>
+			<GridPanel classNames="fcls_detail_cnt" gridItemLocation="0,3,1,1" fieldTable="formonly" identifier="c7_dataTable" horizontalAlignment="Stretch" verticalAlignment="Stretch">
+				<GridPanel.gridRowDefinitions>
+					<GridRowDefinition gridLengthValue="100%"/>
+				</GridPanel.gridRowDefinitions>
+				<GridPanel.gridColumnDefinitions>
+					<GridColumnDefinition gridLengthValue="100%"/>
+				</GridPanel.gridColumnDefinitions>
+				<Table classNames="fclsCnTable,fcls_table_cnt" minSize=",200" gridItemLocation="0,0,1,1" fieldTable="" identifier="sc_rec" horizontalAlignment="Stretch" verticalAlignment="Stretch">
+					<TableColumn text="Date" classNames="classTableColumn" fieldTable="" identifier="tcAct_da">
+						<TableColumn.columnLength>
+							<GridLength gridLengthValue="10rem" gridMaxLength="12rem" gridMinLength="10rem"/>
+						</TableColumn.columnLength>
+						<Calendar dataType="Char,,,," classNames="classTableField" toolTip="Registration Date" fieldTable="formonly" comment="Registration Date" identifier="act_date"/>
+					</TableColumn>
+					<TableColumn text="Activity" classNames="classTableColumn" fieldTable="" identifier="tcAct_activity">
+						<TableColumn.columnLength>
+							<GridLength gridLengthValue="100%" gridMaxLength="30rem" gridMinLength="10rem"/>
+						</TableColumn.columnLength>
+						<TextField dataType="Char,,,," classNames="classTableField" toolTip="Activity" fieldTable="formonly" comment="Activity" identifier="act_activity"/>
+					</TableColumn>
+					<TableColumn text="Title" resizable="true" visible="true" fieldTable="" identifier="tc_f8">
+						<TableColumn.columnLength>
+							<GridLength gridLengthValue="10rem" gridMaxLength="10rem" gridMinLength="6rem"/>
+						</TableColumn.columnLength>
+						<ComboBox visible="true" fieldTable="" identifier="act_tit">
+							<ComboBoxItem text="Mr.">
+								<ComboBoxItem.value>
+									<StringLiteral stringValue="Mr."/>
+								</ComboBoxItem.value>
+							</ComboBoxItem>
+							<ComboBoxItem text="Mrs.">
+								<ComboBoxItem.value>
+									<StringLiteral stringValue="Mrs."/>
+								</ComboBoxItem.value>
+							</ComboBoxItem>
+							<ComboBoxItem text="Miss">
+								<ComboBoxItem.value>
+									<StringLiteral stringValue="Miss"/>
+								</ComboBoxItem.value>
+							</ComboBoxItem>
+							<ComboBoxItem text="Dr.">
+								<ComboBoxItem.value>
+									<StringLiteral stringValue="Dr."/>
+								</ComboBoxItem.value>
+							</ComboBoxItem>
+							<ComboBoxItem text="Prof.">
+								<ComboBoxItem.value>
+									<StringLiteral stringValue="Prof."/>
+								</ComboBoxItem.value>
+							</ComboBoxItem>
+						</ComboBox>
+					</TableColumn>
+					<TableColumn text="First Name" classNames="classTableColumn" fieldTable="" identifier="tc_act_conf">
+						<TableColumn.columnLength>
+							<GridLength gridLengthValue="20rem" gridMaxLength="20rem" gridMinLength="10rem"/>
+						</TableColumn.columnLength>
+						<TextField dataType="VarChar,,,," classNames="classTableField" toolTip="Contact&apos;s first name involved in activity" fieldTable="formonly" comment="Contact&apos;s first name involved in activity" identifier="act_conf"/>
+					</TableColumn>
+					<TableColumn text="Last Name" classNames="classTableColumn" fieldTable="" identifier="tc_act_conl">
+						<TableColumn.columnLength>
+							<GridLength gridLengthValue="20rem" gridMaxLength="20rem" gridMinLength="10rem"/>
+						</TableColumn.columnLength>
+						<TextField dataType="VarChar,,,," classNames="classTableField" toolTip="Contact&apos;s last name involved in activity" fieldTable="formonly" comment="Contact&apos;s last name involved in activity" identifier="act_conl"/>
+					</TableColumn>
+					<TableColumn text="State" classNames="classTableColumn" fieldTable="" identifier="tc_act_state">
+						<TableColumn.columnLength>
+							<GridLength gridLengthValue="10rem" gridMaxLength="10rem" gridMinLength="6rem"/>
+						</TableColumn.columnLength>
+						<TextField dataType="Char,,,," classNames="classTableField" toolTip="State" fieldTable="formonly" comment="State" identifier="act_state"/>
+					</TableColumn>
+					<TableColumn text="Cost" resizable="true" visible="true" fieldTable="" identifier="tc_act_state">
+						<TableColumn.columnLength>
+							<GridLength gridLengthValue="10rem" gridMaxLength="10rem" gridMinLength="6rem"/>
+						</TableColumn.columnLength>
+						<TextField visible="true" fieldTable="" identifier="act_cost"/>
+					</TableColumn>
+					<TableColumn text="Priority" resizable="true" visible="true" fieldTable="" identifier="tc_act_priority">
+						<TableColumn.columnLength>
+							<GridLength gridLengthValue="10rem" gridMaxLength="10rem" gridMinLength="6rem"/>
+						</TableColumn.columnLength>
+						<Spinner step="1" maxValue="100" visible="true" fieldTable="" identifier="act_priority"/>
+					</TableColumn>
+					<TableColumn resizable="true" visible="true" identifier="tc_lb6">
+						<TableColumn.columnLength>
+							<GridLength gridLengthValue="100%"/>
+						</TableColumn.columnLength>
+					</TableColumn>
+				</Table>
+			</GridPanel>
+			<GridPanel classNames="fcls_statusbar_cnt" minSize=",15" gridItemLocation="0,4,1,1" fieldTable="formonly" identifier="cntGpRowFooter">
+				<GridPanel.gridRowDefinitions>
+					<GridRowDefinition gridLengthValue=""/>
+				</GridPanel.gridRowDefinitions>
+				<GridPanel.gridColumnDefinitions>
+					<GridColumnDefinition gridLengthValue="100%"/>
+				</GridPanel.gridColumnDefinitions>
+			</GridPanel>
+		</GridPanel>
+	</form.rootContainer>
+	<form.screenRecords>
+		<ScreenRecord identifier="sc_rec" fields="act_date,act_activity,act_tit,act_conf,act_conl,act_state,act_cost,act_priority"/>
+		<ScreenRecord identifier="formonly" fields="cust_picture,fb_input,fb_done,fb_cancel,fb_error,fb_message,dl_title,dl_country,dl_c_id,dl_f_name,dl_s_name,cust_url2,hl_cust_email,dl_dob,dl_email,cust_email,cust_dob,dl_cb_rec_email,dl_cb_rec_post,dl_rb_ct_private,dl_rb_ct_business,dl_cb_rec_call,act_date,act_activity,act_conf,act_conl,act_state,cust_country,cust_id,cust_title,cust_fname,cust_lname,cust_re,cust_rp,cust_rl,cust_type,lbTitle,formonly.cust_memo,wc_google_map,cust_address1,cust_address2,cust_address3,cust_post_code,cust_url"/>
+	</form.screenRecords>
+</form>
+

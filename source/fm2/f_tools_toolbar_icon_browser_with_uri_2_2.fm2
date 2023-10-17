@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://namespaces.querix.com/2015/fglForms">
+	<form.rootContainer>
+		<GridPanel preferredSize="500,500" minSize="45,600"   fieldTable="formonly" identifier="rootContainer">
+			<GridPanel.gridRowDefinitions>
+				<GridRowDefinition>
+					<GridRowDefinition.gridLength>
+						<GridLength gridLengthType="Pixels" gridLengthValue="26"/>
+					</GridRowDefinition.gridLength>
+				</GridRowDefinition>
+				<GridRowDefinition>
+					<GridRowDefinition.gridLength>
+						<GridLength gridLengthType="Percent" gridLengthValue="90"/>
+					</GridRowDefinition.gridLength>
+				</GridRowDefinition>
+			</GridPanel.gridRowDefinitions>
+			<GridPanel.gridColumnDefinitions>
+				<GridColumnDefinition>
+					<GridColumnDefinition.gridLength>
+						<GridLength gridLengthType="Percent" gridLengthValue="100"/>
+					</GridColumnDefinition.gridLength>
+				</GridColumnDefinition>
+			</GridPanel.gridColumnDefinitions>
+			<Label isDynamic="true" text="Icons:" dataType="Char,,,,"   gridItemLocation="0,0,1,1" fieldTable="formonly" identifier="dl_i"/>
+			<Table rowHeight="32"   gridItemLocation="0,1,1,1" fieldTable="formonly" identifier="ic_array">
+						<TableColumn resizable="true" allowNewlines="true"   fieldTable="formonly" identifier="tc_icon">
+							<TableColumn.columnLength>
+								<GridLength gridLengthValue="100"/>
+							</TableColumn.columnLength>
+							<Button allowNewlines="true" minSize="32,32"   fieldTable="formonly" identifier="icon_name">
+								<Button.image>
+									<Image imageUrl="qx://application/icon32/exit01.ico"/>
+								</Button.image>
+								<Button.onInvoke>
+									<KeyEventHandler keyName="ACCEPT,false,false,false"/>
+								</Button.onInvoke>
+							</Button>
+						</TableColumn>
+						<TableColumn text="column" resizable="true" visible="true" identifier="tc_f1">
+							<TextField visible="true" identifier="icon_name_uri"/>
+							<TableColumn.columnLength>
+								<GridLength gridLengthType="Percent" gridLengthValue="100" gridMinLength="300"/>
+							</TableColumn.columnLength>
+						</TableColumn>
+			</Table>
+		</GridPanel>
+	</form.rootContainer>
+	<form.screenRecords>
+		<ScreenRecord identifier="ic_array" fields="icon_name,icon_name_uri"/>
+		<ScreenRecord identifier="formonly" fields="dl_i,formonly.icon"/>
+	</form.screenRecords>
+</form>
+

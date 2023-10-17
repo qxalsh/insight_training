@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://namespaces.querix.com/2015/fglForms" title="HashMap/Dictionary Key List">
+	<form.rootContainer>
+		<Table identifier="sc_reference" visible="true">
+			<TableColumn text="Key List" resizable="true" visible="true" identifier="tc_f5">
+				<TextField visible="true" identifier="hash_key"/>
+				<TableColumn.columnLength>
+					<GridLength/>
+				</TableColumn.columnLength>
+			</TableColumn>
+		</Table>
+	</form.rootContainer>
+	<form.screenRecords>
+		<ScreenRecord identifier="sc_reference" fields="hash_key"/>
+	</form.screenRecords> 
+</form>

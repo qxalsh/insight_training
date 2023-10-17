@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://namespaces.querix.com/2015/fglForms" title="Select HashMap">
+	<form.rootContainer>
+		<GridPanel identifier="rootContainer" visible="true" preferredSize="344,214">
+			<GridPanel.gridColumnDefinitions>
+				<GridColumnDefinition gridLengthValue="100%"/>
+			</GridPanel.gridColumnDefinitions>
+			<GridPanel.gridRowDefinitions>
+				<GridRowDefinition gridLengthValue=""/>
+				<GridRowDefinition gridLengthValue=""/>
+				<GridRowDefinition gridLengthValue=""/>
+				<GridRowDefinition gridLengthValue=""/>
+				<GridRowDefinition/>
+			</GridPanel.gridRowDefinitions>
+			<Label text="Title" isDynamic="true" visible="true" identifier="lb_title" gridItemLocation="0,0,1,1" classNames="fcls_columnlabel_rev_cell,fcls_align_hstretch"/>
+			<Label text="Description" isDynamic="true" visible="true" identifier="lb_description" gridItemLocation="0,1,1,1" classNames="fcls_font_description"/>
+			<Label text="dynamic Description" isDynamic="true" visible="true" identifier="lb_dynamic_desription" gridItemLocation="0,2,1,1" classNames="fcls_font_description"/>
+			<RadioGroup orientation="Vertical" visible="true" identifier="target" gridItemLocation="0,3,1,1">
+				<Radio title="HashMap hm1" identifier="hm1">
+					<Radio.value>
+						<StringLiteral stringValue="hm1"/>
+					</Radio.value>
+				</Radio>
+				<Radio title="HashMap hm2" identifier="hm2">
+					<Radio.value>
+						<StringLiteral stringValue="hm2"/>
+					</Radio.value>
+				</Radio>
+
+
+
+
+			</RadioGroup>
+			<StackPanel visible="true" identifier="c1" gridItemLocation="0,4,1,1" horizontalAlignment="Right">
+				<StackPanel visible="true" identifier="c2" horizontalAlignment="Right"/>
+				<Button text="Accept" visible="true" identifier="bt1">
+					<Button.onInvoke>
+						<ActionEventHandler actionName="ACCEPT"/>
+					</Button.onInvoke>
+				</Button>
+				<Button text="Cancel" visible="true" identifier="bt2">
+					<Button.onInvoke>
+						<ActionEventHandler actionName="CANCEL"/>
+					</Button.onInvoke>
+				</Button>
+			</StackPanel>
+		</GridPanel>
+	</form.rootContainer>
+	<form.screenRecords>
+		<ScreenRecord identifier="sc_target"/>
+	</form.screenRecords>
+</form>

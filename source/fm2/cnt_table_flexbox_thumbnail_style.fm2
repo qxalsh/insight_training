@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="UTF-8"?><form xmlns="http://namespaces.querix.com/2015/fglForms">
+	<form.rootContainer>
+		<BorderPanel fieldTable="" identifier="rootContainer" visible="true">
+			<GridPanel borderPanelItemLocation="Top" classNames="fcls_title_cnt" fieldTable="" identifier="cntTitle" margin="0,0,0,10" verticalAlignment="Top" visible="true">
+				<GridPanel.gridRowDefinitions>
+					<GridRowDefinition gridLengthValue=""/>
+					<GridRowDefinition gridLengthValue=""/>
+				</GridPanel.gridRowDefinitions>
+				<GridPanel.gridColumnDefinitions>
+					<GridColumnDefinition gridLengthValue=""/>
+				</GridPanel.gridColumnDefinitions>
+				<Label classNames="fcls_title_lb" fieldTable="" gridItemLocation="0,0,1,1" identifier="lb4" isDynamic="true" margin="0,10,0,10" text="Dogs Online Shopping Basket" visible="true">
+					<Label.image>
+						<Image imageUrl="{CONTEXT}/public/querix/icon/svg/24/ic_browser_24px.svg"/>
+					</Label.image>
+				</Label>
+				<Label classNames="fcls_title_lb" fieldTable="" gridItemLocation="0,1,1,1" identifier="lb1" isDynamic="true" margin="0,0,0,10" text="These dogs are in the final sale. The references shown are only examples of the actual dog." visible="true"/>
+				<GridPanel.background>
+					<Background/>
+				</GridPanel.background>
+				<GridPanel.elementBorder>
+					<LineBorder thickness="0,0,0,1">
+						<LineBorder.borderBrush>
+							<SystemColor systemColorName="Gray"/>
+						</LineBorder.borderBrush>
+					</LineBorder>
+				</GridPanel.elementBorder>
+			</GridPanel>
+			<GridPanel borderPanelItemLocation="Left" classNames="fcls_detail_cnt_sub,fcls_data_cnt,fcls_align_left" fieldTable="" identifier="cntFilter" verticalAlignment="Top" visible="true">
+				<GridPanel.gridRowDefinitions>
+					<GridRowDefinition gridLengthValue=""/>
+					<GridRowDefinition gridLengthValue=""/>
+					<GridRowDefinition gridLengthValue=""/>
+					<GridRowDefinition gridLengthValue=""/>
+					<GridRowDefinition gridLengthValue=""/>
+					<GridRowDefinition gridLengthValue=""/>
+					<GridRowDefinition gridLengthValue=""/>
+					<GridRowDefinition gridLengthValue=""/>
+					<GridRowDefinition gridLengthValue=""/>
+					<GridRowDefinition gridLengthValue=""/>
+					<GridRowDefinition gridLengthValue=""/>
+					<GridRowDefinition gridLengthValue=""/>
+					<GridRowDefinition gridLengthValue=""/>
+					<GridRowDefinition gridLengthValue=""/>
+				</GridPanel.gridRowDefinitions>
+				<GridPanel.gridColumnDefinitions>
+					<GridColumnDefinition gridLengthValue=""/>
+					<GridColumnDefinition gridLengthValue=""/>
+				</GridPanel.gridColumnDefinitions>
+				<Label classNames="fcls_font_h3" fieldTable="" gridItemLocation="0,0,1,1" identifier="lb37" isDynamic="true" margin="0,0,0,4" text="Filter by:" visible="true"/>
+				<Label classNames="fcls_fieldlabel" fieldTable="" gridItemLocation="0,1,1,1" identifier="lb5" isDynamic="true" margin="0,0,0,4" text="Style #:" visible="true"/>
+				<TextField classNames="fcls_data_widget,fcls_align_left,fcls_length_20qch" fieldTable="" gridItemLocation="1,1,1,1" identifier="fStyle" visible="true"/>
+				<Label classNames="fcls_fieldlabel" fieldTable="" gridItemLocation="0,2,1,1" identifier="lb6" isDynamic="true" margin="0,0,0,4" text="Category:" visible="true"/>
+				<ComboBox classNames="fcls_data_widget,fcls_align_left,fcls_length_10qch" fieldTable="" gridItemLocation="1,2,1,1" identifier="fCategory" visible="true">
+					<ComboBoxItem text="Category 1">
+						<ComboBoxItem.value>
+							<StringLiteral stringValue="Category 1"/>
+						</ComboBoxItem.value>
+					</ComboBoxItem>
+					<ComboBoxItem text="Category 2">
+						<ComboBoxItem.value>
+							<StringLiteral stringValue="Category 2"/>
+						</ComboBoxItem.value>
+					</ComboBoxItem>
+					<ComboBoxItem text="Category 3">
+						<ComboBoxItem.value>
+							<StringLiteral stringValue="Category 3"/>
+						</ComboBoxItem.value>
+					</ComboBoxItem>
+				</ComboBox>
+				<Label classNames="fcls_fieldlabel" fieldTable="" gridItemLocation="0,3,1,1" identifier="lb7" isDynamic="true" margin="0,0,0,4" text="Size (width):" visible="true"/>
+				<Label classNames="fcls_fieldlabel" fieldTable="" gridItemLocation="0,4,1,1" horizontalAlignment="Right" identifier="lb8" isDynamic="true" margin="0,0,0,4" text="From:" visible="true"/>
+				<ComboBox classNames="fcls_data_widget,fcls_align_left,fcls_length_10qch" fieldTable="" gridItemLocation="1,4,1,1" identifier="fFrom" visible="true">
+					<ComboBoxItem text="From 1">
+						<ComboBoxItem.value>
+							<StringLiteral stringValue="From 1"/>
+						</ComboBoxItem.value>
+					</ComboBoxItem>
+					<ComboBoxItem text="From 2">
+						<ComboBoxItem.value>
+							<StringLiteral stringValue="From 2"/>
+						</ComboBoxItem.value>
+					</ComboBoxItem>
+					<ComboBoxItem text="From 3">
+						<ComboBoxItem.value>
+							<StringLiteral stringValue="From 3"/>
+						</ComboBoxItem.value>
+					</ComboBoxItem>
+				</ComboBox>
+				<Label classNames="fcls_fieldlabel" fieldTable="" gridItemLocation="0,5,1,1" horizontalAlignment="Right" identifier="lb9" isDynamic="true" margin="0,0,0,4" text="To:" visible="true"/>
+				<ComboBox classNames="fcls_data_widget,fcls_align_left,fcls_length_10qch" fieldTable="" gridItemLocation="1,5,1,1" identifier="fTo" visible="true">
+					<ComboBoxItem text="To 1">
+						<ComboBoxItem.value>
+							<StringLiteral stringValue="To 1"/>
+						</ComboBoxItem.value>
+					</ComboBoxItem>
+					<ComboBoxItem text="To 2">
+						<ComboBoxItem.value>
+							<StringLiteral stringValue="To 2"/>
+						</ComboBoxItem.value>
+					</ComboBoxItem>
+					<ComboBoxItem text="To 3">
+						<ComboBoxItem.value>
+							<StringLiteral stringValue="To 3"/>
+						</ComboBoxItem.value>
+					</ComboBoxItem>
+				</ComboBox>
+				<Label classNames="fcls_fieldlabel" fieldTable="" gridItemLocation="0,6,1,1" identifier="lb10" isDynamic="true" margin="0,0,0,4" text="Minimum Quantity:" visible="true"/>
+				<ComboBox classNames="fcls_data_widget,fcls_align_left,fcls_length_10qch" fieldTable="" gridItemLocation="1,6,1,1" identifier="fMinQuantity" visible="true">
+					<ComboBoxItem text="MinQuantity 1">
+						<ComboBoxItem.value>
+							<StringLiteral stringValue="MinQuantity 1"/>
+						</ComboBoxItem.value>
+					</ComboBoxItem>
+					<ComboBoxItem text="MinQuantity 2">
+						<ComboBoxItem.value>
+							<StringLiteral stringValue="MinQuantity 2"/>
+						</ComboBoxItem.value>
+					</ComboBoxItem>
+					<ComboBoxItem text="MinQuantity 3">
+						<ComboBoxItem.value>
+							<StringLiteral stringValue="MinQuantity 3"/>
+						</ComboBoxItem.value>
+					</ComboBoxItem>
+				</ComboBox>
+				<Label classNames="fcls_fieldlabel" fieldTable="" gridItemLocation="0,7,1,1" identifier="lb24" isDynamic="true" margin="0,0,0,4" text="Available in:" visible="true"/>
+				<ComboBox classNames="fcls_data_widget,fcls_align_left,fcls_length_10qch" fieldTable="" gridItemLocation="1,7,1,1" identifier="fAvailableIn" visible="true">
+					<ComboBoxItem text="AvailableIn 1">
+						<ComboBoxItem.value>
+							<StringLiteral stringValue="AvailableIn 1"/>
+						</ComboBoxItem.value>
+					</ComboBoxItem>
+					<ComboBoxItem text="AvailableIn 2">
+						<ComboBoxItem.value>
+							<StringLiteral stringValue="AvailableIn 2"/>
+						</ComboBoxItem.value>
+					</ComboBoxItem>
+					<ComboBoxItem text="AvailableIn 3">
+						<ComboBoxItem.value>
+							<StringLiteral stringValue="AvailableIn 3"/>
+						</ComboBoxItem.value>
+					</ComboBoxItem>
+				</ComboBox>
+				<Label classNames="fcls_fieldlabel" fieldTable="" gridItemLocation="0,8,1,1" identifier="lb12" isDynamic="true" margin="0,0,0,4" text="Price:" visible="true"/>
+				<ComboBox classNames="fcls_data_widget,fcls_align_left,fcls_length_20qch" fieldTable="" gridItemLocation="1,8,1,1" identifier="fPrice" visible="true">
+					<ComboBoxItem text="25.55">
+						<ComboBoxItem.value>
+							<DecimalLiteral decimalValue="25.55"/>
+						</ComboBoxItem.value>
+					</ComboBoxItem>
+					<ComboBoxItem text="75.77">
+						<ComboBoxItem.value>
+							<DecimalLiteral decimalValue="75.77"/>
+						</ComboBoxItem.value>
+					</ComboBoxItem>
+					<ComboBoxItem text="100.00">
+						<ComboBoxItem.value>
+							<DecimalLiteral decimalValue="100.00"/>
+						</ComboBoxItem.value>
+					</ComboBoxItem>
+				</ComboBox>
+				<Label classNames="fcls_fieldlabel" fieldTable="" gridItemLocation="0,9,1,1" identifier="lb13" isDynamic="true" margin="0,0,0,4" text="Finish:" visible="true"/>
+				<ComboBox classNames="fcls_data_widget,fcls_align_left,fcls_length_20qch" fieldTable="" gridItemLocation="1,9,1,1" identifier="fFinish" visible="true">
+					<ComboBoxItem text="Finish 1">
+						<ComboBoxItem.value>
+							<StringLiteral stringValue="Finish 1"/>
+						</ComboBoxItem.value>
+					</ComboBoxItem>
+					<ComboBoxItem text="Finish 2">
+						<ComboBoxItem.value>
+							<StringLiteral stringValue="Finish 2"/>
+						</ComboBoxItem.value>
+					</ComboBoxItem>
+					<ComboBoxItem text="Finish 3">
+						<ComboBoxItem.value>
+							<StringLiteral stringValue="Finish 3"/>
+						</ComboBoxItem.value>
+					</ComboBoxItem>
+				</ComboBox>
+				<Label classNames="fcls_fieldlabel" fieldTable="" gridItemLocation="0,10,1,1" identifier="lb21" isDynamic="true" margin="0,0,0,4" text="Ornament:" visible="true"/>
+				<ComboBox classNames="fcls_data_widget,fcls_align_left,fcls_length_20qch" fieldTable="" gridItemLocation="1,10,1,1" identifier="fOrnament" visible="true">
+					<ComboBoxItem text="Ornament 1">
+						<ComboBoxItem.value>
+							<StringLiteral stringValue="Ornament 1"/>
+						</ComboBoxItem.value>
+					</ComboBoxItem>
+					<ComboBoxItem text="Ornament 2">
+						<ComboBoxItem.value>
+							<StringLiteral stringValue="Ornament 2"/>
+						</ComboBoxItem.value>
+					</ComboBoxItem>
+					<ComboBoxItem text="Ornament 3">
+						<ComboBoxItem.value>
+							<StringLiteral stringValue="Ornament 3"/>
+						</ComboBoxItem.value>
+					</ComboBoxItem>
+				</ComboBox>
+				<Label classNames="fcls_fieldlabel" fieldTable="" gridItemLocation="0,11,1,1" identifier="lb39" isDynamic="true" text="f_arr_curr" visible="true"/>
+				<TextField classNames="fcls_data_widget,fcls_align_left,fcls_length_20qch" fieldTable="" gridItemLocation="1,11,1,1" identifier="f_arr_curr" visible="true"/>
+				<Label classNames="fcls_fieldlabel" fieldTable="" gridItemLocation="0,12,1,1" identifier="lb38" isDynamic="true" text="f_scr_line" toolTip="Note: The function scr_line() makes no sense with flexBox containers" visible="true"/>
+				<TextField classNames="fcls_data_widget,fcls_align_left,fcls_length_20qch" fieldTable="" gridItemLocation="1,12,1,1" identifier="f_scr_line" toolTip="Note: The function scr_line() makes no sense with flexBox containers" visible="true"/>
+				<StackPanel classNames="fcls_align_hcenter,fcls_stackPanel" fieldTable="" gridItemLocation="0,13,2,1" horizontalAlignment="Center" identifier="c5" margin="0,10,0,0" visible="true">
+					<Button classNames="fcls_button,fcls_length_10qch" fieldTable="" identifier="btRefineSearch" minSize="100," text="Refine Search" visible="true">
+						<Button.onInvoke>
+							<ActionEventHandler actionName="actRefineSearch"/>
+						</Button.onInvoke>
+					</Button>
+					<Button classNames="fcls_button,fcls_length_10qch" fieldTable="" identifier="btReset" minSize="100," text="Reset" visible="true">
+						<Button.onInvoke>
+							<ActionEventHandler actionName="actReset"/>
+						</Button.onInvoke>
+					</Button>
+				</StackPanel>
+				<GridPanel.background>
+					<Background/>
+				</GridPanel.background>
+			</GridPanel>
+			<GridPanel fieldTable="" identifier="cntCenter" margin="10,0,0,0" visible="true">
+				<GridPanel.gridRowDefinitions>
+					<GridRowDefinition gridLengthValue=""/>
+					<GridRowDefinition gridLengthValue="100%"/>
+				</GridPanel.gridRowDefinitions>
+				<GridPanel.gridColumnDefinitions>
+					<GridColumnDefinition gridLengthValue=""/>
+				</GridPanel.gridColumnDefinitions>
+				<GridPanel classNames="fcls_detail_cnt" fieldTable="" gridItemLocation="0,0,1,1" identifier="cntCenterTop" verticalAlignment="Top" visible="true">
+					<GridPanel.gridRowDefinitions>
+						<GridRowDefinition gridLengthValue=""/>
+						<GridRowDefinition gridLengthValue=""/>
+						<GridRowDefinition gridLengthValue=""/>
+					</GridPanel.gridRowDefinitions>
+					<GridPanel.gridColumnDefinitions>
+						<GridColumnDefinition gridLengthValue=""/>
+					</GridPanel.gridColumnDefinitions>
+					<StackPanel fieldTable="" gridItemLocation="0,0,1,1" horizontalAlignment="Right" identifier="c9" visible="true">
+						<Label classNames="fcls_fieldlabel" fieldTable="" identifier="lbSortBy" isDynamic="true" text="Sort by:" verticalAlignment="Center" visible="true"/>
+						<ComboBox classNames="fcls_data_widget,fcls_align_left,fcls_length_15qch" fieldTable="" identifier="fSortBy" visible="true">
+							<ComboBoxItem text="Price Up">
+								<ComboBoxItem.value>
+									<StringLiteral stringValue="Price Up"/>
+								</ComboBoxItem.value>
+							</ComboBoxItem>
+							<ComboBoxItem text="Price Down">
+								<ComboBoxItem.value>
+									<StringLiteral stringValue="Price Down"/>
+								</ComboBoxItem.value>
+							</ComboBoxItem>
+							<ComboBoxItem text="Breed">
+								<ComboBoxItem.value>
+									<StringLiteral stringValue="Breed"/>
+								</ComboBoxItem.value>
+							</ComboBoxItem>
+						</ComboBox>
+					</StackPanel>
+					<Label classNames="fcls_font_description" fieldTable="" gridItemLocation="0,2,1,1" identifier="lb27" isDynamic="true" text="Click on any image or style to get the price#." visible="true"/>
+				</GridPanel>
+				<Table classNames="fcls_flexbox" fieldTable="" gridItemLocation="0,1,1,1" identifier="rec_arr" preferredSize="520,198">
+					<TableColumn fieldTable="" identifier="tc_lb3" resizable="true" text="URL Image" visible="true">
+						<TableColumn.columnLength>
+							<GridLength gridLengthValue="35%"/>
+						</TableColumn.columnLength>
+						<Label fieldTable="" identifier="urlImage" isDynamic="true" visible="true">
+							<Label.onInvoke>
+								<ActionEventHandler actionName="actImageClick"/>
+							</Label.onInvoke>
+						</Label>
+					</TableColumn>
+					<TableColumn fieldTable="" identifier="tc_lb4" resizable="true" text="URL" visible="true">
+						<TableColumn.columnLength>
+							<GridLength gridLengthValue="35%"/>
+						</TableColumn.columnLength>
+						<Label fieldTable="" identifier="url" isDynamic="true" text="" visible="true">
+							<Label.onInvoke>
+								<ActionEventHandler actionName="actUrlClick"/>
+							</Label.onInvoke>
+							<Label.onMouseClick>
+								<ActionEventHandler actionName="actUrlClick"/>
+							</Label.onMouseClick>
+						</Label>
+					</TableColumn>
+					<TableColumn fieldTable="" identifier="tc_lb6" resizable="true" text="Breed" visible="true">
+						<TableColumn.columnLength>
+							<GridLength gridLengthValue="20%"/>
+						</TableColumn.columnLength>
+						<Label fieldTable="" identifier="bread" isDynamic="true" text="" visible="true">
+							<Label.onInvoke>
+								<ActionEventHandler actionName="actBreedClick"/>
+							</Label.onInvoke>
+						</Label>
+					</TableColumn>
+					<TableColumn fieldTable="" identifier="tc_lb5" resizable="true" text="IQ" visible="true">
+						<TableColumn.columnLength>
+							<GridLength gridLengthValue="10%"/>
+						</TableColumn.columnLength>
+						<Label fieldTable="" identifier="iq" isDynamic="true" text="" textAlignment="Right," visible="true">
+							<Label.onInvoke>
+								<ActionEventHandler actionName="actIqClick"/>
+							</Label.onInvoke>
+						</Label>
+					</TableColumn>
+				</Table>
+			</GridPanel>
+		</BorderPanel>
+	</form.rootContainer>
+	<form.screenRecords>
+		<ScreenRecord fields="fStyle,f_arr_curr,f_scr_line" identifier="FormOnly"/>
+		<ScreenRecord fields="urlImage,url,bread,iq" identifier="rec_arr"/>
+	</form.screenRecords>
+</form>

@@ -1,0 +1,1 @@
+During input, you may press the '!' key to invoke an extenal editor on a TEXT field. The editor is determined by the 'PROGRAM' or 'EDITOR' field attribute. Once you have exited the editor, the contents of the field are automatically updated to the server. 

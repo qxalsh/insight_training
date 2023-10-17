@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://namespaces.querix.com/2015/fglForms">
+    <form.rootContainer>
+            <GridPanel visible="true" fieldTable="" identifier="cntRoot">
+                <GridPanel.gridRowDefinitions>
+                    <GridRowDefinition/>
+                    <GridRowDefinition gridLengthValue="15%" gridMinLength="5qch"/>
+                    <GridRowDefinition gridLengthValue="80%"/>
+                    <GridRowDefinition gridLengthValue=""/>
+                </GridPanel.gridRowDefinitions>
+                <GridPanel.gridColumnDefinitions>
+                    <GridColumnDefinition gridLengthValue=""/>
+                </GridPanel.gridColumnDefinitions>
+                
+			<GridPanel classNames="fcls_title_cnt" visible="true" verticalAlignment="Top" gridItemLocation="0,0,1,1" fieldTable="formonly" identifier="cntTitle">
+				<GridPanel.gridRowDefinitions>
+					<GridRowDefinition gridLengthValue=""/>
+				</GridPanel.gridRowDefinitions>
+				<GridPanel.gridColumnDefinitions>
+					<GridColumnDefinition gridLengthValue="100%"/>
+					<GridColumnDefinition gridLengthValue=""/>
+				</GridPanel.gridColumnDefinitions>
+				<Label isDynamic="true" text="Dynamic Table Column Creation via the API" classNames="fcls_title_lb" visible="true" gridItemLocation="0,0,1,1" fieldTable="formonly" identifier="lbTitle"/>
+				<Label isDynamic="true" text="lay_wi_table_01.fm2" classNames="fcls_title_lb" visible="true" gridItemLocation="1,0,1,1" fieldTable="" identifier="lbFormName"/>
+			</GridPanel>
+			<GridPanel visible="true" identifier="c6" gridItemLocation="0,1,1,1">
+				<GridPanel.gridColumnDefinitions>
+					<GridColumnDefinition gridLengthValue=""/>
+				</GridPanel.gridColumnDefinitions>
+				<GridPanel.gridRowDefinitions>
+					<GridRowDefinition gridLengthValue=""/>
+				</GridPanel.gridRowDefinitions>
+				<ListBox visible="true" identifier="tableColumnCount" gridItemLocation="0,0,1,1" preferredSize=",10rem">
+					<ListBox.onMouseDoubleClick>
+						<ActionEventHandler actionName="doubleclick"/>
+					</ListBox.onMouseDoubleClick>
+					
+					<ListBoxItem text="Table with 1 Column">
+						<ListBoxItem.value>
+							<IntegerLiteral integerValue="1"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="Table with 2 Column">
+						<ListBoxItem.value>
+							<IntegerLiteral integerValue="2"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="Table with 3 Column">
+						<ListBoxItem.value>
+							<IntegerLiteral integerValue="3"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="Table with 4 Column">
+						<ListBoxItem.value>
+							<IntegerLiteral integerValue="4"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="Table with 5 Column">
+						<ListBoxItem.value>
+							<IntegerLiteral integerValue="5"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="Table with 6 Column">
+						<ListBoxItem.value>
+							<IntegerLiteral integerValue="6"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="Table with 7 Column">
+						<ListBoxItem.value>
+							<IntegerLiteral integerValue="7"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+
+				</ListBox>
+			</GridPanel>
+
+                
+                <Table visible="true" gridItemLocation="0,2,1,1" fieldTable="" identifier="tb_dynamic"/>
+
+			<GridPanel classNames="fcls_statusbar_cnt" visible="true" verticalAlignment="Top" gridItemLocation="0,3,1,1" fieldTable="formonly" identifier="cntStatusBar">
+				<GridPanel.gridRowDefinitions>
+					<GridRowDefinition gridLengthValue=""/>
+					<GridRowDefinition gridLengthValue=""/>
+				</GridPanel.gridRowDefinitions>
+				<GridPanel.gridColumnDefinitions>
+					<GridColumnDefinition gridLengthValue="100%"/>
+				</GridPanel.gridColumnDefinitions>
+				<Label isDynamic="true" text="" classNames="fcls_sblabel" visible="true" gridItemLocation="0,0,1,1" fieldTable="formonly" identifier="lbInfo1"/>
+				<Label isDynamic="true" text="" classNames="fcls_sblabel" visible="true" gridItemLocation="0,1,1,1" fieldTable="formonly" identifier="lbInfo2"/>
+			</GridPanel>
+
+            </GridPanel>
+    </form.rootContainer>
+    <form.screenRecords>
+			<ScreenRecord identifier="FormOnly"/>
+    </form.screenRecords>
+</form>
+

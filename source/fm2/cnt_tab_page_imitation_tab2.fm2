@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://namespaces.querix.com/2015/fglForms">
+	<form.rootContainer>
+		<GridPanel classNames="fcls_rootContainer" verticalAlignment="Stretch" horizontalAlignment="Stretch" fieldTable="" identifier="rootContainer">
+			<GridPanel.gridRowDefinitions>
+				<GridRowDefinition gridLengthValue=""/>
+				<GridRowDefinition gridLengthValue=""/>
+			</GridPanel.gridRowDefinitions>
+			<GridPanel.gridColumnDefinitions>
+				<GridColumnDefinition gridLengthValue="100%"/>
+			</GridPanel.gridColumnDefinitions>
+			<Tab classNames="fcls_tab_cnt" visible="true" verticalAlignment="Stretch" gridItemLocation="0,0,1,1" fieldTable="" identifier="cntTab">
+				<TabPage title="Contact Details" classNames="fcls_tab_page_cnt" visible="true" fieldTable="" identifier="cntTabPageContactDetails">
+					<TabPage.onSelectTabPage>
+						<ActionEventHandler actionName="actContactDetails"/>
+					</TabPage.onSelectTabPage>
+					<TabPage.image>
+						<Image imageUrl="{CONTEXT}/public/querix/icon/svg/24/ic_contacts_24px.svg"/>
+					</TabPage.image>
+				</TabPage>
+				<TabPage title="Activities" classNames="fcls_tab_page_cnt" visible="true" verticalAlignment="Stretch" fieldTable="" identifier="cntTabPageActivities">
+					<TabPage.onSelectTabPage>
+						<ActionEventHandler actionName="actContactActivities"/>
+					</TabPage.onSelectTabPage>
+					<GridPanel visible="true" verticalAlignment="Stretch" fieldTable="" identifier="cntTabPageActivitiesSubGp">
+						<GridPanel.gridRowDefinitions>
+							<GridRowDefinition gridLengthValue=""/>
+							<GridRowDefinition gridLengthValue="100%" gridMinLength="100"/>
+							<GridRowDefinition gridLengthValue=""/>
+						</GridPanel.gridRowDefinitions>
+						<GridPanel.gridColumnDefinitions>
+							<GridColumnDefinition gridLengthValue="100%"/>
+						</GridPanel.gridColumnDefinitions>
+						<GridPanel classNames="fcls_title_cnt" visible="true" verticalAlignment="Top" gridItemLocation="0,0,1,1" fieldTable="formonly" identifier="cntTitle">
+							<GridPanel.gridRowDefinitions>
+								<GridRowDefinition gridLengthValue=""/>
+							</GridPanel.gridRowDefinitions>
+							<GridPanel.gridColumnDefinitions>
+								<GridColumnDefinition gridLengthValue="100%"/>
+								<GridColumnDefinition gridLengthValue=""/>
+							</GridPanel.gridColumnDefinitions>
+							<Label isDynamic="true" text="Customer Communication Activities" classNames="fcls_title_lb" visible="true" gridItemLocation="0,0,1,1" fieldTable="formonly" identifier="lbTitle"/>
+							<Label isDynamic="true" text="cnt_tab_page_imitation_tab2.fm2" classNames="fcls_title_lb" visible="true" gridItemLocation="1,0,1,1" fieldTable="" identifier="lbFormName"/>
+						</GridPanel>
+						<Table preferredSize="50qch,10qch" visible="true" verticalAlignment="Stretch" horizontalAlignment="Stretch" gridItemLocation="0,1,1,1" fieldTable="" identifier="Table4">
+							<TableColumn text="Type" resizable="true" visible="true" fieldTable="" identifier="tc_f159">
+								<TableColumn.columnLength>
+									<GridLength gridLengthValue="16.6%"/>
+								</TableColumn.columnLength>
+								<ComboBox visible="true" fieldTable="" identifier="logType">
+									<ComboBoxItem text="Other">
+										<ComboBoxItem.value>
+											<IntegerLiteral/>
+										</ComboBoxItem.value>
+									</ComboBoxItem>
+									<ComboBoxItem text="Consultancy">
+										<ComboBoxItem.value>
+											<StringLiteral stringValue="1"/>
+										</ComboBoxItem.value>
+									</ComboBoxItem>
+									<ComboBoxItem text="Sale">
+										<ComboBoxItem.value>
+											<StringLiteral stringValue="2"/>
+										</ComboBoxItem.value>
+									</ComboBoxItem>
+									<ComboBoxItem text="Support">
+										<ComboBoxItem.value>
+											<IntegerLiteral integerValue="3"/>
+										</ComboBoxItem.value>
+									</ComboBoxItem>
+								</ComboBox>
+							</TableColumn>
+							<TableColumn text="Date" resizable="true" visible="true" fieldTable="" identifier="tc_f160">
+								<TableColumn.columnLength>
+									<GridLength gridLengthValue="16.6%"/>
+								</TableColumn.columnLength>
+								<Calendar dataType="Date,,,," visible="true" fieldTable="" identifier="logDate"/>
+							</TableColumn>
+							<TableColumn text="Time" resizable="true" visible="true" fieldTable="" identifier="tc_f161">
+								<TableColumn.columnLength>
+									<GridLength gridLengthValue="16.6%"/>
+								</TableColumn.columnLength>
+								<TimeEditField visible="true" fieldTable="" identifier="logTime"/>
+							</TableColumn>
+							<TableColumn text="Friendly" resizable="true" visible="true" fieldTable="" identifier="tc_f162">
+								<TableColumn.columnLength>
+									<GridLength gridLengthValue="16.6%"/>
+								</TableColumn.columnLength>
+								<CheckBox notNull="true" visible="true" fieldTable="" identifier="logStatusFriendly">
+									<CheckBox.checkedValue>
+										<IntegerLiteral integerValue="1"/>
+									</CheckBox.checkedValue>
+									<CheckBox.uncheckedValue>
+										<IntegerLiteral/>
+									</CheckBox.uncheckedValue>
+								</CheckBox>
+							</TableColumn>
+							<TableColumn text="Request" resizable="true" visible="true" fieldTable="" identifier="tc_f163">
+								<TableColumn.columnLength>
+									<GridLength gridLengthValue="16.6%"/>
+								</TableColumn.columnLength>
+								<CheckBox notNull="true" visible="true" fieldTable="" identifier="logStatusRequest">
+									<CheckBox.checkedValue>
+										<IntegerLiteral integerValue="1"/>
+									</CheckBox.checkedValue>
+									<CheckBox.uncheckedValue>
+										<IntegerLiteral/>
+									</CheckBox.uncheckedValue>
+								</CheckBox>
+							</TableColumn>
+							<TableColumn text="Cancelation" resizable="true" visible="true" fieldTable="" identifier="tc_f164">
+								<TableColumn.columnLength>
+									<GridLength gridLengthValue="16.6%"/>
+								</TableColumn.columnLength>
+								<CheckBox notNull="true" visible="true" fieldTable="" identifier="logStatusCancelation">
+									<CheckBox.checkedValue>
+										<IntegerLiteral integerValue="1"/>
+									</CheckBox.checkedValue>
+									<CheckBox.uncheckedValue>
+										<IntegerLiteral/>
+									</CheckBox.uncheckedValue>
+								</CheckBox>
+							</TableColumn>
+						</Table>
+						<GridPanel classNames="fcls_detail_cnt,fcls_data_cnt,fcls_align_left,fcls_align_top" visible="true" verticalAlignment="Top" horizontalAlignment="Left" gridItemLocation="0,2,1,1" fieldTable="" identifier="cntDetail1">
+							<GridPanel.gridRowDefinitions>
+								<GridRowDefinition gridLengthValue=""/>
+								<GridRowDefinition gridLengthValue=""/>
+								<GridRowDefinition gridLengthValue=""/>
+								<GridRowDefinition gridLengthValue=""/>
+							</GridPanel.gridRowDefinitions>
+							<GridPanel.gridColumnDefinitions>
+								<GridColumnDefinition gridLengthValue=""/>
+								<GridColumnDefinition gridLengthValue=""/>
+								<GridColumnDefinition gridLengthValue=""/>
+								<GridColumnDefinition gridLengthValue=""/>
+								<GridColumnDefinition gridLengthValue=""/>
+								<GridColumnDefinition gridLengthValue=""/>
+							</GridPanel.gridColumnDefinitions>
+							<Label isDynamic="true" text="Type" classNames="fcls_fieldlabel,fcls_align_left" visible="true" gridItemLocation="0,0,1,1" fieldTable="" identifier="lb139"/>
+							<TextField visible="true" gridItemLocation="1,0,1,1" fieldTable="" identifier="detLogType"/>
+							<Label isDynamic="true" text="Date" classNames="fcls_fieldlabel,fcls_align_left" visible="true" gridItemLocation="2,0,1,1" fieldTable="" identifier="lb146"/>
+							<TextField visible="true" gridItemLocation="3,0,1,1" fieldTable="" identifier="detLogDate"/>
+							<Label isDynamic="true" text="Time" classNames="fcls_fieldlabel,fcls_align_left" visible="true" gridItemLocation="4,0,1,1" fieldTable="" identifier="lb149"/>
+							<TextField visible="true" gridItemLocation="5,0,1,1" fieldTable="" identifier="detLogTime"/>
+							<Label isDynamic="true" text="Attributes" classNames="fcls_fieldlabel,fcls_align_left" visible="true" gridItemLocation="0,1,1,1" fieldTable="" identifier="lb156"/>
+							<CheckBox title="Friendly" notNull="true" visible="true" gridItemLocation="1,1,1,1" fieldTable="" identifier="isFriendly">
+								<CheckBox.checkedValue>
+									<IntegerLiteral integerValue="1"/>
+								</CheckBox.checkedValue>
+								<CheckBox.uncheckedValue>
+									<IntegerLiteral/>
+								</CheckBox.uncheckedValue>
+							</CheckBox>
+							<Label isDynamic="true" text="Details" classNames="fcls_fieldlabel,fcls_align_left" visible="true" gridItemLocation="2,1,1,1" fieldTable="" identifier="lb147"/>
+							<TextArea visible="true" gridItemLocation="3,1,3,3" fieldTable="" identifier="details"/>
+							<Label isDynamic="true" text="Title" classNames="fcls_fieldlabel,fcls_align_left" visible="true" gridItemLocation="0,2,1,1" fieldTable="" identifier="lb141"/>
+							<CheckBox title="Status Requested" notNull="true" visible="true" gridItemLocation="1,2,1,1" fieldTable="" identifier="statusRequest">
+								<CheckBox.checkedValue>
+									<IntegerLiteral integerValue="1"/>
+								</CheckBox.checkedValue>
+								<CheckBox.uncheckedValue>
+									<IntegerLiteral/>
+								</CheckBox.uncheckedValue>
+							</CheckBox>
+							<Label isDynamic="true" text="First Name" classNames="fcls_fieldlabel,fcls_align_left" visible="true" gridItemLocation="0,3,1,1" fieldTable="" identifier="lb157"/>
+							<CheckBox title="Canceled Maintenance" notNull="true" visible="true" gridItemLocation="1,3,1,1" fieldTable="" identifier="statusCancelation">
+								<CheckBox.checkedValue>
+									<IntegerLiteral integerValue="1"/>
+								</CheckBox.checkedValue>
+								<CheckBox.uncheckedValue>
+									<IntegerLiteral/>
+								</CheckBox.uncheckedValue>
+							</CheckBox>
+						</GridPanel>
+					</GridPanel>
+					<TabPage.image>
+						<Image imageUrl="{CONTEXT}/public/querix/icon/svg/24/ic_business-24px.svg"/>
+					</TabPage.image>
+				</TabPage>
+				<TabPage title="Account Summary" classNames="fcls_tab_page_cnt" visible="true" fieldTable="" identifier="cntTabPageAccountSummary">
+					<TabPage.onSelectTabPage>
+						<ActionEventHandler actionName="actAccountSummary"/>
+					</TabPage.onSelectTabPage>
+					<TabPage.image>
+						<Image imageUrl="{CONTEXT}/public/querix/icon/svg/24/ic_account_balance_24px.svg"/>
+					</TabPage.image>
+				</TabPage>
+			</Tab>
+			<GridPanel classNames="fcls_statusbar_cnt" visible="true" verticalAlignment="Top" gridItemLocation="0,1,1,1" fieldTable="formonly" identifier="cntStatusBar">
+				<GridPanel.gridRowDefinitions>
+					<GridRowDefinition gridLengthValue=""/>
+					<GridRowDefinition gridLengthValue=""/>
+				</GridPanel.gridRowDefinitions>
+				<GridPanel.gridColumnDefinitions>
+					<GridColumnDefinition gridLengthValue="100%"/>
+				</GridPanel.gridColumnDefinitions>
+				<Label isDynamic="true" text="" classNames="fcls_sblabel" visible="true" gridItemLocation="0,0,1,1" fieldTable="formonly" identifier="lbInfo1"/>
+				<Label isDynamic="true" text="" classNames="fcls_sblabel" visible="true" gridItemLocation="0,1,1,1" fieldTable="formonly" identifier="lbInfo2"/>
+			</GridPanel>
+		</GridPanel>
+	</form.rootContainer>
+	<form.screenRecords>
+		<ScreenRecord identifier="s_reqthdr" fields=""/>
+		<ScreenRecord identifier="FORMONLY" fields="print_opt,detLogType,detLogDate,detLogTime,isFriendly,statusRequest,statusCancelation,details"/>
+		<ScreenRecord identifier="Table4" fields="logType,logDate,logTime,logStatusFriendly,logStatusRequest,logStatusCancelation"/>
+	</form.screenRecords>
+</form>
+

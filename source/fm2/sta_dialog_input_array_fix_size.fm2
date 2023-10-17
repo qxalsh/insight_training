@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://namespaces.querix.com/2015/fglForms">
+	<form.rootContainer>
+		<GridPanel preferredSize="80qch,30qch" visible="true" fieldTable="" identifier="rootContainer">
+			<GridPanel.gridRowDefinitions>
+				<GridRowDefinition gridLengthValue=""/>
+				<GridRowDefinition gridLengthValue="33%"/>
+				<GridRowDefinition gridLengthValue="33%"/>
+				<GridRowDefinition gridLengthValue="33%"/>
+				<GridRowDefinition gridLengthValue=""/>
+			</GridPanel.gridRowDefinitions>
+			<GridPanel.gridColumnDefinitions>
+				<GridColumnDefinition gridLengthValue=""/>
+			</GridPanel.gridColumnDefinitions>
+			<GridPanel classNames="fcls_title_cnt" visible="true" verticalAlignment="Top" horizontalAlignment="Stretch" gridItemLocation="0,0,1,1" fieldTable="formonly" identifier="cntTitle">
+				<GridPanel.gridRowDefinitions>
+					<GridRowDefinition gridLengthValue=""/>
+				</GridPanel.gridRowDefinitions>
+				<GridPanel.gridColumnDefinitions>
+					<GridColumnDefinition gridLengthValue="100%"/>
+					<GridColumnDefinition gridLengthValue=""/>
+				</GridPanel.gridColumnDefinitions>
+				<Label isDynamic="true" text="DIALOG INPUT ARRAY with dynamic array, but keep it&apos;s fix in size (no delete,append, insert row is possible)" classNames="fcls_title_lb" visible="true" gridItemLocation="0,0,1,1" fieldTable="formonly" identifier="lbTitle"/>
+				<Label isDynamic="true" text="sta_dialog_input_array_fix_size.fm2" classNames="fcls_title_lb" visible="true" gridItemLocation="1,0,1,1" fieldTable="" identifier="lbFormName"/>
+			</GridPanel>
+			
+			<Table visible="true" gridItemLocation="0,1,1,1" fieldTable="" identifier="sArr_1">
+				<TableColumn text="ID" resizable="true" visible="true" fieldTable="" identifier="tc_contId_1">
+					<TableColumn.columnLength>
+						<GridLength gridLengthValue="9%"/>
+					</TableColumn.columnLength>
+					<TextField visible="true" fieldTable="contactRecord" identifier="contId_1"/>
+				</TableColumn>
+				<TableColumn text="First Name" resizable="true" visible="true" fieldTable="" identifier="tc_firstName_1">
+					<TableColumn.columnLength>
+						<GridLength gridLengthValue="13%"/>
+					</TableColumn.columnLength>
+					<TextField visible="true" fieldTable="contactRecord" identifier="firstName_1"/>
+				</TableColumn>
+				<TableColumn text="LastName" resizable="true" visible="true" fieldTable="" identifier="tc_lastName_1">
+					<TableColumn.columnLength>
+						<GridLength gridLengthValue="13%"/>
+					</TableColumn.columnLength>
+					<TextField visible="true" fieldTable="contactRecord" identifier="lastName_1"/>
+				</TableColumn>
+				<TableColumn text="Address 1" resizable="true" visible="true" fieldTable="" identifier="tc_address1_1">
+					<TableColumn.columnLength>
+						<GridLength gridLengthValue="13%"/>
+					</TableColumn.columnLength>
+					<TextField visible="true" fieldTable="" identifier="address1_1"/>
+				</TableColumn>
+				<TableColumn text="Address 2" resizable="true" visible="true" fieldTable="" identifier="tc_address2_1">
+					<TableColumn.columnLength>
+						<GridLength gridLengthValue="13%"/>
+					</TableColumn.columnLength>
+					<TextField visible="true" fieldTable="" identifier="address2_1"/>
+				</TableColumn>
+				<TableColumn text="Address 3" resizable="true" visible="true" fieldTable="" identifier="tc_address3_1">
+					<TableColumn.columnLength>
+						<GridLength gridLengthValue="13%"/>
+					</TableColumn.columnLength>
+					<TextField visible="true" fieldTable="" identifier="address3_1"/>
+				</TableColumn>
+				<TableColumn text="City" resizable="true" visible="true" fieldTable="" identifier="tc_city_1">
+					<TableColumn.columnLength>
+						<GridLength gridLengthValue="13%"/>
+					</TableColumn.columnLength>
+					<TextField visible="true" fieldTable="" identifier="city_1"/>
+				</TableColumn>
+				<TableColumn text="Post Code" resizable="true" visible="true" fieldTable="" identifier="tc_postCode_1">
+					<TableColumn.columnLength>
+						<GridLength gridLengthValue="13%"/>
+					</TableColumn.columnLength>
+					<TextField visible="true" fieldTable="" identifier="postCode_1"/>
+				</TableColumn>
+			</Table>
+			
+			<Table visible="true" identifier="sArr_2" gridItemLocation="0,2,1,1">
+			
+				<TableColumn visible="true" identifier="tc_contId_2" resizable="true" text="ID">
+					<TableColumn.columnLength>
+						<GridLength gridLengthValue="9%"/>
+					</TableColumn.columnLength>
+					<TextField visible="true" identifier="contId_2" fieldTable="contactRecord"/>
+				</TableColumn>
+				
+				<TableColumn visible="true" identifier="tc_firstName_2" resizable="true" text="First Name">
+					<TableColumn.columnLength>
+						<GridLength gridLengthValue="13%"/>
+					</TableColumn.columnLength>
+					<TextField visible="true" identifier="firstName_2" fieldTable="contactRecord"/>
+				</TableColumn>
+				
+				
+				<TableColumn visible="true" identifier="tc_lastName_2" resizable="true" text="LastName">
+					<TableColumn.columnLength>
+						<GridLength gridLengthValue="13%"/>
+					</TableColumn.columnLength>
+					<TextField visible="true" identifier="lastName_2" fieldTable="contactRecord"/>
+				</TableColumn>
+				<TableColumn visible="true" identifier="tc_address1_2" resizable="true" text="Address 1">
+					<TableColumn.columnLength>
+						<GridLength gridLengthValue="13%"/>
+					</TableColumn.columnLength>
+					<TextField visible="true" identifier="address1_2" fieldTable=""/>
+				</TableColumn>
+				<TableColumn visible="true" identifier="tc_address2_2" resizable="true" text="Address 2">
+					<TableColumn.columnLength>
+						<GridLength gridLengthValue="13%"/>
+					</TableColumn.columnLength>
+					<TextField visible="true" identifier="address2_2" fieldTable=""/>
+				</TableColumn>
+				<TableColumn visible="true" identifier="tc_address3_2" resizable="true" text="Address 3">
+					<TableColumn.columnLength>
+						<GridLength gridLengthValue="13%"/>
+					</TableColumn.columnLength>
+					<TextField visible="true" identifier="address3_2" fieldTable=""/>
+				</TableColumn>
+				<TableColumn visible="true" identifier="tc_city_2" resizable="true" text="City">
+					<TableColumn.columnLength>
+						<GridLength gridLengthValue="13%"/>
+					</TableColumn.columnLength>
+					<TextField visible="true" identifier="city_2" fieldTable=""/>
+				</TableColumn>
+				<TableColumn visible="true" identifier="tc_postCode_2" resizable="true" text="Post Code">
+					<TableColumn.columnLength>
+						<GridLength gridLengthValue="13%"/>
+					</TableColumn.columnLength>
+					<TextField visible="true" identifier="postCode_2" fieldTable=""/>
+				</TableColumn>
+			</Table>
+			<GridPanel classNames="fcls_statusbar_cnt" visible="true" verticalAlignment="Top" gridItemLocation="0,4,1,1" fieldTable="formonly" identifier="cntStatusBar">
+				<GridPanel.gridRowDefinitions>
+					<GridRowDefinition gridLengthValue=""/>
+					<GridRowDefinition gridLengthValue=""/>
+				</GridPanel.gridRowDefinitions>
+				<GridPanel.gridColumnDefinitions>
+					<GridColumnDefinition gridLengthValue="100%"/>
+				</GridPanel.gridColumnDefinitions>
+				<Label isDynamic="true" text="" classNames="fcls_sblabel" visible="true" gridItemLocation="0,0,1,1" fieldTable="formonly" identifier="lbInfo1"/>
+				<Label isDynamic="true" text="" classNames="fcls_sblabel" visible="true" gridItemLocation="0,1,1,1" fieldTable="formonly" identifier="lbInfo2"/>
+			</GridPanel>
+		</GridPanel>
+	</form.rootContainer>
+	<form.screenRecords>
+		<ScreenRecord identifier="sArr_1" fields="contId_1,firstName_1,lastName_1,address1_1,address2_1,address3_1,city_1,postCode_1"/>
+		<ScreenRecord identifier="sArr_2" fields="contId_2,firstName_2,lastName_2,address1_2,address2_2,address3_2,city_2,postCode_2"/>
+	</form.screenRecords>
+</form>
+

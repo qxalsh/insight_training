@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://namespaces.querix.com/2015/fglForms">
+	<form.rootContainer>
+		<GridPanel classNames="fcls_rootContainer" preferredSize="80qch,35qch" verticalAlignment="Top" horizontalAlignment="Left" fieldTable="" identifier="rootContainer">
+			<GridPanel.gridRowDefinitions>
+				<GridRowDefinition gridLengthValue=""/>
+				<GridRowDefinition gridLengthValue="" gridMinLength="50"/>
+				<GridRowDefinition gridLengthValue=""/>
+				<GridRowDefinition gridLengthValue=""/>
+			</GridPanel.gridRowDefinitions>
+			<GridPanel.gridColumnDefinitions>
+				<GridColumnDefinition gridLengthValue="100%"/>
+			</GridPanel.gridColumnDefinitions>
+			<GridPanel classNames="fcls_title_cnt" visible="true" verticalAlignment="Top" gridItemLocation="0,0,1,1" fieldTable="formonly" identifier="cntTitle">
+				<GridPanel.gridRowDefinitions>
+					<GridRowDefinition gridLengthValue=""/>
+				</GridPanel.gridRowDefinitions>
+				<GridPanel.gridColumnDefinitions>
+					<GridColumnDefinition gridLengthValue="100%"/>
+				</GridPanel.gridColumnDefinitions>
+				<Label isDynamic="true" text="Widgets" classNames="fcls_title_lb" visible="true" gridItemLocation="0,0,1,1" fieldTable="formonly" identifier="lbTitle"/>
+			</GridPanel>
+			<GridPanel visible="true" verticalAlignment="Top" horizontalAlignment="Left" gridItemLocation="0,1,1,1" fieldTable="formonly" identifier="cntDetail1">
+				<GridPanel.gridRowDefinitions>
+					<GridRowDefinition gridLengthValue=""/>
+					<GridRowDefinition gridLengthValue=""/>
+					<GridRowDefinition gridLengthValue=""/>
+					<GridRowDefinition gridLengthValue=""/>
+					<GridRowDefinition gridLengthValue=""/>
+					<GridRowDefinition gridLengthValue=""/>
+					<GridRowDefinition gridLengthValue=""/>
+					<GridRowDefinition gridLengthValue=""/>
+					<GridRowDefinition gridLengthValue=""/>
+					<GridRowDefinition gridLengthValue=""/>
+					<GridRowDefinition gridLengthValue=""/>
+					<GridRowDefinition gridLengthValue=""/>
+					<GridRowDefinition gridLengthValue=""/>
+					<GridRowDefinition gridLengthValue=""/>
+					<GridRowDefinition gridLengthValue=""/>
+					<GridRowDefinition gridLengthValue=""/>
+					<GridRowDefinition gridLengthValue=""/>
+					<GridRowDefinition gridLengthValue=""/>
+					<GridRowDefinition gridLengthValue=""/>
+					<GridRowDefinition gridLengthValue=""/>
+				</GridPanel.gridRowDefinitions>
+				<GridPanel.gridColumnDefinitions>
+					<GridColumnDefinition gridLengthValue=""/>
+				</GridPanel.gridColumnDefinitions>
+				<Label isDynamic="true" text="Elena will like this speeeeellling" classNames="fcls_length_30qch,fcls_columnlabel_rev_cell" visible="true" horizontalAlignment="Stretch" gridItemLocation="0,0,1,1" fieldTable="" identifier="lb72"/>
+				<TextField classNames="fcls_length_30qch" visible="true" verticalAlignment="Top" horizontalAlignment="Left" gridItemLocation="0,1,1,1" fieldTable="" identifier="f1"/>
+				<FunctionField classNames="fcls_length_30qch" visible="true" verticalAlignment="Top" horizontalAlignment="Left" gridItemLocation="0,2,1,1" fieldTable="" identifier="f2">
+					<FunctionField.onInvoke>
+						<ActionEventHandler actionName="act_funcFieldButton"/>
+					</FunctionField.onInvoke>
+				</FunctionField>
+				<ComboBox classNames="fcls_length_30qch" visible="true" verticalAlignment="Top" horizontalAlignment="Left" gridItemLocation="0,3,1,1" fieldTable="" identifier="f3">
+					<ComboBoxItem text="value 0">
+						<ComboBoxItem.value>
+							<IntegerLiteral/>
+						</ComboBoxItem.value>
+					</ComboBoxItem>
+					<ComboBoxItem text="value 1">
+						<ComboBoxItem.value>
+							<IntegerLiteral integerValue="2"/>
+						</ComboBoxItem.value>
+					</ComboBoxItem>
+					<ComboBoxItem text="value 2">
+						<ComboBoxItem.value>
+							<IntegerLiteral integerValue="2"/>
+						</ComboBoxItem.value>
+					</ComboBoxItem>
+				</ComboBox>
+				<Calendar dataType="Date,,,," classNames="fcls_length_30qch" visible="true" verticalAlignment="Top" horizontalAlignment="Left" gridItemLocation="0,4,1,1" fieldTable="" identifier="f4"/>
+				<Spinner step="1" maxValue="100" classNames="fcls_length_30qch" visible="true" verticalAlignment="Top" horizontalAlignment="Left" gridItemLocation="0,5,1,1" fieldTable="" identifier="f5"/>
+				<CheckBox title="New check box" classNames="fcls_length_30qch" notNull="true" visible="true" verticalAlignment="Top" horizontalAlignment="Left" gridItemLocation="0,6,1,1" fieldTable="" identifier="f6">
+					<CheckBox.checkedValue>
+						<IntegerLiteral integerValue="1"/>
+					</CheckBox.checkedValue>
+					<CheckBox.uncheckedValue>
+						<IntegerLiteral/>
+					</CheckBox.uncheckedValue>
+				</CheckBox>
+				<RadioGroup orientation="Vertical" classNames="fcls_length_30qch" visible="true" verticalAlignment="Top" horizontalAlignment="Left" gridItemLocation="0,7,1,1" fieldTable="" identifier="f7">
+					<Radio title="Value 0" identifier="f7_0">
+						<Radio.value>
+							<IntegerLiteral/>
+						</Radio.value>
+					</Radio>
+					<Radio title="Value 1" identifier="f7_1">
+						<Radio.value>
+							<IntegerLiteral integerValue="1"/>
+						</Radio.value>
+					</Radio>
+					<Radio title="Value 2" identifier="f7_2">
+						<Radio.value>
+							<IntegerLiteral integerValue="2"/>
+						</Radio.value>
+					</Radio>
+					<Radio title="Value 3" identifier="f7_3">
+						<Radio.value>
+							<IntegerLiteral integerValue="3"/>
+						</Radio.value>
+					</Radio>
+				</RadioGroup>
+				<BlobViewer editor="bmp" dataType="Byte,,,," classNames="fcls_length_30qch" visible="true" verticalAlignment="Top" horizontalAlignment="Left" gridItemLocation="0,8,1,1" fieldTable="" identifier="f8"/>
+				<TextArea classNames="fcls_length_30qch" visible="true" verticalAlignment="Top" horizontalAlignment="Left" gridItemLocation="0,9,1,1" fieldTable="" identifier="f9"/>
+				<Browser classNames="fcls_length_30qch" visible="true" verticalAlignment="Top" horizontalAlignment="Left" gridItemLocation="0,10,1,1" fieldTable="" identifier="f10"/>
+				<ListBox classNames="fcls_length_30qch" visible="true" verticalAlignment="Top" horizontalAlignment="Left" gridItemLocation="0,11,1,1" fieldTable="" identifier="f11">
+					<ListBoxItem text="value 0">
+						<ListBoxItem.value>
+							<IntegerLiteral/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="value 1">
+						<ListBoxItem.value>
+							<IntegerLiteral integerValue="1"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+					<ListBoxItem text="value 2">
+						<ListBoxItem.value>
+							<IntegerLiteral integerValue="2"/>
+						</ListBoxItem.value>
+					</ListBoxItem>
+				</ListBox>
+				<ProgressBar step="1" maxValue="100" classNames="fcls_length_30qch" visible="true" verticalAlignment="Top" horizontalAlignment="Left" gridItemLocation="0,12,1,1" fieldTable="" identifier="f12"/>
+				<RadioGroup orientation="Vertical" classNames="fcls_length_30qch" visible="true" verticalAlignment="Top" horizontalAlignment="Left" gridItemLocation="0,13,1,1" fieldTable="" identifier="f13">
+					<Radio title="Signed (Single RadioButton)" identifier="f13">
+						<Radio.value>
+							<BooleanLiteral booleanValue="true"/>
+						</Radio.value>
+					</Radio>
+				</RadioGroup>
+				<Slider maxValue="100" dataType="Integer,,,," classNames="fcls_length_30qch" visible="true" verticalAlignment="Top" horizontalAlignment="Left" gridItemLocation="0,14,1,1" fieldTable="" identifier="f14"/>
+				<Canvas classNames="fcls_length_30qch" visible="true" verticalAlignment="Top" horizontalAlignment="Left" gridItemLocation="0,15,1,1" fieldTable="" identifier="f15"/>
+				<ScrollBar largeStep="10" smallStep="1" maxValue="100" dataType="SmallInt,,,," classNames="fcls_length_30qch" visible="true" verticalAlignment="Top" horizontalAlignment="Left" gridItemLocation="0,16,1,1" fieldTable="" identifier="f16"/>
+				<TimeEditField classNames="fcls_length_30qch" visible="true" verticalAlignment="Top" horizontalAlignment="Left" gridItemLocation="0,17,1,1" fieldTable="" identifier="f17"/>
+				<Button text="MyButton" classNames="fcls_length_30qch" visible="true" verticalAlignment="Top" horizontalAlignment="Left" gridItemLocation="0,18,1,1" fieldTable="" identifier="f18"/>
+				<WebComponent componentType="html/google-map" classNames="fcls_length_30qch" visible="true" verticalAlignment="Top" horizontalAlignment="Left" gridItemLocation="0,19,1,1" fieldTable="" identifier="f19"/>
+			</GridPanel>
+			<GridPanel classNames="fcls_statusbar_cnt" visible="true" verticalAlignment="Top" gridItemLocation="0,3,1,1" fieldTable="formonly" identifier="cntStatusBar">
+				<GridPanel.gridRowDefinitions>
+					<GridRowDefinition gridLengthValue="100%"/>
+				</GridPanel.gridRowDefinitions>
+				<GridPanel.gridColumnDefinitions>
+					<GridColumnDefinition gridLengthValue="100%"/>
+				</GridPanel.gridColumnDefinitions>
+				<GridPanel classNames="fcls_statusbar_cnt_sub" visible="true" verticalAlignment="Top" gridItemLocation="0,0,1,1" fieldTable="formonly" identifier="cntStatusBarSub">
+					<GridPanel.gridRowDefinitions>
+						<GridRowDefinition gridLengthValue=""/>
+						<GridRowDefinition gridLengthValue=""/>
+					</GridPanel.gridRowDefinitions>
+					<GridPanel.gridColumnDefinitions>
+						<GridColumnDefinition gridLengthValue="100%"/>
+					</GridPanel.gridColumnDefinitions>
+					<Label isDynamic="true" text="" classNames="fcls_sblabel" visible="true" gridItemLocation="0,0,1,1" fieldTable="formonly" identifier="lbInfo1"/>
+					<Label isDynamic="true" text="" classNames="fcls_sblabel" visible="true" gridItemLocation="0,1,1,1" fieldTable="formonly" identifier="lbInfo2"/>
+				</GridPanel>
+			</GridPanel>
+		</GridPanel>
+	</form.rootContainer>
+	<form.screenRecords>
+		<ScreenRecord identifier="FORMONLY" fields="f1,f2,f4,f6,f7,f11,f13,f14,f5,f16,f9,f17,f19,f18"/>
+	</form.screenRecords>
+</form>
+

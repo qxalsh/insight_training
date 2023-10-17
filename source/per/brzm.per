@@ -1,0 +1,63 @@
+{#####################################################################
+# Copyright (C) 1992 Informix Software, Inc.
+# Copyright (C) 1992 FourGen Software, Inc.
+# Sccsid:  @(#)  .../screen.4gm/painter.4gs/cgs_init.4gl  1.32  Delta:
+######################################################################
+# Screen Generator version: 4.10.UC1 }
+
+DATABASE accounts
+
+SCREEN
+{
+----Code-----Branch---------------------Bank----------
+  [A1   ][A2                       ]    [A3   ]
+  [A1   ][A2                       ]    [A3   ]
+  [A1   ][A2                       ]    [A3   ]
+  [A1   ][A2                       ]    [A3   ]
+  [A1   ][A2                       ]    [A3   ]
+  [A1   ][A2                       ]    [A3   ]
+  [A1   ][A2                       ]    [A3   ]
+  [A1   ][A2                       ]    [A3   ]
+  [A1   ][A2                       ]    [A3   ]
+  [A1   ][A2                       ]    [A3   ]
+  [A1   ][A2                       ]    [A3   ]
+  [A1   ][A2                       ]    [A3   ]
+  [A1   ][A2                       ]    [A3   ]
+  [A1   ][A2                       ]    [A3   ]
+  [A1   ][A2                       ]    [A3   ]
+  [A1   ][A2                       ]    [A3   ]
+  [A1   ][A2                       ]    [A3   ]
+}
+
+TABLES
+    bank_branch
+
+ATTRIBUTES
+A1 = bank_branch.branch_code, upshift, comments = "";
+A2 = bank_branch.branch_desc, upshift, comments = "";
+A3 = bank_branch.bank_code, upshift, comments = "";
+
+INSTRUCTIONS
+screen record s_brzm[17] (bank_branch.branch_code,
+    bank_branch.branch_desc, bank_branch.bank_code)
+
+delimiters "  "
+
+{
+######################################################################
+FOURGEN
+######################################################################
+
+defaults
+    module     = loan
+    type       = zoom
+    init       = bank_code=$bank_code
+    attributes = border, white
+    location   = 2, 3
+    returning  = branch_code
+
+input 1
+    table     = bank_branch
+    filter    = 1=1
+    arr_max   = 100
+}

@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://namespaces.querix.com/2015/fglForms">
+	<form.rootContainer>
+		<GridPanel classNames="fcls_rootContainer" verticalAlignment="Stretch" fieldTable="" identifier="rootContainer">
+			<GridPanel.gridRowDefinitions>
+				<GridRowDefinition gridLengthValue=""/>
+				<GridRowDefinition gridLengthValue="100%"/>
+				<GridRowDefinition gridLengthValue=""/>
+			</GridPanel.gridRowDefinitions>
+			<GridPanel.gridColumnDefinitions>
+				<GridColumnDefinition gridLengthValue="100%"/>
+			</GridPanel.gridColumnDefinitions>
+			<GridPanel classNames="fcls_title_cnt" visible="true" verticalAlignment="Top" gridItemLocation="0,0,1,1" fieldTable="formonly" identifier="cntTitle">
+				<GridPanel.gridRowDefinitions>
+					<GridRowDefinition gridLengthValue=""/>
+				</GridPanel.gridRowDefinitions>
+				<GridPanel.gridColumnDefinitions>
+					<GridColumnDefinition gridLengthValue="100%"/>
+					<GridColumnDefinition gridLengthValue=""/>
+				</GridPanel.gridColumnDefinitions>
+				<Label isDynamic="true" text="Table Demo - Move Rows between two tables" classNames="fcls_title_lb" visible="true" gridItemLocation="0,0,1,1" fieldTable="formonly" identifier="lbTitle"/>
+				<Label isDynamic="true" text="cnt_table_copy_dialog.fm2" classNames="fcls_title_lb" visible="true" gridItemLocation="1,0,1,1" fieldTable="" identifier="lbFormName"/>
+			</GridPanel>
+			<GridPanel visible="true" gridItemLocation="0,1,1,1" fieldTable="" identifier="DetailTables">
+				<GridPanel.gridRowDefinitions>
+					<GridRowDefinition gridLengthValue=""/>
+					<GridRowDefinition/>
+				</GridPanel.gridRowDefinitions>
+				<GridPanel.gridColumnDefinitions>
+					<GridColumnDefinition gridLengthValue="50%"/>
+					<GridColumnDefinition gridLengthValue="5rem"/>
+					<GridColumnDefinition gridLengthValue="50%"/>
+				</GridPanel.gridColumnDefinitions>
+				<Table classNames="fcls_table_cnt" visible="true" gridItemLocation="0,0,1,1" fieldTable="" identifier="tableLeft" minSize=",10rem" verticalAlignment="Stretch">
+					<TableColumn text="Active" resizable="true" visible="true" identifier="tc_activeMemberL">
+						<CheckBox visible="true" notNull="true" identifier="activeMemberL">
+							<CheckBox.checkedValue>
+								<IntegerLiteral integerValue="1"/>
+							</CheckBox.checkedValue>
+							<CheckBox.uncheckedValue>
+								<IntegerLiteral integerValue="0"/>
+							</CheckBox.uncheckedValue>
+						</CheckBox>
+						<TableColumn.columnLength>
+							<GridLength gridLengthValue="5rem"/>
+						</TableColumn.columnLength>
+					</TableColumn>
+					<TableColumn text="First Name" resizable="true" visible="true" identifier="tc_firstName">
+						<TextField visible="true" identifier="firstNameL"/>
+						<TableColumn.columnLength>
+							<GridLength gridLengthValue="20rem"/>
+						</TableColumn.columnLength>
+					</TableColumn>
+					<TableColumn text="Last Name" resizable="true" visible="true" identifier="tc_lastNameL">
+						<TextField visible="true" identifier="lastNameL"/>
+						<TableColumn.columnLength>
+							<GridLength gridLengthValue="20rem"/>
+						</TableColumn.columnLength>
+					</TableColumn>
+				</Table>
+				<StackPanel visible="true" identifier="c2" gridItemLocation="1,0,1,1" orientation="Vertical" horizontalAlignment="Center" verticalAlignment="Center">
+					<Button visible="true" identifier="bt3" preferredSize="3rem,">
+						<Button.onInvoke>
+							<ActionEventHandler type="actioneventhandler" actionName="MoveToRight"/>
+						</Button.onInvoke>
+						<Button.image>
+							<Image imageUrl="/public/querix/icon/svg/24/ic_arrow_forward_24px.svg"/>
+						</Button.image>
+					</Button>
+					<Button visible="true" identifier="bt4" preferredSize="3rem,">
+						<Button.onInvoke>
+							<ActionEventHandler type="actioneventhandler" actionName="MoveToLeft"/>
+						</Button.onInvoke>
+						<Button.image>
+							<Image imageUrl="/public/querix/icon/svg/24/ic_arrow_back_24px.svg"/>
+						</Button.image>
+					</Button>
+				</StackPanel>
+				<Table classNames="fcls_table_cnt" visible="true" gridItemLocation="2,0,1,1" fieldTable="" identifier="tableRight" minSize=",10rem" verticalAlignment="Stretch">
+					<TableColumn text="Active" resizable="true" visible="true" identifier="tc_activeMemberR">
+						<CheckBox visible="true" notNull="true" identifier="activeMemberR">
+							<CheckBox.checkedValue>
+								<IntegerLiteral integerValue="1"/>
+							</CheckBox.checkedValue>
+							<CheckBox.uncheckedValue>
+								<IntegerLiteral integerValue="0"/>
+							</CheckBox.uncheckedValue>
+						</CheckBox>
+						<TableColumn.columnLength>
+							<GridLength gridLengthValue="5rem"/>
+						</TableColumn.columnLength>
+					</TableColumn>
+					<TableColumn text="First Name" resizable="true" visible="true" identifier="tc_firstNameR">
+						<TextField visible="true" identifier="firstNameR"/>
+						<TableColumn.columnLength>
+							<GridLength gridLengthValue="20rem"/>
+						</TableColumn.columnLength>
+					</TableColumn>
+					<TableColumn text="Last Name" resizable="true" visible="true" identifier="tc_lastNameR">
+						<TextField visible="true" identifier="lastNameR"/>
+						<TableColumn.columnLength>
+							<GridLength gridLengthValue="20rem"/>
+						</TableColumn.columnLength>
+					</TableColumn>
+				</Table>
+				<GridPanel visible="true" identifier="c3" gridItemLocation="0,1,1,1" verticalAlignment="Top" horizontalAlignment="Left">
+					<GridPanel.gridColumnDefinitions>
+						<GridColumnDefinition gridLengthValue=""/>
+						<GridColumnDefinition gridLengthValue=""/>
+					</GridPanel.gridColumnDefinitions>
+					<GridPanel.gridRowDefinitions>
+						<GridRowDefinition gridLengthValue=""/>
+						<GridRowDefinition gridLengthValue=""/>
+					</GridPanel.gridRowDefinitions>
+					<Label text="m_arr_left.getSize()" isDynamic="true" visible="true" identifier="lb5" gridItemLocation="0,0,1,1" classNames="fcls_fieldlabel"/>
+					<TextField visible="true" identifier="m_arr_leftSize" gridItemLocation="1,0,1,1" classNames="fcls_data_widget,fcls_align_left,fcls_length_05qch"/>
+					<Label text="idxLeft" isDynamic="true" visible="true" identifier="lbIdxLeft" gridItemLocation="0,1,1,1" classNames="fcls_fieldlabel"/>
+					<TextField visible="true" identifier="idxLeft" gridItemLocation="1,1,1,1" classNames="fcls_data_widget,fcls_align_left,fcls_length_05qch"/>
+				</GridPanel>
+				<GridPanel visible="true" identifier="c4" gridItemLocation="2,1,1,1" verticalAlignment="Top" horizontalAlignment="Left">
+					<GridPanel.gridColumnDefinitions>
+						<GridColumnDefinition gridLengthValue=""/>
+						<GridColumnDefinition gridLengthValue=""/>
+					</GridPanel.gridColumnDefinitions>
+					<GridPanel.gridRowDefinitions>
+						<GridRowDefinition gridLengthValue=""/>
+						<GridRowDefinition gridLengthValue=""/>
+					</GridPanel.gridRowDefinitions>
+					<Label text="m_arr_right.getSize()" isDynamic="true" visible="true" identifier="lb7" gridItemLocation="0,0,1,1" classNames="fcls_fieldlabel"/>
+					<TextField visible="true" identifier="m_arr_rightSize" gridItemLocation="1,0,1,1" classNames="fcls_data_widget,fcls_align_left,fcls_length_05qch"/>
+					<Label text="idxRight" isDynamic="true" visible="true" identifier="lbidxRight" gridItemLocation="0,1,1,1" classNames="fcls_fieldlabel"/>
+					<TextField visible="true" identifier="idxRight" gridItemLocation="1,1,1,1" classNames="fcls_data_widget,fcls_align_left,fcls_length_05qch"/>
+				</GridPanel>
+			</GridPanel>
+			<GridPanel classNames="fcls_statusbar_cnt" visible="true" verticalAlignment="Top" gridItemLocation="0,2,1,1" fieldTable="formonly" identifier="cntStatusBar">
+				<GridPanel.gridRowDefinitions>
+					<GridRowDefinition gridLengthValue=""/>
+					<GridRowDefinition gridLengthValue=""/>
+				</GridPanel.gridRowDefinitions>
+				<GridPanel.gridColumnDefinitions>
+					<GridColumnDefinition gridLengthValue="100%"/>
+				</GridPanel.gridColumnDefinitions>
+				<Label isDynamic="true" text="" classNames="fcls_sblabel" visible="true" gridItemLocation="0,0,1,1" fieldTable="formonly" identifier="lbInfo1"/>
+				<Label isDynamic="true" text="" classNames="fcls_sblabel" visible="true" gridItemLocation="0,1,1,1" fieldTable="formonly" identifier="lbInfo2"/>
+			</GridPanel>
+		</GridPanel>
+	</form.rootContainer>
+	<form.screenRecords>
+		<ScreenRecord identifier="FORMONLY" fields="m_arr_leftSize,idxLeft,m_arr_rightSize,idxRight"/>
+		<ScreenRecord identifier="tableLeft" fields="activeMemberL,firstNameL,lastNameL"/>
+		<ScreenRecord identifier="tableRight" fields="activeMemberR,firstNameR,lastNameR"/>
+	</form.screenRecords>
+</form>
+

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?><form xmlns="http://namespaces.querix.com/2015/fglForms" title="HashMap ARRAY INPUT">
+	<form.rootContainer>
+		<GridPanel identifier="rootContainer" preferredSize="574,706" visible="true">
+			<GridPanel.gridColumnDefinitions>
+				<GridColumnDefinition gridLengthValue="10rem" gridMinLength="10rem"/>
+				<GridColumnDefinition gridLengthValue="100%"/>
+			</GridPanel.gridColumnDefinitions>
+			<GridPanel.gridRowDefinitions>
+				<GridRowDefinition gridLengthValue=""/>
+				<GridRowDefinition gridLengthValue=""/>
+				<GridRowDefinition gridLengthValue=""/>
+				<GridRowDefinition gridLengthValue=""/>
+				<GridRowDefinition gridLengthValue=""/>
+				<GridRowDefinition gridLengthValue="100%"/>
+			</GridPanel.gridRowDefinitions>
+			<Label classNames="fcls_columnlabel_rev_cell,fcls_align_hstretch" gridItemLocation="0,0,2,1" identifier="lb_title" isDynamic="true" text="Title" visible="true"/>
+			<Label classNames="fcls_font_description" gridItemLocation="0,1,2,1" identifier="lb_description" isDynamic="true" text="Description" visible="true"/>
+			<Label classNames="fcls_fieldlabel,fcls_align_left" gridItemLocation="0,2,1,1" identifier="lb4" isDynamic="true" text="key" visible="true"/>
+			<TextField classNames="fcls_length_30qch,fcls_data_widget,fcls_align_left" gridItemLocation="1,2,1,1" identifier="key" visible="true"/>
+			<Label classNames="fcls_fieldlabel,fcls_align_left" gridItemLocation="0,3,1,1" identifier="lb2" isDynamic="true" text="First Nama (fName)" visible="true"/>
+			<TextField classNames="fcls_length_30qch,fcls_data_widget,fcls_align_left" gridItemLocation="1,3,1,1" identifier="fName" visible="true"/>
+			<Table gridItemLocation="0,5,2,1" identifier="sc_hashArray" visible="true">
+				<TableColumn identifier="tc_f8" resizable="true" text="hashValue Array" visible="true">
+					<TextField identifier="hvalue" visible="true"/>
+					<TableColumn.columnLength>
+						<GridLength/>
+					</TableColumn.columnLength>
+				</TableColumn>
+			</Table>
+		</GridPanel>
+	</form.rootContainer>
+	
+	<form.screenRecords>
+		
+		<ScreenRecord fields="hvalue" identifier="sc_arr_hvalue"/>
+	</form.screenRecords> 
+	
+</form>

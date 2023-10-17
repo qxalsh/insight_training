@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://namespaces.querix.com/2015/fglForms" title="Console &amp; Log Window">
+	<form.rootContainer>
+		<GridPanel identifier="rootContainer" visible="true" preferredSize="800,600">
+			<GridPanel.gridColumnDefinitions>
+				<GridColumnDefinition gridLengthValue=""/>
+			</GridPanel.gridColumnDefinitions>
+			<GridPanel.gridRowDefinitions>
+				<GridRowDefinition gridLengthValue=""/>
+				<GridRowDefinition gridLengthValue=""/>
+				<GridRowDefinition gridLengthValue=""/>
+			</GridPanel.gridRowDefinitions>
+			<TextArea visible="true" identifier="console" gridItemLocation="0,0,1,1"/>
+			<StackPanel visible="true" identifier="cntSpButtons" gridItemLocation="0,1,1,1" horizontalAlignment="Right" verticalAlignment="Bottom">
+				<Button text="Cancel" visible="true" identifier="btCancel" horizontalAlignment="Right" preferredSize="15rem," classNames="fcls_length_10qch,fcls_align_left,fcls_button">
+				<Button.onInvoke>
+					<ActionEventHandler actionName="CANCEL"/>
+				</Button.onInvoke>
+			</Button>
+				<Button text="OK" visible="true" identifier="btOk" classNames="fcls_length_10qch,fcls_align_left,fcls_button">
+					<Button.onInvoke>
+						<ActionEventHandler actionName="ACCEPT"/>
+					</Button.onInvoke>
+				</Button>
+			</StackPanel>
+		</GridPanel>
+	</form.rootContainer>
+</form>

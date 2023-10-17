@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://namespaces.querix.com/2015/fglForms" title="New Form 1">
+	<form.rootContainer>
+		<GridPanel identifier="rootContainer" visible="true" classNames="fcls_rootContainer,fcls_container_border,fcls_container_margin,fcls_container_padding,fcls_align_left,fcls_align_top" horizontalAlignment="Left" verticalAlignment="Top" preferredSize="900,550">
+			<GridPanel.gridColumnDefinitions>
+				<GridColumnDefinition>
+					<GridColumnDefinition.gridLength>
+						<GridLength gridLengthType="Auto" gridLengthValue="0.0"/>
+					</GridColumnDefinition.gridLength>
+				</GridColumnDefinition>
+			</GridPanel.gridColumnDefinitions>
+			<GridPanel.gridRowDefinitions>
+				<GridRowDefinition>
+					<GridRowDefinition.gridLength>
+						<GridLength gridLengthType="Auto" gridLengthValue="0.0"/>
+					</GridRowDefinition.gridLength>
+				</GridRowDefinition>
+				<GridRowDefinition>
+					<GridRowDefinition.gridLength>
+						<GridLength gridLengthType="Auto" gridLengthValue="0.0"/>
+					</GridRowDefinition.gridLength>
+				</GridRowDefinition>
+				<GridRowDefinition>
+					<GridRowDefinition.gridLength>
+						<GridLength gridLengthType="Auto" gridLengthValue="0.0"/>
+					</GridRowDefinition.gridLength>
+				</GridRowDefinition>
+			</GridPanel.gridRowDefinitions>
+			<GridPanel visible="true" identifier="c1" gridItemLocation="0,0,1,1" classNames="fcls_detail_cnt,fcls_container_border,fcls_container_margin,fcls_container_padding,fcls_align_hstretch,fcls_detail_cnt_sub,fcls_data_cnt" preferredSize=",170">
+				<GridPanel.gridColumnDefinitions>
+					<GridColumnDefinition>
+						<GridColumnDefinition.gridLength>
+							<GridLength gridLengthType="Pixels" gridLengthValue="100"/>
+						</GridColumnDefinition.gridLength>
+					</GridColumnDefinition>
+					<GridColumnDefinition>
+						<GridColumnDefinition.gridLength>
+							<GridLength gridLengthType="Percent" gridLengthValue="90"/>
+						</GridColumnDefinition.gridLength>
+					</GridColumnDefinition>
+				</GridPanel.gridColumnDefinitions>
+				<GridPanel.gridRowDefinitions>
+					<GridRowDefinition>
+						<GridRowDefinition.gridLength>
+							<GridLength gridLengthType="Auto" gridLengthValue="0.0" gridMinLength="80"/>
+						</GridRowDefinition.gridLength>
+					</GridRowDefinition>
+				</GridPanel.gridRowDefinitions>
+				<Label text="What you currently see:" isDynamic="true" visible="true" identifier="lbNowLabel" gridItemLocation="0,0,1,1" allowNewlines="true" classNames="fcls_columnlabel_rev_cell,fcls_align_left,fcls_align_vcenter" maxSize="100,"/>
+				<Label text="We have NOT defined any action View configuration (Toolbar/Button). &#13;&#10;This means, the toolbar is only driven by the default&#13;&#10;&quot;systemActionsDefault.fm2&quot;&#13;&#10;configuration file.&#13;&#10;Look &amp; Watch the first buton in the toolbar &quot;Accept&quot; ! &#13;&#10;It will change in the next step." isDynamic="true" visible="true" identifier="lbInfoNow" gridItemLocation="1,0,2,1" classNames="fcls_font_description,fcls_align_left,fcls_align_vcenter" allowNewlines="true" verticalAlignment="Center"/>
+			</GridPanel>
+			<GridPanel visible="true" identifier="c2" gridItemLocation="0,1,1,1" classNames="fcls_detail_cnt,fcls_container_border,fcls_container_margin,fcls_container_padding,fcls_align_hstretch,fcls_detail_cnt_sub,fcls_data_cnt" preferredSize=",170">
+				<GridPanel.gridColumnDefinitions>
+					<GridColumnDefinition>
+						<GridColumnDefinition.gridLength>
+							<GridLength gridLengthType="Pixels" gridLengthValue="100"/>
+						</GridColumnDefinition.gridLength>
+					</GridColumnDefinition>
+					<GridColumnDefinition>
+						<GridColumnDefinition.gridLength>
+							<GridLength gridLengthValue="90" gridLengthType="Percent"/>
+						</GridColumnDefinition.gridLength>
+					</GridColumnDefinition>
+				</GridPanel.gridColumnDefinitions>
+				<GridPanel.gridRowDefinitions>
+					<GridRowDefinition>
+						<GridRowDefinition.gridLength>
+							<GridLength gridLengthType="Auto" gridLengthValue="0.0" gridMinLength="80"/>
+						</GridRowDefinition.gridLength>
+					</GridRowDefinition>
+				</GridPanel.gridRowDefinitions>
+				<Label text="What we are going to do next:" isDynamic="true" visible="true" identifier="lbNextLabel" gridItemLocation="0,0,1,1" allowNewlines="true" classNames="fcls_columnlabel_rev_cell,fcls_align_left,fcls_align_vcenter" maxSize="100,"/>
+				<Label text="We are going to change the view configuration for the ACCEPT event&#13;&#10;using the function fgl_setKeyLabel()&#13;&#10;CALL fgl_setKeyLabel(&quot;ACCEPT&quot;,&quot;MyAccept1&quot;,&quot;{CONTEXT}/public/querix/icon/png/32/demo/activity_monitor.png&quot;)" isDynamic="true" visible="true" identifier="lbInfoNext" gridItemLocation="1,0,1,1" allowNewlines="true" classNames="fcls_font_description,fcls_align_left,fcls_align_vcenter" verticalAlignment="Center" textAlignment="Default,Center"/>
+			</GridPanel>
+			<GridPanel visible="true" identifier="c3" gridItemLocation="0,2,1,1" classNames="fcls_detail_cnt,fcls_container_margin,fcls_container_padding,fcls_align_hstretch,fcls_detail_cnt_sub,fcls_data_cnt">
+				<GridPanel.gridColumnDefinitions>
+					<GridColumnDefinition>
+						<GridColumnDefinition.gridLength>
+							<GridLength gridLengthType="Auto" gridLengthValue="0.0"/>
+						</GridColumnDefinition.gridLength>
+					</GridColumnDefinition>
+					<GridColumnDefinition>
+						<GridColumnDefinition.gridLength>
+							<GridLength gridLengthType="Auto" gridLengthValue="0.0"/>
+						</GridColumnDefinition.gridLength>
+					</GridColumnDefinition>
+				</GridPanel.gridColumnDefinitions>
+				<GridPanel.gridRowDefinitions>
+					<GridRowDefinition>
+						<GridRowDefinition.gridLength>
+							<GridLength gridLengthType="Auto" gridLengthValue="0.0"/>
+						</GridRowDefinition.gridLength>
+					</GridRowDefinition>
+					<GridRowDefinition>
+						<GridRowDefinition.gridLength>
+							<GridLength gridLengthType="Auto" gridLengthValue="0.0"/>
+						</GridRowDefinition.gridLength>
+					</GridRowDefinition>
+					<GridRowDefinition>
+						<GridRowDefinition.gridLength>
+							<GridLength gridLengthType="Auto" gridLengthValue="0.0"/>
+						</GridRowDefinition.gridLength>
+					</GridRowDefinition>
+					<GridRowDefinition>
+						<GridRowDefinition.gridLength>
+							<GridLength gridLengthType="Auto" gridLengthValue="0.0"/>
+						</GridRowDefinition.gridLength>
+					</GridRowDefinition>
+					<GridRowDefinition>
+						<GridRowDefinition.gridLength>
+							<GridLength gridLengthType="Auto" gridLengthValue="0.0"/>
+						</GridRowDefinition.gridLength>
+					</GridRowDefinition>
+				</GridPanel.gridRowDefinitions>
+				<Label text="Field f001" isDynamic="true" visible="true" identifier="lb1" gridItemLocation="0,0,1,1" classNames="fcls_fieldlabel,fcls_align_left"/>
+				<TextField visible="true" identifier="f1" gridItemLocation="1,0,1,1" classNames="fcls_data_widget,fcls_align_left,fcls_length_20qch"/>
+				<Label text="Field f002" isDynamic="true" visible="true" identifier="lb3" gridItemLocation="0,1,1,1" classNames="fcls_fieldlabel,fcls_align_left"/>
+				<TextField visible="true" identifier="f2" gridItemLocation="1,1,1,1" classNames="fcls_data_widget,fcls_align_left,fcls_length_20qch"/>
+				<Label text="Field f003" isDynamic="true" visible="true" identifier="lb2" gridItemLocation="0,2,1,1" classNames="fcls_fieldlabel,fcls_align_left"/>
+				<TextField visible="true" identifier="f3" gridItemLocation="1,2,1,1" classNames="fcls_data_widget,fcls_align_left,fcls_length_20qch"/>
+				<Label text="int_flag" isDynamic="true" visible="true" identifier="lb4" gridItemLocation="0,3,1,1" classNames="fcls_fieldlabel,fcls_align_left"/>
+				<TextField visible="true" identifier="int_flag" gridItemLocation="1,3,1,1" classNames="fcls_data_widget,fcls_align_left,fcls_length_01qch"/>
+				<Label text="quit_flag" isDynamic="true" visible="true" identifier="lb6" gridItemLocation="0,4,1,1" classNames="fcls_fieldlabel,fcls_align_left"/>
+				<TextField visible="true" identifier="quit_flag" gridItemLocation="1,4,1,1" classNames="fcls_data_widget,fcls_align_left,fcls_length_01qch"/>
+			</GridPanel>
+		</GridPanel>
+	</form.rootContainer>
+	<form.screenRecords>
+		<ScreenRecord identifier="FormOnly" fields="f1,f2,f3,int_flag,quit_flag"/>
+	</form.screenRecords>
+</form>

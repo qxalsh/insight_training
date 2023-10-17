@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://namespaces.querix.com/2015/fglForms">
+	<form.rootContainer>
+		<GridPanel classNames="fcls_rootContainer" verticalAlignment="Top" horizontalAlignment="Left" fieldTable="" identifier="rootContainer">
+			<GridPanel.gridRowDefinitions>
+				<GridRowDefinition gridLengthValue=""/>
+				<GridRowDefinition gridLengthValue=""/>
+				<GridRowDefinition gridLengthValue=""/>
+				<GridRowDefinition gridLengthValue=""/>
+			</GridPanel.gridRowDefinitions>
+			<GridPanel.gridColumnDefinitions>
+				<GridColumnDefinition gridLengthValue="100%"/>
+			</GridPanel.gridColumnDefinitions>
+			<GridPanel classNames="fcls_title_cnt" visible="true" verticalAlignment="Top" gridItemLocation="0,0,1,1" fieldTable="formonly" identifier="cntTitle">
+				<GridPanel.gridRowDefinitions>
+					<GridRowDefinition gridLengthValue=""/>
+				</GridPanel.gridRowDefinitions>
+				<GridPanel.gridColumnDefinitions>
+					<GridColumnDefinition gridLengthValue="100%"/>
+					<GridColumnDefinition gridLengthValue=""/>
+				</GridPanel.gridColumnDefinitions>
+				<Label isDynamic="true" text="Demo Example to replace ATTRIBUTE(COLOR) dynamically by using Styles" classNames="fcls_title_lb" visible="true" gridItemLocation="0,0,1,1" fieldTable="formonly" identifier="lbTitle"/>
+				<Label isDynamic="true" text="style_example" classNames="fcls_title_lb" visible="true" gridItemLocation="1,0,1,1" fieldTable="" identifier="lbFormName"/>
+			</GridPanel>
+			<GridPanel classNames="fcls_detail_cnt,fcls_data_cnt" visible="true" verticalAlignment="Top" horizontalAlignment="Left" gridItemLocation="0,1,1,1" fieldTable="formonly" identifier="cntDetail1">
+				<GridPanel.gridRowDefinitions>
+					<GridRowDefinition gridLengthValue=""/>
+				</GridPanel.gridRowDefinitions>
+				<GridPanel.gridColumnDefinitions>
+					<GridColumnDefinition gridLengthValue="" gridMinLength="10rem"/>
+				</GridPanel.gridColumnDefinitions>
+				<Label text="Note: There is a whole list of pre-defined styles which can be used by the 4GL application. Developers can also create new styles." classNames="fcls_font_description,fcls_align_left" gridItemLocation="0,0,1,1" fieldTable="" identifier="label1"/>
+			</GridPanel>
+			<GridPanel classNames="fcls_detail_cnt,fcls_data_cnt" visible="true" verticalAlignment="Top" horizontalAlignment="Left" gridItemLocation="0,2,1,1" fieldTable="formonly" identifier="cntDetail2">
+				<GridPanel.gridRowDefinitions>
+					<GridRowDefinition gridLengthValue=""/>
+					<GridRowDefinition gridLengthValue=""/>
+					<GridRowDefinition gridLengthValue=""/>
+					<GridRowDefinition gridLengthValue=""/>
+					<GridRowDefinition gridLengthValue=""/>
+					<GridRowDefinition gridLengthValue=""/>
+					<GridRowDefinition gridLengthValue=""/>
+					<GridRowDefinition gridLengthValue=""/>
+					<GridRowDefinition gridLengthValue=""/>
+					<GridRowDefinition gridLengthValue=""/>
+				</GridPanel.gridRowDefinitions>
+				<GridPanel.gridColumnDefinitions>
+					<GridColumnDefinition gridLengthValue="" gridMinLength="10rem"/>
+					<GridColumnDefinition gridLengthValue=""/>
+					<GridColumnDefinition gridLengthValue=""/>
+					<GridColumnDefinition gridLengthValue=""/>
+				</GridPanel.gridColumnDefinitions>
+				<Label visible="true" identifier="lb170" gridItemLocation="0,0,4,1" isDynamic="true" classNames="fcls_columnlabel_rev_cell,fcls_align_hstretch" fieldTable="formonly" text="DISPLAY Attribute using static style name"/>
+				<Label isDynamic="true" text="Field f_green" classNames="fcls_fieldlabel,fcls_align_left" visible="true" gridItemLocation="0,1,1,1" fieldTable="formonly" identifier="lb42"/>
+				<Label isDynamic="true" text="attribute_GREEN" classNames="fcls_fieldlabel,fcls_align_left" visible="true" gridItemLocation="1,1,1,1" fieldTable="" identifier="lb57"/>
+				<TextField visible="true" identifier="f_green" gridItemLocation="2,1,1,1" classNames="fcls_length_30qch,fcls_data_widget,fcls_align_left" preferredSize="50qch," horizontalAlignment="Left"/>
+				<TextField visible="true" identifier="f_red" gridItemLocation="2,3,1,1" classNames="fcls_length_30qch,fcls_data_widget,fcls_align_left" preferredSize="50qch," horizontalAlignment="Left"/>
+				<Label visible="true" identifier="lb171" gridItemLocation="0,4,4,1" isDynamic="true" classNames="fcls_columnlabel_rev_cell,fcls_align_hstretch" fieldTable="formonly" text="DISPLAY Attribute using a variable holding the style name"/>
+				<Label visible="true" identifier="lb156" gridItemLocation="0,5,1,1" isDynamic="true" classNames="fcls_fieldlabel,fcls_align_left" fieldTable="formonly" text="Field f_ok"/>
+				<Label visible="true" identifier="lb166" gridItemLocation="1,5,1,1" isDynamic="true" classNames="fcls_fieldlabel,fcls_align_left" fieldTable="" text="via variable"/>
+				<TextField visible="true" identifier="f_ok" gridItemLocation="2,5,1,1" classNames="fcls_length_30qch,fcls_data_widget,fcls_align_left" preferredSize="50qch," horizontalAlignment="Left"/>
+				<Label visible="true" identifier="lb162" gridItemLocation="3,5,1,1" isDynamic="true" classNames="fcls_fieldlabel,fcls_align_left" fieldTable="" text="LET l_style=&quot;attribute_GREEN&quot;&#13;&#10;DISPLAY &quot;Hello World is ok&quot; ATTRIBUTE(Style=l_style)" allowNewlines="true"/>
+				<Label visible="true" identifier="lb157" gridItemLocation="0,6,1,1" isDynamic="true" classNames="fcls_fieldlabel,fcls_align_left" fieldTable="formonly" text="Field f_warning"/>
+				<Label visible="true" identifier="lb167" gridItemLocation="1,6,1,1" isDynamic="true" classNames="fcls_fieldlabel,fcls_align_left" fieldTable="" text="via variable"/>
+				<TextField visible="true" identifier="f_warning" gridItemLocation="2,6,1,1" classNames="fcls_length_30qch,fcls_data_widget,fcls_align_left" preferredSize="50qch," horizontalAlignment="Left"/>
+				<Label visible="true" identifier="lb164" gridItemLocation="3,6,1,1" isDynamic="true" classNames="fcls_fieldlabel,fcls_align_left" fieldTable="" text="LET l_style=&quot;attribute_MAGENTA&quot;&#13;&#10;DISPLAY &quot;Hello World is warning&quot; ATTRIBUTE(Style=l_style)" allowNewlines="true"/>
+				<Label visible="true" identifier="lb158" gridItemLocation="0,7,1,1" isDynamic="true" classNames="fcls_fieldlabel,fcls_align_left" fieldTable="formonly" text="Field f_error"/>
+				<Label visible="true" identifier="lb168" gridItemLocation="1,7,1,1" isDynamic="true" classNames="fcls_fieldlabel,fcls_align_left" fieldTable="" text="via variable"/>
+				<TextField visible="true" identifier="f_error" gridItemLocation="2,7,1,1" classNames="fcls_length_30qch,fcls_data_widget,fcls_align_left" preferredSize="50qch," horizontalAlignment="Left"/>
+				<Label visible="true" identifier="lb165" gridItemLocation="3,7,1,1" isDynamic="true" classNames="fcls_fieldlabel,fcls_align_left" fieldTable="" text="LET l_style=&quot;attribute_RED&quot;&#13;&#10;DISPLAY &quot;Hello World is error&quot; ATTRIBUTE(Style=l_style)" allowNewlines="true"/>
+				<Label isDynamic="true" text="Field f_dynamic:" classNames="fcls_fieldlabel,fcls_align_left" visible="true" gridItemLocation="0,9,1,1" fieldTable="" identifier="lb63"/>
+				<Button text="Demo" visible="true" identifier="bt_demo" gridItemLocation="1,9,1,1">
+					<Button.onInvoke>
+						<ActionEventHandler actionName="demo"/>
+					</Button.onInvoke>
+				</Button>
+				<TextField visible="true" identifier="f_dynamic" gridItemLocation="2,9,1,1" classNames="fcls_length_30qch,fcls_data_widget,fcls_align_left" preferredSize="50qch," horizontalAlignment="Left"/>
+				<Label isDynamic="true" text="LET l_inp = fgl_winbutton(&quot;Choose DISPLAY Style Color&quot;, &#13;&#10;&quot;What Color Style do you want to use ?&quot;, &quot;Error&quot;, &#13;&#10;&quot;Error|Warning|Ok|Cancel&quot;, &quot;exclamation&quot;, 1) &#13;&#10;CASE l_inp&#13;&#10;&#9;WHEN &quot;E&quot;&#13;&#10;&#9;&#9;LET l_style = ATTRIBUTE_ERROR&#13;&#10;&#9;WHEN &quot;W&quot;&#13;&#10;&#9;&#9;LET l_style = ATTRIBUTE_WARNING&#13;&#10;&#9;WHEN &quot;O&quot;&#13;&#10;&#9;&#9;LET l_style = ATTRIBUTE_OK&#13;&#10;END CASE&#13;&#10;DISPLAY l_msg to f_dynamic ATTRIBUTE(STYLE=l_style)" classNames="fcls_fieldlabel,fcls_align_left" visible="true" gridItemLocation="3,9,1,1" fieldTable="" identifier="lb147" allowNewlines="true"/>
+				<Label isDynamic="true" text="DISPLAY &quot;Hello World in green&quot; ATTRIBUTE(Style=attribute_GREEN)" classNames="fcls_fieldlabel,fcls_align_left" visible="true" gridItemLocation="3,1,1,1" fieldTable="" identifier="lb87"/>
+				<Label isDynamic="true" text="Field f_magenta" classNames="fcls_fieldlabel,fcls_align_left" visible="true" gridItemLocation="0,2,1,1" fieldTable="formonly" identifier="lb36"/>
+				<Label isDynamic="true" text="DISPLAY &quot;Hello World in magenta&quot; ATTRIBUTE(Style=attribute_MAGENTA)" classNames="fcls_fieldlabel,fcls_align_left" visible="true" gridItemLocation="3,2,1,1" fieldTable="" identifier="lb85"/>
+				<Label isDynamic="true" text="Field f_red" classNames="fcls_fieldlabel,fcls_align_left" visible="true" gridItemLocation="0,3,1,1" fieldTable="formonly" identifier="lb37"/>
+				<Label isDynamic="true" text="DISPLAY &quot;Hello World in red&quot; ATTRIBUTE(Style=attribute_RED)" classNames="fcls_fieldlabel,fcls_align_left" visible="true" gridItemLocation="3,3,1,1" fieldTable="" identifier="lb88"/>
+				<Label isDynamic="true" text="Show a Dynamic Example:" classNames="fcls_columnlabel_rev_cell,fcls_align_hstretch" visible="true" gridItemLocation="0,8,4,1" fieldTable="formonly" identifier="lb38"/>
+				<TextField visible="true" identifier="f_magenta" gridItemLocation="2,2,1,1" classNames="fcls_length_30qch,fcls_data_widget,fcls_align_left" preferredSize="50qch," horizontalAlignment="Left"/>
+				<Label isDynamic="true" text="attribute_MAGENTA" classNames="fcls_fieldlabel,fcls_align_left" visible="true" fieldTable="" identifier="lb148" gridItemLocation="1,2,1,1"/>
+				<Label isDynamic="true" text="attribute_RED" classNames="fcls_fieldlabel,fcls_align_left" visible="true" fieldTable="" identifier="lb149" gridItemLocation="1,3,1,1"/>
+			</GridPanel>
+			<GridPanel classNames="fcls_statusbar_cnt" visible="true" verticalAlignment="Top" gridItemLocation="0,3,1,1" fieldTable="formonly" identifier="cntStatusBar">
+				<GridPanel.gridRowDefinitions>
+					<GridRowDefinition gridLengthValue=""/>
+					<GridRowDefinition gridLengthValue=""/>
+				</GridPanel.gridRowDefinitions>
+				<GridPanel.gridColumnDefinitions>
+					<GridColumnDefinition gridLengthValue="100%"/>
+				</GridPanel.gridColumnDefinitions>
+				<Label isDynamic="true" text="" classNames="fcls_sblabel" visible="true" gridItemLocation="0,0,1,1" fieldTable="formonly" identifier="lbInfo1"/>
+				<Label isDynamic="true" text="" classNames="fcls_sblabel" visible="true" gridItemLocation="0,1,1,1" fieldTable="formonly" identifier="lbInfo2"/>
+			</GridPanel>
+		</GridPanel>
+	</form.rootContainer>
+	<form.screenRecords>
+		<ScreenRecord identifier="FORMONLY" fields=""/>
+	</form.screenRecords>
+</form>
+

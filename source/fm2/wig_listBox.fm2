@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://namespaces.querix.com/2015/fglForms">
+    <form.rootContainer>
+        <GridPanel verticalAlignment="Top" horizontalAlignment="Left" fieldTable="" classNames="fcls_rootContainer" preferredSize="45qch,15qch" identifier="rootContainer">
+            <GridPanel.gridRowDefinitions>
+                <GridRowDefinition gridLengthValue="" />
+                <GridRowDefinition gridLengthValue="100%" />
+                <GridRowDefinition gridLengthValue="" />
+            </GridPanel.gridRowDefinitions>
+            <GridPanel.gridColumnDefinitions>
+                <GridColumnDefinition gridLengthValue="100%" />
+            </GridPanel.gridColumnDefinitions>
+            <GridPanel visible="true" verticalAlignment="Top" fieldTable="formonly" classNames="fcls_title_cnt" gridItemLocation="0,0,1,1" identifier="cntTitle">
+                <GridPanel.gridRowDefinitions>
+                    <GridRowDefinition gridLengthValue="" />
+                </GridPanel.gridRowDefinitions>
+                <GridPanel.gridColumnDefinitions>
+                    <GridColumnDefinition gridLengthValue="100%" />
+                    <GridColumnDefinition gridLengthValue="" />
+                </GridPanel.gridColumnDefinitions>
+                <Label isDynamic="true" text="ListBox Example" visible="true" fieldTable="formonly" classNames="fcls_title_lb" gridItemLocation="0,0,1,1" identifier="lbTitle" />
+                <Label isDynamic="true" text="wig_listBox" visible="true" fieldTable="" classNames="fcls_title_lb" gridItemLocation="1,0,1,1" identifier="lbFormName" />
+            </GridPanel>
+            <GridPanel visible="true" verticalAlignment="Stretch" horizontalAlignment="Stretch" fieldTable="formonly" classNames="fcls_detail_cnt,fcls_data_cnt,fcls_align_hstretch" gridItemLocation="0,1,1,1" identifier="cntDetail1">
+                <GridPanel.gridRowDefinitions>
+                    <GridRowDefinition gridLengthValue="" />
+                    <GridRowDefinition gridLengthValue="" />
+                </GridPanel.gridRowDefinitions>
+                <GridPanel.gridColumnDefinitions>
+                    <GridColumnDefinition gridLengthValue="33%" />
+                    <GridColumnDefinition gridLengthValue="66%" />
+                </GridPanel.gridColumnDefinitions>
+                <Label isDynamic="true" text="18 Of The Most Expensive Substances In The World" visible="true" fieldTable="" classNames="fcls_fieldlabel,fcls_align_left" gridItemLocation="0,0,2,1" identifier="lb48" />
+                <ListBox visible="true" verticalAlignment="Stretch" horizontalAlignment="Stretch" fieldTable="" classNames="fcls_data_widget,fcls_align_hstretch,fcls_align_vstretch" preferredSize="15qch,10qch" gridItemLocation="0,1,1,1" identifier="fListChoice">
+                    <ListBoxItem text="Antimatter">
+                        <ListBoxItem.value>
+                            <IntegerLiteral integerValue="1" />
+                        </ListBoxItem.value>
+                    </ListBoxItem>
+                    <ListBoxItem text="Californium 252">
+                        <ListBoxItem.value>
+                            <IntegerLiteral integerValue="2" />
+                        </ListBoxItem.value>
+                    </ListBoxItem>
+                    <ListBoxItem text="Painite">
+                        <ListBoxItem.value>
+                            <IntegerLiteral integerValue="3" />
+                        </ListBoxItem.value>
+                    </ListBoxItem>
+                    <ListBoxItem text="Diamonds">
+                        <ListBoxItem.value>
+                            <IntegerLiteral integerValue="4" />
+                        </ListBoxItem.value>
+                    </ListBoxItem>
+                    <ListBoxItem text="Tritium">
+                        <ListBoxItem.value>
+                            <IntegerLiteral integerValue="5" />
+                        </ListBoxItem.value>
+                    </ListBoxItem>
+                    <ListBoxItem text="Taaffeite">
+                        <ListBoxItem.value>
+                            <IntegerLiteral integerValue="6" />
+                        </ListBoxItem.value>
+                    </ListBoxItem>
+                    <ListBoxItem text="Plutonium">
+                        <ListBoxItem.value>
+                            <IntegerLiteral integerValue="7" />
+                        </ListBoxItem.value>
+                    </ListBoxItem>
+                    <ListBoxItem text="LSD">
+                        <ListBoxItem.value>
+                            <IntegerLiteral integerValue="8" />
+                        </ListBoxItem.value>
+                    </ListBoxItem>
+                    <ListBoxItem text="Methamphetamine">
+                        <ListBoxItem.value>
+                            <IntegerLiteral integerValue="9" />
+                        </ListBoxItem.value>
+                    </ListBoxItem>
+                    <ListBoxItem text="Heroin">
+                        <ListBoxItem.value>
+                            <IntegerLiteral integerValue="10" />
+                        </ListBoxItem.value>
+                    </ListBoxItem>
+                    <ListBoxItem text="Crème de la Mer">
+                        <ListBoxItem.value>
+                            <IntegerLiteral integerValue="11" />
+                        </ListBoxItem.value>
+                    </ListBoxItem>
+                    <ListBoxItem text="Rhino Horn">
+                        <ListBoxItem.value>
+                            <IntegerLiteral integerValue="12" />
+                        </ListBoxItem.value>
+                    </ListBoxItem>
+                    <ListBoxItem text="Platinum">
+                        <ListBoxItem.value>
+                            <IntegerLiteral integerValue="13" />
+                        </ListBoxItem.value>
+                    </ListBoxItem>
+                    <ListBoxItem text="Rhodium">
+                        <ListBoxItem.value>
+                            <IntegerLiteral integerValue="14" />
+                        </ListBoxItem.value>
+                    </ListBoxItem>
+                    <ListBoxItem text="Gold">
+                        <ListBoxItem.value>
+                            <IntegerLiteral integerValue="15" />
+                        </ListBoxItem.value>
+                    </ListBoxItem>
+                    <ListBoxItem text="Iranian Beluga Caviar">
+                        <ListBoxItem.value>
+                            <IntegerLiteral integerValue="16" />
+                        </ListBoxItem.value>
+                    </ListBoxItem>
+                    <ListBoxItem text="Saffron">
+                        <ListBoxItem.value>
+                            <IntegerLiteral integerValue="17" />
+                        </ListBoxItem.value>
+                    </ListBoxItem>
+                    <ListBoxItem text="White Truffles">
+                        <ListBoxItem.value>
+                            <IntegerLiteral integerValue="18" />
+                        </ListBoxItem.value>
+                    </ListBoxItem>
+                    <ListBox.onValueChanged>
+                        <ActionEventHandler actionName="updateField" />
+                    </ListBox.onValueChanged>
+                    <ListBox.onTouched>
+                        <ActionEventHandler actionName="updateField" />
+                    </ListBox.onTouched>
+                    <ListBox.onMouseDoubleClick>
+                        <ActionEventHandler actionName="actMouseDoubleClick" />
+                    </ListBox.onMouseDoubleClick>
+                </ListBox>
+                <StackPanel orientation="Vertical" visible="true" verticalAlignment="Bottom" horizontalAlignment="Stretch" fieldTable="" classNames="fcls_align_bottom" gridItemLocation="1,1,1,1" identifier="c2">
+                    <Label isDynamic="true" allowNewlines="true" text="Actual value of the variable when you choose an item" visible="true" fieldTable="" classNames="fcls_fieldlabel,fcls_align_left" gridItemLocation="0,2,1,1" identifier="lb50" />
+                    <TextField visible="true" fieldTable="" classNames="fcls_data_widget,fcls_align_hstretch,fcls_align_vcenter" gridItemLocation="1,2,1,1" identifier="fListChoiceText" />
+                </StackPanel>
+            </GridPanel>
+            <GridPanel visible="true" verticalAlignment="Top" fieldTable="formonly" classNames="fcls_statusbar_cnt" gridItemLocation="0,2,1,1" identifier="cntStatusBar">
+                <GridPanel.gridRowDefinitions>
+                    <GridRowDefinition gridLengthValue="" />
+                    <GridRowDefinition gridLengthValue="" />
+                </GridPanel.gridRowDefinitions>
+                <GridPanel.gridColumnDefinitions>
+                    <GridColumnDefinition gridLengthValue="100%" />
+                </GridPanel.gridColumnDefinitions>
+                <Label isDynamic="true" text="" visible="true" fieldTable="formonly" classNames="fcls_sblabel" gridItemLocation="0,0,1,1" identifier="lbInfo1" />
+                <Label isDynamic="true" text="" visible="true" fieldTable="formonly" classNames="fcls_sblabel" gridItemLocation="0,1,1,1" identifier="lbInfo2" />
+            </GridPanel>
+        </GridPanel>
+    </form.rootContainer>
+    <form.screenRecords>
+        <ScreenRecord identifier="FORMONLY" fields="fListChoice,fListChoiceText" />
+    </form.screenRecords>
+</form>

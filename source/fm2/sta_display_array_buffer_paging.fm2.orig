@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://namespaces.querix.com/2015/fglForms">
+	<form.rootContainer>
+		<GridPanel classNames="fcls_rootContainer" fieldTable="" identifier="rootContainer">
+			<GridPanel.gridRowDefinitions>
+				<GridRowDefinition>
+					<GridRowDefinition.gridLength>
+						<GridLength gridLengthType="Auto"/>
+					</GridRowDefinition.gridLength>
+				</GridRowDefinition>
+				<GridRowDefinition>
+					<GridRowDefinition.gridLength>
+						<GridLength gridLengthType="Percent" gridLengthValue="100"/>
+					</GridRowDefinition.gridLength>
+				</GridRowDefinition>
+				<GridRowDefinition>
+					<GridRowDefinition.gridLength>
+						<GridLength gridLengthType="Auto"/>
+					</GridRowDefinition.gridLength>
+				</GridRowDefinition>
+				<GridRowDefinition>
+					<GridRowDefinition.gridLength>
+						<GridLength gridLengthType="Auto"/>
+					</GridRowDefinition.gridLength>
+				</GridRowDefinition>
+			</GridPanel.gridRowDefinitions>
+			<GridPanel.gridColumnDefinitions>
+				<GridColumnDefinition>
+					<GridColumnDefinition.gridLength>
+						<GridLength gridLengthType="Percent" gridLengthValue="100"/>
+					</GridColumnDefinition.gridLength>
+				</GridColumnDefinition>
+				<GridColumnDefinition>
+					<GridColumnDefinition.gridLength>
+						<GridLength gridLengthType="Auto" gridLengthValue="0.0"/>
+					</GridColumnDefinition.gridLength>
+				</GridColumnDefinition>
+			</GridPanel.gridColumnDefinitions>
+			
+			
+			
+			
+			<GridPanel classNames="fcls_title_cnt" visible="true" gridItemLocation="0,0,2,1" fieldTable="formonly" identifier="cntTitle">
+				<GridPanel.gridRowDefinitions>
+					<GridRowDefinition>
+						<GridRowDefinition.gridLength>
+							<GridLength/>
+						</GridRowDefinition.gridLength>
+					</GridRowDefinition>
+				</GridPanel.gridRowDefinitions>
+				<GridPanel.gridColumnDefinitions>
+					<GridColumnDefinition>
+						<GridColumnDefinition.gridLength>
+							<GridLength gridLengthType="Percent" gridLengthValue="100"/>
+						</GridColumnDefinition.gridLength>
+					</GridColumnDefinition>
+				</GridPanel.gridColumnDefinitions>
+				<Label isDynamic="true" text="Setting styles for table rows with specified conditions" classNames="fcls_title_lb" visible="true" gridItemLocation="0,0,1,1" fieldTable="formonly" identifier="masken_kopf"/>
+			</GridPanel>
+			<GridPanel classNames="fcls_table_cnt" visible="true" gridItemLocation="0,1,1,1" fieldTable="formonly" identifier="cntTable">
+				<GridPanel.gridRowDefinitions>
+					<GridRowDefinition>
+						<GridRowDefinition.gridLength>
+							<GridLength gridLengthType="Percent" gridLengthValue="100"/>
+						</GridRowDefinition.gridLength>
+					</GridRowDefinition>
+				</GridPanel.gridRowDefinitions>
+				<GridPanel.gridColumnDefinitions>
+					<GridColumnDefinition>
+						<GridColumnDefinition.gridLength>
+							<GridLength gridLengthType="Percent" gridLengthValue="100"/>
+						</GridColumnDefinition.gridLength>
+					</GridColumnDefinition>
+				</GridPanel.gridColumnDefinitions>
+				<Table gridItemLocation="0,0,1,1" fieldTable="" identifier="sc" classNames="fcls_p_font" preferredSize="700,250">
+
+							<TableColumn text="Column 1" resizable="true" visible="true" identifier="tc_c1">
+								<TextField visible="true" identifier="c1"/>
+								<TableColumn.columnLength>
+									<GridLength gridLengthType="Auto"/>
+								</TableColumn.columnLength>
+							</TableColumn>
+
+							<TableColumn text="Column 2" resizable="true" visible="true" identifier="tc_c2">
+								<TextField visible="true" identifier="c2"/>
+								<TableColumn.columnLength>
+									<GridLength gridLengthType="Auto"/>
+								</TableColumn.columnLength>
+							</TableColumn>
+
+							
+							<TableColumn text="Column 3" resizable="true" visible="true" identifier="tc_c3">
+								<TextField visible="true" identifier="c3"/>
+								<TableColumn.columnLength>
+									<GridLength gridLengthType="Auto"/>
+								</TableColumn.columnLength>
+							</TableColumn>
+							
+							<TableColumn text="Column 4" resizable="true" visible="true" identifier="tc_c4">
+								<TextField visible="true" identifier="c4"/>
+								<TableColumn.columnLength>
+									<GridLength gridLengthType="Auto"/>
+								</TableColumn.columnLength>
+							</TableColumn>
+							
+							<TableColumn text="Column 5" resizable="true" visible="true" identifier="tc_c5">
+								<TextField visible="true" identifier="c5"/>
+								<TableColumn.columnLength>
+									<GridLength gridLengthType="Auto"/>
+								</TableColumn.columnLength>
+							</TableColumn>								
+							
+					
+				</Table>
+			</GridPanel>
+			<TextArea visible="true" identifier="bufferActionReport" gridItemLocation="1,1,1,2" classNames="fcls_data_widget,fcls_align_left,fcls_length_30qch"/>
+			<GridPanel classNames="fcls_detail_cnt" visible="true" gridItemLocation="0,2,1,1" fieldTable="formonly" identifier="cntDetail2">
+				<GridPanel.gridRowDefinitions>
+					<GridRowDefinition>
+						<GridRowDefinition.gridLength>
+							<GridLength gridLengthValue="100"/>
+						</GridRowDefinition.gridLength>
+					</GridRowDefinition>
+				</GridPanel.gridRowDefinitions>
+				<GridPanel.gridColumnDefinitions>
+					<GridColumnDefinition>
+						<GridColumnDefinition.gridLength>
+							<GridLength gridLengthType="Percent" gridLengthValue="100"/>
+						</GridColumnDefinition.gridLength>
+					</GridColumnDefinition>
+					<GridColumnDefinition>
+						<GridColumnDefinition.gridLength>
+							<GridLength gridLengthType="Auto" gridLengthValue="0.0"/>
+						</GridColumnDefinition.gridLength>
+					</GridColumnDefinition>
+				</GridPanel.gridColumnDefinitions>
+				<GridPanel visible="true" identifier="cntInfo" gridItemLocation="0,0,1,1" classNames="fcls_detail_cnt_sub,fcls_data_cnt,fcls_align_left,fcls_align_top">
+					<GridPanel.gridColumnDefinitions>
+						<GridColumnDefinition>
+							<GridColumnDefinition.gridLength>
+								<GridLength gridLengthType="Auto" gridLengthValue="0.0"/>
+							</GridColumnDefinition.gridLength>
+						</GridColumnDefinition>
+						<GridColumnDefinition>
+							<GridColumnDefinition.gridLength>
+								<GridLength/>
+							</GridColumnDefinition.gridLength>
+						</GridColumnDefinition>
+						<GridColumnDefinition>
+							<GridColumnDefinition.gridLength>
+								<GridLength gridLengthType="Auto" gridLengthValue="0.0"/>
+							</GridColumnDefinition.gridLength>
+						</GridColumnDefinition>
+						<GridColumnDefinition>
+							<GridColumnDefinition.gridLength>
+								<GridLength gridLengthType="Auto" gridLengthValue="0.0"/>
+							</GridColumnDefinition.gridLength>
+						</GridColumnDefinition>
+						<GridColumnDefinition>
+							<GridColumnDefinition.gridLength>
+								<GridLength gridLengthType="Auto" gridLengthValue="0.0"/>
+							</GridColumnDefinition.gridLength>
+						</GridColumnDefinition>
+						<GridColumnDefinition>
+							<GridColumnDefinition.gridLength>
+								<GridLength gridLengthType="Auto" gridLengthValue="0.0"/>
+							</GridColumnDefinition.gridLength>
+						</GridColumnDefinition>
+					</GridPanel.gridColumnDefinitions>
+					<GridPanel.gridRowDefinitions>
+						<GridRowDefinition>
+							<GridRowDefinition.gridLength>
+								<GridLength gridLengthType="Auto" gridLengthValue="0.0"/>
+							</GridRowDefinition.gridLength>
+						</GridRowDefinition>
+						<GridRowDefinition>
+							<GridRowDefinition.gridLength>
+								<GridLength gridLengthType="Auto" gridLengthValue="0.0"/>
+							</GridRowDefinition.gridLength>
+						</GridRowDefinition>
+						<GridRowDefinition>
+							<GridRowDefinition.gridLength>
+								<GridLength gridLengthType="Auto" gridLengthValue="0.0"/>
+							</GridRowDefinition.gridLength>
+						</GridRowDefinition>
+					</GridPanel.gridRowDefinitions>
+					<Label text="arr_curr()" isDynamic="true" visible="true" identifier="lb35" gridItemLocation="0,0,1,1" classNames="fcls_fieldlabel,fcls_align_left"/>
+					<TextField visible="true" identifier="arr_curr" gridItemLocation="1,0,1,1" classNames="fcls_data_widget,fcls_align_left,fcls_length_10qch"/>
+					<Label text="fgl_dialog_getBufferStart()" isDynamic="true" visible="true" identifier="lb41" gridItemLocation="2,0,1,1" classNames="fcls_fieldlabel,fcls_align_left"/>
+					<TextField visible="true" identifier="fgl_dialog_getBufferStart" gridItemLocation="3,0,1,1" classNames="fcls_data_widget,fcls_align_left,fcls_length_10qch"/>
+					<Label text="recArrayBuffer.getLength()" isDynamic="true" visible="true" identifier="lb46" gridItemLocation="4,0,1,1" classNames="fcls_fieldlabel,fcls_align_left"/>
+					<TextField visible="true" identifier="recArrayBuffer_getLength" gridItemLocation="5,0,1,1" classNames="fcls_data_widget,fcls_align_left,fcls_length_10qch"/>
+					<Label text="fgl_scr_size():" isDynamic="true" visible="true" identifier="lb_scr_size" gridItemLocation="0,1,1,1" classNames="fcls_fieldlabel,fcls_align_left"/>
+					<TextField visible="true" identifier="fgl_scr_size" gridItemLocation="1,1,1,1" classNames="fcls_data_widget,fcls_align_left,fcls_length_10qch"/>
+					<Label text="fgl_dialog_getBufferLength()" isDynamic="true" visible="true" identifier="lb40" gridItemLocation="2,1,1,1" classNames="fcls_fieldlabel,fcls_align_left"/>
+					<TextField visible="true" identifier="fgl_dialog_getBufferLength" gridItemLocation="3,1,1,1" classNames="fcls_data_widget,fcls_align_left,fcls_length_10qch"/>
+					<Label text="arr_count( )" isDynamic="true" visible="true" identifier="lb38" gridItemLocation="0,2,1,1" classNames="fcls_fieldlabel,fcls_align_left"/>
+					<TextField visible="true" identifier="arr_count" gridItemLocation="1,2,1,1" classNames="fcls_data_widget,fcls_align_left,fcls_length_10qch"/>
+					<Label text="recArrayMaster.getlength()" isDynamic="true" visible="true" identifier="lb44" gridItemLocation="2,2,1,1" classNames="fcls_fieldlabel,fcls_align_left"/>
+					<TextField visible="true" identifier="recArrayMaster_getlength" gridItemLocation="3,2,1,1" classNames="fcls_data_widget,fcls_align_left,fcls_length_10qch"/>
+				</GridPanel>
+			</GridPanel>
+			<GridPanel classNames="fcls_statusbar_cnt" visible="true" verticalAlignment="Top" gridItemLocation="0,3,2,1" fieldTable="formonly" identifier="cntStatusBar">
+				<GridPanel.gridRowDefinitions>
+					<GridRowDefinition>
+						<GridRowDefinition.gridLength>
+							<GridLength gridLengthType="Percent" gridLengthValue="100"/>
+						</GridRowDefinition.gridLength>
+					</GridRowDefinition>
+				</GridPanel.gridRowDefinitions>
+				<GridPanel.gridColumnDefinitions>
+					<GridColumnDefinition>
+						<GridColumnDefinition.gridLength>
+							<GridLength gridLengthType="Percent" gridLengthValue="100"/>
+						</GridColumnDefinition.gridLength>
+					</GridColumnDefinition>
+				</GridPanel.gridColumnDefinitions>
+				<GridPanel classNames="fcls_statusbar_cnt_sub" visible="true" verticalAlignment="Top" gridItemLocation="0,0,1,1" fieldTable="formonly" identifier="cntStatusBarSub">
+					<GridPanel.gridRowDefinitions>
+						<GridRowDefinition>
+							<GridRowDefinition.gridLength>
+								<GridLength gridLengthType="Auto"/>
+							</GridRowDefinition.gridLength>
+						</GridRowDefinition>
+						<GridRowDefinition>
+							<GridRowDefinition.gridLength>
+								<GridLength gridLengthType="Auto"/>
+							</GridRowDefinition.gridLength>
+						</GridRowDefinition>
+					</GridPanel.gridRowDefinitions>
+					<GridPanel.gridColumnDefinitions>
+						<GridColumnDefinition>
+							<GridColumnDefinition.gridLength>
+								<GridLength gridLengthType="Percent" gridLengthValue="100"/>
+							</GridColumnDefinition.gridLength>
+						</GridColumnDefinition>
+					</GridPanel.gridColumnDefinitions>
+					<Label isDynamic="true" text="" classNames="fcls_sblabel" visible="true" gridItemLocation="0,0,1,1" fieldTable="formonly" identifier="lbInfo1"/>
+					<Label isDynamic="true" text="" classNames="fcls_sblabel" visible="true" gridItemLocation="0,1,1,1" fieldTable="formonly" identifier="lbInfo2"/>
+				</GridPanel>
+			</GridPanel>
+			
+						
+			
+		</GridPanel>
+	</form.rootContainer>
+	<form.screenRecords>
+		<ScreenRecord identifier="sc5" fields="c1,c2,c3,c4,c5"/>
+		<ScreenRecord identifier="plan_hdr" fields="plan_no,c1"/>
+		<ScreenRecord identifier="FormOnly" fields="arr_curr,fgl_scr_size,arr_count,fgl_dialog_getBufferStart,fgl_dialog_getBufferLength,recArrayMaster_getlength,recArrayBuffer_getLength,bufferActionReport"/>
+		
+	</form.screenRecords>
+</form>
+

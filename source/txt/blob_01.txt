@@ -1,0 +1,2 @@
+This is a blob test text file 
+We will use it for our webservice test

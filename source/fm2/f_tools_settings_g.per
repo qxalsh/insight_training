@@ -1,0 +1,562 @@
+DATABASE formonly
+
+SCREEN KEY F1011 TITLE "General Path"
+{
+
+[dl_field11        ][cfg_path                           ]    
+[dl_field12        ][unl_path                           ]                                                               
+[dl_field13        ][form_path                          ] 
+[dl_field14        ][document_path                      ] 
+[dl_field15        ][html_path                          ] 
+[dl_field16        ][image_path                         ]
+[dl_field17        ][icon10_path                        ]
+[dl_field18        ][icon16_path                        ]
+[dl_field19        ][icon32_path                        ]
+
+}
+
+SCREEN KEY F1012 TITLE "Cfg-Path"
+{
+
+[dl_field21        ][main_cfg_file_name                 ]
+
+[dl_field22        ][toolbar_cfg_file_name              ]
+[dl_field23        ][tool_string_file_name              ]
+[dl_field24        ][tool_string_mono_file_name         ]
+[dl_field25        ][string_file_name                   ]
+[dl_field26        ][string_mono_file_name              ]
+[dl_field27        ][help_url_mapping_file_name         ]
+[dl_field28        ][dde_cfg_file_name                  ]
+
+[dl_field29        ][online_demo_path                   ]
+}
+
+
+
+SCREEN KEY F1013 TITLE "Classic Help"
+{
+
+[dl_field31        ][msg_path                           ] 
+[dl_field32        ][classic_help_multi_lang            ]    
+[dl_field33        ][classic_help_file_1                ]                                                               
+[dl_field34        ][classic_help_file_2                ] 
+[dl_field35        ][classic_help_file_3                ] 
+[dl_field36        ][classic_help_file_4                ] 
+[dl_field37        ][classic_help_file_5                ]
+[dl_field38        ][classic_help_file_6                ]
+[dl_field39        ][classic_help_file_7                ]
+[dl_field40        ][classic_help_file_8                ]
+[dl_field41        ][classic_help_file_9                ]
+[dl_field42        ][classic_help_file_10               ]
+
+}
+
+
+
+SCREEN KEY F1014 TITLE "Html-Help"
+{
+                                                                 
+[dl_field51        ][help_system_type                   ] 
+
+[dl_field52        ][help_file_base_url                 ] 
+[dl_field53        ][help_language_dir_uk               ]                                                                   
+[dl_field54        ][help_language_dir_sp               ]                                                                   
+[dl_field55        ][help_language_dir_de               ]                                                                   
+[dl_field56        ][help_language_dir_fr               ]                                                                   
+[dl_field57        ][help_language_dir_ar               ]                                                                   
+[dl_field58        ][help_language_dir_it               ]                                                                   
+[dl_field59        ][help_language_dir_ot               ]                                                           
+}
+
+SCREEN KEY F1015 TITLE "Webservice"
+{
+
+[dl_field71        ][ws_name                            ]                                                                   
+[dl_field72        ][ws_port                            ]     
+
+
+
+
+                                                              
+}
+
+SCREEN KEY F1016 TITLE "Language"
+{
+                                                               
+[dl_field81        ][language                           ] 
+
+
+
+
+
+
+
+
+
+
+                                                          
+}
+
+SCREEN KEY F1017 TITLE "Print-Html"
+{
+                                                               
+[dl_field91        ][html_print_output                  ] 
+[dl_field92        ][html_print_template_1              ] 
+[dl_field93        ][html_print_template_2              ] 
+[dl_field94        ][html_print_template_3              ] 
+[dl_field95        ][html_print_template_4              ] 
+[dl_field96        ][html_print_template_5              ] 
+[dl_field97        ][html_print_template_6              ] 
+[dl_field98        ][html_print_template_7              ] 
+[dl_field99        ][html_print_template_8              ] 
+
+
+                                                          
+}
+
+SCREEN KEY F1018 TITLE "Print-Html-Image"
+{
+
+[dl_field101       ][html_print_image_1                 ] 
+[dl_field102       ][html_print_image_2                 ] 
+[dl_field103       ][html_print_image_3                 ] 
+[dl_field104       ][html_print_image_4                 ] 
+[dl_field105       ][html_print_image_5                 ] 
+[dl_field106       ][html_print_image_6                 ] 
+[dl_field107       ][html_print_image_7                 ] 
+[dl_field108       ][html_print_image_8                 ] 
+
+
+                                                          
+}
+
+SCREEN KEY F1019 TITLE "DDE"
+{
+
+[dl_field111       ][dde_timeout] 
+
+
+
+
+
+
+
+
+
+                                                          
+}
+
+
+ATTRIBUTES
+
+language=formonly.language,
+	config="1 {English} 2 {Spanish} 3 {German} 4 {French} 5 {Arabic} 6 {Italian} 7 {Other}",
+	widget="radio",
+	comments="Language choice (not implemented)";
+
+cfg_path=formonly.cfg_path;
+
+unl_path=formonly.unl_path;
+
+image_path=formonly.image_path;
+form_path=formonly.form_path;
+document_path=formonly.document_path;
+html_path=formonly.html_path;
+icon10_path=formonly.icon10_path;
+icon16_path=formonly.icon16_path;
+icon32_path=formonly.icon32_path;
+
+main_cfg_file_name = formonly.main_cfg_file_name;
+toolbar_cfg_file_name = formonly.toolbar_cfg_file_name;
+tool_string_file_name = formonly.tool_string_file_name;
+tool_string_mono_file_name = formonly.tool_string_mono_file_name;
+string_file_name = formonly.string_file_name;
+string_mono_file_name = formonly.string_mono_file_name;
+help_url_mapping_file_name = formonly.help_url_mapping_file_name;
+dde_cfg_file_name = formonly.dde_cfg_file_name;
+online_demo_path=formonly.online_demo_path;
+
+#Classic 4gl help section
+msg_path=formonly.msg_path;
+classic_help_multi_lang=formonly.classic_help_multi_lang,
+	config="1 0 {Multi Languages}",
+	widget="check",
+	comments="0=Single Language X=Multi Language";
+
+classic_help_file_1=formonly.classic_help_file_1;
+classic_help_file_2=formonly.classic_help_file_2;
+classic_help_file_3=formonly.classic_help_file_3;
+classic_help_file_4=formonly.classic_help_file_4;
+classic_help_file_5=formonly.classic_help_file_5;
+classic_help_file_6=formonly.classic_help_file_6;
+classic_help_file_7=formonly.classic_help_file_7;
+classic_help_file_8=formonly.classic_help_file_8;
+classic_help_file_9=formonly.classic_help_file_9;
+classic_help_file_10=formonly.classic_help_file_10;
+
+#Html-Help Section
+help_file_base_url=formonly.help_file_base_url;
+help_system_type=formonly.help_system_type,
+	config="0 {Local} 2 {Online}",
+	widget="radio",
+	comments="Local/Database/Online";
+#	config="0 {Local} 1 {Database} 2 {Online}",
+help_language_dir_uk=formonly.help_language_dir_uk;
+help_language_dir_sp=formonly.help_language_dir_sp;
+help_language_dir_de=formonly.help_language_dir_de;
+help_language_dir_fr=formonly.help_language_dir_fr;
+help_language_dir_ar=formonly.help_language_dir_ar;
+help_language_dir_it=formonly.help_language_dir_it;
+help_language_dir_ot=formonly.help_language_dir_ot;
+
+
+#webservice
+ws_name=formonly.ws_name;
+ws_port=formonly.ws_port;
+
+#print-html
+html_print_output=formonly.html_print_output;
+html_print_template_1=formonly.html_print_template_1;
+html_print_template_2=formonly.html_print_template_2;
+html_print_template_3=formonly.html_print_template_3;
+html_print_template_4=formonly.html_print_template_4;
+html_print_template_5=formonly.html_print_template_5;
+html_print_template_6=formonly.html_print_template_6;
+html_print_template_7=formonly.html_print_template_7;
+html_print_template_8=formonly.html_print_template_8;
+
+html_print_image_1=formonly.html_print_image_1;
+html_print_image_2=formonly.html_print_image_2;
+html_print_image_3=formonly.html_print_image_3;
+html_print_image_4=formonly.html_print_image_4;
+html_print_image_5=formonly.html_print_image_5;
+html_print_image_6=formonly.html_print_image_6;
+html_print_image_7=formonly.html_print_image_7;
+html_print_image_8=formonly.html_print_image_8;
+
+#dde section
+dde_timeout=formonly.dde_timeout;
+
+#dl_field00=formonly.dl_field00,
+#	config="",
+#	widget="label",
+#	color=bold Blue;
+
+dl_field11=formonly.dl_field11,
+	config="",
+	widget="label",
+	color=bold Blue;
+
+dl_field12=formonly.dl_field12,
+	config="",
+	widget="label",
+	color=bold Blue;
+
+dl_field13=formonly.dl_field13,
+	config="",
+	widget="label",
+	color=bold Blue;
+
+dl_field14=formonly.dl_field14,
+	config="",
+	widget="label",
+	color=bold Blue;
+
+dl_field15=formonly.dl_field15,
+	config="",
+	widget="label",
+	color=bold Blue;
+
+dl_field16=formonly.dl_field16,
+	config="",
+	widget="label",
+	color=bold Blue;
+
+dl_field17=formonly.dl_field17,
+	config="",
+	widget="label",
+	color=bold Blue;
+
+dl_field18=formonly.dl_field18,
+	config="",
+	widget="label",
+	color=bold Blue;
+
+
+dl_field19=formonly.dl_field19,
+	config="",
+	widget="label",
+	color=bold Blue;
+
+#Specify file path inc. Online demo section
+dl_field21=formonly.dl_field21,
+	config="",
+	widget="label",
+	color=bold Blue;
+
+dl_field22=formonly.dl_field22,
+	config="",
+	widget="label",
+	color=bold Blue;
+
+dl_field23=formonly.dl_field23,
+	config="",
+	widget="label",
+	color=bold Blue;
+
+dl_field24=formonly.dl_field24,
+	config="",
+	widget="label",
+	color=bold Blue;
+
+dl_field25=formonly.dl_field25,
+	config="",
+	widget="label",
+	color=bold Blue;
+
+dl_field26=formonly.dl_field26,
+	config="",
+	widget="label",
+	color=bold Blue;
+
+dl_field27=formonly.dl_field27,
+	config="",
+	widget="label",
+	color=bold Blue;
+
+
+dl_field28=formonly.dl_field28,
+	config="",
+	widget="label",
+	color=bold Blue;
+
+dl_field29=formonly.dl_field29,
+	config="",
+	widget="label",
+	color=bold Blue;
+
+
+#Labels for Classic 4gl Help section
+dl_field31=formonly.dl_field31,
+	config="",
+	widget="label",
+	color=bold Blue;
+
+dl_field32=formonly.dl_field32,
+	config="",
+	widget="label",
+	color=bold Blue;
+
+dl_field33=formonly.dl_field33,
+	config="",
+	widget="label",
+	color=bold Blue;
+
+dl_field34=formonly.dl_field34,
+	config="",
+	widget="label",
+	color=bold Blue;
+
+dl_field35=formonly.dl_field35,
+	config="",
+	widget="label",
+	color=bold Blue;
+
+dl_field36=formonly.dl_field36,
+	config="",
+	widget="label",
+	color=bold Blue;
+
+dl_field37=formonly.dl_field37,
+	config="",
+	widget="label",
+	color=bold Blue;
+
+dl_field38=formonly.dl_field38,
+	config="",
+	widget="label",
+	color=bold Blue;
+
+dl_field39=formonly.dl_field39,
+	config="",
+	widget="label",
+	color=bold Blue;
+
+
+dl_field40=formonly.dl_field40,
+	config="",
+	widget="label",
+	color=bold Blue;
+
+dl_field41=formonly.dl_field41,
+	config="",
+	widget="label",
+	color=bold Blue;
+
+
+dl_field42=formonly.dl_field42,
+	config="",
+	widget="label",
+	color=bold Blue;
+
+#HTML Help Labels
+dl_field51=formonly.dl_field51,
+	config="",
+	widget="label",
+	color=bold Blue;
+
+dl_field52=formonly.dl_field52,
+	config="",
+	widget="label",
+	color=bold Blue;
+
+dl_field53=formonly.dl_field53,
+	config="",
+	widget="label",
+	color=bold Blue;
+
+dl_field54=formonly.dl_field54,
+	config="",
+	widget="label",
+	color=bold Blue;
+
+dl_field55=formonly.dl_field55,
+	config="",
+	widget="label",
+	color=bold Blue;
+
+dl_field56=formonly.dl_field56,
+	config="",
+	widget="label",
+	color=bold Blue;
+
+dl_field57=formonly.dl_field57,
+	config="",
+	widget="label",
+	color=bold Blue;
+
+dl_field58=formonly.dl_field58,
+	config="",
+	widget="label",
+	color=bold Blue;
+
+dl_field59=formonly.dl_field59,
+	config="",
+	widget="label",
+	color=bold Blue;
+
+
+#webservice labels
+dl_field71=formonly.dl_field71,
+	config="",
+	widget="label",
+	color=bold Blue;
+
+dl_field72=formonly.dl_field72,
+	config="",
+	widget="label",
+	color=bold Blue;
+
+#language label
+dl_field81=formonly.dl_field81,
+	config="",
+	widget="label",
+	color=bold Blue;
+
+#print-html label
+dl_field91=formonly.dl_field91,
+	config="",
+	widget="label",
+	color=bold Blue;
+
+dl_field92=formonly.dl_field92,
+	config="",
+	widget="label",
+	color=bold Blue;
+
+dl_field93=formonly.dl_field93,
+	config="",
+	widget="label",
+	color=bold Blue;
+
+dl_field94=formonly.dl_field94,
+	config="",
+	widget="label",
+	color=bold Blue;
+
+dl_field95=formonly.dl_field95,
+	config="",
+	widget="label",
+	color=bold Blue;
+
+dl_field96=formonly.dl_field96,
+	config="",
+	widget="label",
+	color=bold Blue;
+
+dl_field97=formonly.dl_field97,
+	config="",
+	widget="label",
+	color=bold Blue;
+
+dl_field98=formonly.dl_field98,
+	config="",
+	widget="label",
+	color=bold Blue;
+
+dl_field99=formonly.dl_field99,
+	config="",
+	widget="label",
+	color=bold Blue;
+
+
+dl_field101=formonly.dl_field101,
+	config="",
+	widget="label",
+	color=bold Blue;
+
+dl_field102=formonly.dl_field102,
+	config="",
+	widget="label",
+	color=bold Blue;
+
+dl_field103=formonly.dl_field103,
+	config="",
+	widget="label",
+	color=bold Blue;
+
+dl_field104=formonly.dl_field104,
+	config="",
+	widget="label",
+	color=bold Blue;
+
+dl_field105=formonly.dl_field105,
+	config="",
+	widget="label",
+	color=bold Blue;
+
+dl_field106=formonly.dl_field106,
+	config="",
+	widget="label",
+	color=bold Blue;
+
+dl_field107=formonly.dl_field107,
+	config="",
+	widget="label",
+	color=bold Blue;
+
+dl_field108=formonly.dl_field108,
+	config="",
+	widget="label",
+	color=bold Blue;
+
+dl_field111=formonly.dl_field111,
+	config="",
+	widget="label",
+	color=bold Blue;
+
+
+INSTRUCTIONS
+
+DELIMITERS "[]"
+

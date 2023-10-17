@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://namespaces.querix.com/2015/fglForms">
+	<form.database>
+		<Database name="accounts"/>
+	</form.database>
+	<form.rootContainer>
+		<CoordPanel preferredSize="76qch,18qch" fieldTable="" identifier="coord1">
+			<Label text="Company" location="1qch,0qch" preferredSize="7qch,1qch" fieldTable="" identifier="label1"/>
+			<Label text=":" location="12qch,0qch" preferredSize="1qch,1qch" fieldTable="" identifier="label2"/>
+			<TextField toCase="Up" dataType="Char,,,,1" location="13qch,0qch" preferredSize="2qch,1qch" toolTip=" Y-Yes                N-No" comment=" Y-Yes                N-No" fieldTable="customer" identifier="company">
+				<TextField.includes>
+					<ValueInclude>
+						<ValueInclude.value>
+							<StringLiteral stringValue="Y"/>
+						</ValueInclude.value>
+					</ValueInclude>
+					<ValueInclude>
+						<ValueInclude.value>
+							<StringLiteral stringValue="N"/>
+						</ValueInclude.value>
+					</ValueInclude>
+				</TextField.includes>
+			</TextField>
+			<Label text="Cust # :" location="53qch,0qch" preferredSize="8qch,1qch" fieldTable="" identifier="label3"/>
+			<TextField noEntry="true" dataType="Integer,,,," location="61qch,0qch" preferredSize="6qch,1qch" toolTip="" comment="" fieldTable="customer" identifier="cust_no"/>
+			<Label text="Surname" location="1qch,1qch" preferredSize="7qch,1qch" fieldTable="" identifier="label4"/>
+			<Label text=":" location="12qch,1qch" preferredSize="1qch,1qch" fieldTable="" identifier="label5"/>
+			<TextField toCase="Up" dataType="Char,,,,50" location="13qch,1qch" preferredSize="51qch,1qch" toolTip="" comment="" fieldTable="customer" identifier="surname"/>
+			<Label text="First Name :" location="1qch,2qch" preferredSize="12qch,1qch" fieldTable="" identifier="label6"/>
+			<TextField toCase="Up" dataType="Char,,,,20" location="13qch,2qch" preferredSize="21qch,1qch" toolTip="" comment="" fieldTable="customer" identifier="firstname"/>
+			<Label text="Marital:" location="53qch,2qch" preferredSize="8qch,1qch" fieldTable="" identifier="label7"/>
+			<TextField toCase="Up" dataType="Char,,,,1" location="61qch,2qch" preferredSize="2qch,1qch" toolTip=" S-Single  M-Married   D-Divorce    C-Common Law" comment=" S-Single  M-Married   D-Divorce    C-Common Law" fieldTable="customer" identifier="marital">
+				<TextField.includes>
+					<ValueInclude>
+						<ValueInclude.value>
+							<StringLiteral stringValue="S"/>
+						</ValueInclude.value>
+					</ValueInclude>
+					<ValueInclude>
+						<ValueInclude.value>
+							<StringLiteral stringValue="M"/>
+						</ValueInclude.value>
+					</ValueInclude>
+					<ValueInclude>
+						<ValueInclude.value>
+							<StringLiteral stringValue="D"/>
+						</ValueInclude.value>
+					</ValueInclude>
+					<ValueInclude>
+						<ValueInclude.value>
+							<StringLiteral stringValue="C"/>
+						</ValueInclude.value>
+					</ValueInclude>
+					<ValueInclude>
+						<ValueInclude.value>
+							<NullLiteral/>
+						</ValueInclude.value>
+					</ValueInclude>
+				</TextField.includes>
+			</TextField>
+			<Label text="Maiden Name:" location="1qch,3qch" preferredSize="12qch,1qch" fieldTable="" identifier="label8"/>
+			<TextField toCase="Up" dataType="Char,,,,30" location="13qch,3qch" preferredSize="32qch,1qch" toolTip="" comment="" fieldTable="customer" identifier="maiden_name"/>
+			<Label text="Depend :" location="53qch,3qch" preferredSize="8qch,1qch" fieldTable="" identifier="label9"/>
+			<TextField format="#&amp;" dataType="SmallInt,,,," location="61qch,3qch" preferredSize="3qch,1qch" toolTip=" Number of dependents" comment=" Number of dependents" fieldTable="customer" identifier="dependents"/>
+			<Label text="Title" location="1qch,4qch" preferredSize="5qch,1qch" fieldTable="" identifier="label10"/>
+			<Label text=":" location="12qch,4qch" preferredSize="1qch,1qch" fieldTable="" identifier="label11"/>
+			<TextField dataType="Char,,,,30" location="13qch,4qch" preferredSize="21qch,1qch" toolTip="Enter Salutation for letter..." comment="Enter Salutation for letter..." fieldTable="customer" identifier="salute"/>
+			<Label text="Phone" location="53qch,4qch" preferredSize="5qch,1qch" fieldTable="" identifier="label12"/>
+			<Label text=":" location="60qch,4qch" preferredSize="1qch,1qch" fieldTable="" identifier="label13"/>
+			<TextField toCase="Up" dataType="Char,,,,8" location="61qch,4qch" preferredSize="9qch,1qch" toolTip="" comment="" fieldTable="customer" identifier="hphone"/>
+			<Label text="Nationality:" location="1qch,5qch" preferredSize="12qch,1qch" fieldTable="" identifier="label14"/>
+			<TextField toCase="Up" dataType="Char,,,,3" location="13qch,5qch" preferredSize="4qch,1qch" toolTip=" Enter Country Code" comment=" Enter Country Code" fieldTable="customer" identifier="nationality"/>
+			<Label text="Cell #1:" location="53qch,5qch" preferredSize="8qch,1qch" fieldTable="" identifier="label15"/>
+			<TextField toCase="Up" dataType="Char,,,,8" location="61qch,5qch" preferredSize="9qch,1qch" toolTip="" comment="" fieldTable="customer" identifier="cellular"/>
+			<Label text="Address 1" location="1qch,6qch" preferredSize="9qch,1qch" fieldTable="" identifier="label16"/>
+			<Label text=":" location="12qch,6qch" preferredSize="1qch,1qch" fieldTable="" identifier="label17"/>
+			<TextField toCase="Up" dataType="Char,,,,25" location="13qch,6qch" preferredSize="26qch,1qch" toolTip="" comment="" fieldTable="customer" identifier="haddr1"/>
+			<Label text="Cell #2:" location="53qch,6qch" preferredSize="8qch,1qch" fieldTable="" identifier="label18"/>
+			<TextField toCase="Up" dataType="Char,,,,20" location="61qch,6qch" preferredSize="14qch,1qch" toolTip="" comment="" fieldTable="customer" identifier="pager"/>
+			<Label text="Address 2" location="1qch,7qch" preferredSize="9qch,1qch" fieldTable="" identifier="label19"/>
+			<Label text=":" location="12qch,7qch" preferredSize="1qch,1qch" fieldTable="" identifier="label20"/>
+			<TextField toCase="Up" dataType="Char,,,,25" location="13qch,7qch" preferredSize="26qch,1qch" toolTip="" comment="" fieldTable="customer" identifier="haddr2"/>
+			<Label text="Fax" location="53qch,7qch" preferredSize="3qch,1qch" fieldTable="" identifier="label21"/>
+			<Label text=":" location="60qch,7qch" preferredSize="1qch,1qch" fieldTable="" identifier="label22"/>
+			<TextField toCase="Up" dataType="Char,,,,8" location="61qch,7qch" preferredSize="9qch,1qch" toolTip="" comment="" fieldTable="customer" identifier="fax"/>
+			<Label text="Address 3" location="1qch,8qch" preferredSize="9qch,1qch" fieldTable="" identifier="label23"/>
+			<Label text=":" location="12qch,8qch" preferredSize="1qch,1qch" fieldTable="" identifier="label24"/>
+			<TextField toCase="Up" dataType="Char,,,,25" location="13qch,8qch" preferredSize="26qch,1qch" toolTip="" comment="" fieldTable="customer" identifier="haddr3"/>
+			<Label text="Mail" location="53qch,8qch" preferredSize="4qch,1qch" fieldTable="" identifier="label25"/>
+			<Label text=":" location="60qch,8qch" preferredSize="1qch,1qch" fieldTable="" identifier="label26"/>
+			<TextField toCase="Up" autonext="true" dataType="Char,,,,1" location="61qch,8qch" preferredSize="2qch,1qch" toolTip="Print Collection's Letters...?  Y/N" comment="Print Collection's Letters...?  Y/N" fieldTable="customer" identifier="print_ltr">
+				<TextField.includes>
+					<ValueInclude>
+						<ValueInclude.value>
+							<StringLiteral stringValue="Y"/>
+						</ValueInclude.value>
+					</ValueInclude>
+					<ValueInclude>
+						<ValueInclude.value>
+							<StringLiteral stringValue="N"/>
+						</ValueInclude.value>
+					</ValueInclude>
+					<ValueInclude>
+						<ValueInclude.value>
+							<NullLiteral/>
+						</ValueInclude.value>
+					</ValueInclude>
+				</TextField.includes>
+			</TextField>
+			<Label text="City" location="1qch,9qch" preferredSize="4qch,1qch" fieldTable="" identifier="label27"/>
+			<Label text=":" location="12qch,9qch" preferredSize="1qch,1qch" fieldTable="" identifier="label28"/>
+			<TextField toCase="Up" dataType="Char,,,,25" location="13qch,9qch" preferredSize="26qch,1qch" toolTip="" comment="" fieldTable="customer" identifier="haddr4"/>
+			<Label text="Web Key:" location="53qch,9qch" preferredSize="8qch,1qch" fieldTable="" identifier="label29"/>
+			<TextField toCase="Up" dataType="Char,,,,8" location="61qch,9qch" preferredSize="9qch,1qch" toolTip=" Web Key for online payments......." comment=" Web Key for online payments......." fieldTable="customer" identifier="webkey"/>
+			<Label text="E" location="1qch,10qch" preferredSize="1qch,1qch" fieldTable="" identifier="label30"/>
+			<Label text="-Mail" location="2qch,10qch" preferredSize="5qch,1qch" fieldTable="" identifier="label31"/>
+			<Label text=":" location="12qch,10qch" preferredSize="1qch,1qch" fieldTable="" identifier="label32"/>
+			<TextField dataType="Char,,,,40" location="13qch,10qch" preferredSize="38qch,1qch" toolTip="" comment="" fieldTable="customer" identifier="email"/>
+			<Label text="Watch" location="53qch,10qch" preferredSize="5qch,1qch" fieldTable="" identifier="label33"/>
+			<Label text=":" location="60qch,10qch" preferredSize="1qch,1qch" fieldTable="" identifier="label34"/>
+			<TextField toCase="Up" autonext="true" dataType="Char,,,,1" location="61qch,10qch" preferredSize="2qch,1qch" toolTip=" Close Watch ...?  Y/N" comment=" Close Watch ...?  Y/N" fieldTable="customer" identifier="watch">
+				<TextField.includes>
+					<ValueInclude>
+						<ValueInclude.value>
+							<StringLiteral stringValue="Y"/>
+						</ValueInclude.value>
+					</ValueInclude>
+					<ValueInclude>
+						<ValueInclude.value>
+							<StringLiteral stringValue="N"/>
+						</ValueInclude.value>
+					</ValueInclude>
+					<ValueInclude>
+						<ValueInclude.value>
+							<NullLiteral/>
+						</ValueInclude.value>
+					</ValueInclude>
+				</TextField.includes>
+			</TextField>
+			<Label text="Exempt:" location="66qch,10qch" preferredSize="7qch,1qch" fieldTable="" identifier="label35"/>
+			<TextField toCase="Up" autonext="true" dataType="Char,,,,1" location="73qch,10qch" preferredSize="2qch,1qch" toolTip=" Source Of Funds Exempt?  Y/N" comment=" Source Of Funds Exempt?  Y/N" fieldTable="customer" identifier="exempt">
+				<TextField.includes>
+					<ValueInclude>
+						<ValueInclude.value>
+							<StringLiteral stringValue="Y"/>
+						</ValueInclude.value>
+					</ValueInclude>
+					<ValueInclude>
+						<ValueInclude.value>
+							<StringLiteral stringValue="N"/>
+						</ValueInclude.value>
+					</ValueInclude>
+					<ValueInclude>
+						<ValueInclude.value>
+							<NullLiteral/>
+						</ValueInclude.value>
+					</ValueInclude>
+				</TextField.includes>
+			</TextField>
+			<Label text="Date Birth :" location="1qch,11qch" preferredSize="12qch,1qch" fieldTable="" identifier="label36"/>
+			<TextField format="dd mmm yyyy" dataType="Date,,,," location="13qch,11qch" preferredSize="12qch,1qch" toolTip="" comment="" fieldTable="customer" identifier="dob"/>
+			<Label text="T/Union:" location="53qch,11qch" preferredSize="8qch,1qch" fieldTable="" identifier="label37"/>
+			<TextField toCase="Up" dataType="Char,,,,1" location="61qch,11qch" preferredSize="2qch,1qch" toolTip=" Give information to Trans Union " comment=" Give information to Trans Union " fieldTable="customer" identifier="transunion">
+				<TextField.includes>
+					<ValueInclude>
+						<ValueInclude.value>
+							<StringLiteral stringValue="Y"/>
+						</ValueInclude.value>
+					</ValueInclude>
+					<ValueInclude>
+						<ValueInclude.value>
+							<StringLiteral stringValue="N"/>
+						</ValueInclude.value>
+					</ValueInclude>
+				</TextField.includes>
+			</TextField>
+			<Label text="Passport # :" location="1qch,12qch" preferredSize="12qch,1qch" fieldTable="" identifier="label38"/>
+			<TextField toCase="Up" dataType="Char,,,,3" location="13qch,12qch" preferredSize="4qch,1qch" toolTip=" Enter Country Code" comment=" Enter Country Code" fieldTable="customer" identifier="pp_country"/>
+			<Label text="-" location="18qch,12qch" preferredSize="1qch,1qch" fieldTable="" identifier="label39"/>
+			<TextField toCase="Up" dataType="Char,,,,20" location="19qch,12qch" preferredSize="20qch,1qch" toolTip="" comment="" fieldTable="customer" identifier="pp_no"/>
+			<Label text="Entered:" location="53qch,12qch" preferredSize="8qch,1qch" fieldTable="" identifier="label40"/>
+			<TextField format="dd mmm yyyy" noEntry="true" dataType="Date,,,," location="61qch,12qch" preferredSize="12qch,1qch" fieldTable="customer" identifier="date_entered"/>
+			<Label text="ID #" location="1qch,13qch" preferredSize="4qch,1qch" fieldTable="" identifier="label41"/>
+			<Label text=":" location="12qch,13qch" preferredSize="1qch,1qch" fieldTable="" identifier="label42"/>
+			<TextField toCase="Up" dataType="Char,,,,3" location="13qch,13qch" preferredSize="4qch,1qch" toolTip=" Enter Country Code" comment=" Enter Country Code" fieldTable="customer" identifier="id_country"/>
+			<Label text="-" location="18qch,13qch" preferredSize="1qch,1qch" fieldTable="" identifier="label43"/>
+			<TextField toCase="Up" dataType="Char,,,,20" location="19qch,13qch" preferredSize="20qch,1qch" toolTip="" comment="" fieldTable="customer" identifier="id_no"/>
+			<Label text="BIR #" location="53qch,13qch" preferredSize="5qch,1qch" fieldTable="" identifier="label44"/>
+			<Label text=":" location="60qch,13qch" preferredSize="1qch,1qch" fieldTable="" identifier="label45"/>
+			<TextField toCase="Up" dataType="Char,,,,15" location="61qch,13qch" preferredSize="14qch,1qch" fieldTable="customer" identifier="bir"/>
+			<Label text="DP #" location="1qch,14qch" preferredSize="4qch,1qch" fieldTable="" identifier="label46"/>
+			<Label text=":" location="12qch,14qch" preferredSize="1qch,1qch" fieldTable="" identifier="label47"/>
+			<TextField toCase="Up" dataType="Char,,,,3" location="13qch,14qch" preferredSize="4qch,1qch" toolTip=" Enter Country Code" comment=" Enter Country Code" fieldTable="customer" identifier="dp_country"/>
+			<Label text="-" location="18qch,14qch" preferredSize="1qch,1qch" fieldTable="" identifier="label48"/>
+			<TextField toCase="Up" dataType="Char,,,,20" location="19qch,14qch" preferredSize="20qch,1qch" toolTip="" comment="" fieldTable="customer" identifier="dp_no"/>
+			<Label text="Public :" location="53qch,14qch" preferredSize="8qch,1qch" fieldTable="" identifier="label49"/>
+			<TextField toCase="Up" dataType="Char,,,,1" location="61qch,14qch" preferredSize="2qch,1qch" toolTip="Y-If Public Figure" comment="Y-If Public Figure" fieldTable="customer" identifier="pfig">
+				<TextField.includes>
+					<ValueInclude>
+						<ValueInclude.value>
+							<StringLiteral stringValue="Y"/>
+						</ValueInclude.value>
+					</ValueInclude>
+					<ValueInclude>
+						<ValueInclude.value>
+							<StringLiteral stringValue="N"/>
+						</ValueInclude.value>
+					</ValueInclude>
+					<ValueInclude>
+						<ValueInclude.value>
+							<NullLiteral/>
+						</ValueInclude.value>
+					</ValueInclude>
+				</TextField.includes>
+			</TextField>
+			<Label text="Related Grp:" location="1qch,15qch" preferredSize="12qch,1qch" fieldTable="" identifier="label50"/>
+			<TextField toCase="Up" dataType="Char,,,,5" location="13qch,15qch" preferredSize="6qch,1qch" toolTip="Enter Related Group..........." comment="Enter Related Group..........." fieldTable="customer" identifier="rb_code"/>
+			<TextField noEntry="true" dataType="Char,,,,30" location="20qch,15qch" preferredSize="31qch,1qch" toolTip="" comment="" fieldTable="related" identifier="related_name"/>
+			<Label text="VAT Reg:" location="53qch,15qch" preferredSize="8qch,1qch" fieldTable="" identifier="label51"/>
+			<TextField toCase="Up" dataType="Char,,,,10" location="61qch,15qch" preferredSize="11qch,1qch" toolTip="" comment="" fieldTable="customer" identifier="vat_reg_no"/>
+			<Label text="Business" location="1qch,16qch" preferredSize="8qch,1qch" fieldTable="" identifier="label52"/>
+			<Label text=":" location="12qch,16qch" preferredSize="1qch,1qch" fieldTable="" identifier="label53"/>
+			<TextField toCase="Up" dataType="Char,,,,4" location="13qch,16qch" preferredSize="5qch,1qch" toolTip="Enter Business Type..........." comment="Enter Business Type..........." fieldTable="customer" identifier="bt_code"/>
+			<TextField noEntry="true" dataType="Char,,,,25" location="20qch,16qch" preferredSize="31qch,1qch" toolTip="" comment="" fieldTable="business_type" identifier="bt_desc"/>
+			<Label text="Taxi" location="53qch,16qch" preferredSize="4qch,1qch" fieldTable="" identifier="label54"/>
+			<Label text=":" location="60qch,16qch" preferredSize="1qch,1qch" fieldTable="" identifier="label55"/>
+			<TextField toCase="Up" dataType="Char,,,,10" location="61qch,16qch" preferredSize="11qch,1qch" toolTip="" comment="" fieldTable="customer" identifier="taxi_badge"/>
+		</CoordPanel>
+	</form.rootContainer>
+	<form.screenRecords>
+		<ScreenRecord identifier="s_cust" fields="customer.cust_no,customer.company,customer.surname,customer.firstname,customer.maiden_name,customer.salute,customer.nationality,customer.haddr1,customer.haddr2,customer.haddr3,customer.haddr4,customer.email,customer.dob,customer.pp_country,customer.pp_no,customer.id_country,customer.id_no,customer.dp_country,customer.dp_no,customer.rb_code,related.related_name,customer.bt_code,business_type.bt_desc,customer.marital,customer.dependents,customer.hphone,customer.cellular,customer.pager,customer.fax,customer.print_ltr,customer.webkey,customer.watch,customer.exempt,customer.transunion,customer.date_entered,customer.bir,customer.pfig,customer.vat_reg_no,customer.taxi_badge"/>
+		<ScreenRecord identifier="business_type" fields="business_type.bt_desc"/>
+		<ScreenRecord identifier="customer" fields="customer.cust_no,customer.company,customer.surname,customer.firstname,customer.maiden_name,customer.salute,customer.nationality,customer.haddr1,customer.haddr2,customer.haddr3,customer.haddr4,customer.email,customer.dob,customer.pp_country,customer.pp_no,customer.id_country,customer.id_no,customer.dp_country,customer.dp_no,customer.rb_code,customer.bt_code,customer.marital,customer.dependents,customer.hphone,customer.cellular,customer.pager,customer.fax,customer.print_ltr,customer.webkey,customer.exempt,customer.watch,customer.transunion,customer.date_entered,customer.bir,customer.pfig,customer.vat_reg_no,customer.taxi_badge"/>
+		<ScreenRecord identifier="related" fields="related.related_name"/>
+	</form.screenRecords>
+</form>
+

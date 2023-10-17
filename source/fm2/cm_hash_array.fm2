@@ -1,0 +1,367 @@
+<?xml version="1.0" encoding="UTF-8"?><form xmlns="http://namespaces.querix.com/2015/fglForms">
+	<form.rootContainer>
+		<GridPanel classNames="fcls_rootContainer" fieldTable="" horizontalAlignment="Stretch" identifier="rootContainer" verticalAlignment="Stretch">
+			<GridPanel.gridRowDefinitions>
+				<GridRowDefinition gridLengthValue=""/>
+				<GridRowDefinition gridLengthValue=""/>
+				<GridRowDefinition gridLengthValue="100%" gridMinLength="100"/>
+				<GridRowDefinition gridLengthValue=""/>
+			</GridPanel.gridRowDefinitions>
+			<GridPanel.gridColumnDefinitions>
+				<GridColumnDefinition gridLengthValue="100%"/>
+			</GridPanel.gridColumnDefinitions>
+			<GridPanel classNames="fcls_title_cnt" fieldTable="formonly" gridItemLocation="0,0,1,1" identifier="cnttitle" verticalAlignment="Top" visible="true">
+				<GridPanel.gridRowDefinitions>
+					<GridRowDefinition gridLengthValue=""/>
+				</GridPanel.gridRowDefinitions>
+				<GridPanel.gridColumnDefinitions>
+					<GridColumnDefinition gridLengthValue="100%"/>
+					<GridColumnDefinition gridLengthValue=""/>
+				</GridPanel.gridColumnDefinitions>
+				<Label classNames="fcls_title_lb" fieldTable="formonly" gridItemLocation="0,0,1,1" identifier="lbtitle" isDynamic="true" text="HashMap/Dictionary Demo with value.array" visible="true"/>
+				<Label classNames="fcls_title_lb" fieldTable="" gridItemLocation="1,0,1,1" identifier="lbformname" isDynamic="true" text="cm_hash_record" visible="true"/>
+			</GridPanel>
+			<GridPanel classNames="fcls_detail_cnt,fcls_data_cnt,,fcls_align_left" fieldTable="formonly" gridItemLocation="0,1,1,1" horizontalAlignment="Stretch" identifier="cntdetail1" verticalAlignment="Top" visible="true">
+				<GridPanel.gridRowDefinitions>
+					<GridRowDefinition gridLengthValue=""/>
+					<GridRowDefinition gridLengthValue=""/>
+					<GridRowDefinition gridLengthValue=""/>
+					<GridRowDefinition gridLengthValue=""/>
+					<GridRowDefinition gridLengthValue=""/>
+					<GridRowDefinition gridLengthValue=""/>
+					<GridRowDefinition gridLengthValue=""/>
+					<GridRowDefinition gridLengthValue=""/>
+					<GridRowDefinition gridLengthValue=""/>
+					<GridRowDefinition gridLengthValue=""/>
+				</GridPanel.gridRowDefinitions>
+				<GridPanel.gridColumnDefinitions>
+					<GridColumnDefinition gridLengthValue="20%"/>
+					<GridColumnDefinition gridLengthValue="20%"/>
+					<GridColumnDefinition gridLengthValue="20%"/>
+					<GridColumnDefinition gridLengthValue="20%"/>
+					<GridColumnDefinition gridLengthValue="20%"/>
+				</GridPanel.gridColumnDefinitions>
+				<Label classNames="fcls_columnlabel_rev_cell,fcls_align_hstretch" gridItemLocation="0,0,1,1" identifier="lb6" isDynamic="true" text="Delete" visible="true"/>
+				<Label classNames="fcls_columnlabel_rev_cell,fcls_align_hstretch" gridItemLocation="2,0,1,1" identifier="lb7" isDynamic="true" text="Search based on Key" visible="true"/>
+				<Label classNames="fcls_columnlabel_rev_cell,fcls_align_hstretch" gridItemLocation="3,0,1,1" identifier="lb8" isDynamic="true" text="Sort/Order" visible="true"/>
+				<Label visible="true" identifier="lb59" gridItemLocation="4,0,1,1" isDynamic="true" classNames="fcls_columnlabel_rev_cell,fcls_align_hstretch" text="Retrieve Properties"/>
+				
+				<Button classNames="fcls_button,fcls_align_hstretch" gridItemLocation="2,1,1,1" identifier="bt_CONTAINS" text="CONTAINS(&lt;key&gt;VARIANT)" visible="true">
+					<Button.onInvoke>
+						<ActionEventHandler actionName="CONTAINS(VARIANT key)"/>
+					</Button.onInvoke>
+				</Button>
+				<Button visible="true" text="KeySort(INT direction) ASC" identifier="bt_keySortAsc" gridItemLocation="3,1,1,1" classNames="fcls_button,fcls_align_hstretch">
+					<Button.onInvoke>
+						<ActionEventHandler actionName="KeySort(INT direction) ASC"/>
+					</Button.onInvoke>
+				</Button>
+				<Button classNames="fcls_button,fcls_align_hstretch" gridItemLocation="0,2,1,1" identifier="bt_delete_single_index" text="Delete(INT index)" visible="true">
+					<Button.onInvoke>
+						<ActionEventHandler actionName="Delete(INT index)"/>
+					</Button.onInvoke>
+				</Button>
+				<Button visible="true" text=".find(&lt;key&gt; VARIANT) " identifier="bt_find" gridItemLocation="2,2,1,1" classNames="fcls_button,fcls_align_hstretch">
+					<Button.onInvoke>
+						<ActionEventHandler actionName="Find(&lt;key&gt;VARIANT)"/>
+					</Button.onInvoke>
+				</Button>
+				<Button visible="true" text="KeySort(INT direction) ASC" identifier="bt_keySortDesc" gridItemLocation="3,2,1,1" classNames="fcls_button,fcls_align_hstretch">
+					<Button.onInvoke>
+						<ActionEventHandler actionName="KeySort(INT direction) DESC"/>
+					</Button.onInvoke>
+				</Button>
+				<Button classNames="fcls_button,fcls_align_hstretch" gridItemLocation="0,3,1,1" identifier="bt_delete_range_index" text="Delete(INT first, INT last)" visible="true">
+					<Button.onInvoke>
+						<ActionEventHandler actionName="Delete(INT first, INT last)"/>
+					</Button.onInvoke>
+				</Button>
+				<Button classNames="fcls_button,fcls_align_hstretch" gridItemLocation="0,1,1,1" identifier="bt_Remove" text="Remove(VARIANT key)" visible="true">
+					<Button.onInvoke>
+						<ActionEventHandler actionName="Remove(VARIANT key)"/>
+					</Button.onInvoke>
+				</Button>
+				<Button visible="true" text=".keyExists(key)" identifier="bt_keyExists" gridItemLocation="2,3,1,1" classNames="fcls_button,fcls_align_hstretch">
+					<Button.onInvoke>
+						<ActionEventHandler actionName="keyExists(key)"/>
+					</Button.onInvoke>
+				</Button>
+				<Button classNames="fcls_button,fcls_align_hstretch" gridItemLocation="0,4,1,1" identifier="bt_Clear" text="Clear()" visible="true">
+					<Button.onInvoke>
+						<ActionEventHandler actionName="Clear()"/>
+					</Button.onInvoke>
+				</Button>
+				<Button classNames="fcls_button,fcls_align_hstretch" identifier="bt_getSize" text="getSize()" visible="true" gridItemLocation="4,1,1,1">
+					<Button.onInvoke>
+						<ActionEventHandler actionName="getSize()"/>
+					</Button.onInvoke>
+				</Button>
+				<Button classNames="fcls_button,fcls_align_hstretch" identifier="bt_GetKeys" text="GetKeys()" visible="true" gridItemLocation="4,2,1,1">
+					<Button.onInvoke>
+						<ActionEventHandler actionName="GetKeys()"/>
+					</Button.onInvoke>
+				</Button>
+				<Label visible="true" identifier="lb53" gridItemLocation="2,8,1,1" isDynamic="true" classNames="fcls_columnlabel_rev_cell,fcls_align_hstretch" text="Search based on value"/>
+				<Button classNames="fcls_button,fcls_align_hstretch" identifier="bt_ValueSort_ASC" text="ValueSort(1) ASC" visible="true" gridItemLocation="3,3,1,1">
+					<Button.onInvoke>
+						<ActionEventHandler actionName="ValueSort(INT direction) ASC"/>
+					</Button.onInvoke>
+				</Button>
+				<Button classNames="fcls_button,fcls_align_hstretch" identifier="bt_ValueSort_DESC" text="ValueSort(0) DESC" visible="true" gridItemLocation="3,4,1,1">
+					<Button.onInvoke>
+						<ActionEventHandler actionName="ValueSort(INT direction) DESC"/>
+					</Button.onInvoke>
+				</Button>
+				<Label classNames="fcls_columnlabel_rev_cell,fcls_align_hstretch" identifier="lb13" isDynamic="true" text="Join &amp; Copy" visible="true" gridItemLocation="1,0,1,1"/>
+				<Button classNames="fcls_button,fcls_align_hstretch" identifier="bt_Join" text="Join(hashMap)" visible="true" gridItemLocation="1,1,1,1">
+					<Button.onInvoke>
+						<ActionEventHandler actionName="Join(hashmap)"/>
+					</Button.onInvoke>
+				</Button>
+				<Button classNames="fcls_button,fcls_align_hstretch" identifier="bt_CopyTo" text="CopyTo(HashMap dst)" visible="true" gridItemLocation="1,2,1,1">
+					<Button.onInvoke>
+						<ActionEventHandler actionName="CopyTo(hashMap)"/>
+					</Button.onInvoke>
+				</Button>
+				<Label classNames="fcls_columnlabel_rev_cell,fcls_align_hstretch" identifier="lb3" isDynamic="true" text="New &amp; Edit" visible="true" gridItemLocation="0,7,1,1"/>
+				<Button classNames="fcls_button,fcls_align_hstretch" identifier="bt_Let" text="LET" visible="true" gridItemLocation="0,8,1,1">
+					<Button.onInvoke>
+						<ActionEventHandler actionName="LET"/>
+					</Button.onInvoke>
+				</Button>
+				<Button classNames="fcls_button,fcls_align_hstretch" identifier="bt_insert" text="insert(key,value)" visible="true" gridItemLocation="0,9,1,1">
+					<Button.onInvoke>
+						<ActionEventHandler actionName="INSERT"/>
+					</Button.onInvoke>
+				</Button>
+				<Label classNames="fcls_columnlabel_rev_cell,fcls_align_hstretch" identifier="lb10" isDynamic="true" text="JSON in/out" visible="true" gridItemLocation="1,7,1,1"/>
+				<Button classNames="fcls_button,fcls_align_hstretch" identifier="bt_util_JSONObject_fromFGL" text="util.JSONObject.fromFGL(Hash)" visible="true" gridItemLocation="1,8,1,1">
+					<Button.onInvoke>
+						<ActionEventHandler actionName="util.JSONObject.fromFGL(hash)"/>
+					</Button.onInvoke>
+				</Button>
+				<Button classNames="fcls_button,fcls_align_hstretch" identifier="bt_util_JSONObject_toFGL" text="util.JSONObject.toFGL(hash)" visible="true" gridItemLocation="1,9,1,1">
+					<Button.onInvoke>
+						<ActionEventHandler actionName="util.JSONObject.toFGL(hash)"/>
+					</Button.onInvoke>
+				</Button>
+				<Label visible="true" identifier="lb52" isDynamic="true" classNames="fcls_columnlabel_rev_cell,fcls_align_hstretch" text="Search based on Arr Index" gridItemLocation="2,4,1,1"/>
+				<Button visible="true" text=".valueExists(value)" identifier="bt_valueExists" gridItemLocation="2,9,1,1" classNames="fcls_button,fcls_align_hstretch">
+					<Button.onInvoke>
+						<ActionEventHandler actionName="valueExists(value)"/>
+					</Button.onInvoke>
+				</Button>
+				<Button classNames="fcls_button,fcls_align_hstretch" identifier="bt_GetKey" text="GetKey(INT index)" visible="true" gridItemLocation="2,6,1,1">
+					<Button.onInvoke>
+						<ActionEventHandler actionName="GetKey(INT index)"/>
+					</Button.onInvoke>
+				</Button>
+				<Button classNames="fcls_button,fcls_align_hstretch" identifier="bt_GetValue" text="GetValue(INT index)" visible="true" gridItemLocation="2,7,1,1">
+					<Button.onInvoke>
+						<ActionEventHandler actionName="GetValue(INT index)"/>
+					</Button.onInvoke>
+				</Button>
+				<Button classNames="fcls_button,fcls_align_hstretch" identifier="bt_ResetSorting" text="ResetSorting()" visible="true" gridItemLocation="3,8,1,1">
+					<Button.onInvoke>
+						<ActionEventHandler actionName="ResetSorting()"/>
+					</Button.onInvoke>
+				</Button>
+				<Button classNames="fcls_button,fcls_align_hstretch" identifier="bt_CustomSort_CompareDESC" text="CustomSort(CompareDESC)" visible="true" gridItemLocation="3,7,1,1">
+					<Button.onInvoke>
+						<ActionEventHandler actionName="CustomSort(STRING funcName) CompareDESC"/>
+					</Button.onInvoke>
+				</Button>
+				<Button classNames="fcls_button,fcls_align_hstretch" identifier="bt_CustomSort_CompareAsc" text="CustomSort(CompareAsc)" visible="true" gridItemLocation="3,6,1,1">
+					<Button.onInvoke>
+						<ActionEventHandler actionName="CustomSort(STRING funcName) CompareAsc"/>
+					</Button.onInvoke>
+				</Button>
+				<Button classNames="fcls_button,fcls_align_hstretch" identifier="lb_DISPLAY_HashMap_Bucket_TO_console" text="DISPLAY HashBucket" visible="true" gridItemLocation="4,9,1,1">
+					<Button.onInvoke>
+						<ActionEventHandler actionName="DISPLAY HashMap Bucket TO console"/>
+					</Button.onInvoke>
+				</Button>
+				<Button classNames="fcls_button,fcls_align_hstretch" identifier="bt_DISPLAY_HashMap_TO_console" text="DISPLAY HashMap" visible="true" gridItemLocation="4,8,1,1">
+					<Button.onInvoke>
+						<ActionEventHandler actionName="DISPLAY HashMap TO console"/>
+					</Button.onInvoke>
+				</Button>
+				<Label classNames="fcls_columnlabel_rev_cell,fcls_align_hstretch" identifier="lb9" isDynamic="true" text="DISPLAY &amp; Debug" visible="true" gridItemLocation="4,7,1,1"/>
+			</GridPanel>
+			<GridPanel gridItemLocation="0,2,1,1" identifier="cnt_HashMap" visible="true">
+				<GridPanel.gridColumnDefinitions>
+					<GridColumnDefinition gridLengthValue="50%"/>
+					<GridColumnDefinition gridLengthValue="50%"/>
+				</GridPanel.gridColumnDefinitions>
+				<GridPanel.gridRowDefinitions>
+					<GridRowDefinition gridLengthValue=""/>
+				</GridPanel.gridRowDefinitions>
+
+
+				<GroupBox gridItemLocation="0,0,1,1" horizontalAlignment="Stretch" identifier="cnt_gb_hm1" title="hm1 HashMap" verticalAlignment="Stretch" visible="true">
+				<GridPanel horizontalAlignment="Stretch" identifier="cnt_gp_hm1" verticalAlignment="Stretch" visible="true">
+				<GridPanel.gridColumnDefinitions>
+					<GridColumnDefinition gridLengthValue="70%"/>
+					<GridColumnDefinition gridLengthValue="30%"/>
+				</GridPanel.gridColumnDefinitions>
+				<GridPanel.gridRowDefinitions>
+					<GridRowDefinition gridLengthValue=""/>
+				</GridPanel.gridRowDefinitions>
+
+				<Table enable="true" fieldTable="formonly" gridItemLocation="0,0,1,1" horizontalAlignment="Stretch" identifier="sc_hm1_inp" minSize="20qch,10qch" preferredSize="30qch,300" verticalAlignment="Stretch" visible="true">
+
+				<TableColumn allowNewlines="true" enable="true" fieldTable="formonly" identifier="" resizable="true" text="key" visible="true">
+					<TextField dataType="Char,,,," enable="true" fieldTable="formonly" identifier="hm1_hkey" visible="true"/>
+					<TableColumn.columnLength>
+						<GridLength gridLengthValue="10qch" gridMinLength=""/>
+					</TableColumn.columnLength>
+				</TableColumn>
+
+				<TableColumn allowNewlines="true" enable="true" fieldTable="formonly" identifier="tc_hm1_hValue" resizable="true" text="First Name" visible="true">
+					<TextField dataType="Char,,,," enable="true" fieldTable="formonly" identifier="hm1_hValue" visible="true"/>
+					<TableColumn.columnLength>
+						<GridLength gridLengthValue="100%"/>
+					</TableColumn.columnLength>
+				</TableColumn>
+			</Table>
+				<GridPanel gridItemLocation="1,0,1,1" identifier="c8" visible="true">
+					<GridPanel.gridColumnDefinitions>
+						<GridColumnDefinition gridLengthValue=""/>
+					</GridPanel.gridColumnDefinitions>
+					<GridPanel.gridRowDefinitions>
+						<GridRowDefinition/>
+						<GridRowDefinition gridLengthValue="100%"/>
+					</GridPanel.gridRowDefinitions>
+					<GridPanel gridItemLocation="0,0,1,1" horizontalAlignment="Left" identifier="cntGphm1Key" verticalAlignment="Top" visible="true">
+						<GridPanel.gridColumnDefinitions>
+							<GridColumnDefinition gridLengthValue=""/>
+							<GridColumnDefinition gridLengthValue=""/>
+						</GridPanel.gridColumnDefinitions>
+						<GridPanel.gridRowDefinitions>
+							<GridRowDefinition gridLengthValue=""/>
+							<GridRowDefinition gridLengthValue=""/>
+						</GridPanel.gridRowDefinitions>
+						<Label classNames="fcls_fieldlabel,fcls_align_left" gridItemLocation="0,0,1,1" identifier="f42" isDynamic="true" text="Hash Key" visible="true"/>
+						<TextField gridItemLocation="1,0,1,1" identifier="hm1_row_key" visible="true"/>
+						<Label classNames="fcls_fieldlabel,fcls_align_left" gridItemLocation="0,1,1,1" identifier="lb55" isDynamic="true" text="bucketArrIndex" visible="true"/>
+						<TextField gridItemLocation="1,1,1,1" identifier="hm1_bucketArrIndex" visible="true"/>
+					</GridPanel>
+					<Table gridItemLocation="0,1,1,1" horizontalAlignment="Stretch" identifier="sc_hm1_val_arr" verticalAlignment="Stretch" visible="true">
+					<TableColumn identifier="tc_hm1_hValue_array_element" resizable="true" text="Hash.value=Array" visible="true">
+						<TextField identifier="hm1_hValue_array_element" visible="true"/>
+						<TableColumn.columnLength>
+							<GridLength/>
+						</TableColumn.columnLength>
+					</TableColumn>
+				</Table>
+				</GridPanel>
+
+
+
+			</GridPanel>
+			</GroupBox>
+
+
+
+				<GroupBox gridItemLocation="1,0,1,1" identifier="cnt_gb_hm2" title="hm2 (HashMap)" visible="true">
+					<GridPanel identifier="cnt_gp_hm2" visible="true">
+					<GridPanel.gridColumnDefinitions>
+						<GridColumnDefinition gridLengthValue="70%"/>
+						<GridColumnDefinition gridLengthValue="30%"/>
+					</GridPanel.gridColumnDefinitions>
+					<GridPanel.gridRowDefinitions>
+						<GridRowDefinition gridLengthValue=""/>
+					</GridPanel.gridRowDefinitions>
+					<Table enable="true" fieldTable="formonly" gridItemLocation="0,0,1,1" horizontalAlignment="Stretch" identifier="sc_hm2_inp" minSize="20qch,10qch" preferredSize="30qch,300" verticalAlignment="Stretch" visible="true">
+				
+				<TableColumn allowNewlines="true" enable="true" fieldTable="formonly" identifier="tc_hm2_hkey" resizable="true" text="key" visible="true">
+					<TextField dataType="Char,,,," enable="true" fieldTable="formonly" identifier="hm2_hkey" visible="true"/>
+					<TableColumn.columnLength>
+						<GridLength gridLengthValue="10qch" gridMinLength=""/>
+					</TableColumn.columnLength>
+				</TableColumn>
+				<TableColumn allowNewlines="true" enable="true" fieldTable="formonly" identifier="tc_hm2_hValue" resizable="true" text="value" visible="true">
+					<TextField dataType="Char,,,," enable="true" fieldTable="formonly" identifier="hm2_hValue" visible="true"/>
+					<TableColumn.columnLength>
+						<GridLength gridLengthValue="100%"/>
+					</TableColumn.columnLength>
+				</TableColumn>
+			</Table>
+					<GridPanel gridItemLocation="1,0,1,1" identifier="cnt_hm2_row_value" visible="true">
+						<GridPanel.gridColumnDefinitions>
+							<GridColumnDefinition gridLengthValue="" gridMinLength="8rem"/>
+						</GridPanel.gridColumnDefinitions>
+						<GridPanel.gridRowDefinitions>
+							<GridRowDefinition/>
+							<GridRowDefinition gridLengthValue="100%"/>
+						</GridPanel.gridRowDefinitions>
+						<GridPanel gridItemLocation="0,0,1,1" identifier="c10" visible="true">
+							<GridPanel.gridColumnDefinitions>
+								<GridColumnDefinition gridLengthValue=""/>
+								<GridColumnDefinition gridLengthValue=""/>
+							</GridPanel.gridColumnDefinitions>
+							<GridPanel.gridRowDefinitions>
+								<GridRowDefinition gridLengthValue=""/>
+							</GridPanel.gridRowDefinitions>
+							<GridPanel gridItemLocation="0,0,1,1" horizontalAlignment="Left" identifier="c11" verticalAlignment="Top" visible="true">
+								<GridPanel.gridColumnDefinitions>
+									<GridColumnDefinition gridLengthValue=""/>
+									<GridColumnDefinition gridLengthValue=""/>
+								</GridPanel.gridColumnDefinitions>
+								<GridPanel.gridRowDefinitions>
+									<GridRowDefinition gridLengthValue=""/>
+									<GridRowDefinition gridLengthValue=""/>
+								</GridPanel.gridRowDefinitions>
+								<Label classNames="fcls_fieldlabel,fcls_align_left" gridItemLocation="0,0,1,1" identifier="f43" isDynamic="true" text="Hash Key" visible="true"/>
+								<TextField gridItemLocation="1,0,1,1" identifier="hm2_row_key" visible="true"/>
+								<Label classNames="fcls_fieldlabel,fcls_align_left" gridItemLocation="0,1,1,1" identifier="lb56" isDynamic="true" text="bucketArrIndex" visible="true"/>
+								<TextField gridItemLocation="1,1,1,1" identifier="hm2_bucketArrIndex" visible="true"/>
+							</GridPanel>
+						</GridPanel>
+						<Table gridItemLocation="0,1,1,1" horizontalAlignment="Stretch" identifier="sc_hm2_val_arr" verticalAlignment="Stretch" visible="true">
+							<TableColumn identifier="tc_f45" resizable="true" text="Hash.value=Array" visible="true">
+								<TableColumn.columnLength>
+									<GridLength/>
+								</TableColumn.columnLength>
+								<TextField identifier="hm2_hValue_array_element" visible="true"/>
+							</TableColumn>
+						</Table>
+					</GridPanel>
+				</GridPanel>
+				</GroupBox>
+
+
+
+
+
+
+
+
+
+
+			</GridPanel>
+
+			<GridPanel classNames="fcls_statusbar_cnt" fieldTable="formonly" gridItemLocation="0,3,1,1" identifier="cntstatusbar" verticalAlignment="Top" visible="true">
+				<GridPanel.gridRowDefinitions>
+					<GridRowDefinition gridLengthValue=""/>
+					<GridRowDefinition gridLengthValue=""/>
+				</GridPanel.gridRowDefinitions>
+				<GridPanel.gridColumnDefinitions>
+					<GridColumnDefinition gridLengthValue="100%"/>
+				</GridPanel.gridColumnDefinitions>
+				<Label classNames="fcls_sblabel" fieldTable="formonly" gridItemLocation="0,0,1,1" identifier="lbinfo1" isDynamic="true" text="" visible="true"/>
+				<Label classNames="fcls_sblabel" fieldTable="formonly" gridItemLocation="0,1,1,1" identifier="lbinfo2" isDynamic="true" text="" visible="true"/>
+			</GridPanel>		
+		
+		</GridPanel>
+	</form.rootContainer>
+	<form.screenRecords>
+    <ScreenRecord fields="hm1_hKey,hm1_hValue" identifier="sc_hm1_inp"/>
+    <ScreenRecord fields="hm2_hKey,hm2_hValue" identifier="sc_hm2_inp"/>
+
+    <ScreenRecord fields="hm1_hValue_array_element" identifier="sc_hm1_val_arr"/>
+    <ScreenRecord fields="hm2_hValue_array_element" identifier="sc_hm2_val_arr"/>
+        
+	</form.screenRecords>
+    
+</form>

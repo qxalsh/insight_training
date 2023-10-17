@@ -1,0 +1,490 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<form xmlns="http://namespaces.querix.com/2015/fglForms" title="Demo util.regex.search()">
+	<form.rootContainer>
+		<GridPanel classNames="fcls_rootContainer" verticalAlignment="Stretch" horizontalAlignment="Stretch" fieldTable="" identifier="rootContainer" preferredSize="100rem,">
+			<GridPanel.gridRowDefinitions>
+				<GridRowDefinition gridLengthValue=""/>
+				<GridRowDefinition gridLengthValue=""/>
+				<GridRowDefinition gridLengthValue="100%"/>
+				<GridRowDefinition gridLengthValue=""/>
+			</GridPanel.gridRowDefinitions>
+			<GridPanel.gridColumnDefinitions>
+				<GridColumnDefinition/>
+			</GridPanel.gridColumnDefinitions>
+			<GridPanel classNames="fcls_title_cnt" visible="true" verticalAlignment="Top" gridItemLocation="0,0,1,1" fieldTable="formonly" identifier="cntTitle" horizontalAlignment="Stretch">
+				<GridPanel.gridRowDefinitions>
+					<GridRowDefinition gridLengthValue=""/>
+				</GridPanel.gridRowDefinitions>
+				<GridPanel.gridColumnDefinitions>
+					<GridColumnDefinition gridLengthValue="100%"/>
+					<GridColumnDefinition gridLengthValue=""/>
+				</GridPanel.gridColumnDefinitions>
+				<Label isDynamic="true" text="Demo os.path object methods" classNames="fcls_title_lb" visible="true" gridItemLocation="0,0,1,1" fieldTable="formonly" identifier="lbTitle"/>
+				<Label isDynamic="true" text="cm_os_path.fm2" classNames="fcls_title_lb" visible="true" gridItemLocation="1,0,1,1" fieldTable="" identifier="lbFormName"/>
+			</GridPanel>
+			<GridPanel visible="true" identifier="cntDetail1" gridItemLocation="0,1,1,1" verticalAlignment="Top" classNames="fcls_detail_cnt,fcls_data_cnt" horizontalAlignment="Stretch">
+				<GridPanel.gridColumnDefinitions>
+					<GridColumnDefinition gridLengthValue=""/>
+					<GridColumnDefinition gridLengthValue="3qch" gridMaxLength="3qch" gridMinLength="3qch"/>
+					<GridColumnDefinition gridLengthValue=""/>
+					<GridColumnDefinition gridLengthValue=""/>
+					<GridColumnDefinition gridLengthValue=""/>
+				</GridPanel.gridColumnDefinitions>
+				<GridPanel.gridRowDefinitions>
+					<GridRowDefinition gridLengthValue=""/>
+				</GridPanel.gridRowDefinitions>
+				<Label text="file name with relative path" isDynamic="true" visible="true" identifier="lb4" gridItemLocation="0,0,1,1"/>
+				<TextField visible="true" identifier="filePath" gridItemLocation="2,0,1,1"/>
+			</GridPanel>
+			<GridPanel classNames="fcls_detail_cnt,fcls_data_cnt" visible="true" verticalAlignment="Stretch" horizontalAlignment="Stretch" gridItemLocation="0,2,1,1" fieldTable="formonly" identifier="cntDetail2">
+				<GridPanel.gridRowDefinitions>
+					<GridRowDefinition gridLengthValue="100%" gridMinLength="40rem"/>
+					<GridRowDefinition gridLengthValue=""/>
+				</GridPanel.gridRowDefinitions>
+				<GridPanel.gridColumnDefinitions>
+					<GridColumnDefinition gridLengthValue="30rem" gridMaxLength="30rem" gridMinLength="30rem"/>
+					<GridColumnDefinition gridLengthValue="70%" gridMinLength="30rem"/>
+				</GridPanel.gridColumnDefinitions>
+				<GridPanel visible="true" identifier="c4" gridItemLocation="1,0,1,1">
+					<GridPanel.gridColumnDefinitions>
+						<GridColumnDefinition gridLengthValue=""/>
+						<GridColumnDefinition gridLengthValue=""/>
+						<GridColumnDefinition gridLengthValue=""/>
+					</GridPanel.gridColumnDefinitions>
+					<GridPanel.gridRowDefinitions>
+						<GridRowDefinition gridLengthValue=""/>
+						<GridRowDefinition gridLengthValue=""/>
+						<GridRowDefinition gridLengthValue=""/>
+						<GridRowDefinition gridLengthValue=""/>
+						<GridRowDefinition gridLengthValue=""/>
+						<GridRowDefinition gridLengthValue=""/>
+						<GridRowDefinition gridLengthValue=""/>
+						<GridRowDefinition gridLengthValue=""/>
+						<GridRowDefinition gridLengthValue=""/>
+						<GridRowDefinition gridLengthValue=""/>
+						<GridRowDefinition gridLengthValue=""/>
+						<GridRowDefinition gridLengthValue=""/>
+						<GridRowDefinition gridLengthValue=""/>
+						<GridRowDefinition gridLengthValue=""/>
+						<GridRowDefinition gridLengthValue=""/>
+						<GridRowDefinition gridLengthValue=""/>
+						<GridRowDefinition gridLengthValue=""/>
+						<GridRowDefinition gridLengthValue=""/>
+						<GridRowDefinition gridLengthValue=""/>
+						<GridRowDefinition gridLengthValue=""/>
+						<GridRowDefinition gridLengthValue=""/>
+						<GridRowDefinition gridLengthValue=""/>
+						<GridRowDefinition gridLengthValue=""/>
+						<GridRowDefinition gridLengthValue=""/>
+						<GridRowDefinition gridLengthValue=""/>
+						<GridRowDefinition gridLengthValue=""/>
+						<GridRowDefinition gridLengthValue=""/>
+						<GridRowDefinition gridLengthValue=""/>
+						<GridRowDefinition gridLengthValue="1.5qch"/>
+						<GridRowDefinition gridLengthValue=""/>
+						<GridRowDefinition gridLengthValue=""/>
+						<GridRowDefinition gridLengthValue=""/>
+						<GridRowDefinition gridLengthValue=""/>
+					</GridPanel.gridRowDefinitions>
+					<Label text="opATime" isDynamic="true" visible="true" identifier="lb6" gridItemLocation="0,0,1,1"/>
+					<Label text="time of the last file access" isDynamic="true" visible="true" identifier="lb8" gridItemLocation="1,0,1,1"/>
+					<TextField visible="true" identifier="ATime" gridItemLocation="2,0,1,1"/>
+					<Label text="baseName()" isDynamic="true" visible="true" identifier="lb9" gridItemLocation="0,1,1,1"/>
+					<Label text="file name without path" isDynamic="true" visible="true" identifier="lb28" gridItemLocation="1,1,1,1"/>
+					<TextField visible="true" identifier="baseName" gridItemLocation="2,1,1,1"/>
+					<Label text="os.Path.dirName(l_filePath)" isDynamic="true" visible="true" identifier="lb10" gridItemLocation="0,2,1,1"/>
+					<Label text="path without the file name" isDynamic="true" visible="true" identifier="lb29" gridItemLocation="1,2,1,1"/>
+					<TextField visible="true" identifier="dirName" gridItemLocation="2,2,1,1"/>
+					<Label text="os.Path.extension()" isDynamic="true" visible="true" identifier="lb12" gridItemLocation="0,3,1,1"/>
+					<Label text="File Extension" isDynamic="true" visible="true" identifier="lb30" gridItemLocation="1,3,1,1"/>
+					<TextField visible="true" identifier="extension" gridItemLocation="2,3,1,1"/>
+					<Label text="os.Path.fullPath()" isDynamic="true" visible="true" identifier="lb13" gridItemLocation="0,4,1,1"/>
+					<Label text="Full (abs) Path" isDynamic="true" visible="true" identifier="lb31" gridItemLocation="1,4,1,1"/>
+					<TextField visible="true" identifier="fullPath" gridItemLocation="2,4,1,1"/>
+					<Label text="os.path.glob()" isDynamic="true" visible="true" identifier="lb69" gridItemLocation="0,6,1,1" verticalAlignment="Top"/>
+					<Label text="Returns file name list array" isDynamic="true" visible="true" identifier="lb70" gridItemLocation="1,6,1,1" verticalAlignment="Top"/>
+					<Table visible="true" identifier="file_list" gridItemLocation="2,6,1,1" verticalAlignment="Top" preferredSize=",5qch">
+						<TableColumn text="File List" resizable="true" visible="true" identifier="tc_file">
+							<TextField visible="true" identifier="file"/>
+							<TableColumn.columnLength>
+								<GridLength/>
+							</TableColumn.columnLength>
+						</TableColumn>
+					</Table>
+					<Label text="os.path.homedir()" isDynamic="true" visible="true" identifier="lb15" gridItemLocation="0,7,1,1"/>
+					<Label text="Returns the path to the HOME directory of the current user." isDynamic="true" visible="true" identifier="lb33" gridItemLocation="1,7,1,1"/>
+					<TextField visible="true" identifier="homeDir" gridItemLocation="2,7,1,1"/>
+					<Label text="os.path.exists()" isDynamic="true" visible="true" identifier="lb74" gridItemLocation="0,8,1,1"/>
+					<Label text="File/Folder Exists" isDynamic="true" visible="true" identifier="lb75" gridItemLocation="1,8,1,1"/>
+					<CheckBox visible="true" identifier="exists" gridItemLocation="2,8,1,1" notNull="true" title="Exists">
+						<CheckBox.checkedValue>
+							<BooleanLiteral booleanValue="true"/>
+						</CheckBox.checkedValue>
+						<CheckBox.uncheckedValue>
+							<BooleanLiteral/>
+						</CheckBox.uncheckedValue>
+					</CheckBox>
+					<Label text="os.path.isDirectory()" isDynamic="true" visible="true" identifier="lb73" gridItemLocation="0,9,1,1"/>
+					<Label text="Checks if a file/path is a directory." isDynamic="true" visible="true" identifier="lb72" gridItemLocation="1,9,1,1"/>
+					<CheckBox title="isDirectory" visible="true" notNull="true" identifier="isDirectory" gridItemLocation="2,9,1,1">
+						<CheckBox.checkedValue>
+							<BooleanLiteral booleanValue="true"/>
+						</CheckBox.checkedValue>
+						<CheckBox.uncheckedValue>
+							<BooleanLiteral/>
+						</CheckBox.uncheckedValue>
+					</CheckBox>
+					<Label visible="true" identifier="lb78" gridItemLocation="0,10,1,1" isDynamic="true" text="os.path.isFile()"/>
+					<Label visible="true" identifier="lb79" gridItemLocation="1,10,1,1" isDynamic="true" text="Checks if a file/path is a file"/>
+					<CheckBox visible="true" identifier="isFile" gridItemLocation="2,10,1,1" notNull="true" title="isFile">
+						<CheckBox.checkedValue>
+							<BooleanLiteral booleanValue="true"/>
+						</CheckBox.checkedValue>
+						<CheckBox.uncheckedValue>
+							<BooleanLiteral/>
+						</CheckBox.uncheckedValue>
+					</CheckBox>
+					<Label text="os.path.isHidden()" isDynamic="true" visible="true" identifier="lb16" gridItemLocation="0,11,1,1"/>
+					<Label text="Checks if file/path is hidden" isDynamic="true" visible="true" identifier="lb34" gridItemLocation="1,11,1,1"/>
+					<CheckBox visible="true" identifier="isHidden" gridItemLocation="2,11,1,1" notNull="true" title="isHidden">
+						<CheckBox.checkedValue>
+							<BooleanLiteral booleanValue="true"/>
+						</CheckBox.checkedValue>
+						<CheckBox.uncheckedValue>
+							<BooleanLiteral/>
+						</CheckBox.uncheckedValue>
+					</CheckBox>
+					<Label text="os.path.isLink()" isDynamic="true" visible="true" identifier="lb82" gridItemLocation="0,12,1,1"/>
+					<Label text="Checks if file/path is a link" isDynamic="true" visible="true" identifier="lb84" gridItemLocation="1,12,1,1"/>
+					<CheckBox visible="true" identifier="isLink" gridItemLocation="2,12,1,1" notNull="true" title="isLink">
+						<CheckBox.checkedValue>
+							<BooleanLiteral booleanValue="true"/>
+						</CheckBox.checkedValue>
+						<CheckBox.uncheckedValue>
+							<BooleanLiteral/>
+						</CheckBox.uncheckedValue>
+					</CheckBox>
+					<Label text="os.path.isRoot()" isDynamic="true" visible="true" identifier="lb11" gridItemLocation="0,13,1,1"/>
+					<Label text="Checks if path is root" isDynamic="true" visible="true" identifier="lb35" gridItemLocation="1,13,1,1"/>
+					<CheckBox visible="true" identifier="isRoot" gridItemLocation="2,13,1,1" notNull="true" title="isRoot">
+						<CheckBox.checkedValue>
+							<BooleanLiteral booleanValue="true"/>
+						</CheckBox.checkedValue>
+						<CheckBox.uncheckedValue>
+							<BooleanLiteral/>
+						</CheckBox.uncheckedValue>
+					</CheckBox>
+					<Label text="Checks if file is readable" isDynamic="true" visible="true" identifier="lb88" gridItemLocation="1,14,1,1"/>
+					<CheckBox visible="true" identifier="readable" gridItemLocation="2,14,1,1" notNull="true" title="readable">
+						<CheckBox.checkedValue>
+							<BooleanLiteral booleanValue="true"/>
+						</CheckBox.checkedValue>
+						<CheckBox.uncheckedValue>
+							<BooleanLiteral/>
+						</CheckBox.uncheckedValue>
+					</CheckBox>
+					<Label visible="true" identifier="lb91" gridItemLocation="1,15,1,1" isDynamic="true" text="Checks if file is writable"/>
+					<CheckBox visible="true" identifier="writable" gridItemLocation="2,15,1,1" notNull="true" title="writeable">
+						<CheckBox.checkedValue>
+							<BooleanLiteral booleanValue="true"/>
+						</CheckBox.checkedValue>
+						<CheckBox.uncheckedValue>
+							<BooleanLiteral/>
+						</CheckBox.uncheckedValue>
+					</CheckBox>
+					<Label text="os.path.size()" isDynamic="true" visible="true" identifier="lb18" gridItemLocation="0,16,1,1"/>
+					<Label text="Size of a file" isDynamic="true" visible="true" identifier="lb36" gridItemLocation="1,16,1,1"/>
+					<TextField visible="true" identifier="size" gridItemLocation="2,16,1,1"/>
+					<Label text="os.path.join()" isDynamic="true" visible="true" identifier="lb19" gridItemLocation="0,17,1,1"/>
+					<Label text="Joins two path segemetns (strings) using the corresponing OS / and \" isDynamic="true" visible="true" identifier="lb37" gridItemLocation="1,17,1,1"/>
+					<TextField visible="true" identifier="join" gridItemLocation="2,17,1,1"/>
+					<Label text="os.path.makeTempName()" isDynamic="true" visible="true" identifier="lb20" gridItemLocation="0,18,1,1"/>
+					<Label text="creates a temp file name with path" isDynamic="true" visible="true" identifier="lb38" gridItemLocation="1,18,1,1"/>
+					<TextField visible="true" identifier="makeTempName" gridItemLocation="2,18,1,1"/>
+					<Label text="os.path.mTime()" isDynamic="true" visible="true" identifier="lb21" gridItemLocation="0,19,1,1"/>
+					<Label text="time of the last file modification" isDynamic="true" visible="true" identifier="lb39" gridItemLocation="1,19,1,1"/>
+					<TextField visible="true" identifier="mTime" gridItemLocation="2,19,1,1"/>
+					<Label text="os.path.pathSeparator()" isDynamic="true" visible="true" identifier="lb22" gridItemLocation="0,20,1,1"/>
+					<Label text="character used in environment variables to separate path elements&#9;" isDynamic="true" visible="true" identifier="lb40" gridItemLocation="1,20,1,1"/>
+					<TextField visible="true" identifier="pathSeparator" gridItemLocation="2,20,1,1"/>
+					<Label text="os.path.pathType()" isDynamic="true" visible="true" identifier="lb23" gridItemLocation="0,21,1,1"/>
+					<Label text="path is a relative path or an absolute path" isDynamic="true" visible="true" identifier="lb41" gridItemLocation="1,21,1,1"/>
+					<TextField visible="true" identifier="pathType" gridItemLocation="2,21,1,1"/>
+					<Label text="os.path.pwd()" isDynamic="true" visible="true" identifier="lb24" gridItemLocation="0,22,1,1"/>
+					<Label text="Current working directory" isDynamic="true" visible="true" identifier="lb42" gridItemLocation="1,22,1,1"/>
+					<TextField visible="true" identifier="pwd" gridItemLocation="2,22,1,1"/>
+					<Label text="os.path.rootDir()" isDynamic="true" visible="true" identifier="lb25" gridItemLocation="0,23,1,1"/>
+					<Label text="root directory of the current working path" isDynamic="true" visible="true" identifier="lb43" gridItemLocation="1,23,1,1"/>
+					<TextField visible="true" identifier="rootDir" gridItemLocation="2,23,1,1"/>
+					<Label text="os.path.rootName()" isDynamic="true" visible="true" identifier="lb27" gridItemLocation="0,25,1,1"/>
+					<Label text="Returns the path part of the pathFile name" isDynamic="true" visible="true" identifier="lb45" gridItemLocation="1,25,1,1"/>
+					<TextField visible="true" identifier="rootName" gridItemLocation="2,25,1,1"/>
+					<Label text="os.Path.type()" isDynamic="true" visible="true" identifier="lb17" gridItemLocation="0,26,1,1"/>
+					<Label text="file,directory,socket,fifo,block,char" isDynamic="true" visible="true" identifier="lb46" gridItemLocation="1,26,1,1" allowNewlines="true"/>
+					<TextField visible="true" identifier="type" gridItemLocation="2,26,1,1"/>
+					<Label visible="true" identifier="lb89" isDynamic="true" text="os.path.readable()" gridItemLocation="0,14,1,1"/>
+					<Label visible="true" identifier="lb87" isDynamic="true" text="os.path.writable()" gridItemLocation="0,15,1,1"/>
+					<Label visible="true" identifier="lb96" gridItemLocation="0,27,1,1" isDynamic="true" text="os.Path.volumes()"/>
+					<Label visible="true" identifier="lb98" gridItemLocation="1,27,1,1" isDynamic="true" allowNewlines="true" text="available volumes"/>
+					<TextField visible="true" identifier="volumes" gridItemLocation="2,27,1,1"/>
+					<Label visible="true" identifier="lb94" gridItemLocation="0,28,1,1" isDynamic="true" text="Unix only" classNames="fcls_columnlabel_rev_cell" verticalAlignment="Stretch" horizontalAlignment="Stretch"/>
+					<Label text="" isDynamic="true" visible="true" identifier="lb99" gridItemLocation="1,28,1,1" classNames="fcls_columnlabel_rev_cell" verticalAlignment="Stretch" horizontalAlignment="Stretch"/>
+					<Label text="" isDynamic="true" visible="true" identifier="lb100" gridItemLocation="2,28,1,1" classNames="fcls_columnlabel_rev_cell" verticalAlignment="Stretch" horizontalAlignment="Stretch"/>
+					<Label visible="true" identifier="lb93" gridItemLocation="0,29,1,1" isDynamic="true" text="os.Path.uid()"/>
+					<Label text="UNIX™ user id of a file" isDynamic="true" visible="true" identifier="lb95" gridItemLocation="1,29,1,1"/>
+					<TextField visible="true" identifier="uid" gridItemLocation="2,29,1,1"/>
+					<Label text="os.Path.gid()" isDynamic="true" visible="true" identifier="lb14" gridItemLocation="0,30,1,1"/>
+					<Label text="Group ID" isDynamic="true" visible="true" identifier="lb32" gridItemLocation="1,30,1,1"/>
+					<TextField visible="true" identifier="gid" gridItemLocation="2,30,1,1"/>
+					<Label text="os.path.rwx()" isDynamic="true" visible="true" identifier="lb26" gridItemLocation="0,31,1,1"/>
+					<Label text="Unix combination of permissions for user, group and other" isDynamic="true" visible="true" identifier="lb44" gridItemLocation="1,31,1,1"/>
+					<TextField visible="true" identifier="rwx" gridItemLocation="2,31,1,1"/>
+					<TextArea visible="true" identifier="log_area" textAlignment="Left,Default" horizontalAlignment="Stretch" verticalAlignment="Stretch" gridItemLocation="1,32,1,1"/>
+				</GridPanel>
+
+				<ScrollViewer visible="true" identifier="c6" verticalAlignment="Stretch" gridItemLocation="0,0,1,1" horizontalAlignment="Left" preferredSize="30rem,">
+
+					<StackPanel visible="true" identifier="c3" orientation="Vertical"  preferredSize="28rem,70qch">
+
+					<Button text="os.Path.atime(filePath)" visible="true" identifier="opATime" classNames="fcls_button,fcls_align_hstretch" horizontalAlignment="Stretch" preferredSize=",2qch" verticalAlignment="Top">
+						<Button.onInvoke>
+							<ActionEventHandler actionName="opATime"/>
+						</Button.onInvoke>
+					</Button>
+					<Button text="os.Path.baseName(filePath)" visible="true" identifier="opBaseName" classNames="fcls_button,fcls_align_hstretch" horizontalAlignment="Stretch" preferredSize=",1qch" verticalAlignment="Top">
+						<Button.onInvoke>
+							<ActionEventHandler actionName="opBaseName"/>
+						</Button.onInvoke>
+					</Button>
+					<Button text="os.Path.copy(source,target)" visible="true" identifier="opCopy" classNames="fcls_button,fcls_align_hstretch" horizontalAlignment="Stretch" preferredSize=",1qch" verticalAlignment="Top">
+						<Button.onInvoke>
+							<ActionEventHandler actionName="opCopy"/>
+						</Button.onInvoke>
+					</Button>
+					<Button text="os.Path.chDir()" visible="true" identifier="opChDir" classNames="fcls_button,fcls_align_hstretch" horizontalAlignment="Stretch" preferredSize=",1qch" verticalAlignment="Top">
+						<Button.onInvoke>
+							<ActionEventHandler actionName="opChDir"/>
+						</Button.onInvoke>
+					</Button>
+					<Button text="os.Path.chVolume()" visible="true" identifier="opChVolume" classNames="fcls_button,fcls_align_hstretch" horizontalAlignment="Stretch" preferredSize=",1qch" verticalAlignment="Top">
+						<Button.onInvoke>
+							<ActionEventHandler actionName="opChVolume"/>
+						</Button.onInvoke>
+					</Button>
+					<Button text="os.Path.delete(filePath)" visible="true" identifier="opDelete" classNames="fcls_button,fcls_align_hstretch" horizontalAlignment="Stretch" preferredSize=",1qch" verticalAlignment="Top">
+						<Button.onInvoke>
+							<ActionEventHandler actionName="opDelete"/>
+						</Button.onInvoke>
+					</Button>
+					<Button text="os.Path.DirClose(folderPath)" visible="true" identifier="opDirClose" classNames="fcls_button,fcls_align_hstretch" horizontalAlignment="Stretch" preferredSize=",1qch" verticalAlignment="Top">
+						<Button.onInvoke>
+							<ActionEventHandler actionName="opDirClose"/>
+						</Button.onInvoke>
+					</Button>
+					<Button text="os.Path.dirFMask(mask)" visible="true" identifier="opDirFMask" classNames="fcls_button,fcls_align_hstretch" horizontalAlignment="Stretch" preferredSize=",1qch" verticalAlignment="Top">
+						<Button.onInvoke>
+							<ActionEventHandler actionName="opDirFMask"/>
+						</Button.onInvoke>
+					</Button>
+					<Button text="os.Path.dirName(filePath)" visible="true" identifier="opDirName" classNames="fcls_button,fcls_align_hstretch" horizontalAlignment="Stretch" preferredSize=",1qch" verticalAlignment="Top">
+						<Button.onInvoke>
+							<ActionEventHandler actionName="opDirName"/>
+						</Button.onInvoke>
+					</Button>
+					<Button text="os.Path.DirNext(mode?)" visible="true" identifier="opDirNext" classNames="fcls_button,fcls_align_hstretch" horizontalAlignment="Stretch" preferredSize=",1qch" verticalAlignment="Top">
+						<Button.onInvoke>
+							<ActionEventHandler actionName="opDirNext"/>
+						</Button.onInvoke>
+					</Button>
+					<Button text="os.Path.DirOpen(folderPath)" visible="true" identifier="opDirOpen" classNames="fcls_button,fcls_align_hstretch" horizontalAlignment="Stretch" preferredSize=",1qch" verticalAlignment="Top">
+						<Button.onInvoke>
+							<ActionEventHandler actionName="opDirOpen"/>
+						</Button.onInvoke>
+					</Button>
+					<Button text="os.Path.DirSort(sortCriteria,sortOrder)" visible="true" identifier="opDirSort" classNames="fcls_button,fcls_align_hstretch" horizontalAlignment="Stretch" preferredSize=",1qch" verticalAlignment="Top">
+						<Button.onInvoke>
+							<ActionEventHandler actionName="opDirSort"/>
+						</Button.onInvoke>
+					</Button>
+					<Button text="os.Path.executable(filePath)" visible="true" identifier="opExecutable" classNames="fcls_button,fcls_align_hstretch" horizontalAlignment="Stretch" preferredSize=",1qch" verticalAlignment="Top">
+						<Button.onInvoke>
+							<ActionEventHandler actionName="opExecutable"/>
+						</Button.onInvoke>
+					</Button>
+					<Button text="os.Path.exists(filePath)" visible="true" identifier="opExists" classNames="fcls_button,fcls_align_hstretch" horizontalAlignment="Stretch" preferredSize=",1qch" verticalAlignment="Top">
+						<Button.onInvoke>
+							<ActionEventHandler actionName="opExists"/>
+						</Button.onInvoke>
+					</Button>
+					<Button text="os.Path.extension(filePath)" visible="true" identifier="opExtension" classNames="fcls_button,fcls_align_hstretch" horizontalAlignment="Stretch" preferredSize=",1qch" verticalAlignment="Top">
+						<Button.onInvoke>
+							<ActionEventHandler actionName="opExtension"/>
+						</Button.onInvoke>
+					</Button>
+					<Button text="os.Path.fullPath(filePath)" visible="true" identifier="opFullPath" classNames="fcls_button,fcls_align_hstretch" horizontalAlignment="Stretch" preferredSize=",1qch" verticalAlignment="Top">
+						<Button.onInvoke>
+							<ActionEventHandler actionName="opFullPath"/>
+						</Button.onInvoke>
+					</Button>
+					<Button text="os.Path.gid(filePath) +Unix" visible="true" identifier="opGid" classNames="fcls_button,fcls_align_hstretch" horizontalAlignment="Stretch" preferredSize=",1qch" verticalAlignment="Top">
+						<Button.onInvoke>
+							<ActionEventHandler actionName="opGid"/>
+						</Button.onInvoke>
+					</Button>
+					<Button text="os.Path.homeDir()" visible="true" identifier="opHomeDir" classNames="fcls_button,fcls_align_hstretch" horizontalAlignment="Stretch" preferredSize=",1qch" verticalAlignment="Top">
+						<Button.onInvoke>
+							<ActionEventHandler actionName="opHomeDir"/>
+						</Button.onInvoke>
+					</Button>
+					<Button text="os.Path.isDirectory(filePath)" visible="true" identifier="opIsDirectory" classNames="fcls_button,fcls_align_hstretch" horizontalAlignment="Stretch" preferredSize=",1qch" verticalAlignment="Top">
+						<Button.onInvoke>
+							<ActionEventHandler actionName="opIsDirectory"/>
+						</Button.onInvoke>
+					</Button>
+					<Button text="os.Path.isFile(filePath)" visible="true" identifier="opIsFile" classNames="fcls_button,fcls_align_hstretch" horizontalAlignment="Stretch" preferredSize=",1qch" verticalAlignment="Top">
+						<Button.onInvoke>
+							<ActionEventHandler actionName="opIsFile"/>
+						</Button.onInvoke>
+					</Button>
+					<Button visible="true" text="os.Path.isHidden(filePath)" identifier="opIsHidden" classNames="fcls_button,fcls_align_hstretch" horizontalAlignment="Stretch" preferredSize=",1qch" verticalAlignment="Top">
+						<Button.onInvoke>
+							<ActionEventHandler actionName="opIsHidden"/>
+						</Button.onInvoke>
+					</Button>
+					<Button visible="true" text="os.Path.isLink(filePath)" identifier="opIsLink" classNames="fcls_button,fcls_align_hstretch" horizontalAlignment="Stretch" preferredSize=",1qch" verticalAlignment="Top">
+						<Button.onInvoke>
+							<ActionEventHandler actionName="opIsLink"/>
+						</Button.onInvoke>
+					</Button>
+					<Button visible="true" text="os.Path.isRoot(filePath)" identifier="opIsRoot" classNames="fcls_button,fcls_align_hstretch" horizontalAlignment="Stretch" preferredSize=",1qch" verticalAlignment="Top">
+						<Button.onInvoke>
+							<ActionEventHandler actionName="opIsRoot"/>
+						</Button.onInvoke>
+					</Button>
+					<Button visible="true" text="os.Path.join(path seg1, path seg2)" identifier="opJoin" classNames="fcls_button,fcls_align_hstretch" horizontalAlignment="Stretch" preferredSize=",1qch" verticalAlignment="Top">
+						<Button.onInvoke>
+							<ActionEventHandler actionName="opJoin"/>
+						</Button.onInvoke>
+					</Button>
+					<Button visible="true" text="os.Path.mTime(filePath)" identifier="opMTime" classNames="fcls_button,fcls_align_hstretch" horizontalAlignment="Stretch" preferredSize=",1qch" verticalAlignment="Top">
+						<Button.onInvoke>
+							<ActionEventHandler actionName="opMTime"/>
+						</Button.onInvoke>
+					</Button>
+					<Button visible="true" text="os.path.mkDir(newFolderPath)" identifier="opMkDir" classNames="fcls_button,fcls_align_hstretch" horizontalAlignment="Stretch" preferredSize=",1qch" verticalAlignment="Top">
+						<Button.onInvoke>
+							<ActionEventHandler actionName="opMkDir"/>
+						</Button.onInvoke>
+					</Button>
+					<Button visible="true" text="os.Path.pathSeparator()" identifier="opPathSeparator" classNames="fcls_button,fcls_align_hstretch" horizontalAlignment="Stretch" preferredSize=",1qch" verticalAlignment="Top">
+						<Button.onInvoke>
+							<ActionEventHandler actionName="opPathSeparator"/>
+						</Button.onInvoke>
+					</Button>
+					<Button visible="true" text="os.Path.pathType(filePath)" identifier="opPathType" classNames="fcls_button,fcls_align_hstretch" horizontalAlignment="Stretch" preferredSize=",1qch" verticalAlignment="Top">
+						<Button.onInvoke>
+							<ActionEventHandler actionName="opPathType"/>
+						</Button.onInvoke>
+					</Button>
+					<Button visible="true" text="os.Path.pwd()" identifier="opPwd" classNames="fcls_button,fcls_align_hstretch" horizontalAlignment="Stretch" preferredSize=",1qch" verticalAlignment="Top">
+						<Button.onInvoke>
+							<ActionEventHandler actionName="opPwd"/>
+						</Button.onInvoke>
+					</Button>
+					<Button visible="true" text="os.Path.readable(filePath)" identifier="opReadable" classNames="fcls_button,fcls_align_hstretch" horizontalAlignment="Stretch" preferredSize=",1qch" verticalAlignment="Top">
+						<Button.onInvoke>
+							<ActionEventHandler actionName="opReadable"/>
+						</Button.onInvoke>
+					</Button>
+					<Button visible="true" text="os.Path.rename(source,target)" identifier="opRename" classNames="fcls_button,fcls_align_hstretch" horizontalAlignment="Stretch" preferredSize=",1qch" verticalAlignment="Top">
+						<Button.onInvoke>
+							<ActionEventHandler actionName="opRename"/>
+						</Button.onInvoke>
+					</Button>
+					<Button visible="true" text="os.Path.Separator()" identifier="opSeparator" classNames="fcls_button,fcls_align_hstretch" horizontalAlignment="Stretch" preferredSize=",1qch" verticalAlignment="Top">
+						<Button.onInvoke>
+							<ActionEventHandler actionName="opSeparator"/>
+						</Button.onInvoke>
+					</Button>
+					<Button visible="true" text="os.Path.size(filePath)" identifier="opSize" classNames="fcls_button,fcls_align_hstretch" horizontalAlignment="Stretch" preferredSize=",1qch" verticalAlignment="Top">
+						<Button.onInvoke>
+							<ActionEventHandler actionName="opSize"/>
+						</Button.onInvoke>
+					</Button>
+					<Button visible="true" text="os.Path.rootDir()" identifier="opRootDir" classNames="fcls_button,fcls_align_hstretch" horizontalAlignment="Stretch" preferredSize=",1qch" verticalAlignment="Top">
+						<Button.onInvoke>
+							<ActionEventHandler actionName="opRootDir"/>
+						</Button.onInvoke>
+					</Button>
+					<Button visible="true" text="os.Path.rootName(filePath)" identifier="opRootName" classNames="fcls_button,fcls_align_hstretch" horizontalAlignment="Stretch" preferredSize=",1qch" verticalAlignment="Top">
+						<Button.onInvoke>
+							<ActionEventHandler actionName="opRootName"/>
+						</Button.onInvoke>
+					</Button>
+					<Button visible="true" text="os.Path.type(filePath)" identifier="opType" classNames="fcls_button,fcls_align_hstretch" horizontalAlignment="Stretch" preferredSize=",1qch" verticalAlignment="Top">
+						<Button.onInvoke>
+							<ActionEventHandler actionName="opType"/>
+						</Button.onInvoke>
+					</Button>
+					<Button visible="true" text="os.Path.volumes()" identifier="opVolumes" classNames="fcls_button,fcls_align_hstretch" horizontalAlignment="Stretch" preferredSize=",1qch" verticalAlignment="Top">
+						<Button.onInvoke>
+							<ActionEventHandler actionName="opVolumes"/>
+						</Button.onInvoke>
+					</Button>
+					<Button visible="true" text="os.Path.writable(filePath)" identifier="opWritable" classNames="fcls_button,fcls_align_hstretch" horizontalAlignment="Stretch" preferredSize=",1qch" verticalAlignment="Top">
+						<Button.onInvoke>
+							<ActionEventHandler actionName="opWritable"/>
+						</Button.onInvoke>
+					</Button>
+					<Label text="Unix Methods" isDynamic="true" visible="true" identifier="lbUnixMethods" classNames="fcls_columnlabel_rev_cell" horizontalAlignment="Stretch" preferredSize=",1qch" verticalAlignment="Top"/>
+					<Button visible="true" text="os.Path.chRwx(filePath,Mode)" identifier="opChRwx" classNames="fcls_button,fcls_align_hstretch" horizontalAlignment="Stretch" preferredSize=",1qch" verticalAlignment="Top">
+						<Button.onInvoke>
+							<ActionEventHandler actionName="opChRwx"/>
+						</Button.onInvoke>
+					</Button>
+					<Button visible="true" text="os.Path.chOwn(filePath,Mode)" identifier="opChOwn" classNames="fcls_button,fcls_align_hstretch" horizontalAlignment="Stretch" preferredSize=",1qch" verticalAlignment="Top">
+						<Button.onInvoke>
+							<ActionEventHandler actionName="opChOwn"/>
+						</Button.onInvoke>
+					</Button>
+					<Button visible="true" text="os.Path.gid(filePath)" identifier="opGid" classNames="fcls_button,fcls_align_hstretch" horizontalAlignment="Stretch" preferredSize=",1qch" verticalAlignment="Top">
+						<Button.onInvoke>
+							<ActionEventHandler actionName="opGid"/>
+						</Button.onInvoke>
+					</Button>
+					<Button visible="true" text="os.Path.uid(filePath)" identifier="opUID" classNames="fcls_button,fcls_align_hstretch" horizontalAlignment="Stretch" preferredSize=",1qch" verticalAlignment="Top">
+						<Button.onInvoke>
+							<ActionEventHandler actionName="opUID"/>
+						</Button.onInvoke>
+					</Button>
+					<Button visible="true" text="os.Path.rwx(filePath)" identifier="opRWX" classNames="fcls_button,fcls_align_hstretch" horizontalAlignment="Stretch" preferredSize=",1qch" verticalAlignment="Top">
+						<Button.onInvoke>
+							<ActionEventHandler actionName="opRWX"/>
+						</Button.onInvoke>
+					</Button>
+				</StackPanel>
+				</ScrollViewer>
+
+			</GridPanel>
+			<GridPanel classNames="fcls_statusbar_cnt" visible="true" verticalAlignment="Top" gridItemLocation="0,3,1,1" fieldTable="formonly" identifier="cntStatusBar" horizontalAlignment="Stretch">
+				<GridPanel.gridRowDefinitions>
+					<GridRowDefinition gridLengthValue=""/>
+					<GridRowDefinition gridLengthValue=""/>
+				</GridPanel.gridRowDefinitions>
+				<GridPanel.gridColumnDefinitions>
+					<GridColumnDefinition gridLengthValue="100%"/>
+				</GridPanel.gridColumnDefinitions>
+				<Label isDynamic="true" text="" classNames="fcls_sblabel" visible="true" gridItemLocation="0,0,1,1" fieldTable="formonly" identifier="lbInfo1"/>
+				<Label isDynamic="true" text="" classNames="fcls_sblabel" visible="true" gridItemLocation="0,1,1,1" fieldTable="formonly" identifier="lbInfo2"/>
+			</GridPanel>
+		</GridPanel>
+	</form.rootContainer>
+	<form.screenRecords>
+		<ScreenRecord identifier="FORMONLY" fields=""/>
+		<ScreenRecord identifier="file_list" fields="file"/>
+	</form.screenRecords>
+</form>
+
+
+

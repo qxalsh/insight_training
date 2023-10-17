@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://namespaces.querix.com/2015/fglForms" title="New Form 1">
+	<form.rootContainer>
+		<GridPanel identifier="rootContainer" visible="true" classNames="fcls_rootContainer,fcls_container_border,fcls_container_margin,fcls_container_padding" horizontalAlignment="Stretch" verticalAlignment="Stretch">
+			<GridPanel.gridColumnDefinitions>
+				<GridColumnDefinition>
+					<GridColumnDefinition.gridLength>
+						<GridLength gridLengthType="Percent" gridLengthValue="100"/>
+					</GridColumnDefinition.gridLength>
+				</GridColumnDefinition>
+			</GridPanel.gridColumnDefinitions>
+			<GridPanel.gridRowDefinitions>
+				<GridRowDefinition>
+					<GridRowDefinition.gridLength>
+						<GridLength/>
+					</GridRowDefinition.gridLength>
+				</GridRowDefinition>
+				<GridRowDefinition>
+					<GridRowDefinition.gridLength>
+						<GridLength gridLengthType="Auto" gridLengthValue="0.0"/>
+					</GridRowDefinition.gridLength>
+				</GridRowDefinition>
+				<GridRowDefinition>
+					<GridRowDefinition.gridLength>
+						<GridLength gridLengthType="Auto" gridLengthValue="0.0"/>
+					</GridRowDefinition.gridLength>
+				</GridRowDefinition>
+				<GridRowDefinition>
+					<GridRowDefinition.gridLength>
+						<GridLength/>
+					</GridRowDefinition.gridLength>
+				</GridRowDefinition>
+			</GridPanel.gridRowDefinitions>
+			
+
+
+				<GridPanel classNames="fcls_title_cnt" visible="true" verticalAlignment="Top" gridItemLocation="0,0,1,1" fieldTable="formonly" identifier="cntTitle">
+					<GridPanel.gridRowDefinitions>
+						<GridRowDefinition>
+							<GridRowDefinition.gridLength>
+								<GridLength gridLengthType="Auto"/>
+							</GridRowDefinition.gridLength>
+						</GridRowDefinition>
+					</GridPanel.gridRowDefinitions>
+					<GridPanel.gridColumnDefinitions>
+						<GridColumnDefinition>
+							<GridColumnDefinition.gridLength>
+								<GridLength gridLengthType="Percent" gridLengthValue="100"/>
+							</GridColumnDefinition.gridLength>
+						</GridColumnDefinition>
+					</GridPanel.gridColumnDefinitions>
+					<Label isDynamic="true" text="fgl_winButton() Example" classNames="fcls_title_lb" visible="true" gridItemLocation="0,0,1,1" fieldTable="formonly" identifier="lbTitle"/>
+				</GridPanel>
+
+			
+			<GridPanel visible="true" identifier="c1" gridItemLocation="0,1,1,1" classNames="fcls_detail_cnt,fcls_container_border,fcls_container_margin,fcls_container_padding,fcls_align_hstretch,fcls_detail_cnt_sub,fcls_data_cnt" preferredSize=",170">
+				<GridPanel.gridColumnDefinitions>
+					<GridColumnDefinition>
+						<GridColumnDefinition.gridLength>
+							<GridLength gridLengthType="Pixels" gridLengthValue="100"/>
+						</GridColumnDefinition.gridLength>
+					</GridColumnDefinition>
+					<GridColumnDefinition>
+						<GridColumnDefinition.gridLength>
+							<GridLength gridLengthType="Percent" gridLengthValue="90"/>
+						</GridColumnDefinition.gridLength>
+					</GridColumnDefinition>
+				</GridPanel.gridColumnDefinitions>
+				<GridPanel.gridRowDefinitions>
+					<GridRowDefinition>
+						<GridRowDefinition.gridLength>
+							<GridLength gridLengthType="Auto" gridLengthValue="0.0" gridMinLength="80"/>
+						</GridRowDefinition.gridLength>
+					</GridRowDefinition>
+				</GridPanel.gridRowDefinitions>
+				<Label text="PROMPT Example in an old classic 4gl application" isDynamic="true" visible="true" identifier="lbNowLabel" gridItemLocation="0,0,1,1" allowNewlines="true" classNames="fcls_columnlabel_rev_cell,fcls_align_left,fcls_align_vcenter" maxSize="100,"/>
+				<Label text="&#9;&#9;WHILE TRUE &#13;&#10;&#13;&#10;OPEN WINDOW softball AT 19,5 WITH 1 ROWS, 25 COLUMNS ATTRIBUTE(REVERSE)&#13;&#10;        &#13;&#10;PROMPT &quot;IS SHIP TO CORRECT? &quot; FOR CHAR answer&#13;&#10;    ON KEY(CONTROL-E) CALL areusure(3) RETURNING answer2&#13;&#10;        IF answer2 = &quot;Y&quot; THEN EXIT PROGRAM END IF&#13;&#10;    ON KEY(CONTROL-B) LET answer = &quot;!&quot;&#13;&#10;    ON KEY(F10) CALL showage(pcm.cmcustnum)&#13;&#10;END PROMPT&#13;&#10;        &#13;&#10;CLOSE WINDOW softball&#13;&#10;        &#13;&#10;      END WHILE&#13;&#10;    END IF&#13;&#10;    CASE &#13;&#10;        WHEN answer MATCHES &quot;[yY]&quot;&#13;&#10;        WHEN answer MATCHES &quot;[*nN]&quot;&#13;&#10;..." isDynamic="true" visible="true" identifier="lbInfoNow" gridItemLocation="1,0,2,1" classNames="fcls_font_description,fcls_align_left,fcls_align_vcenter" allowNewlines="true" verticalAlignment="Center" preferredSize="60qch,">
+					<Label.background>
+						<Background>
+							<Background.fillColor>
+								<CustomizedColor redColor="255" greenColor="200" blueColor="200" alpha="100"/>
+							</Background.fillColor>
+						</Background>
+					</Label.background>
+				</Label>
+			</GridPanel>
+			<GridPanel visible="true" identifier="c2" gridItemLocation="0,2,1,1" classNames="fcls_detail_cnt,fcls_container_border,fcls_container_margin,fcls_container_padding,fcls_align_hstretch,fcls_detail_cnt_sub,fcls_data_cnt" preferredSize=",170">
+				<GridPanel.gridColumnDefinitions>
+					<GridColumnDefinition>
+						<GridColumnDefinition.gridLength>
+							<GridLength gridLengthType="Pixels" gridLengthValue="100"/>
+						</GridColumnDefinition.gridLength>
+					</GridColumnDefinition>
+					<GridColumnDefinition>
+						<GridColumnDefinition.gridLength>
+							<GridLength gridLengthValue="90" gridLengthType="Percent"/>
+						</GridColumnDefinition.gridLength>
+					</GridColumnDefinition>
+				</GridPanel.gridColumnDefinitions>
+				<GridPanel.gridRowDefinitions>
+					<GridRowDefinition>
+						<GridRowDefinition.gridLength>
+							<GridLength gridLengthType="Auto" gridLengthValue="0.0" gridMinLength="80"/>
+						</GridRowDefinition.gridLength>
+					</GridRowDefinition>
+				</GridPanel.gridRowDefinitions>
+				<Label text="Can be changed to:" isDynamic="true" visible="true" identifier="lbNextLabel" gridItemLocation="0,0,1,1" allowNewlines="true" classNames="fcls_columnlabel_rev_cell,fcls_align_left,fcls_align_vcenter" maxSize="100,"/>
+				<Label text="WHILE TRUE &#13;&#10;&#9;LET answer = fgl_winbutton(&quot;Question&quot;,&quot;Is Ship To correct ?&quot;,&quot;Yes&quot;,&quot;Yes|No|Exit|Info&quot;,&quot;question&quot;)&#13;&#10;&#9;LET answer = answer[1]  --huho answer is a char(2)&#13;&#10;&#9;&#9;CASE answer[1]&#13;&#10;&#9;&#9;&#9;WHEN &quot;Y&quot;&#13;&#10;&#9;&#9;&#9;&#9;EXIT WHILE&#13;&#10;&#9;&#9;&#9;WHEN &quot;N&quot;&#13;&#10;&#9;&#9;&#9;&#9;EXIT WHILE&#13;&#10;..." isDynamic="true" visible="true" identifier="lbInfoNext" gridItemLocation="1,0,1,1" allowNewlines="true" classNames="fcls_font_description,fcls_align_left,fcls_align_vcenter" verticalAlignment="Center" textAlignment="Default,Center" preferredSize="60qch,">
+					<Label.background>
+						<Background>
+							<Background.fillColor>
+								<CustomizedColor redColor="200" greenColor="255" blueColor="200" alpha="100"/>
+							</Background.fillColor>
+						</Background>
+					</Label.background>
+				</Label>
+			</GridPanel>
+			
+			
+
+				<GridPanel classNames="fcls_statusbar_cnt" visible="true" verticalAlignment="Top" gridItemLocation="0,3,1,1" fieldTable="formonly" identifier="cntStatusBar">
+					<GridPanel.gridRowDefinitions>
+						<GridRowDefinition>
+							<GridRowDefinition.gridLength>
+								<GridLength gridLengthType="Auto"/>
+							</GridRowDefinition.gridLength>
+						</GridRowDefinition>
+						<GridRowDefinition>
+							<GridRowDefinition.gridLength>
+								<GridLength gridLengthType="Auto"/>
+							</GridRowDefinition.gridLength>
+						</GridRowDefinition>
+					</GridPanel.gridRowDefinitions>
+					<GridPanel.gridColumnDefinitions>
+						<GridColumnDefinition>
+							<GridColumnDefinition.gridLength>
+								<GridLength gridLengthType="Percent" gridLengthValue="100"/>
+							</GridColumnDefinition.gridLength>
+						</GridColumnDefinition>
+					</GridPanel.gridColumnDefinitions>
+					<Label isDynamic="true" text="" classNames="fcls_sblabel" visible="true" gridItemLocation="0,0,1,1" fieldTable="formonly" identifier="lbInfo1"/>
+					<Label isDynamic="true" text="" classNames="fcls_sblabel" visible="true" gridItemLocation="0,1,1,1" fieldTable="formonly" identifier="lbInfo2"/>
+
+			</GridPanel>			
+			
+		</GridPanel>
+	</form.rootContainer>
+	<form.screenRecords>
+		<ScreenRecord identifier="FormOnly" fields=""/>
+	</form.screenRecords>
+</form>

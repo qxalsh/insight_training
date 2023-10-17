@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://namespaces.querix.com/2015/fglForms" title="gd_f_country_lookup">
+	<form.rootContainer>
+		<GridPanel preferredSize="20rem,20rem" fieldTable="formonly" identifier="rootContainer" horizontalAlignment="Left" verticalAlignment="Top">
+			<GridPanel.gridRowDefinitions>
+				<GridRowDefinition/>
+				<GridRowDefinition/>
+			</GridPanel.gridRowDefinitions>
+			<GridPanel.gridColumnDefinitions>
+				<GridColumnDefinition gridLengthValue="100%"/>
+			</GridPanel.gridColumnDefinitions>
+			<Table visible="true" identifier="sc_rec" gridItemLocation="0,0,1,1" horizontalAlignment="Stretch" verticalAlignment="Stretch">
+				<TableColumn resizable="true" visible="true" identifier="tc_f1">
+					<TextField visible="true" identifier="f0"/>
+					<TableColumn.columnLength>
+						<GridLength/>
+					</TableColumn.columnLength>
+				</TableColumn>
+			</Table>
+			<StackPanel visible="true" identifier="c3" gridItemLocation="0,1,1,1" horizontalAlignment="Right" verticalAlignment="Bottom">
+				<Button text="Cancel" visible="true" identifier="btCancel" classNames="fcls_button,fcls_length_10qch">
+					<Button.onInvoke>
+						<ActionEventHandler type="actioneventhandler" actionName="CANCEL"/>
+					</Button.onInvoke>
+				</Button>
+				<Button text="Apply" visible="true" identifier="btAccept" classNames="fcls_button,fcls_length_10qch">
+					<Button.onInvoke>
+						<ActionEventHandler type="actioneventhandler" actionName="ACCEPT"/>
+					</Button.onInvoke>
+				</Button>
+			</StackPanel>
+		</GridPanel>
+	</form.rootContainer>
+	<form.screenRecords>
+		<ScreenRecord identifier="sc_rec" fields="f0"/>
+		<ScreenRecord identifier="formonly" fields="f0"/>
+		<ScreenRecord identifier="Table1" fields="f0"/>
+	</form.screenRecords>
+</form>
+

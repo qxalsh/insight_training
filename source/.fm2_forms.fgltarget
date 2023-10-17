@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<fglBuildTarget xmlns="http://namespaces.querix.com/lyciaide/target" name="fm2_forms" type="fgl-program">
+  <sources type="form">
+    <file location="fm2/cm_form_pair.fm2"/>
+    <file location="fm2/4gl_questionaire.fm2"/>
+    <file location="fm2/cm_hash_input_array.fm2"/>
+    <file location="fm2/cm_hash_input_mixed.fm2"/>
+    <file location="fm2/cm_hash_input_record.fm2"/>
+    <file location="fm2/cnt_table_display_array.fm2"/>
+    <file location="fm2/cnt_table.fm2"/>
+    <file location="fm2/cnt_tab_page.fm2"/>
+    <file location="fm2/cnt_borderpanel.fm2"/>
+    <file location="fm2/gui_demo_contact.fm2"/>
+    <file location="fm2/gui_invoice_simplified.fm2"/>
+    <file location="fm2/wig_comboBox.fm2"/>
+  </sources>
+</fglBuildTarget>

@@ -1,0 +1,149 @@
+{#####################################################################
+# Copyright (C) 1992 Informix Software, Inc.
+# Copyright (C) 1992 FourGen Software, Inc.
+# Sccsid:  @(#)  .../screen.4gm/painter.4gs/cgs_init.4gl  1.32  Delta:
+######################################################################
+# Screen Generator version: 4.10.UC1 }
+
+DATABASE accounts
+
+SCREEN
+{
+ Company    :[A]                                     Cust # :[A1   ]
+ Surname    :[A2                                                ]
+ First Name :[A3                  ]                  Marital:[B]
+ Maiden Name:[A5                             ]       Depend :[A7] 
+ Title      :[A6                  ]                  Phone  :[A9      ]
+ Nationality:[Y8 ]                                   Cell #1:[B2      ]  
+ Address 1  :[A8                       ]             Cell #2:[B6           ]
+ Address 2  :[B1                       ]             Fax    :[B4      ]
+ Address 3  :[B3                       ]             Mail   :[C]
+ City       :[B5                       ]             Web Key:[WK      ] 
+ E-Mail     :[B7                                   ] Watch  :[O]  Exempt:[Q]
+ Date Birth :[A4         ]                           T/Union:[V]
+ Passport # :[B8 ]-[B9                 ]             Entered:[Y1         ]
+ ID #       :[C1 ]-[C2                 ]             BIR #  :[T            ]
+ DP #       :[C3 ]-[C4                 ]             Public :[L]
+ Related Grp:[C5   ][C6                            ] VAT Reg:[C7        ]
+ Business   :[C8  ] [C9                            ] Taxi   :[D1        ]
+-
+}
+
+TABLES
+    customer
+    related
+    business_type
+
+ATTRIBUTES
+A1 = customer.cust_no, noentry, comments = "";
+A  = customer.company, include = ("Y", "N"), upshift,
+     comments = " Y-Yes                N-No";
+A2 = customer.surname, upshift, comments = "";
+A3 = customer.firstname, upshift, comments = "";
+A5 = customer.maiden_name, upshift, comments = "";
+A6 = customer.salute, comments = "Enter Salutation for letter...";
+Y8 = customer.nationality, upshift, comments = " Enter Country Code";
+A8 = customer.haddr1, upshift, comments = "";
+B1 = customer.haddr2, upshift, comments = "";
+B3 = customer.haddr3, upshift, comments = "";
+B5 = customer.haddr4, upshift, comments = "";
+B7 = customer.email, comments = "";
+A4 = customer.dob, format = "dd mmm yyyy", comments = "";
+B8 = customer.pp_country, upshift, comments = " Enter Country Code";
+B9 = customer.pp_no, upshift, comments = "";
+C1 = customer.id_country, upshift, comments = " Enter Country Code";
+C2 = customer.id_no, upshift, comments = "";
+C3 = customer.dp_country, upshift, comments = " Enter Country Code";
+C4 = customer.dp_no, upshift, comments = "";
+C5 = customer.rb_code, upshift,
+     comments = "Enter Related Group...........";
+C6 = related.related_name, noentry, comments = "";
+C8 = customer.bt_code, upshift,
+     comments = "Enter Business Type...........";
+C9 = business_type.bt_desc, noentry, comments = "";
+B  = customer.marital, include = ("S", "M", "D", "C", null), upshift,
+     comments = " S-Single  M-Married   D-Divorce    C-Common Law";
+A7 = customer.dependents, format = "#&",
+     comments = " Number of dependents";
+A9 = customer.hphone, upshift, comments = "";
+B2 = customer.cellular, upshift, comments = "";
+B6 = customer.pager, upshift, comments = "";
+B4 = customer.fax, upshift, comments = "";
+C  = customer.print_ltr, autonext, include = ("Y", "N", null), upshift,
+     comments = "Print Collection's Letters...?  Y/N";
+WK = customer.webkey, upshift,
+     comments = " Web Key for online payments.......";
+Q  = customer.exempt, autonext, include = ("Y", "N", null), upshift,
+     comments = " Source Of Funds Exempt?  Y/N";
+O  = customer.watch, autonext, include = ("Y", "N", null), upshift,
+     comments = " Close Watch ...?  Y/N";
+V = customer.transunion, upshift, include=("Y", "N"), 
+    comments = " Give information to Trans Union ";
+Y1 = customer.date_entered, noentry, format="dd mmm yyyy";
+T = customer.bir, upshift;
+L = customer.pfig, include = ("Y", "N", null), upshift,
+       comments = "Y-If Public Figure";
+C7 = customer.vat_reg_no, upshift, comments = "";
+D1 = customer.taxi_badge, upshift, comments = "";
+
+INSTRUCTIONS
+screen record s_cust ( customer.cust_no, customer.company, 
+customer.surname, customer.firstname, customer.maiden_name, 
+customer.salute, customer.nationality, customer.haddr1, 
+customer.haddr2, customer.haddr3, customer.haddr4, customer.email, 
+customer.dob, customer.pp_country, customer.pp_no, customer.id_country, 
+customer.id_no, customer.dp_country, customer.dp_no, customer.rb_code, 
+related_name, customer.bt_code, business_type.bt_desc,
+customer.marital, customer.dependents, customer.hphone, 
+customer.cellular,  customer.pager, customer.fax,
+customer.print_ltr, customer.webkey,  customer.watch, customer.exempt,
+customer.transunion, customer.date_entered, customer.bir, 
+customer.pfig, customer.vat_reg_no, customer.taxi_badge) 
+
+
+delimiters "  "
+
+{
+######################################################################
+FOURGEN
+######################################################################
+
+defaults
+    module     = cust
+    type       = header
+    init       = 1=0
+    attributes = border, white
+    location   = 2, 3
+
+input 1
+    table     = customer
+    key       = cust_no
+    filter    = 1=1
+    order     = cust_no
+    lookup    = name=pplk, key=pp_country, table=country,
+      filter=country_code=$pp_country
+    lookup    = name=ntlk, key=nationality, table=country,
+      filter=country_code=$nationality
+    lookup    = name=dplk, key=dp_country, table=country,
+      filter=country_code=$dp_country
+    lookup    = name=rellk, key=rb_code, table=related,
+      into=related_name, filter=rb_code=$rb_code
+    lookup    = name=btlk, key=bt_code, table=business_type,
+      into=bt_desc, filter=bt_code=$bt_code
+    zoom      = key=nationality, screen=conzm, table=country,
+      from=country_code, filter=1=1
+    zoom      = key=pp_country, screen=conzm, table=country,
+      from=country_code, filter=1=1
+    zoom      = key=id_country, screen=conzm, table=country,
+      from=country_code, filter=1=1
+    zoom      = key=dp_country, screen=conzm, table=country,
+      from=country_code, filter=1=1
+    zoom      = key=rb_code, screen=rlzm, table=related, from=rb_code,
+      filter=1=1
+    zoom      = key=bt_code, screen=buszm, table=business_type,
+      from=bt_code, filter=1=1
+    default   = company = "N"
+    skip      = firstname, salute, dob, pp_country, pp_no, id_country,
+      id_no, dp_country, dp_no
+    nonull    = company
+}

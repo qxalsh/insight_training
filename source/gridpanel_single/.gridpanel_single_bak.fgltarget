@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<fglBuildTarget xmlns="http://namespaces.querix.com/lyciaide/target" name="gridpanel_single_bak" type="fgl-program">
+  <sources type="fgl">
+    <file location="gridpanel_single/gridpanel_single_bak.4gl"/>
+  </sources>
+  <sources type="form">
+    <file location="gridpanel_single/gridpanel_single_bak.fm2"/>
+  </sources>
+</fglBuildTarget>

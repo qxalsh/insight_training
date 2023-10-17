@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://namespaces.querix.com/2015/fglForms" title="New Form 1">
+    <form.rootContainer>
+        <BorderPanel visible="true" verticalAlignment="Stretch" horizontalAlignment="Stretch" fieldTable="" identifier="rootContainer">
+            <GridPanel visible="true" verticalAlignment="Top" horizontalAlignment="Left" borderPanelItemLocation="Top" fieldTable="" preferredSize="10qch,3qch" identifier="cntTop">
+                <GridPanel.gridRowDefinitions>
+                    <GridRowDefinition gridLengthValue="" />
+                    <GridRowDefinition />
+                </GridPanel.gridRowDefinitions>
+                <GridPanel.gridColumnDefinitions>
+                    <GridColumnDefinition gridLengthValue="33%" />
+                    <GridColumnDefinition gridLengthValue="33%" />
+                    <GridColumnDefinition gridLengthValue="33%" />
+                </GridPanel.gridColumnDefinitions>
+                <GridPanel.background>
+                    <Background>
+                        <Background.fillColor>
+                            <SystemColor systemColorName="LightGreen" />
+                        </Background.fillColor>
+                    </Background>
+                </GridPanel.background>
+                <Label visible="true" gridItemLocation="0,0,1,1" identifier="lb1" />
+                <Label visible="true" gridItemLocation="0,1,1,1" identifier="lb2" />
+                <TextField visible="true" gridItemLocation="1,0,1,1" identifier="f11" />
+                <TextField visible="true" gridItemLocation="1,1,1,1" identifier="f12" />
+                <Button visible="true" horizontalAlignment="Stretch" gridItemLocation="2,0,1,1" identifier="bt1">
+                    <Button.onInvoke>
+                        <ActionEventHandler actionName="actBt1" />
+                    </Button.onInvoke>
+                </Button>
+                <Button visible="true" horizontalAlignment="Stretch" gridItemLocation="2,1,1,1" identifier="bt2">
+                    <Button.onInvoke>
+                        <ActionEventHandler actionName="actBt2" />
+                    </Button.onInvoke>
+                </Button>
+            </GridPanel>
+            <GridPanel visible="true" verticalAlignment="Stretch" horizontalAlignment="Left" borderPanelItemLocation="Left" fieldTable="" preferredSize="15qch," identifier="cntLeft">
+                <GridPanel.gridRowDefinitions>
+                    <GridRowDefinition gridLengthValue="" />
+                    <GridRowDefinition />
+                    <GridRowDefinition />
+                    <GridRowDefinition />
+                    <GridRowDefinition />
+                    <GridRowDefinition />
+                </GridPanel.gridRowDefinitions>
+                <GridPanel.gridColumnDefinitions>
+                    <GridColumnDefinition gridLengthValue="" />
+                </GridPanel.gridColumnDefinitions>
+                <GridPanel.background>
+                    <Background>
+                        <Background.fillColor>
+                            <SystemColor systemColorName="LightRed" />
+                        </Background.fillColor>
+                    </Background>
+                </GridPanel.background>
+                <Label visible="true" gridItemLocation="0,0,1,1" identifier="lb3" />
+                <TextField visible="true" gridItemLocation="0,1,1,1" identifier="f21" />
+                <Button visible="true" horizontalAlignment="Stretch" gridItemLocation="0,2,1,1" identifier="bt3">
+                    <Button.onInvoke>
+                        <ActionEventHandler actionName="actBt3" />
+                    </Button.onInvoke>
+                </Button>
+                <Label visible="true" gridItemLocation="0,3,1,1" identifier="lb4" />
+                <TextField visible="true" gridItemLocation="0,4,1,1" identifier="f22" />
+                <Button visible="true" horizontalAlignment="Stretch" gridItemLocation="0,5,1,1" identifier="bt4">
+                    <Button.onInvoke>
+                        <ActionEventHandler actionName="actBt4" />
+                    </Button.onInvoke>
+                </Button>
+            </GridPanel>
+            <GridPanel visible="true" verticalAlignment="Top" horizontalAlignment="Left" fieldTable="" preferredSize="10qch,15qch" identifier="cntCenter">
+                <GridPanel.gridRowDefinitions>
+                    <GridRowDefinition gridLengthValue="50%" />
+                    <GridRowDefinition gridLengthValue="50%" />
+                </GridPanel.gridRowDefinitions>
+                <GridPanel.gridColumnDefinitions>
+                    <GridColumnDefinition gridLengthValue="33%" />
+                    <GridColumnDefinition gridLengthValue="33%" />
+                    <GridColumnDefinition gridLengthValue="33%" />
+                </GridPanel.gridColumnDefinitions>
+                <GridPanel.background>
+                    <Background>
+                        <Background.fillColor>
+                            <SystemColor systemColorName="Cyan" />
+                        </Background.fillColor>
+                    </Background>
+                </GridPanel.background>
+                <GridPanel visible="true" gridItemLocation="0,0,1,1" identifier="gp1">
+                    <GridPanel.gridColumnDefinitions>
+                        <GridColumnDefinition />
+                    </GridPanel.gridColumnDefinitions>
+                    <GridPanel.gridRowDefinitions>
+                        <GridRowDefinition />
+                        <GridRowDefinition />
+                        <GridRowDefinition />
+                    </GridPanel.gridRowDefinitions>
+                    <Label visible="true" gridItemLocation="0,0,1,1" identifier="lb7" />
+                    <TextField visible="true" gridItemLocation="0,1,1,1" identifier="f41" />
+                    <Button visible="true" horizontalAlignment="Stretch" gridItemLocation="0,2,1,1" identifier="bt7">
+                        <Button.onInvoke>
+                            <ActionEventHandler actionName="actBt11" />
+                        </Button.onInvoke>
+                    </Button>
+                </GridPanel>
+                <GridPanel visible="true" gridItemLocation="1,0,1,1" identifier="gp2">
+                    <GridPanel.gridColumnDefinitions>
+                        <GridColumnDefinition />
+                    </GridPanel.gridColumnDefinitions>
+                    <GridPanel.gridRowDefinitions>
+                        <GridRowDefinition />
+                        <GridRowDefinition />
+                        <GridRowDefinition />
+                    </GridPanel.gridRowDefinitions>
+                    <Label visible="true" gridItemLocation="0,0,1,1" identifier="lb8" />
+                    <TextField visible="true" gridItemLocation="0,1,1,1" identifier="f42" />
+                    <Button visible="true" horizontalAlignment="Stretch" gridItemLocation="0,2,1,1" identifier="bt8">
+                        <Button.onInvoke>
+                            <ActionEventHandler actionName="actBt11" />
+                        </Button.onInvoke>
+                    </Button>
+                </GridPanel>
+                <GridPanel visible="true" gridItemLocation="2,0,1,1" identifier="gp3">
+                    <GridPanel.gridColumnDefinitions>
+                        <GridColumnDefinition />
+                    </GridPanel.gridColumnDefinitions>
+                    <GridPanel.gridRowDefinitions>
+                        <GridRowDefinition />
+                        <GridRowDefinition />
+                        <GridRowDefinition />
+                    </GridPanel.gridRowDefinitions>
+                    <Label visible="true" gridItemLocation="0,0,1,1" identifier="lb9" />
+                    <TextField visible="true" gridItemLocation="0,1,1,1" identifier="f43" />
+                    <Button visible="true" horizontalAlignment="Stretch" gridItemLocation="0,2,1,1" identifier="bt9">
+                        <Button.onInvoke>
+                            <ActionEventHandler actionName="actBt13" />
+                        </Button.onInvoke>
+                    </Button>
+                </GridPanel>
+                <GridPanel visible="true" gridItemLocation="0,1,1,1" identifier="gp4">
+                    <GridPanel.gridColumnDefinitions>
+                        <GridColumnDefinition />
+                    </GridPanel.gridColumnDefinitions>
+                    <GridPanel.gridRowDefinitions>
+                        <GridRowDefinition />
+                        <GridRowDefinition />
+                        <GridRowDefinition />
+                    </GridPanel.gridRowDefinitions>
+                    <Label visible="true" gridItemLocation="0,0,1,1" identifier="lb10" />
+                    <TextField visible="true" gridItemLocation="0,1,1,1" identifier="f44" />
+                    <Button visible="true" horizontalAlignment="Stretch" gridItemLocation="0,2,1,1" identifier="bt10">
+                        <Button.onInvoke>
+                            <ActionEventHandler actionName="actBt14" />
+                        </Button.onInvoke>
+                    </Button>
+                </GridPanel>
+                <GridPanel visible="true" gridItemLocation="1,1,1,1" identifier="gp5">
+                    <GridPanel.gridColumnDefinitions>
+                        <GridColumnDefinition />
+                    </GridPanel.gridColumnDefinitions>
+                    <GridPanel.gridRowDefinitions>
+                        <GridRowDefinition />
+                        <GridRowDefinition />
+                        <GridRowDefinition />
+                    </GridPanel.gridRowDefinitions>
+                    <Label visible="true" gridItemLocation="0,0,1,1" identifier="lb11" />
+                    <TextField visible="true" gridItemLocation="0,1,1,1" identifier="f45" />
+                    <Button visible="true" horizontalAlignment="Stretch" gridItemLocation="0,2,1,1" identifier="bt11">
+                        <Button.onInvoke>
+                            <ActionEventHandler actionName="actBt15" />
+                        </Button.onInvoke>
+                    </Button>
+                </GridPanel>
+                <GridPanel visible="true" gridItemLocation="2,1,1,1" identifier="gp6">
+                    <GridPanel.gridColumnDefinitions>
+                        <GridColumnDefinition />
+                    </GridPanel.gridColumnDefinitions>
+                    <GridPanel.gridRowDefinitions>
+                        <GridRowDefinition />
+                        <GridRowDefinition />
+                        <GridRowDefinition />
+                    </GridPanel.gridRowDefinitions>
+                    <Label visible="true" gridItemLocation="0,0,1,1" identifier="lb12" />
+                    <TextField visible="true" gridItemLocation="0,1,1,1" identifier="f46" />
+                    <Button visible="true" horizontalAlignment="Stretch" gridItemLocation="0,2,1,1" identifier="bt12">
+                        <Button.onInvoke>
+                            <ActionEventHandler actionName="actBt16" />
+                        </Button.onInvoke>
+                    </Button>
+                </GridPanel>
+            </GridPanel>
+            <GridPanel visible="true" verticalAlignment="Bottom" horizontalAlignment="Left" borderPanelItemLocation="Bottom" fieldTable="" preferredSize="10qch,3qch" identifier="cntBottom">
+                <GridPanel.gridRowDefinitions>
+                    <GridRowDefinition gridLengthValue="" />
+                    <GridRowDefinition />
+                </GridPanel.gridRowDefinitions>
+                <GridPanel.gridColumnDefinitions>
+                    <GridColumnDefinition gridLengthValue="33%" />
+                    <GridColumnDefinition gridLengthValue="33%" />
+                    <GridColumnDefinition gridLengthValue="33%" />
+                </GridPanel.gridColumnDefinitions>
+                <GridPanel.background>
+                    <Background>
+                        <Background.fillColor>
+                            <SystemColor systemColorName="LightOrange" />
+                        </Background.fillColor>
+                    </Background>
+                </GridPanel.background>
+                <Label visible="true" gridItemLocation="0,0,1,1" identifier="lb5" />
+                <Button visible="true" horizontalAlignment="Stretch" gridItemLocation="2,0,1,1" identifier="bt5">
+                    <Button.onInvoke>
+                        <ActionEventHandler actionName="actBt5" />
+                    </Button.onInvoke>
+                </Button>
+                <Button visible="true" horizontalAlignment="Stretch" gridItemLocation="2,1,1,1" identifier="bt6">
+                    <Button.onInvoke>
+                        <ActionEventHandler actionName="actBt6" />
+                    </Button.onInvoke>
+                </Button>
+                <Label visible="true" gridItemLocation="0,1,1,1" identifier="lb6" />
+                <TextField visible="true" gridItemLocation="1,0,1,1" identifier="f31" />
+                <TextField visible="true" gridItemLocation="1,1,1,1" identifier="f32" />
+            </GridPanel>
+        </BorderPanel>
+    </form.rootContainer>
+    <form.screenRecords>
+        <ScreenRecord identifier="FormOnly" />
+    </form.screenRecords>
+</form>

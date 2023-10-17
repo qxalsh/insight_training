@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://namespaces.querix.com/2015/fglForms" title="HashMap Pair INPUT">
+	<form.rootContainer>
+		<GridPanel identifier="rootContainer" visible="true" preferredSize="41rem,10rem" horizontalAlignment="Left" verticalAlignment="Top">
+			<GridPanel.gridColumnDefinitions>
+				<GridColumnDefinition gridLengthValue="10rem" gridMinLength="10rem"/>
+				<GridColumnDefinition gridLengthValue="100%"/>
+			</GridPanel.gridColumnDefinitions>
+			<GridPanel.gridRowDefinitions>
+				<GridRowDefinition gridLengthValue=""/>
+				<GridRowDefinition gridLengthValue=""/>
+				<GridRowDefinition gridLengthValue=""/>
+				<GridRowDefinition gridLengthValue=""/>
+			</GridPanel.gridRowDefinitions>
+			<Label text="Title" isDynamic="true" visible="true" identifier="lb_title" gridItemLocation="0,0,2,1" classNames="fcls_columnlabel_rev_cell,fcls_align_hstretch"/>
+			<Label text="Description" isDynamic="true" visible="true" identifier="lb_description" gridItemLocation="0,1,2,1" classNames="fcls_font_description"/>
+			<Label text="key" isDynamic="true" visible="true" identifier="lb4" gridItemLocation="0,2,1,1" classNames="fcls_fieldlabel,fcls_align_left"/>
+			<TextField visible="true" identifier="hkey" gridItemLocation="1,2,1,1" classNames="fcls_length_30qch,fcls_data_widget,fcls_align_left"/>
+			<Label text="value" isDynamic="true" visible="true" identifier="lb2" gridItemLocation="0,3,1,1" classNames="fcls_fieldlabel,fcls_align_left"/>
+			<TextField visible="true" identifier="hvalue" gridItemLocation="1,3,1,1" classNames="fcls_length_30qch,fcls_data_widget,fcls_align_left"/>
+		</GridPanel>
+	</form.rootContainer>
+	
+	<form.screenRecords>
+		<ScreenRecord identifier="sc_hashPair" fields="hkey,hvalue"/>
+	</form.screenRecords> 
+	
+</form>

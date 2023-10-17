@@ -1,0 +1,25 @@
+database accounts@accounts
+screen size 24 by 80
+{
+loan_no            [f000       ]
+bank_code          [f001 ]
+bank_account       [f002                ]
+ach                [a]
+bank_branch        [f003 ]
+ach_date           [f004      ]
+created_by         [f005        ]
+created            [f006      ]
+}
+end
+tables
+loan_ach
+attributes
+f000 = loan_ach.loan_no;
+f001 = loan_ach.bank_code;
+f002 = loan_ach.bank_account;
+a = loan_ach.ach;
+f003 = loan_ach.bank_branch;
+f004 = loan_ach.ach_date;
+f005 = loan_ach.created_by;
+f006 = loan_ach.created;
+end

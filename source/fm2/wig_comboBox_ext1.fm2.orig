@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://namespaces.querix.com/2015/fglForms">
+	<form.rootContainer>
+		<GridPanel classNames="fcls_rootContainer" verticalAlignment="Top" fieldTable="" identifier="rootContainer">
+			<GridPanel.gridRowDefinitions>
+				<GridRowDefinition>
+					<GridRowDefinition.gridLength>
+						<GridLength/>
+					</GridRowDefinition.gridLength>
+				</GridRowDefinition>
+				<GridRowDefinition>
+					<GridRowDefinition.gridLength>
+						<GridLength gridLengthType="Auto" gridLengthValue="0.0"/>
+					</GridRowDefinition.gridLength>
+				</GridRowDefinition>
+				<GridRowDefinition>
+					<GridRowDefinition.gridLength>
+						<GridLength gridLengthType="Auto" gridLengthValue="0.0"/>
+					</GridRowDefinition.gridLength>
+				</GridRowDefinition>
+			</GridPanel.gridRowDefinitions>
+
+
+
+
+				<GridPanel classNames="fcls_title_cnt" visible="true" verticalAlignment="Top" gridItemLocation="0,0,1,1" fieldTable="formonly" identifier="cntTitle">
+					<GridPanel.gridRowDefinitions>
+						<GridRowDefinition>
+							<GridRowDefinition.gridLength>
+								<GridLength gridLengthType="Auto"/>
+							</GridRowDefinition.gridLength>
+						</GridRowDefinition>
+					</GridPanel.gridRowDefinitions>
+					<GridPanel.gridColumnDefinitions>
+						<GridColumnDefinition>
+							<GridColumnDefinition.gridLength>
+								<GridLength gridLengthType="Percent" gridLengthValue="100"/>
+							</GridColumnDefinition.gridLength>
+						</GridColumnDefinition>
+						<GridColumnDefinition>
+							<GridColumnDefinition.gridLength>
+								<GridLength gridLengthType="Auto" gridLengthValue="0.0"/>
+							</GridColumnDefinition.gridLength>
+						</GridColumnDefinition>
+					</GridPanel.gridColumnDefinitions>
+					<Label isDynamic="true" text="Static and Dynamic ComboBoxes" classNames="fcls_title_lb" visible="true" gridItemLocation="0,0,1,1" fieldTable="formonly" identifier="lbTitle"/>
+					<Label visible="true" identifier="lbFormName" gridItemLocation="1,0,1,1" classNames="fcls_title_lb" isDynamic="true" text="wig_comboBox_ext1"/>
+				</GridPanel>
+				<Tab tabPagePlacement="Top" visible="true" identifier="cntTab" gridItemLocation="0,1,1,1">
+					<TabPage title="Static ComboBox List" visible="true" identifier="cntTabPage1">
+						<GridPanel visible="true" identifier="cntTabPageGp1" gridItemLocation="0,5,1,1" classNames="fcls_detail_cnt,fcls_data_cnt,fcls_align_left" horizontalAlignment="Left" verticalAlignment="Top">
+					<GridPanel.gridColumnDefinitions>
+						<GridColumnDefinition>
+							<GridColumnDefinition.gridLength>
+								<GridLength/>
+							</GridColumnDefinition.gridLength>
+						</GridColumnDefinition>
+						<GridColumnDefinition>
+							<GridColumnDefinition.gridLength>
+								<GridLength/>
+							</GridColumnDefinition.gridLength>
+						</GridColumnDefinition>
+						<GridColumnDefinition>
+							<GridColumnDefinition.gridLength>
+								<GridLength/>
+							</GridColumnDefinition.gridLength>
+						</GridColumnDefinition>
+						<GridColumnDefinition>
+							<GridColumnDefinition.gridLength>
+								<GridLength/>
+							</GridColumnDefinition.gridLength>
+						</GridColumnDefinition>
+					</GridPanel.gridColumnDefinitions>
+
+					<GridPanel.gridRowDefinitions>
+						<GridRowDefinition>
+							<GridRowDefinition.gridLength>
+								<GridLength/>
+							</GridRowDefinition.gridLength>
+						</GridRowDefinition>
+						<GridRowDefinition>
+							<GridRowDefinition.gridLength>
+								<GridLength/>
+							</GridRowDefinition.gridLength>
+						</GridRowDefinition>
+						<GridRowDefinition>
+							<GridRowDefinition.gridLength>
+								<GridLength gridLengthType="Auto" gridLengthValue="0.0"/>
+							</GridRowDefinition.gridLength>
+						</GridRowDefinition>
+						<GridRowDefinition>
+							<GridRowDefinition.gridLength>
+								<GridLength gridLengthType="Auto" gridLengthValue="0.0"/>
+							</GridRowDefinition.gridLength>
+						</GridRowDefinition>
+					</GridPanel.gridRowDefinitions>
+					<ComboBox visible="true" identifier="fComboBoxStaticInt1" gridItemLocation="1,0,1,1" classNames="fcls_data_widget,fcls_align_left,fcls_length_10qch">
+						<ComboBoxItem identifier="fComboBoxStaticInt1_1" text="fChoice-0">
+							<ComboBoxItem.value>
+								<IntegerLiteral/>
+							</ComboBoxItem.value>
+						</ComboBoxItem>
+						<ComboBoxItem identifier="fComboBoxStaticInt1_2" text="fChoice-1">
+							<ComboBoxItem.value>
+								<IntegerLiteral integerValue="1"/>
+							</ComboBoxItem.value>
+						</ComboBoxItem>
+						<ComboBoxItem identifier="fComboBoxStaticInt1_3" text="fChoice-2">
+							<ComboBoxItem.value>
+								<IntegerLiteral integerValue="2"/>
+							</ComboBoxItem.value>
+						</ComboBoxItem>
+					</ComboBox>
+					<Label text="Actual Int field variable value:" isDynamic="true" visible="true" identifier="lb104" gridItemLocation="2,0,1,1" classNames="fcls_fieldlabel,fcls_align_left"/>
+					<TextField visible="true" identifier="fComboBoxStaticInt1Value" gridItemLocation="3,0,1,1" classNames="fcls_data_widget,fcls_align_left,fcls_length_10qch"/>
+					<Label text="Numeric - Value AND Label" isDynamic="true" visible="true" identifier="lb79" gridItemLocation="0,1,1,1" classNames="fcls_fieldlabel,fcls_align_left"/>
+					<Label text="Numeric - Label=Value" isDynamic="true" visible="true" identifier="lb78" gridItemLocation="0,0,1,1" classNames="fcls_fieldlabel,fcls_align_left"/>
+					<ComboBox visible="true" identifier="fComboBoxStaticInt2" gridItemLocation="1,1,1,1" classNames="fcls_data_widget,fcls_align_left,fcls_length_10qch">
+						<ComboBoxItem identifier="fComboBoxStaticInt2_1" text="0">
+							<ComboBoxItem.value>
+								<IntegerLiteral/>
+							</ComboBoxItem.value>
+						</ComboBoxItem>
+						<ComboBoxItem identifier="fComboBoxStaticInt2_2" text="1">
+							<ComboBoxItem.value>
+								<IntegerLiteral integerValue="1"/>
+							</ComboBoxItem.value>
+						</ComboBoxItem>
+						<ComboBoxItem identifier="fComboBoxStaticInt2_3" text="2">
+							<ComboBoxItem.value>
+								<IntegerLiteral integerValue="2"/>
+							</ComboBoxItem.value>
+						</ComboBoxItem>
+					</ComboBox>
+					<Label text="Actual Int field variable value" isDynamic="true" visible="true" identifier="lb105" gridItemLocation="2,1,1,1" classNames="fcls_fieldlabel,fcls_align_left"/>
+					<TextField visible="true" identifier="fComboBoxStaticInt2Value" gridItemLocation="3,1,1,1" classNames="fcls_data_widget,fcls_align_left,fcls_length_10qch"/>
+					<Label text="String - Label=Value" isDynamic="true" visible="true" identifier="lb153" gridItemLocation="0,2,1,1"/>
+					<ComboBox visible="true" identifier="fComboBoxStaticStr1" gridItemLocation="1,2,1,1" classNames="fcls_data_widget,fcls_align_left,fcls_length_10qch">
+						<ComboBoxItem text="Yes" identifier="fComboBoxStaticStr1_1">
+							<ComboBoxItem.value>
+								<StringLiteral stringValue="Yes"/>
+							</ComboBoxItem.value>
+						</ComboBoxItem>
+						<ComboBoxItem text="No" identifier="fComboBoxStaticStr1_2">
+							<ComboBoxItem.value>
+								<StringLiteral stringValue="No"/>
+							</ComboBoxItem.value>
+						</ComboBoxItem>
+						<ComboBoxItem text="Other" identifier="fComboBoxStaticStr1_3">
+							<ComboBoxItem.value>
+								<StringLiteral stringValue="Other"/>
+							</ComboBoxItem.value>
+						</ComboBoxItem>
+					</ComboBox>
+					<Label text="Actual String field variable value:" isDynamic="true" visible="true" identifier="lb155" gridItemLocation="2,2,1,1"/>
+					<TextField visible="true" identifier="fComboBoxStaticStr1Value" gridItemLocation="3,2,1,1" classNames="fcls_data_widget,fcls_align_left,fcls_length_10qch"/>
+					<Label text="String - Value AND Label" isDynamic="true" visible="true" identifier="lb154" gridItemLocation="0,3,1,1"/>
+					<ComboBox visible="true" identifier="fComboBoxStaticStr2" gridItemLocation="1,3,1,1" classNames="fcls_data_widget,fcls_align_left,fcls_length_10qch">
+						<ComboBoxItem text="Yes" identifier="fComboBoxStaticStr2_1">
+							<ComboBoxItem.value>
+								<StringLiteral stringValue="Y"/>
+							</ComboBoxItem.value>
+						</ComboBoxItem>
+						<ComboBoxItem text="No" identifier="fComboBoxStaticStr2_2">
+							<ComboBoxItem.value>
+								<StringLiteral stringValue="N"/>
+							</ComboBoxItem.value>
+						</ComboBoxItem>
+						<ComboBoxItem text="Other" identifier="fComboBoxStaticStr2_3">
+							<ComboBoxItem.value>
+								<StringLiteral stringValue="O"/>
+							</ComboBoxItem.value>
+						</ComboBoxItem>
+					</ComboBox>
+					<Label text="Actual String field variable value:" isDynamic="true" visible="true" identifier="lb156" gridItemLocation="2,3,1,1"/>
+					<TextField visible="true" identifier="fComboBoxStaticStr2Value" gridItemLocation="3,3,1,1" classNames="fcls_data_widget,fcls_align_left,fcls_length_10qch"/>
+
+			</GridPanel>
+					</TabPage>
+					<TabPage title="Dynamic ComboBox List" visible="true" identifier="cntTabPage2">
+						<GridPanel visible="true" identifier="cntTabPageGp2" gridItemLocation="0,4,1,1" classNames="fcls_detail_cnt,fcls_data_cnt,fcls_align_left,fcls_align_top" verticalAlignment="Top" horizontalAlignment="Left">
+					<GridPanel.gridColumnDefinitions>
+						<GridColumnDefinition>
+							<GridColumnDefinition.gridLength>
+								<GridLength gridLengthType="Auto"/>
+							</GridColumnDefinition.gridLength>
+						</GridColumnDefinition>
+						<GridColumnDefinition>
+							<GridColumnDefinition.gridLength>
+								<GridLength gridLengthType="Auto"/>
+							</GridColumnDefinition.gridLength>
+						</GridColumnDefinition>
+						<GridColumnDefinition>
+							<GridColumnDefinition.gridLength>
+								<GridLength gridLengthType="Auto"/>
+							</GridColumnDefinition.gridLength>
+						</GridColumnDefinition>
+						<GridColumnDefinition>
+							<GridColumnDefinition.gridLength>
+								<GridLength gridLengthType="Auto"/>
+							</GridColumnDefinition.gridLength>
+						</GridColumnDefinition>
+						<GridColumnDefinition>
+							<GridColumnDefinition.gridLength>
+								<GridLength gridLengthType="Auto"/>
+							</GridColumnDefinition.gridLength>
+						</GridColumnDefinition>
+					</GridPanel.gridColumnDefinitions>
+					<GridPanel.gridRowDefinitions>
+						<GridRowDefinition>
+							<GridRowDefinition.gridLength>
+								<GridLength gridLengthType="Auto"/>
+							</GridRowDefinition.gridLength>
+						</GridRowDefinition>
+						<GridRowDefinition>
+							<GridRowDefinition.gridLength>
+								<GridLength gridLengthType="Auto"/>
+							</GridRowDefinition.gridLength>
+						</GridRowDefinition>
+						<GridRowDefinition>
+							<GridRowDefinition.gridLength>
+								<GridLength gridLengthType="Auto"/>
+							</GridRowDefinition.gridLength>
+						</GridRowDefinition>
+						<GridRowDefinition>
+							<GridRowDefinition.gridLength>
+								<GridLength gridLengthType="Auto"/>
+							</GridRowDefinition.gridLength>
+						</GridRowDefinition>
+					</GridPanel.gridRowDefinitions>
+					<ComboBox visible="true" identifier="fComboBoxDynamicInt1" gridItemLocation="1,0,1,1" classNames="fcls_data_widget,fcls_align_left,fcls_length_10qch"/>
+					<TextField visible="true" identifier="fComboBoxDynamicInt1Value" gridItemLocation="3,0,1,1" classNames="fcls_data_widget,fcls_align_left,fcls_length_10qch"/>
+					<ComboBox visible="true" identifier="fComboBoxDynamicInt2" gridItemLocation="1,1,1,1" classNames="fcls_data_widget,fcls_align_left,fcls_length_10qch"/>
+					<TextField visible="true" identifier="fComboBoxDynamicInt2Value" gridItemLocation="3,1,1,1" classNames="fcls_data_widget,fcls_align_left,fcls_length_10qch"/>
+					<ComboBox visible="true" identifier="fComboBoxDynamicStr1" gridItemLocation="1,2,1,1" classNames="fcls_data_widget,fcls_align_left,fcls_length_10qch"/>
+					<TextField visible="true" identifier="fComboBoxDynamicStr1Value" gridItemLocation="3,2,1,1" classNames="fcls_data_widget,fcls_align_left,fcls_length_10qch"/>
+					<ComboBox visible="true" identifier="fComboBoxDynamicStr2" gridItemLocation="1,3,1,1" classNames="fcls_data_widget,fcls_align_left,fcls_length_10qch"/>
+					<Label text="Actual String field variable value:" isDynamic="true" visible="true" identifier="lb75" gridItemLocation="2,3,1,1" classNames="fcls_fieldlabel,fcls_align_left"/>
+					<Label text="String - Value AND Label" isDynamic="true" visible="true" identifier="lb68" gridItemLocation="0,3,1,1" classNames="fcls_fieldlabel,fcls_align_left"/>
+					<Label text="Numeric - Label=Value" isDynamic="true" visible="true" identifier="lb44" gridItemLocation="0,0,1,1" classNames="fcls_fieldlabel,fcls_align_left"/>
+					<Label text="Actual Int field variable value:" isDynamic="true" visible="true" identifier="lb72" gridItemLocation="2,0,1,1" classNames="fcls_fieldlabel,fcls_align_left"/>
+					<Label text="Numeric - Value AND Label" isDynamic="true" visible="true" identifier="lb45" gridItemLocation="0,1,1,1" classNames="fcls_fieldlabel,fcls_align_left"/>
+					<Label text="Actual Int field variable value:" isDynamic="true" visible="true" identifier="lb73" gridItemLocation="2,1,1,1" classNames="fcls_fieldlabel,fcls_align_left"/>
+					<Label text="String  - Label=Value" isDynamic="true" visible="true" identifier="lb46" gridItemLocation="0,2,1,1" classNames="fcls_fieldlabel,fcls_align_left"/>
+					<Label text="Actual String field variable value:" isDynamic="true" visible="true" identifier="lb74" gridItemLocation="2,2,1,1" classNames="fcls_fieldlabel,fcls_align_left"/>
+					<TextField visible="true" identifier="fComboBoxDynamicStr2Value" gridItemLocation="3,3,1,1" classNames="fcls_data_widget,fcls_align_left,fcls_length_10qch"/>
+				</GridPanel>
+					</TabPage>
+				</Tab>
+
+
+
+				<GridPanel classNames="fcls_statusbar_cnt" visible="true" verticalAlignment="Top" gridItemLocation="0,2,1,1" fieldTable="formonly" identifier="cntStatusBar">
+					<GridPanel.gridRowDefinitions>
+						<GridRowDefinition>
+							<GridRowDefinition.gridLength>
+								<GridLength gridLengthType="Auto"/>
+							</GridRowDefinition.gridLength>
+						</GridRowDefinition>
+						<GridRowDefinition>
+							<GridRowDefinition.gridLength>
+								<GridLength gridLengthType="Auto"/>
+							</GridRowDefinition.gridLength>
+						</GridRowDefinition>
+					</GridPanel.gridRowDefinitions>
+					<GridPanel.gridColumnDefinitions>
+						<GridColumnDefinition>
+							<GridColumnDefinition.gridLength>
+								<GridLength gridLengthType="Percent" gridLengthValue="100"/>
+							</GridColumnDefinition.gridLength>
+						</GridColumnDefinition>
+					</GridPanel.gridColumnDefinitions>
+					<Label isDynamic="true" text="" classNames="fcls_sblabel" visible="true" gridItemLocation="0,0,1,1" fieldTable="formonly" identifier="lbInfo1"/>
+					<Label isDynamic="true" text="" classNames="fcls_sblabel" visible="true" gridItemLocation="0,1,1,1" fieldTable="formonly" identifier="lbInfo2"/>
+
+			</GridPanel>
+			
+			
+			
+			<GridPanel.gridColumnDefinitions>
+				<GridColumnDefinition>
+					<GridColumnDefinition.gridLength>
+						<GridLength gridLengthType="Percent" gridLengthValue="100"/>
+					</GridColumnDefinition.gridLength>
+				</GridColumnDefinition>
+			</GridPanel.gridColumnDefinitions>
+		</GridPanel>
+	</form.rootContainer>
+	<form.screenRecords>
+		<ScreenRecord identifier="FORMONLY" fields="fComboBoxDynamicInt2,fComboBoxDynamicInt2Value,fComboBoxDynamicInt1Value,fComboBoxStaticStr1Value,fComboBoxStaticStr2Value,fComboBoxDynamicStr1Value,fComboBoxDynamicStr2Value"/>
+	</form.screenRecords>
+</form>
+

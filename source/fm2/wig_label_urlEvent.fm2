@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://namespaces.querix.com/2015/fglForms">
+	<form.rootContainer>
+		<GridPanel classNames="fcls_rootContainer" verticalAlignment="Top" horizontalAlignment="Left" fieldTable="" identifier="rootContainer">
+			<GridPanel.gridRowDefinitions>
+				<GridRowDefinition gridLengthValue=""/>
+				<GridRowDefinition gridLengthValue=""/>
+				<GridRowDefinition gridLengthValue=""/>
+				<GridRowDefinition gridLengthValue=""/>
+				<GridRowDefinition gridLengthValue=""/>
+			</GridPanel.gridRowDefinitions>
+			<GridPanel.gridColumnDefinitions>
+				<GridColumnDefinition gridLengthValue="100%"/>
+			</GridPanel.gridColumnDefinitions>
+			<GridPanel classNames="fcls_title_cnt" visible="true" verticalAlignment="Top" gridItemLocation="0,0,1,1" fieldTable="formonly" identifier="cntTitle">
+				<GridPanel.gridRowDefinitions>
+					<GridRowDefinition gridLengthValue=""/>
+				</GridPanel.gridRowDefinitions>
+				<GridPanel.gridColumnDefinitions>
+					<GridColumnDefinition gridLengthValue="100%"/>
+					<GridColumnDefinition gridLengthValue=""/>
+				</GridPanel.gridColumnDefinitions>
+				<Label isDynamic="true" text="Label (button &amp; ui methods) with URL events - Open Website &amp; Mail URL" classNames="fcls_title_lb" visible="true" gridItemLocation="0,0,1,1" fieldTable="formonly" identifier="lbTitle"/>
+				<Label isDynamic="true" text="wig_label_urlEvent" classNames="fcls_title_lb" visible="true" gridItemLocation="1,0,1,1" fieldTable="" identifier="lbFormName"/>
+			</GridPanel>
+			<GroupBox title="Label with Email url event - OpenUrlEventHandler url=&quot;mailto" visible="true" identifier="c2" gridItemLocation="0,1,1,1" classNames="fcls_detail_gb_cnt">
+				<GridPanel visible="true" identifier="c3" horizontalAlignment="Left" verticalAlignment="Top">
+					<GridPanel.gridColumnDefinitions>
+						<GridColumnDefinition gridLengthValue="" gridMinLength="20rem"/>
+						<GridColumnDefinition gridLengthValue=""/>
+					</GridPanel.gridColumnDefinitions>
+					<GridPanel.gridRowDefinitions>
+						<GridRowDefinition gridLengthValue=""/>
+						<GridRowDefinition gridLengthValue=""/>
+					</GridPanel.gridRowDefinitions>
+					<Label isDynamic="true" text="Send Email to support@querix.com" visible="true" enable="true" fieldTable="formonly" identifier="lbSendEmail" gridItemLocation="0,0,1,1">
+				<Label.image>
+					<Image imageUrl="{CONTEXT}/public/querix/icon/svg/24/ic_email2_24px_blue.svg"/>
+				</Label.image>
+				<Label.onInvoke>
+					<!--  <OpenUrlEventHandler type="OpenUrlEventHandler" url="mailto:support@querix.com"/>
+										<OpenUrlEventHandler url="mailto:support@querix.com?cc=info%40querix.com&amp;bcc=sales%40querix.com&amp;subject=My%20Subject&amp;body=This%20is%20my%20message%20body"/>  
+					<OpenUrlEventHandler url="mailto:support@querix.com?cc=info%40querix.com&amp;amp;bcc=sales%40querix.com&amp;amp;subject=My%20Subject&amp;amp;body=This%20is%20my%20message%20body"/>		 
+							<OpenUrlEventHandler url="mailto:support@querix.com?cc=info%40querix.com&amp;bcc=sales%40querix.com&amp;subject=My%20Subject&amp;body=This%20is%20my%20message%20body"/>			-->
+							<OpenUrlEventHandler url="mailto:support@querix.com?cc=info%40querix.com&amp;bcc=sales%40querix.com&amp;subject=My%20Subject&amp;body=This%20is%20my%20message%20body"/>
+															
+							
+				</Label.onInvoke>
+			</Label>
+					<Button text="Send Email to support@querix.com" visible="true" identifier="btSendEmail" classNames="fcls_button,fcls_align_hstretch" gridItemLocation="0,1,1,1">
+					<Button.image>
+						<Image imageUrl="{CONTEXT}/public/querix/icon/svg/24/ic_email_24px.svg"/>
+					</Button.image>
+					<Button.onInvoke>
+						<OpenUrlEventHandler type="OpenUrlEventHandler" url="mailto:support@querix.com?cc=info%40querix.com&amp;bcc=sales%40querix.com&amp;subject=My%20Subject&amp;body=This%20is%20my%20message%20body"/>
+					</Button.onInvoke>
+				</Button>
+					<Label text="&lt;Label.onInvoke&gt;&#13;&#10;  &lt;OpenUrlEventHandler url=&quot;mailto:support@querix.com?cc=info%40querix.com&amp;bcc=sales%40querix.com&amp;subject=My%20Subject&amp;body=This%20is%20my%20message%20body&quot;/&gt;&#13;&#10;&lt;/Label.onInvoke&gt;" isDynamic="true" visible="true" identifier="lb6" allowNewlines="true" textAlignment="Left,Default" horizontalAlignment="Left" gridItemLocation="1,0,1,2"/>
+				</GridPanel>
+			</GroupBox>
+			<GroupBox title="Label with Email url event - OpenUrlEventHandler url=&quot;www.querix.com&quot;" visible="true" identifier="c4" gridItemLocation="0,2,1,1" classNames="fcls_detail_gb_cnt">
+				<GridPanel visible="true" identifier="c5" horizontalAlignment="Left" verticalAlignment="Top">
+					<GridPanel.gridColumnDefinitions>
+						<GridColumnDefinition gridLengthValue="" gridMinLength="20rem"/>
+						<GridColumnDefinition gridLengthValue=""/>
+					</GridPanel.gridColumnDefinitions>
+					<GridPanel.gridRowDefinitions>
+						<GridRowDefinition gridLengthValue=""/>
+						<GridRowDefinition gridLengthValue=""/>
+					</GridPanel.gridRowDefinitions>
+					<Label text="Open Website www.querix.com" isDynamic="true" visible="true" identifier="lbOpenWebsite" gridItemLocation="0,0,1,1">
+					<Label.image>
+						<Image imageUrl="{CONTEXT}/public/querix/icon/svg/24/ic_link_24px_blue.svg"/>
+					</Label.image>
+					<Label.onInvoke>
+						<OpenUrlEventHandler type="OpenUrlEventHandler" url="www.querix.com"/>
+					</Label.onInvoke>
+				</Label>
+					<Label text="&lt;Label.onInvoke&gt;&#13;&#10;  &lt;OpenUrlEventHandler type=&quot;OpenUrlEventHandler&quot; url=&quot;www.querix.com&quot;/&gt;&#13;&#10;&lt;/Label.onInvoke&gt;" isDynamic="true" visible="true" identifier="lb7" allowNewlines="true" horizontalAlignment="Left" textAlignment="Left,Default" gridItemLocation="1,0,1,2"/>
+					<Button text="Open Website www.querix.com" visible="true" identifier="btOpenWebsite" classNames="fcls_button,fcls_align_hstretch" gridItemLocation="0,1,1,1">
+					<Button.image>
+						<Image imageUrl="{CONTEXT}/public/querix/icon/svg/24/ic_home_24px.svg"/>
+					</Button.image>
+					<Button.onInvoke>
+						<OpenUrlEventHandler type="OpenUrlEventHandler" url="www.querix.com"/>
+					</Button.onInvoke>
+				</Button>
+				</GridPanel>
+			</GroupBox>
+			<GroupBox title="ui.interface.frontCall() methods" visible="true" identifier="c6" gridItemLocation="0,3,1,1" classNames="fcls_detail_gb_cnt">
+				<GridPanel visible="true" identifier="c7" horizontalAlignment="Left" verticalAlignment="Top">
+					<GridPanel.gridColumnDefinitions>
+						<GridColumnDefinition gridLengthValue="" gridMinLength="20rem"/>
+						<GridColumnDefinition gridLengthValue=""/>
+					</GridPanel.gridColumnDefinitions>
+					<GridPanel.gridRowDefinitions>
+						<GridRowDefinition gridLengthValue=""/>
+						<GridRowDefinition gridLengthValue=""/>
+					</GridPanel.gridRowDefinitions>
+					<Button text="Website ui.Interface.frontCall" visible="true" identifier="btUiInterfaceWebsite" classNames="fcls_button,fcls_align_hstretch" textAlignment="Left,Default" gridItemLocation="0,0,1,1">
+					<Button.onInvoke>
+						<ActionEventHandler type="actioneventhandler" actionName="UI_API_WEBSITE"/>
+					</Button.onInvoke>
+					<Button.image>
+						<Image imageUrl="{CONTEXT}/public/querix/icon/svg/24/ic_api_24px.svg"/>
+					</Button.image>
+				</Button>
+					<Label text="call ui.Interface.frontCall(&quot;standard&quot;,&quot;launchurl&quot;, [&quot;www.querix.com&quot;],[])" isDynamic="true" visible="true" identifier="lb14" gridItemLocation="1,0,1,1" textAlignment="Left,Default" horizontalAlignment="Left"/>
+					<Button text="Email ui.Interface.frontCall" visible="true" identifier="btUiInterfaceEmail" classNames="fcls_button,fcls_align_hstretch" textAlignment="Left,Default" gridItemLocation="0,1,1,1">
+					<Button.onInvoke>
+						<ActionEventHandler type="actioneventhandler" actionName="UI_API_EMAIL"/>
+					</Button.onInvoke>
+					<Button.image>
+						<Image imageUrl="{CONTEXT}/public/querix/icon/svg/24/ic_api_ui_24px.svg"/>
+					</Button.image>
+				</Button>
+					<Label text="call ui.Interface.frontCall(&quot;standard&quot;,&quot;launchurl&quot;,&#13;&#10;[&quot;mailto:support@querix.com?cc=info%40querix.com&amp;bcc=sales%40querix.com&amp;subject=My%20Subject&amp;body=This%20is%20my%20message%20body&quot;],[])" isDynamic="true" visible="true" identifier="lb12" allowNewlines="true" gridItemLocation="1,1,1,1" textAlignment="Left,Default" horizontalAlignment="Left"/>
+				</GridPanel>
+			</GroupBox>
+			<GridPanel classNames="fcls_statusbar_cnt" visible="true" verticalAlignment="Bottom" gridItemLocation="0,4,1,1" fieldTable="formonly" identifier="cntStatusBar">
+				<GridPanel.gridRowDefinitions>
+					<GridRowDefinition gridLengthValue=""/>
+					<GridRowDefinition gridLengthValue=""/>
+				</GridPanel.gridRowDefinitions>
+				<GridPanel.gridColumnDefinitions>
+					<GridColumnDefinition gridLengthValue="100%"/>
+				</GridPanel.gridColumnDefinitions>
+				<Label isDynamic="true" text="" classNames="fcls_sblabel" visible="true" gridItemLocation="0,0,1,1" fieldTable="formonly" identifier="lbInfo1"/>
+				<Label isDynamic="true" text="" classNames="fcls_sblabel" visible="true" gridItemLocation="0,1,1,1" fieldTable="formonly" identifier="lbInfo2"/>
+			</GridPanel>
+		</GridPanel>
+	</form.rootContainer>
+	<form.screenRecords>
+		<ScreenRecord identifier="FORMONLY" fields=""/>
+	</form.screenRecords>
+</form>
+
+
+

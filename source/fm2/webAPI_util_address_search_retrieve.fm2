@@ -1,0 +1,442 @@
+<?xml version="1.0" encoding="UTF-8"?><form xmlns="http://namespaces.querix.com/2015/fglForms">
+	<form.rootContainer>
+		<GridPanel classNames="fcls_rootContainer" fieldTable="" horizontalAlignment="Stretch" identifier="rootContainer" verticalAlignment="Top">
+			<GridPanel.gridRowDefinitions>
+				<GridRowDefinition gridLengthValue=""/>
+				<GridRowDefinition gridLengthValue=""/>
+				<GridRowDefinition gridLengthValue="20%"/>
+				<GridRowDefinition gridLengthValue=""/>
+				<GridRowDefinition/>
+				<GridRowDefinition gridLengthValue=""/>
+			</GridPanel.gridRowDefinitions>
+			<GridPanel.gridColumnDefinitions>
+				<GridColumnDefinition gridLengthValue="100%"/>
+			</GridPanel.gridColumnDefinitions>
+			<GridPanel classNames="fcls_title_cnt" fieldTable="formonly" gridItemLocation="0,0,1,1" identifier="cntTitle" verticalAlignment="Top" visible="true">
+				<GridPanel.gridRowDefinitions>
+					<GridRowDefinition gridLengthValue=""/>
+				</GridPanel.gridRowDefinitions>
+				<GridPanel.gridColumnDefinitions>
+					<GridColumnDefinition gridLengthValue="100%"/>
+					<GridColumnDefinition gridLengthValue=""/>
+				</GridPanel.gridColumnDefinitions>
+				<Label classNames="fcls_title_lb" fieldTable="formonly" gridItemLocation="0,0,1,1" identifier="lbTitle" isDynamic="true" text="Demo: Address Lookup using the LOQATE.COM REST Webservice API" visible="true"/>
+				<Label classNames="fcls_title_lb" fieldTable="" gridItemLocation="1,0,1,1" identifier="lbFormName" isDynamic="true" text="webAPI_util_address_search_retrieve" visible="true"/>
+			</GridPanel>
+
+			<GridPanel visible="true" identifier="cntGpSearch" gridItemLocation="0,1,1,1" verticalAlignment="Top" horizontalAlignment="Stretch">
+				<GridPanel.gridColumnDefinitions>
+					<GridColumnDefinition gridLengthValue="33%"/>
+					<GridColumnDefinition gridLengthValue="33%"/>
+					<GridColumnDefinition gridLengthValue="33%"/>
+				</GridPanel.gridColumnDefinitions>
+				<GridPanel.gridRowDefinitions>
+					<GridRowDefinition gridLengthValue=""/>
+				</GridPanel.gridRowDefinitions>
+
+				<GridPanel classNames="fcls_detail_cnt,fcls_data_cnt" fieldTable="formonly" horizontalAlignment="Stretch" identifier="cntDetail1" verticalAlignment="Top" visible="true" gridItemLocation="0,0,1,1">
+				<GridPanel.gridRowDefinitions>
+					<GridRowDefinition gridLengthValue=""/>
+					<GridRowDefinition gridLengthValue="33" gridMinLength="33"/>
+					<GridRowDefinition gridLengthValue=""/>
+					<GridRowDefinition gridLengthValue=""/>
+					<GridRowDefinition gridLengthValue=""/>
+				</GridPanel.gridRowDefinitions>
+
+				<GridPanel.gridColumnDefinitions>
+					<GridColumnDefinition gridLengthValue="10rem" gridMinLength="10rem" gridMaxLength="10rem"/>
+					<GridColumnDefinition gridLengthValue="100%"/>
+				</GridPanel.gridColumnDefinitions>
+
+				<Label classNames="fcls_fieldlabel,fcls_align_left" fieldTable="" identifier="lb66" isDynamic="true" text="Search (1-4)Text" visible="true" gridItemLocation="0,0,1,1"/>
+				<TextField visible="true" identifier="text" gridItemLocation="1,0,1,1" classNames="fcls_data_widget,fcls_align_hstretch" noEntry="true">
+					<TextField.onKeyUp>
+						<ActionEventHandler actionName="SEARCH"/>
+					</TextField.onKeyUp>
+				</TextField>
+				<Label visible="true" identifier="lb221" gridItemLocation="0,1,1,1" isDynamic="true" classNames="fcls_fieldlabel,fcls_align_left" fieldTable="" text="Search1 (M308BR)"/>
+				<TextField visible="true" identifier="search1" gridItemLocation="1,1,1,1" classNames="fcls_data_widget,fcls_align_hstretch">
+					<TextField.onKeyUp>
+						<ActionEventHandler actionName="SEARCH"/>
+					</TextField.onKeyUp>
+				</TextField>
+				<Label visible="true" identifier="lb222" gridItemLocation="0,2,1,1" isDynamic="true" classNames="fcls_fieldlabel,fcls_align_left" fieldTable="" text="Search2 (22)"/>
+				<TextField visible="true" identifier="search2" gridItemLocation="1,2,1,1" classNames="fcls_data_widget,fcls_align_hstretch">
+					<TextField.onKeyUp>
+						<ActionEventHandler actionName="SEARCH"/>
+					</TextField.onKeyUp>
+				</TextField>
+				<Label visible="true" identifier="lb223" gridItemLocation="0,3,1,1" isDynamic="true" classNames="fcls_fieldlabel,fcls_align_left" fieldTable="" text="Search3"/>
+				<TextField visible="true" identifier="search3" gridItemLocation="1,3,1,1" classNames="fcls_data_widget,fcls_align_hstretch">
+					<TextField.onKeyUp>
+						<ActionEventHandler actionName="SEARCH"/>
+					</TextField.onKeyUp>
+				</TextField>
+				<Label visible="true" identifier="lb237" gridItemLocation="0,4,1,1" isDynamic="true" classNames="fcls_fieldlabel,fcls_align_left" fieldTable="" text="Search4"/>
+				<TextField visible="true" identifier="search4" gridItemLocation="1,4,1,1" classNames="fcls_data_widget,fcls_align_hstretch">
+					<TextField.onKeyUp>
+						<ActionEventHandler actionName="SEARCH"/>
+					</TextField.onKeyUp>
+				</TextField>
+			</GridPanel>
+				<GridPanel visible="true" identifier="cntDetail2" gridItemLocation="1,0,1,1" fieldTable="formonly" classNames="fcls_detail_cnt,fcls_data_cnt" horizontalAlignment="Stretch" verticalAlignment="Top">
+					<GridPanel.gridRowDefinitions>
+						<GridRowDefinition gridLengthValue=""/>
+						<GridRowDefinition gridLengthValue="33" gridMinLength="33"/>
+						<GridRowDefinition gridLengthValue=""/>
+						<GridRowDefinition gridLengthValue=""/>
+						<GridRowDefinition gridLengthValue=""/>
+						<GridRowDefinition gridLengthValue=""/>
+					</GridPanel.gridRowDefinitions>
+					<GridPanel.gridColumnDefinitions>
+						<GridColumnDefinition gridLengthValue="10rem" gridMaxLength="10rem" gridMinLength="10rem"/>
+						<GridColumnDefinition gridLengthValue=""/>
+					</GridPanel.gridColumnDefinitions>
+					<Label visible="true" identifier="lb246" isDynamic="true" classNames="fcls_fieldlabel,fcls_align_left" fieldTable="" gridItemLocation="0,3,1,1" text="Max. Line / Found" allowNewlines="true"/>
+					<Label visible="true" identifier="lb248" isDynamic="true" classNames="fcls_fieldlabel,fcls_align_left" fieldTable="" gridItemLocation="0,0,1,1" text="Origin"/>
+					<Label visible="true" identifier="lb250" allowNewlines="true" classNames="fcls_fieldlabel,fcls_align_left" fieldTable="" gridItemLocation="0,1,1,1" text="Countries(csv)"/>
+					<Label visible="true" identifier="lb251" isDynamic="true" classNames="fcls_fieldlabel,fcls_align_left" fieldTable="" gridItemLocation="0,2,1,1" text="Language"/>
+					<ComboBox visible="true" identifier="origin" classNames="fcls_data_widget,fcls_align_hstretch" editable="true" toCase="Up" gridItemLocation="1,0,1,1">
+					<ComboBoxItem text="United Kingdom">
+						<ComboBoxItem.value>
+							<StringLiteral stringValue="GB"/>
+						</ComboBoxItem.value>
+					</ComboBoxItem>
+					<ComboBoxItem text="Germany">
+						<ComboBoxItem.value>
+							<StringLiteral stringValue="DE"/>
+						</ComboBoxItem.value>
+					</ComboBoxItem>
+					<ComboBoxItem text="France">
+						<ComboBoxItem.value>
+							<StringLiteral stringValue="FR"/>
+						</ComboBoxItem.value>
+					</ComboBoxItem>
+					<ComboBoxItem text="">
+						<ComboBoxItem.value>
+							<NullLiteral/>
+						</ComboBoxItem.value>
+					</ComboBoxItem>
+					<ComboBox.onKeyUp>
+						<ActionEventHandler actionName="SEARCH"/>
+					</ComboBox.onKeyUp>
+					<ComboBox.onValueChanged>
+						<ActionEventHandler actionName="SEARCH"/>
+					</ComboBox.onValueChanged>
+				</ComboBox>
+					<ComboBox identifier="countries" visible="true" classNames="fcls_data_widget,fcls_align_hstretch" editable="true" toCase="Up" gridItemLocation="1,1,1,1">
+					<ComboBoxItem text="United Kingdom">
+						<ComboBoxItem.value>
+							<StringLiteral stringValue="GB"/>
+						</ComboBoxItem.value>
+					</ComboBoxItem>
+					<ComboBoxItem text="Germany">
+						<ComboBoxItem.value>
+							<StringLiteral stringValue="DE"/>
+						</ComboBoxItem.value>
+					</ComboBoxItem>
+					<ComboBoxItem text="France">
+						<ComboBoxItem.value>
+							<StringLiteral stringValue="FR"/>
+						</ComboBoxItem.value>
+					</ComboBoxItem>
+					<ComboBoxItem text="">
+						<ComboBoxItem.value>
+							<NullLiteral/>
+						</ComboBoxItem.value>
+					</ComboBoxItem>
+					<ComboBox.onKeyUp>
+						<ActionEventHandler actionName="SEARCH"/>
+					</ComboBox.onKeyUp>
+					<ComboBox.onValueChanged>
+						<ActionEventHandler actionName="SEARCH"/>
+					</ComboBox.onValueChanged>
+
+				</ComboBox>
+					<ComboBox visible="true" identifier="language" classNames="fcls_data_widget,fcls_align_hstretch" editable="true" toCase="Up" gridItemLocation="1,2,1,1">
+					<ComboBoxItem text="English">
+						<ComboBoxItem.value>
+							<StringLiteral stringValue="ENG"/>
+						</ComboBoxItem.value>
+					</ComboBoxItem>
+					<ComboBoxItem text="German">
+						<ComboBoxItem.value>
+							<StringLiteral stringValue="GER"/>
+						</ComboBoxItem.value>
+					</ComboBoxItem>
+					<ComboBoxItem text="French">
+						<ComboBoxItem.value>
+							<StringLiteral stringValue="FRE"/>
+						</ComboBoxItem.value>
+					</ComboBoxItem>
+					<ComboBoxItem text="">
+						<ComboBoxItem.value>
+							<NullLiteral/>
+						</ComboBoxItem.value>
+					</ComboBoxItem>
+					<ComboBox.onKeyUp>
+						<ActionEventHandler actionName="SEARCH"/>
+					</ComboBox.onKeyUp>
+					<ComboBox.onValueChanged>
+						<ActionEventHandler actionName="SEARCH"/>
+					</ComboBox.onValueChanged>
+
+				</ComboBox>
+					<StackPanel visible="true" identifier="c2224" gridItemLocation="1,3,1,1">
+						<TextField visible="true" identifier="limit" classNames="fcls_data_widget,fcls_align_left,fcls_length_05qch">
+					<TextField.onKeyUp>
+						<ActionEventHandler actionName="SEARCH"/>
+					</TextField.onKeyUp>
+				</TextField>
+						<Label text="/" isDynamic="true" visible="true" identifier="lb258" classNames="fcls_fieldlabel,fcls_align_left"/>
+						<Label visible="true" identifier="find_count" classNames="fcls_fieldlabel,fcls_align_left" text="0" isDynamic="true">
+						<Label.onKeyUp>
+							<ActionEventHandler actionName="SEARCH"/>
+						</Label.onKeyUp>
+					</Label>
+					</StackPanel>
+					<Label visible="true" identifier="lb252" gridItemLocation="0,5,1,1" isDynamic="true" classNames="fcls_fieldlabel,fcls_align_left" fieldTable="" text="Find/Retrieve Count"/>
+					<StackPanel visible="true" identifier="c2225" gridItemLocation="1,5,1,1">
+						<Label text="0" isDynamic="true" visible="true" identifier="count_find" classNames="fcls_fieldlabel,fcls_align_left"/>
+						<Label text="/" isDynamic="true" visible="true" identifier="lb256" classNames="fcls_fieldlabel,fcls_align_left"/>
+						<Label text="0" isDynamic="true" visible="true" identifier="count_retrieve" classNames="fcls_fieldlabel,fcls_align_left"/>
+					</StackPanel>
+				</GridPanel>
+				<GridPanel visible="true" identifier="cnt_gp_filter" gridItemLocation="2,0,1,1" verticalAlignment="Top" horizontalAlignment="Left">
+					<GridPanel.gridColumnDefinitions>
+						<GridColumnDefinition gridLengthValue="11rem" gridMaxLength="11rem" gridMinLength="11rem"/>
+						<GridColumnDefinition gridLengthValue=""/>
+					</GridPanel.gridColumnDefinitions>
+					<GridPanel.gridRowDefinitions>
+						<GridRowDefinition gridLengthValue=""/>
+						<GridRowDefinition gridLengthValue=""/>
+						<GridRowDefinition gridLengthValue=""/>
+						<GridRowDefinition gridLengthValue=""/>
+					</GridPanel.gridRowDefinitions>
+					<Label text="List Filter" isDynamic="true" visible="true" identifier="lb154" gridItemLocation="0,2,1,1" classNames="fcls_fieldlabel,fcls_align_left"/>
+					<Label classNames="fcls_fieldlabel,fcls_align_left" fieldTable="" identifier="lb52" isDynamic="true" text="Loqate License" visible="true" gridItemLocation="0,0,1,1"/>
+					<TextField visible="true" identifier="license_key" classNames="fcls_data_widget,fcls_align_hstretch" gridItemLocation="1,0,1,1"/>
+					<Label visible="true" identifier="lb156" isDynamic="true" classNames="fcls_fieldlabel,fcls_align_left" fieldTable="" text="API Search Container" gridItemLocation="0,1,1,1"/>
+					<TextField visible="true" identifier="container" classNames="fcls_data_widget,fcls_align_hstretch" noEntry="true" gridItemLocation="1,1,1,1"/>
+					<RadioGroup orientation="Vertical" visible="true" identifier="filter_type" verticalAlignment="Top" gridItemLocation="1,2,1,1">
+
+						<Radio title="All (filter off)" identifier="filter_type_none">
+							<Radio.value>
+								<StringLiteral stringValue="N"/>
+							</Radio.value>
+						</Radio>
+
+						<Radio title="Address" identifier="filter_type_address">
+							<Radio.value>
+								<StringLiteral stringValue="A"/>
+							</Radio.value>
+						</Radio>
+
+						<Radio title="Post Code" identifier="filter_type_postcode">
+							<Radio.value>
+								<StringLiteral stringValue="P"/>
+							</Radio.value>
+						</Radio>
+
+						<Radio title="District" identifier="filter_type_district">
+							<Radio.value>
+								<StringLiteral stringValue="D"/>
+							</Radio.value>
+						</Radio>
+
+					</RadioGroup>
+
+				</GridPanel>
+			</GridPanel>
+			<Table classNames="fcls_table_cnt" fieldTable="" gridItemLocation="0,2,1,1" horizontalAlignment="Stretch" identifier="scr_response" verticalAlignment="Stretch" visible="true">
+				<TableColumn classNames="fcls_table_cnt_column" fieldTable="" identifier="tc_id" resizable="true" text="ID" visible="true">
+					<TableColumn.columnLength>
+						<GridLength gridLengthValue="25%"/>
+					</TableColumn.columnLength>
+					<TextField visible="true" identifier="id1"/>
+				</TableColumn>
+				<TableColumn text="Type" resizable="true" visible="true" identifier="tc_type">
+					<TextField visible="true" identifier="type1"/>
+					<TableColumn.columnLength>
+						<GridLength gridLengthValue="12.5%"/>
+					</TableColumn.columnLength>
+				</TableColumn>
+				<TableColumn text="Text" resizable="true" visible="true" identifier="tc_text">
+					<TextField visible="true" identifier="text1"/>
+					<TableColumn.columnLength>
+						<GridLength gridLengthValue="25%"/>
+					</TableColumn.columnLength>
+				</TableColumn>
+				<TableColumn text="Highlight" resizable="true" visible="true" identifier="tc_highlight">
+					<TextField visible="true" identifier="highlight1"/>
+					<TableColumn.columnLength>
+						<GridLength gridLengthValue="12.5%"/>
+					</TableColumn.columnLength>
+				</TableColumn>
+				<TableColumn text="Description" resizable="true" visible="true" identifier="tc_description">
+					<TextField visible="true" identifier="description1"/>
+					<TableColumn.columnLength>
+						<GridLength gridLengthValue="25%"/>
+					</TableColumn.columnLength>
+				</TableColumn>
+			</Table>
+			
+
+			<GroupBox title="Address api.retrieve()" visible="true" identifier="cntGB_Retrieve" gridItemLocation="0,3,1,1" verticalAlignment="Top" minSize=",5qch" horizontalAlignment="Stretch">
+			
+			
+			
+			<GridPanel classNames="fcls_detail_cnt,fcls_data_cnt" fieldTable="formonly" gridItemLocation="0,0,1,1" horizontalAlignment="Left" identifier="cntDetail2222" verticalAlignment="Top" visible="true">
+				<GridPanel.gridRowDefinitions>
+					<GridRowDefinition gridLengthValue=""/>
+					<GridRowDefinition gridLengthValue=""/>
+					<GridRowDefinition gridLengthValue=""/>
+					<GridRowDefinition gridLengthValue=""/>
+					<GridRowDefinition gridLengthValue=""/>
+					<GridRowDefinition gridLengthValue=""/>
+					<GridRowDefinition gridLengthValue=""/>
+					<GridRowDefinition gridLengthValue=""/>
+					<GridRowDefinition gridLengthValue=""/>
+					<GridRowDefinition gridLengthValue=""/>
+					<GridRowDefinition gridLengthValue=""/>
+					<GridRowDefinition gridLengthValue=""/>
+					<GridRowDefinition gridLengthValue=""/>
+				</GridPanel.gridRowDefinitions>
+				<GridPanel.gridColumnDefinitions>
+					<GridColumnDefinition gridLengthValue="" gridMinLength="10rem"/>
+					<GridColumnDefinition gridLengthValue="" gridMinLength="10rem"/>
+					<GridColumnDefinition gridLengthValue="" gridMinLength="10rem"/>
+					<GridColumnDefinition gridLengthValue="" gridMinLength="10rem"/>
+					<GridColumnDefinition gridLengthValue="" gridMinLength="10rem"/>
+					<GridColumnDefinition gridLengthValue="" gridMinLength="10rem"/>
+					<GridColumnDefinition gridLengthValue="" gridMinLength="10rem"/>
+					<GridColumnDefinition gridLengthValue="" gridMinLength="10rem"/>
+				</GridPanel.gridColumnDefinitions>
+				<Label classNames="fcls_fieldlabel,fcls_align_left" fieldTable="formonly" gridItemLocation="0,0,1,1" identifier="lb42" isDynamic="true" text="id" visible="true"/>
+				<TextField visible="true" identifier="address_id" gridItemLocation="1,0,1,1" classNames="fcls_data_widget,fcls_align_hstretch"/>
+				<Label visible="true" identifier="lb224" gridItemLocation="6,0,1,1" isDynamic="true" classNames="fcls_fieldlabel,fcls_align_left" fieldTable="" text="Field1"/>
+				<TextField visible="true" identifier="field1" gridItemLocation="7,0,1,1" allowNewlines="true" classNames="fcls_data_widget,fcls_align_hstretch"/>
+				<Label classNames="fcls_fieldlabel,fcls_align_left" fieldTable="formonly" gridItemLocation="0,1,1,1" identifier="lb36" isDynamic="true" text="domesticId" visible="true"/>
+				<TextField visible="true" identifier="domesticId" gridItemLocation="1,1,1,1" classNames="fcls_data_widget,fcls_align_hstretch"/>
+				<Label visible="true" identifier="lb225" gridItemLocation="6,1,1,1" isDynamic="true" classNames="fcls_fieldlabel,fcls_align_left" fieldTable="" text="Field2"/>
+				<TextField visible="true" identifier="field2" gridItemLocation="7,1,1,1" classNames="fcls_data_widget,fcls_align_hstretch"/>
+				<Label classNames="fcls_fieldlabel,fcls_align_left" fieldTable="formonly" gridItemLocation="0,2,1,1" identifier="lb37" isDynamic="true" text="language" visible="true"/>
+				<TextField visible="true" identifier="address_language" gridItemLocation="1,2,1,1" classNames="fcls_data_widget,fcls_align_hstretch"/>
+				<Label visible="true" identifier="lb226" gridItemLocation="6,2,1,1" isDynamic="true" classNames="fcls_fieldlabel,fcls_align_left" fieldTable="" text="Field3"/>
+				<TextField visible="true" identifier="field3" gridItemLocation="7,2,1,1" classNames="fcls_data_widget,fcls_align_hstretch"/>
+				<Label classNames="fcls_fieldlabel,fcls_align_left" fieldTable="" identifier="lb57" isDynamic="true" text="languageAlternatives" visible="true" gridItemLocation="0,3,1,1"/>
+				<TextField visible="true" identifier="languageAlternatives" gridItemLocation="1,3,1,1" classNames="fcls_data_widget,fcls_align_hstretch"/>
+				<Label visible="true" identifier="lb227" gridItemLocation="6,3,1,1" isDynamic="true" classNames="fcls_fieldlabel,fcls_align_left" fieldTable="" text="Field4"/>
+				<TextField visible="true" identifier="field4" gridItemLocation="7,3,1,1" classNames="fcls_data_widget,fcls_align_hstretch"/>
+				<Label visible="true" identifier="lb161" gridItemLocation="0,4,1,1" isDynamic="true" classNames="fcls_fieldlabel,fcls_align_left" fieldTable="" text="Department"/>
+				<TextField visible="true" identifier="Department" gridItemLocation="1,4,1,1" classNames="fcls_data_widget,fcls_align_hstretch"/>
+				<Label visible="true" identifier="lb228" gridItemLocation="6,4,1,1" isDynamic="true" classNames="fcls_fieldlabel,fcls_align_left" fieldTable="" text="Field5"/>
+				<TextField visible="true" identifier="field5" gridItemLocation="7,4,1,1" classNames="fcls_data_widget,fcls_align_hstretch"/>
+				<Label visible="true" identifier="lb162" gridItemLocation="0,5,1,1" isDynamic="true" classNames="fcls_fieldlabel,fcls_align_left" fieldTable="" text="Company"/>
+				<TextField visible="true" identifier="Company" gridItemLocation="1,5,1,1" classNames="fcls_data_widget,fcls_align_hstretch"/>
+				<Label visible="true" identifier="lb229" gridItemLocation="6,5,1,1" isDynamic="true" classNames="fcls_fieldlabel,fcls_align_left" fieldTable="" text="Field6"/>
+				<TextField visible="true" identifier="field6" gridItemLocation="7,5,1,1" classNames="fcls_data_widget,fcls_align_hstretch"/>
+				<Label visible="true" identifier="lb163" gridItemLocation="0,6,1,1" isDynamic="true" classNames="fcls_fieldlabel,fcls_align_left" fieldTable="" text="SubBuilding"/>
+				<TextField visible="true" identifier="SubBuilding" gridItemLocation="1,6,1,1" classNames="fcls_data_widget,fcls_align_hstretch"/>
+				<Label visible="true" identifier="lb230" gridItemLocation="6,6,1,1" isDynamic="true" classNames="fcls_fieldlabel,fcls_align_left" fieldTable="" text="Field7"/>
+				<TextField visible="true" identifier="field7" gridItemLocation="7,6,1,1" classNames="fcls_data_widget,fcls_align_hstretch"/>
+				<Label visible="true" identifier="lb194" gridItemLocation="0,7,1,1" isDynamic="true" classNames="fcls_fieldlabel,fcls_align_left" fieldTable="" text="BuildingNumber"/>
+				<TextField visible="true" identifier="BuildingNumber" gridItemLocation="1,7,1,1" classNames="fcls_data_widget,fcls_align_hstretch"/>
+				<Label visible="true" identifier="lb231" gridItemLocation="6,7,1,1" isDynamic="true" classNames="fcls_fieldlabel,fcls_align_left" fieldTable="" text="Field8"/>
+				<TextField visible="true" identifier="field8" gridItemLocation="7,7,1,1" classNames="fcls_data_widget,fcls_align_hstretch"/>
+				<Label visible="true" identifier="lb195" gridItemLocation="0,8,1,1" isDynamic="true" classNames="fcls_fieldlabel,fcls_align_left" fieldTable="" text="BuildingName"/>
+				<TextField visible="true" identifier="BuildingName" gridItemLocation="1,8,1,1" classNames="fcls_data_widget,fcls_align_hstretch"/>
+				<Label visible="true" identifier="lb232" gridItemLocation="6,8,1,1" isDynamic="true" classNames="fcls_fieldlabel,fcls_align_left" fieldTable="" text="Field9"/>
+				<TextField visible="true" identifier="field9" gridItemLocation="7,8,1,1" classNames="fcls_data_widget,fcls_align_hstretch"/>
+				<Label classNames="fcls_fieldlabel,fcls_align_left" fieldTable="" identifier="lb58" isDynamic="true" text="SecondaryStreet" visible="true" gridItemLocation="0,9,1,1"/>
+				<TextField visible="true" identifier="SecondaryStreet" gridItemLocation="1,9,1,1" classNames="fcls_data_widget,fcls_align_hstretch"/>
+				<Label visible="true" identifier="lb233" gridItemLocation="6,9,1,1" isDynamic="true" classNames="fcls_fieldlabel,fcls_align_left" fieldTable="" text="Field10"/>
+				<TextField visible="true" identifier="field10" gridItemLocation="7,9,1,1" classNames="fcls_data_widget,fcls_align_hstretch"/>
+				<Label classNames="fcls_fieldlabel,fcls_align_left" fieldTable="" identifier="lb60" isDynamic="true" text="Street" visible="true" gridItemLocation="0,10,1,1"/>
+				<TextField visible="true" identifier="Street" gridItemLocation="1,10,1,1" classNames="fcls_data_widget,fcls_align_hstretch"/>
+				<Label visible="true" identifier="lb234" gridItemLocation="6,10,1,1" isDynamic="true" classNames="fcls_fieldlabel,fcls_align_left" fieldTable="" text="Field11"/>
+				<TextField visible="true" identifier="field11" gridItemLocation="7,10,1,1" classNames="fcls_data_widget,fcls_align_hstretch"/>
+				<Label classNames="fcls_fieldlabel,fcls_align_left" fieldTable="" identifier="lb61" isDynamic="true" text="Block" visible="true" gridItemLocation="0,11,1,1"/>
+				<TextField visible="true" identifier="Block" gridItemLocation="1,11,1,1" classNames="fcls_data_widget,fcls_align_hstretch"/>
+				<Label visible="true" identifier="lb235" gridItemLocation="6,11,1,1" isDynamic="true" classNames="fcls_fieldlabel,fcls_align_left" fieldTable="" text="Field12"/>
+				<TextField visible="true" identifier="field12" gridItemLocation="7,11,1,1" classNames="fcls_data_widget,fcls_align_hstretch"/>
+				<Label visible="true" identifier="lb236" gridItemLocation="6,12,1,1" isDynamic="true" classNames="fcls_fieldlabel,fcls_align_left" fieldTable="" text="Field13"/>
+				<TextField visible="true" identifier="field13" gridItemLocation="7,12,1,1" classNames="fcls_data_widget,fcls_align_hstretch"/>
+				<Label classNames="fcls_fieldlabel,fcls_align_left" fieldTable="" identifier="lb59" isDynamic="true" text="Neighbourhood" visible="true" gridItemLocation="0,12,1,1"/>
+				<TextField visible="true" identifier="Neighbourhood" classNames="fcls_data_widget,fcls_align_hstretch" gridItemLocation="1,12,1,1"/>
+				<Label visible="true" identifier="lb164" isDynamic="true" classNames="fcls_fieldlabel,fcls_align_left" fieldTable="" text="District" gridItemLocation="2,0,1,1"/>
+				<TextField visible="true" identifier="District" classNames="fcls_data_widget,fcls_align_hstretch" gridItemLocation="3,0,1,1"/>
+				<Label visible="true" identifier="lb165" isDynamic="true" classNames="fcls_fieldlabel,fcls_align_left" fieldTable="" text="City" gridItemLocation="2,1,1,1"/>
+				<Label visible="true" identifier="lb166" isDynamic="true" classNames="fcls_fieldlabel,fcls_align_left" fieldTable="" text="Line1" gridItemLocation="2,2,1,1"/>
+				<Label visible="true" identifier="lb196" isDynamic="true" classNames="fcls_fieldlabel,fcls_align_left" fieldTable="" text="Line2" gridItemLocation="2,3,1,1"/>
+				<Label visible="true" identifier="lb197" isDynamic="true" classNames="fcls_fieldlabel,fcls_align_left" fieldTable="" text="Line3" gridItemLocation="2,4,1,1"/>
+				<Label classNames="fcls_fieldlabel,fcls_align_left" fieldTable="" identifier="lb87" isDynamic="true" text="Line4" visible="true" gridItemLocation="2,5,1,1"/>
+				<Label classNames="fcls_fieldlabel,fcls_align_left" fieldTable="" identifier="lb85" isDynamic="true" text="Line5" visible="true" gridItemLocation="2,6,1,1"/>
+				<Label classNames="fcls_fieldlabel,fcls_align_left" fieldTable="" identifier="lb88" isDynamic="true" text="AdminAreaName" visible="true" gridItemLocation="2,7,1,1"/>
+				<Label visible="true" identifier="lb167" isDynamic="true" classNames="fcls_fieldlabel,fcls_align_left" fieldTable="" text="AdminAreaCode" gridItemLocation="2,8,1,1"/>
+				<Label visible="true" identifier="lb168" isDynamic="true" classNames="fcls_fieldlabel,fcls_align_left" fieldTable="" text="Province" gridItemLocation="2,9,1,1"/>
+				<Label visible="true" identifier="lb169" isDynamic="true" classNames="fcls_fieldlabel,fcls_align_left" fieldTable="" text="ProvinceName" gridItemLocation="2,10,1,1"/>
+				<Label visible="true" identifier="lb218" isDynamic="true" classNames="fcls_fieldlabel,fcls_align_left" fieldTable="" text="ProvinceCode" gridItemLocation="2,11,1,1"/>
+				<TextField visible="true" identifier="City" classNames="fcls_data_widget,fcls_align_hstretch" gridItemLocation="3,1,1,1"/>
+				<TextField visible="true" identifier="Line1" classNames="fcls_data_widget,fcls_align_hstretch" gridItemLocation="3,2,1,1"/>
+				<TextField visible="true" identifier="Line2" classNames="fcls_data_widget,fcls_align_hstretch" gridItemLocation="3,3,1,1"/>
+				<TextField visible="true" identifier="Line3" classNames="fcls_data_widget,fcls_align_hstretch" gridItemLocation="3,4,1,1"/>
+				<TextField visible="true" identifier="Line4" classNames="fcls_data_widget,fcls_align_hstretch" gridItemLocation="3,5,1,1"/>
+				<TextField visible="true" identifier="Line5" classNames="fcls_data_widget,fcls_align_hstretch" gridItemLocation="3,6,1,1"/>
+				<TextField visible="true" identifier="AdminAreaName" classNames="fcls_data_widget,fcls_align_hstretch" gridItemLocation="3,7,1,1"/>
+				<TextField visible="true" identifier="AdminAreaCode" classNames="fcls_data_widget,fcls_align_hstretch" gridItemLocation="3,8,1,1"/>
+				<TextField visible="true" identifier="Province" classNames="fcls_data_widget,fcls_align_hstretch" gridItemLocation="3,9,1,1"/>
+				<TextField visible="true" identifier="ProvinceName" classNames="fcls_data_widget,fcls_align_hstretch" gridItemLocation="3,10,1,1"/>
+				<TextField visible="true" identifier="ProvinceCode" classNames="fcls_data_widget,fcls_align_hstretch" gridItemLocation="3,11,1,1"/>
+				<Label visible="true" identifier="lb170" isDynamic="true" classNames="fcls_fieldlabel,fcls_align_left" fieldTable="" text="PostalCode" gridItemLocation="2,12,1,1"/>
+				<TextField visible="true" identifier="PostalCode" classNames="fcls_data_widget,fcls_align_hstretch" gridItemLocation="3,12,1,1"/>
+				<Label visible="true" identifier="lb220" isDynamic="true" classNames="fcls_fieldlabel,fcls_align_left" fieldTable="" text="CountryName" gridItemLocation="4,0,1,1"/>
+				<TextField visible="true" identifier="CountryName" classNames="fcls_data_widget,fcls_align_hstretch" gridItemLocation="5,0,1,1"/>
+				<Label visible="true" identifier="lb198" isDynamic="true" classNames="fcls_fieldlabel,fcls_align_left" fieldTable="" text="CountryIso2" gridItemLocation="4,1,1,1"/>
+				<TextField visible="true" identifier="CountryIso2" classNames="fcls_data_widget,fcls_align_hstretch" gridItemLocation="5,1,1,1"/>
+				<Label visible="true" identifier="lb199" isDynamic="true" classNames="fcls_fieldlabel,fcls_align_left" fieldTable="" text="CountryIso3" gridItemLocation="4,2,1,1"/>
+				<TextField visible="true" identifier="CountryIso3" classNames="fcls_data_widget,fcls_align_hstretch" gridItemLocation="5,2,1,1"/>
+				<Label visible="true" identifier="lb200" isDynamic="true" classNames="fcls_fieldlabel,fcls_align_left" fieldTable="" text="CountryIsoNumber" gridItemLocation="4,3,1,1"/>
+				<Label visible="true" identifier="lb201" isDynamic="true" classNames="fcls_fieldlabel,fcls_align_left" fieldTable="" text="SortingNumber1" gridItemLocation="4,4,1,1"/>
+				<Label visible="true" identifier="lb202" isDynamic="true" classNames="fcls_fieldlabel,fcls_align_left" fieldTable="" text="SortingNumber2" gridItemLocation="4,5,1,1"/>
+				<Label visible="true" identifier="lb203" isDynamic="true" classNames="fcls_fieldlabel,fcls_align_left" fieldTable="" text="Barcode" gridItemLocation="4,6,1,1"/>
+				<Label visible="true" identifier="lb204" isDynamic="true" classNames="fcls_fieldlabel,fcls_align_left" fieldTable="" text="POBoxNumber" gridItemLocation="4,7,1,1"/>
+				<Label visible="true" identifier="lb205" isDynamic="true" classNames="fcls_fieldlabel,fcls_align_left" fieldTable="" text="Label" gridItemLocation="4,8,1,1"/>
+				<TextField visible="true" identifier="CountryIsoNumber" classNames="fcls_data_widget,fcls_align_hstretch" gridItemLocation="5,3,1,1"/>
+				<TextField visible="true" identifier="SortingNumber1" classNames="fcls_data_widget,fcls_align_hstretch" gridItemLocation="5,4,1,1"/>
+				<TextField visible="true" identifier="SortingNumber2" classNames="fcls_data_widget,fcls_align_hstretch" gridItemLocation="5,5,1,1"/>
+				<TextField visible="true" identifier="Barcode" classNames="fcls_data_widget,fcls_align_hstretch" gridItemLocation="5,6,1,1"/>
+				<TextField visible="true" identifier="POBoxNumber" classNames="fcls_data_widget,fcls_align_hstretch" gridItemLocation="5,7,1,1"/>
+				<TextArea visible="true" identifier="Label" classNames="fcls_data_widget,fcls_align_hstretch" gridItemLocation="5,8,1,3"/>
+				<Label visible="true" identifier="lb216" isDynamic="true" classNames="fcls_fieldlabel,fcls_align_left" fieldTable="" text="DataLevel" gridItemLocation="4,12,1,1"/>
+				<TextField visible="true" identifier="DataLevel" classNames="fcls_data_widget,fcls_align_hstretch" gridItemLocation="5,12,1,1"/>
+				<Label visible="true" identifier="lb215" isDynamic="true" classNames="fcls_fieldlabel,fcls_align_left" fieldTable="" text="type" gridItemLocation="4,11,1,1"/>
+				<TextField visible="true" identifier="type" classNames="fcls_data_widget,fcls_align_hstretch" gridItemLocation="5,11,1,1"/>
+			</GridPanel>
+			</GroupBox>
+
+
+
+			<GroupBox title="Response Body" visible="true" identifier="cntGB_Response" gridItemLocation="0,4,1,1" verticalAlignment="Top"  horizontalAlignment="Stretch" preferredSize=",5qch">
+				<TextArea visible="true" identifier="response_body" verticalAlignment="Stretch" horizontalAlignment="Stretch"/>
+			</GroupBox>
+			<GridPanel classNames="fcls_statusbar_cnt" fieldTable="formonly" gridItemLocation="0,5,1,1" identifier="cntStatusBar" verticalAlignment="Bottom" visible="true" horizontalAlignment="Stretch">
+				<GridPanel.gridRowDefinitions>
+					<GridRowDefinition gridLengthValue=""/>
+					<GridRowDefinition gridLengthValue=""/>
+				</GridPanel.gridRowDefinitions>
+				<GridPanel.gridColumnDefinitions>
+					<GridColumnDefinition gridLengthValue="100%"/>
+				</GridPanel.gridColumnDefinitions>
+				<Label classNames="fcls_sblabel" fieldTable="formonly" gridItemLocation="0,0,1,1" identifier="lbInfo1" isDynamic="true" text="" visible="true"/>
+				<Label classNames="fcls_sblabel" fieldTable="formonly" gridItemLocation="0,1,1,1" identifier="lbInfo2" isDynamic="true" text="" visible="true"/>
+			</GridPanel>
+		</GridPanel>
+	</form.rootContainer>
+	
+	
+	<form.screenRecords>
+		<ScreenRecord fields="id1,type1,text1,highlight1,description1" identifier="scr_response"/>
+				
+	</form.screenRecords>
+</form>

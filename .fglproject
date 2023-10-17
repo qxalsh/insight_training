@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<fglProject name="insight_training">
+  <data>
+    <item id="com.querix.fgl.core.pathentries">
+      <pathentry kind="out" path="output" />
+      <pathentry kind="src" path="source" />
+    </item>
+    <item id="com.querix.fgl.core.buildtargets">
+      <buildTarget location="." name="classic_forms" type="fgl-program"/>
+      <buildTarget location="." name="fm2_forms" type="fgl-program"/>
+      <buildTarget location="gridpanel_single" name="gridpanel_single_bak" type="fgl-program"/>
+    </item>
+  </data>
+</fglProject>

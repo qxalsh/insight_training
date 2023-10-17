@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://namespaces.querix.com/2015/fglForms">
+	<form.rootContainer>
+
+		<GridPanel classNames="fcls_rootContainer" verticalAlignment="Top" horizontalAlignment="Left" fieldTable="" identifier="rootContainer">
+			<GridPanel.gridRowDefinitions>
+				<GridRowDefinition gridLengthValue=""/>
+				<GridRowDefinition/>
+				<GridRowDefinition gridLengthValue="12rem"/>
+				<GridRowDefinition gridLengthValue=""/>
+			</GridPanel.gridRowDefinitions>
+			<GridPanel.gridColumnDefinitions>
+				<GridColumnDefinition gridLengthValue="100%"/>
+			</GridPanel.gridColumnDefinitions>
+
+			<GridPanel classNames="fcls_title_cnt" visible="true" verticalAlignment="Top" horizontalAlignment="Stretch" gridItemLocation="0,0,1,1" fieldTable="formonly" identifier="cntTitle">
+				<GridPanel.gridRowDefinitions>
+					<GridRowDefinition gridLengthValue=""/>
+				</GridPanel.gridRowDefinitions>
+				<GridPanel.gridColumnDefinitions>
+					<GridColumnDefinition gridLengthValue="100%"/>
+					<GridColumnDefinition gridLengthValue=""/>
+				</GridPanel.gridColumnDefinitions>
+				<Label isDynamic="true" text="GridPanel Demo with BackgroundImage" classNames="fcls_title_lb" visible="true" gridItemLocation="0,0,1,1" fieldTable="formonly" identifier="lbTitle"/>
+				<Label isDynamic="true" text="cnt_gridpanel_background_image.fm2" classNames="fcls_title_lb" visible="true" gridItemLocation="1,0,1,1" fieldTable="" identifier="lbFormName"/>
+			</GridPanel>
+
+			<GridPanel classNames="fcls_detail_cnt,fcls_data_cnt,fcls_align_left" preferredSize="745,449" visible="true" verticalAlignment="Top" horizontalAlignment="Left" gridItemLocation="0,1,1,1" fieldTable="formonly" identifier="cntDetail1">
+				<GridPanel.gridRowDefinitions>
+					<GridRowDefinition gridLengthValue="40"/>
+					<GridRowDefinition gridLengthValue="30"/>
+					<GridRowDefinition gridLengthValue="58"/>
+					<GridRowDefinition gridLengthValue="33"/>
+					<GridRowDefinition gridLengthValue="66"/>
+					<GridRowDefinition gridLengthValue="47"/>
+					<GridRowDefinition gridLengthValue="37"/>
+					<GridRowDefinition gridLengthValue="60"/>
+					<GridRowDefinition gridLengthValue="70"/>
+				</GridPanel.gridRowDefinitions>
+				<GridPanel.gridColumnDefinitions>
+					<GridColumnDefinition gridLengthValue="47"/>
+					<GridColumnDefinition gridLengthValue="35"/>
+					<GridColumnDefinition gridLengthValue="175"/>
+					<GridColumnDefinition gridLengthValue="98"/>
+					<GridColumnDefinition gridLengthValue="84"/>
+					<GridColumnDefinition gridLengthValue="45"/>
+					<GridColumnDefinition gridLengthValue="65"/>
+					<GridColumnDefinition gridLengthValue="45"/>
+					<GridColumnDefinition gridLengthValue="105"/>
+					<GridColumnDefinition gridLengthValue="45"/>
+					<GridColumnDefinition gridLengthValue="15"/>
+				</GridPanel.gridColumnDefinitions>
+
+				<TextField visible="true" gridItemLocation="2,1,1,1" fieldTable="" identifier="fSteuernummer"/>
+
+				<GridPanel visible="true" verticalAlignment="Stretch" horizontalAlignment="Stretch" gridItemLocation="1,3,3,2" fieldTable="" identifier="cntFinanzamt">
+					<GridPanel.gridRowDefinitions>
+						<GridRowDefinition gridLengthValue="2rem"/>
+						<GridRowDefinition gridLengthValue="2rem"/>
+						<GridRowDefinition gridLengthValue="2rem"/>
+					</GridPanel.gridRowDefinitions>
+					<GridPanel.gridColumnDefinitions>
+						<GridColumnDefinition gridLengthValue="100%"/>
+					</GridPanel.gridColumnDefinitions>
+					<TextField visible="true" gridItemLocation="0,0,1,1" fieldTable="" identifier="finanzamt1"/>
+					<TextField visible="true" gridItemLocation="0,1,1,1" fieldTable="" identifier="finanzamt2"/>
+					<TextField visible="true" gridItemLocation="0,2,1,1" fieldTable="" identifier="finanzamt3"/>
+				</GridPanel>
+
+				<GridPanel visible="true" verticalAlignment="Top" horizontalAlignment="Center" gridItemLocation="5,4,1,3" fieldTable="" identifier="cntAnmeldezeitraumMonat_1_6">
+					<GridPanel.gridRowDefinitions>
+						<GridRowDefinition gridLengthValue=""/>
+						<GridRowDefinition gridLengthValue=""/>
+						<GridRowDefinition gridLengthValue=""/>
+						<GridRowDefinition gridLengthValue=""/>
+						<GridRowDefinition gridLengthValue=""/>
+						<GridRowDefinition gridLengthValue=""/>
+					</GridPanel.gridRowDefinitions>
+					<GridPanel.gridColumnDefinitions>
+						<GridColumnDefinition/>
+					</GridPanel.gridColumnDefinitions>
+					<RadioGroup orientation="Vertical" visible="true"  gridItemLocation="0,0,1,6" fieldTable="" identifier="rbg_period" horizontalAlignment="Stretch">
+						<Radio identifier="zeitraumMonat_1">
+							<Radio.value>
+								<IntegerLiteral integerValue="1"/>
+							</Radio.value>
+						</Radio>
+						<Radio identifier="zeitraumMonat_2">
+							<Radio.value>
+								<IntegerLiteral integerValue="2"/>
+							</Radio.value>
+						</Radio>
+						<Radio identifier="zeitraumMonat_3">
+							<Radio.value>
+								<IntegerLiteral integerValue="3"/>
+							</Radio.value>
+						</Radio>
+						<Radio identifier="zeitraumMonat_4">
+							<Radio.value>
+								<IntegerLiteral integerValue="4"/>
+							</Radio.value>
+						</Radio>
+						<Radio identifier="zeitraumMonat_5">
+							<Radio.value>
+								<IntegerLiteral integerValue="5"/>
+							</Radio.value>
+						</Radio>
+						<Radio identifier="zeitraumMonat_6">
+							<Radio.value>
+								<IntegerLiteral integerValue="6"/>
+							</Radio.value>
+						</Radio>
+	
+					</RadioGroup>
+				</GridPanel>
+
+				<GridPanel visible="true" verticalAlignment="Stretch" horizontalAlignment="Stretch" gridItemLocation="7,4,1,3" fieldTable="" identifier="cntAnmeldezeitraumMonat_7_12">
+					<GridPanel.gridRowDefinitions>
+						<GridRowDefinition gridLengthValue="25px"/>
+						<GridRowDefinition gridLengthValue="25px"/>
+						<GridRowDefinition gridLengthValue="25px"/>
+						<GridRowDefinition gridLengthValue="25px"/>
+						<GridRowDefinition gridLengthValue="25px"/>
+						<GridRowDefinition gridLengthValue="25px"/>
+					</GridPanel.gridRowDefinitions>
+					<GridPanel.gridColumnDefinitions>
+						<GridColumnDefinition/>
+					</GridPanel.gridColumnDefinitions>
+					<RadioGroup visible="true" identifier="rbg_period" gridItemLocation="0,0,1,6" fieldTable="" orientation="Vertical" horizontalAlignment="Stretch">
+						<Radio identifier="zeitraumMonat_7">
+							<Radio.value>
+								<IntegerLiteral integerValue="7"/>
+							</Radio.value>
+						</Radio>
+						<Radio identifier="zeitraumMonat_8">
+							<Radio.value>
+								<IntegerLiteral integerValue="8"/>
+							</Radio.value>
+						</Radio>
+						<Radio identifier="zeitraumMonat_9">
+							<Radio.value>
+								<IntegerLiteral integerValue="9"/>
+							</Radio.value>
+						</Radio>
+						<Radio identifier="zeitraumMonat_10">
+							<Radio.value>
+								<IntegerLiteral integerValue="10"/>
+							</Radio.value>
+						</Radio>
+						<Radio identifier="zeitraumMonat_11">
+							<Radio.value>
+								<IntegerLiteral integerValue="11"/>
+							</Radio.value>
+						</Radio>
+						<Radio identifier="zeitraumMonat_12">
+							<Radio.value>
+								<IntegerLiteral integerValue="12"/>
+							</Radio.value>
+						</Radio>
+					</RadioGroup>
+				</GridPanel>
+
+				<GridPanel visible="true" verticalAlignment="Stretch" horizontalAlignment="Stretch" gridItemLocation="9,4,1,3" fieldTable="" identifier="cntAnmeldezeitraumJahr">
+					<GridPanel.gridRowDefinitions>
+						<GridRowDefinition gridLengthValue="25px"/>
+						<GridRowDefinition gridLengthValue="25px"/>
+						<GridRowDefinition gridLengthValue="25px"/>
+						<GridRowDefinition gridLengthValue="25px"/>
+						<GridRowDefinition gridLengthValue="15px"/>
+						<GridRowDefinition gridLengthValue="25px"/>
+					</GridPanel.gridRowDefinitions>
+					<GridPanel.gridColumnDefinitions>
+						<GridColumnDefinition/>
+					</GridPanel.gridColumnDefinitions>
+					<RadioGroup visible="true" identifier="rbg_period" gridItemLocation="0,0,1,4" fieldTable="" orientation="Vertical" horizontalAlignment="Stretch" verticalAlignment="Stretch">
+						<Radio identifier="zeitraumJahr_1">
+							<Radio.value>
+								<IntegerLiteral integerValue="7"/>
+							</Radio.value>
+						</Radio>
+						<Radio identifier="zeitraumJahr_2">
+							<Radio.value>
+								<IntegerLiteral integerValue="8"/>
+							</Radio.value>
+						</Radio>
+						<Radio identifier="zeitraumJahr_3">
+							<Radio.value>
+								<IntegerLiteral integerValue="9"/>
+							</Radio.value>
+						</Radio>
+						<Radio identifier="zeitraumJahr_4">
+							<Radio.value>
+								<IntegerLiteral integerValue="10"/>
+							</Radio.value>
+						</Radio>
+					</RadioGroup>
+					<RadioGroup visible="true" identifier="rbg_period" gridItemLocation="0,5,1,1" fieldTable="" orientation="Vertical" horizontalAlignment="Stretch" verticalAlignment="Stretch">
+						<Radio identifier="zeitraumJahr">
+							<Radio.value>
+								<IntegerLiteral integerValue="12"/>
+							</Radio.value>
+						</Radio>
+					</RadioGroup>
+
+
+
+				</GridPanel>
+				<GridPanel visible="true" gridItemLocation="1,6,3,2" fieldTable="" identifier="cntArbeitgeber">
+					<GridPanel.gridRowDefinitions>
+						<GridRowDefinition gridLengthValue="2rem"/>
+						<GridRowDefinition gridLengthValue="2rem"/>
+						<GridRowDefinition gridLengthValue="2rem"/>
+					</GridPanel.gridRowDefinitions>
+					<GridPanel.gridColumnDefinitions>
+						<GridColumnDefinition gridLengthValue=""/>
+					</GridPanel.gridColumnDefinitions>
+					<TextField visible="true" gridItemLocation="0,0,1,1" fieldTable="" identifier="arbeitgeber1"/>
+					<TextField visible="true" gridItemLocation="0,1,1,1" fieldTable="" identifier="arbeitgeber2"/>
+					<TextField visible="true" gridItemLocation="0,2,1,1" fieldTable="" identifier="arbeitgeber3"/>
+				</GridPanel>
+				<GridPanel.background>
+					<Background backgroundImage="{context}/public/querix/icon/background/lohnsteuer.jpg" backgroundStyle="Normal" size="741,445"/>
+				</GridPanel.background>
+			</GridPanel>
+			<GroupBox title="Form Property Description (How To Do)" visible="true" identifier="cntDescription" gridItemLocation="0,2,1,1" classNames="fcls_detail_gb_cnt">
+				<GridPanel visible="true" identifier="cntDescription" horizontalAlignment="Left" classNames="fcls_container_border,fcls_detail_cnt,fcls_data_cnt,fcls_align_left,fcls_container_margin,fcls_container_padding">
+				<GridPanel.gridColumnDefinitions>
+					<GridColumnDefinition gridLengthValue=""/>
+				</GridPanel.gridColumnDefinitions>
+				<GridPanel.gridRowDefinitions>
+					<GridRowDefinition gridLengthValue=""/>
+				</GridPanel.gridRowDefinitions>
+				<Label text="&lt;GridPanel&gt;&#13;&#10;...&#13;&#10;    &lt;GridPanel.background&gt;&#13;&#10;        &lt;Background backgroundImage=&quot;{context}/public/querix/icon/background/lohnsteuer.jpg&quot; backgroundStyle=&quot;Normal&quot; size=&quot;741,445&quot;/&gt;&#13;&#10;    &lt;/GridPanel.background&gt;&#13;&#10;&lt;/GridPanel&gt;" isDynamic="true" visible="true" identifier="lb4" allowNewlines="true" textAlignment="Left,Default" horizontalAlignment="Left" gridItemLocation="0,0,1,1"/>
+			</GridPanel>
+			</GroupBox>
+			<GridPanel classNames="fcls_statusbar_cnt" visible="true" verticalAlignment="Bottom" horizontalAlignment="Stretch" gridItemLocation="0,3,1,1" fieldTable="formonly" identifier="cntStatusBar">
+				<GridPanel.gridRowDefinitions>
+					<GridRowDefinition gridLengthValue=""/>
+					<GridRowDefinition gridLengthValue=""/>
+				</GridPanel.gridRowDefinitions>
+				<GridPanel.gridColumnDefinitions>
+					<GridColumnDefinition gridLengthValue="100%"/>
+				</GridPanel.gridColumnDefinitions>
+				<Label isDynamic="true" text="" classNames="fcls_sblabel" visible="true" gridItemLocation="0,0,1,1" fieldTable="formonly" identifier="lbInfo1"/>
+				<Label isDynamic="true" text="" classNames="fcls_sblabel" visible="true" gridItemLocation="0,1,1,1" fieldTable="formonly" identifier="lbInfo2"/>
+			</GridPanel>
+		</GridPanel>
+	</form.rootContainer>
+	<form.screenRecords>
+		<ScreenRecord identifier="FORMONLY" fields="fSteuernummer,finanzamt2,finanzamt3,finanzamt1,arbeitgeber1,arbeitgeber2,arbeitgeber3,rb_group,f4,f5,f6"/>
+	</form.screenRecords>
+</form>
+
